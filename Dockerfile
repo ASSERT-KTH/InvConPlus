@@ -8,15 +8,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     default-jre \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install --no-cache-dir solc-select==1.0.4 \
-    && solc-select install 0.8.0 \
-    && solc-select use 0.8.0
-
 WORKDIR /app
 
 COPY . .
 
+# hadolint ignore=DL3013
 RUN pip install --no-cache-dir \
+    solc-select==1.0.4 \
     slither-analyzer==0.9.0 \
     web3==6.12.0 \
     evm-trace==0.1.2 \
