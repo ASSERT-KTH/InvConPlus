@@ -1,26 +1,21 @@
 FROM python:3.10-slim
 
-# Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    git \
-    curl \
-    wget \
-    build-essential \
-    default-jre \
+    git=1:2.39.5-0+deb12u2 \
+    curl=7.88.1-10+deb12u8 \
+    wget=1.21.3-1+deb12u1 \
+    build-essential=12.9 \
+    default-jre=2:1.17-74 \
     && rm -rf /var/lib/apt/lists/*
 
-# Install solc-select and a default solc version
-RUN pip install --no-cache-dir solc-select && \
-    solc-select install 0.8.0 && \
-    solc-select use 0.8.0
+RUN pip install --no-cache-dir solc-select==1.0.4 \
+    && solc-select install 0.8.0 \
+    && solc-select use 0.8.0
 
-# Set working directory
 WORKDIR /app
 
-# Copy repo
 COPY . .
 
-# Install Python dependencies (minimal set)
 RUN pip install --no-cache-dir \
     slither-analyzer==0.9.0 \
     web3==6.12.0 \
@@ -44,7 +39,5 @@ RUN pip install --no-cache-dir \
     automata-lib==8.1.0 \
     web3-input-decoder==0.1.10
 
-# Install the package itself
-RUN pip install --no-cache-dir -e .
-
+ENV PYTHONPATH=/app
 ENV PYTHONUNBUFFERED=1
