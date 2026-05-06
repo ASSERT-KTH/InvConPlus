@@ -22,7 +22,7 @@ class SourcecodeProvider(Provider):
         
     def crawl(self):
         try:
-            slither = Slither(target="mainet:{0}".format(self.params[CONTRACT_ADDRESS]), export_dir = "./crytic-export", etherscan_api_key="SDI5QEC2UAY1CX4C1VPXC4WE9HIMH2SF1C")
+          slither = Slither(target="mainet:{0}".format(self.params[CONTRACT_ADDRESS]), export_dir = "./crytic-export", etherscan_api_key=os.environ.get("ETHERSCAN_API_KEY", ""))
             # print(slither._crytic_compile.filenames)
             if len(slither._crytic_compile.filenames) == 1:
                 mainContract = list(slither._crytic_compile.filenames)[0].relative.split(".etherscan.io-")[1].split(".sol")[0]
