@@ -52,7 +52,7 @@ jobs:
             -e ETHERSCAN_API_KEY \
             invconplus:ci \
             python3 -m invconplus.main \
-              --address 0x22d982a8B875Cc0f8994cd8a4a70872161fdc000 \
+              --address 0x00765EaABedBC0eC71e922178B5cF6f5632EC324 \
               --maxCount 10
 
   L4-dockerfile-lint:
