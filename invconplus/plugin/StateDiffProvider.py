@@ -1,7 +1,7 @@
 from typing import Any
 from .Provider import Provider
 import logging
-from .quickNode import fetchStateDiff as fetchStateDiffByQuickNode
+from .rpc import fetchStateDiff as fetchStateDiffByRPC
 from .etherscan import fetchStateDiff as fetchStateDiffByEtherscan
 import traceback
 import time 
@@ -32,7 +32,7 @@ class StateDiffProvider(Provider):
         except:
             # when etherscan fails, use quicknode as a backup
             # traceback.print_exc()
-            result = fetchStateDiffByQuickNode(self.params[TX_HASH])
+            result = fetchStateDiffByRPC(self.params[TX_HASH])
             return result 
 
 if __name__ == "__main__":

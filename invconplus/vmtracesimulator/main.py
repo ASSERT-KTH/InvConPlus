@@ -10,7 +10,7 @@ from Crypto.Hash import keccak
 from evm_trace import TraceFrame, ParityTraceList, get_calltree_from_parity_trace
 from evm_trace.vmtrace import VMTrace, VMTraceFrame, to_trace_frames, from_rpc_response
 
-from invconplus.plugin.quickNode import fetchAllRuntimeInformation
+from invconplus.plugin.rpc import fetchAllRuntimeInformation
 from invconplus.plugin.chifra_usdt import fetchTransaction
 
 def keccak256(buffer: bytes) -> bytes:
