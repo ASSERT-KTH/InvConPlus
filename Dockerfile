@@ -1,11 +1,11 @@
 FROM python:3.10-slim
 
+# hadolint ignore=DL3008
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    git=1:2.39.5-0+deb12u2 \
-    curl=7.88.1-10+deb12u8 \
-    wget=1.21.3-1+deb12u1 \
-    build-essential=12.9 \
-    default-jre=2:1.17-74 \
+    git \
+    curl \
+    build-essential \
+    default-jre \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip install --no-cache-dir solc-select==1.0.4 \
