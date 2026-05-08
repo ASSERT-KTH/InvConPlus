@@ -24,7 +24,7 @@ def fetchBatchTransaction(tx_ids: list):
     cmds =  ["chifra",  "traces"]
     for tx_hash in tx_ids:
         cmds.append("{0}".format(tx_hash))
-    cmds.extend(["-a", "--fmt", "json"])
+    cmds.extend(["--fmt", "json"])  # removed -a: causes chifra segfault on LoadKnownAbis
     while True:
         p =  subprocess.Popen(cmds, stdout=subprocess.PIPE)
         out, err = p.communicate()
@@ -55,7 +55,7 @@ def fetchBatchTransaction(tx_ids: list):
 def fetchTransaction(block, txid):
     global sys 
     cmds =  ["chifra", "traces", "{0}.{1}".format(block, txid)]
-    cmds.extend(["-a", "--fmt", "json"])
+    cmds.extend(["--fmt", "json"])  # removed -a: causes chifra segfault on LoadKnownAbis
     while True :
         p =  subprocess.Popen(cmds, stdout=subprocess.PIPE)
         out, err = p.communicate()
@@ -68,7 +68,7 @@ def fetchTransaction(block, txid):
         result =  json.loads(out.decode())
         break 
 
-    # cmds =  ["chifra", "traces", "{0}.{1}".format(block, txid), "-o", "-a"]
+    # cmds =  ["chifra", "traces", "{0}.{1}".format(block, txid), "-o"]
     # sys.argv =  cmds
     # result = run()
     # while result is None or "data" not in result or len(result["data"]) == 0:
