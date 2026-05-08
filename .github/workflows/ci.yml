@@ -35,15 +35,25 @@ jobs:
           "
 
   L3-smoke-test:
-    name: L3 Smoke Test (skipped - requires archive RPC)
+    name: L3 Smoke Test
     runs-on: ubuntu-latest
     needs: L2-dependency-check
     steps:
-      - name: Document RPC barrier
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Build Docker image
+        run: docker build -t invconplus:ci .
+      - name: Run smoke test
+        env:
+          RPC_URL: ${{ secrets.RPC_URL }}
+          ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
         run: |
-          echo "L3 smoke test requires trace_replayTransaction (archive node RPC)"
-          echo "This method is unavailable on free-tier providers (Dwellir, Ankr)."
-          echo "Set RPC_URL secret with a trace-enabled archive endpoint to enable."
+          docker run --rm \
+            -e RPC_URL \
+            -e ETHERSCAN_API_KEY \
+            invconplus:ci \
+            python3 -m invconplus.main \
+              --address 0x01F2AcF2914860331C1Cb1a9AcecDa7475e06Af8 \
+              --maxCount 10
 
   L4-dockerfile-lint:
     name: L4 Dockerfile Lint
