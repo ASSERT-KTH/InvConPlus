@@ -32,7 +32,7 @@ RUN pip install --no-cache-dir \
     "numpy==1.26.4" \
     "python-dateutil==2.9.0.post0" \
     "pytz==2024.1" \
-    "crytic-compile==0.3.5" \
+    "crytic-compile==0.3.11" \ \
     "forbiddenfruit==0.1.4" \
     "graphviz==0.16" \
     "automata-lib==8.1.0" \
