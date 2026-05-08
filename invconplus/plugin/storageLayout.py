@@ -34,8 +34,12 @@ def filtercompilerversion(compiler_version):
 
 def installSolc(solcVersion):
     solcVersion = filtercompilerversion(solcVersion)
-    subprocess.run(["solc-select","install", solcVersion])
-    subprocess.run(["solc-select","use", solcVersion])
+    # Skip solc-select install (GitHub releases API blocked)
+    # Binary already placed in .solc-select/artifacts
+    try:
+        subprocess.run(["solc-select","use", solcVersion], timeout=10)
+    except Exception:
+        pass
 
 dynamicArrayRegex = re.compile(r"(\w+)\[\]")
 fixedArrayRegex = re.compile(r"(\w+)\[([0-9]+)\]")

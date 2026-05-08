@@ -1,3 +1,4 @@
+import os
 import logging
 import pprint
 from slither import Slither
@@ -59,12 +60,12 @@ def rename(address_or_workdir, missing_files: List[str]):
             print(code)
 
 def compileContract(address):
-    cc = CryticCompile(target="mainet:{0}".format(address), etherscan_api_key="SDI5QEC2UAY1CX4C1VPXC4WE9HIMH2SF1C")
+    cc = CryticCompile(target="mainnet:{0}".format(address), etherscan_api_key=os.environ.get("ETHERSCAN_API_KEY", ""))
     slither = Slither(cc)
     if len(slither._crytic_compile.filenames) == 1:
-        mainContract = list(slither._crytic_compile.filenames)[0].relative.split(".etherscan.io-")[1].split(".sol")[0]
+        mainContract = list(slither._crytic_compile.filenames)[0].relative.split("mainnet-")[1].split(".sol")[0]
     else:
-        mainContract = list(slither._crytic_compile.filenames)[0].relative.split(".etherscan.io-")[1].split(".sol")[0].split("/")[0]
+        mainContract = list(slither._crytic_compile.filenames)[0].relative.split("mainnet-")[1].split(".sol")[0].split("/")[0]
     print("main contract: ", mainContract)
     for contract in slither.contracts:
         print(contract.name)

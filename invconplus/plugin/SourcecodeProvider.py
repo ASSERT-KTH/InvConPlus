@@ -26,10 +26,10 @@ class SourcecodeProvider(Provider):
             slither = Slither(target="mainnet:{0}".format(self.params[CONTRACT_ADDRESS]), export_dir = "./crytic-export", etherscan_api_key=os.environ.get("ETHERSCAN_API_KEY", ""))
             # print(slither._crytic_compile.filenames)
             if len(slither._crytic_compile.filenames) == 1:
-                mainContract = list(slither._crytic_compile.filenames)[0].relative.split(".etherscan.io-")[1].split(".sol")[0]
+                mainContract = list(slither._crytic_compile.filenames)[0].relative.split("mainnet-")[1].split(".sol")[0]
             else:
                 # print(list(slither._crytic_compile.filenames)[0])
-                mainContract = list(slither._crytic_compile.filenames)[0].relative.split(".etherscan.io-")[1].split(".sol")[0].split("/")[0]
+                mainContract = list(slither._crytic_compile.filenames)[0].relative.split("mainnet-")[1].split(".sol")[0].split("/")[0]
             print("main contract:", mainContract)
             # StaticSlice(slither=slither, mainContractName=mainContract).staticSlice()
             try:
