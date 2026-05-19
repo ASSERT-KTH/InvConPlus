@@ -1,0 +1,78 @@
+{
+    "variables": [
+        {
+            "contractName": "ExchangeBetweenPools",
+            "varName": "_contract_owner",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 0,
+            "varOffset": 0
+        },
+        {
+            "contractName": "ExchangeBetweenPools",
+            "varName": "note",
+            "varType": "string",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 1,
+            "varOffset": 0,
+            "byteSize": 0,
+            "toReadSlot": 1
+        },
+        {
+            "contractName": "ExchangeBetweenPools",
+            "varName": "usdt",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 2,
+            "varOffset": 0
+        },
+        {
+            "contractName": "ExchangeBetweenPools",
+            "varName": "usdc",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 3,
+            "varOffset": 0
+        },
+        {
+            "contractName": "ExchangeBetweenPools",
+            "varName": "from_bank",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 4,
+            "varOffset": 0
+        },
+        {
+            "contractName": "ExchangeBetweenPools",
+            "varName": "to_bank",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 5,
+            "varOffset": 0
+        },
+        {
+            "contractName": "ExchangeBetweenPools",
+            "varName": "minimum_amount",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 6,
+            "varOffset": 0
+        },
+        {
+            "contractName": "ExchangeBetweenPools",
+            "varName": "curve",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 7,
+            "varOffset": 0
+        }
+    ]
+}
