@@ -1,0 +1,112 @@
+{
+    "variables": [
+        {
+            "contractName": "NFTLiquidation",
+            "varName": "admin",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 0,
+            "varOffset": 0
+        },
+        {
+            "contractName": "NFTLiquidation",
+            "varName": "pendingAdmin",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 1,
+            "varOffset": 0
+        },
+        {
+            "contractName": "NFTLiquidation",
+            "varName": "nftLiquidationImplementation",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 2,
+            "varOffset": 0
+        },
+        {
+            "contractName": "NFTLiquidation",
+            "varName": "pendingNFTLiquidationImplementation",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 3,
+            "varOffset": 0
+        },
+        {
+            "contractName": "NFTLiquidation",
+            "varName": "_notEntered",
+            "varType": "bool",
+            "varBytes": 1,
+            "varValue": null,
+            "varSlot": 3,
+            "varOffset": 20
+        },
+        {
+            "contractName": "NFTLiquidation",
+            "varName": "comptroller",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 4,
+            "varOffset": 0
+        },
+        {
+            "contractName": "NFTLiquidation",
+            "varName": "oEther",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 5,
+            "varOffset": 0
+        },
+        {
+            "contractName": "NFTLiquidation",
+            "varName": "protocolFeeRecipient",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 6,
+            "varOffset": 0
+        },
+        {
+            "contractName": "NFTLiquidation",
+            "varName": "protocolFeeMantissa",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 7,
+            "varOffset": 0
+        },
+        {
+            "contractName": "NFTLiquidation",
+            "varName": "extraRepayAmount",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 8,
+            "varOffset": 0
+        },
+        {
+            "contractName": "NFTLiquidation",
+            "varName": "seizeIndexes_",
+            "varType": "uint256[]",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 9,
+            "varOffset": 0,
+            "item_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "uint256",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            }
+        }
+    ]
+}
