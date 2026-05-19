@@ -1,0 +1,40 @@
+{
+    "variables": [
+        {
+            "contractName": "YVCrv3CryptoFeed",
+            "varName": "WBTC",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 0,
+            "varOffset": 0
+        },
+        {
+            "contractName": "YVCrv3CryptoFeed",
+            "varName": "WETH",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 1,
+            "varOffset": 0
+        },
+        {
+            "contractName": "YVCrv3CryptoFeed",
+            "varName": "USDT",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 2,
+            "varOffset": 0
+        },
+        {
+            "contractName": "YVCrv3CryptoFeed",
+            "varName": "crv3CryptoLPToken",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 3,
+            "varOffset": 0
+        }
+    ]
+}
