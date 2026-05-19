@@ -1,0 +1,553 @@
+{
+    "variables": [
+        {
+            "contractName": "PointFarm",
+            "varName": "_supportedInterfaces",
+            "varType": "mapping(bytes4 => bool)",
+            "varBytes": 32,
+            "varValue": {},
+            "varSlot": 0,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "bytes4",
+                "varBytes": 4,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "bool",
+                "varBytes": 1,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            }
+        },
+        {
+            "contractName": "PointFarm",
+            "varName": "_balances",
+            "varType": "mapping(uint256 => mapping(address => uint256))",
+            "varBytes": 32,
+            "varValue": {
+                "0": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "mapping(address => uint256)",
+                    "varBytes": 32,
+                    "varValue": {
+                        "0x9d9820f10772ffcef842770b6581c07a97fed9e4": {
+                            "contractName": null,
+                            "varName": null,
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": 584,
+                            "varSlot": 65692329903184193986901348350761362132781286849448831659104338287388078659807,
+                            "varOffset": 0
+                        }
+                    },
+                    "varSlot": 75506153327051474587906755573858019282972751592871715030499431892688993766217,
+                    "varOffset": null,
+                    "key_var_type": {
+                        "contractName": null,
+                        "varName": null,
+                        "varType": "address",
+                        "varBytes": 20,
+                        "varValue": null,
+                        "varSlot": null,
+                        "varOffset": null
+                    },
+                    "val_var_type": {
+                        "contractName": null,
+                        "varName": null,
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": null,
+                        "varOffset": null
+                    }
+                }
+            },
+            "varSlot": 1,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "uint256",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "mapping(address => uint256)",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null,
+                "key_var_type": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "address",
+                    "varBytes": 20,
+                    "varValue": null,
+                    "varSlot": null,
+                    "varOffset": null
+                },
+                "val_var_type": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": null,
+                    "varSlot": null,
+                    "varOffset": null
+                }
+            }
+        },
+        {
+            "contractName": "PointFarm",
+            "varName": "_operatorApprovals",
+            "varType": "mapping(address => mapping(address => bool))",
+            "varBytes": 32,
+            "varValue": {
+                "0x9d9820f10772ffcef842770b6581c07a97fed9e4": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "mapping(address => bool)",
+                    "varBytes": 32,
+                    "varValue": {
+                        "0xcdcc535503cba9286489b338b36156b4b75008f6": {
+                            "contractName": null,
+                            "varName": null,
+                            "varType": "bool",
+                            "varBytes": 1,
+                            "varValue": true,
+                            "varSlot": 50995674341602199368046148145555799651967130443408218649209190804630306943768,
+                            "varOffset": 0
+                        }
+                    },
+                    "varSlot": 49014206627193003041521360191820522154908637637058134374094947946062664526784,
+                    "varOffset": null,
+                    "key_var_type": {
+                        "contractName": null,
+                        "varName": null,
+                        "varType": "address",
+                        "varBytes": 20,
+                        "varValue": null,
+                        "varSlot": null,
+                        "varOffset": null
+                    },
+                    "val_var_type": {
+                        "contractName": null,
+                        "varName": null,
+                        "varType": "bool",
+                        "varBytes": 1,
+                        "varValue": null,
+                        "varSlot": null,
+                        "varOffset": null
+                    }
+                }
+            },
+            "varSlot": 2,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "address",
+                "varBytes": 20,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "mapping(address => bool)",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null,
+                "key_var_type": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "address",
+                    "varBytes": 20,
+                    "varValue": null,
+                    "varSlot": null,
+                    "varOffset": null
+                },
+                "val_var_type": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "bool",
+                    "varBytes": 1,
+                    "varValue": null,
+                    "varSlot": null,
+                    "varOffset": null
+                }
+            }
+        },
+        {
+            "contractName": "PointFarm",
+            "varName": "_uri",
+            "varType": "string",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 3,
+            "varOffset": 0,
+            "byteSize": 0,
+            "toReadSlot": 3
+        },
+        {
+            "contractName": "PointFarm",
+            "varName": "_owner",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 4,
+            "varOffset": 0
+        },
+        {
+            "contractName": "PointFarm",
+            "varName": "whitelist",
+            "varType": "mapping(address => bool)",
+            "varBytes": 32,
+            "varValue": {
+                "0xa499648fd0e80fd911972bbeb069e4c20e68bf22": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "bool",
+                    "varBytes": 1,
+                    "varValue": true,
+                    "varSlot": 87999854329647821793099846755125202300866725674734268511422956142852801601898,
+                    "varOffset": 0
+                }
+            },
+            "varSlot": 5,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "address",
+                "varBytes": 20,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "bool",
+                "varBytes": 1,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            }
+        },
+        {
+            "contractName": "PointFarm",
+            "varName": "shopIDs",
+            "varType": "mapping(address => uint256)",
+            "varBytes": 32,
+            "varValue": {},
+            "varSlot": 6,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "address",
+                "varBytes": 20,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "uint256",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            }
+        },
+        {
+            "contractName": "PointFarm",
+            "varName": "currentShopIndex",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": 1,
+            "varSlot": 7,
+            "varOffset": 0
+        },
+        {
+            "contractName": "PointFarm",
+            "varName": "pointsPerBlock",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 8,
+            "varOffset": 0
+        },
+        {
+            "contractName": "PointFarm",
+            "varName": "poolInfo",
+            "varType": "PointFarm.PoolInfo[]",
+            "varBytes": 32,
+            "varValue": [
+                {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "PointFarm.PoolInfo",
+                    "varBytes": 84,
+                    "varValue": [
+                        null,
+                        {
+                            "contractName": "PointFarm",
+                            "varName": "lastRewardBlock",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 1,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "PointFarm",
+                            "varName": "accPointsPerShare",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 2,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": 0,
+                    "varOffset": 0
+                }
+            ],
+            "varSlot": 9,
+            "varOffset": 0,
+            "item_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "PointFarm.PoolInfo",
+                "varBytes": 84,
+                "varValue": [
+                    null,
+                    {
+                        "contractName": "PointFarm",
+                        "varName": "lastRewardBlock",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 1,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "PointFarm",
+                        "varName": "accPointsPerShare",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 2,
+                        "varOffset": 0
+                    }
+                ],
+                "varSlot": null,
+                "varOffset": null
+            }
+        },
+        {
+            "contractName": "PointFarm",
+            "varName": "userInfo",
+            "varType": "mapping(uint256 => mapping(address => PointFarm.UserInfo))",
+            "varBytes": 32,
+            "varValue": {
+                "0": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "mapping(address => PointFarm.UserInfo)",
+                    "varBytes": 32,
+                    "varValue": {
+                        "0x0ef024d299cb56805f2437cd00b8a361a7b06d54": {
+                            "contractName": null,
+                            "varName": null,
+                            "varType": "PointFarm.UserInfo",
+                            "varBytes": 64,
+                            "varValue": [
+                                {
+                                    "contractName": "PointFarm",
+                                    "varName": "amount",
+                                    "varType": "uint256",
+                                    "varBytes": 32,
+                                    "varValue": 10000000000000000000000,
+                                    "varSlot": 113955608399958025302473147009379529117151577315696808588167641688647470593023,
+                                    "varOffset": 0
+                                },
+                                {
+                                    "contractName": "PointFarm",
+                                    "varName": "rewardDebt",
+                                    "varType": "uint256",
+                                    "varBytes": 32,
+                                    "varValue": null,
+                                    "varSlot": 113955608399958025302473147009379529117151577315696808588167641688647470593024,
+                                    "varOffset": 0
+                                }
+                            ],
+                            "varSlot": 113955608399958025302473147009379529117151577315696808588167641688647470593023,
+                            "varOffset": null
+                        },
+                        "0x9d9820f10772ffcef842770b6581c07a97fed9e4": {
+                            "contractName": null,
+                            "varName": null,
+                            "varType": "PointFarm.UserInfo",
+                            "varBytes": 64,
+                            "varValue": [
+                                {
+                                    "contractName": "PointFarm",
+                                    "varName": "amount",
+                                    "varType": "uint256",
+                                    "varBytes": 32,
+                                    "varValue": 0,
+                                    "varSlot": 9627430145577198249428960048218766661920089909322630752910237450229227756501,
+                                    "varOffset": 0
+                                },
+                                {
+                                    "contractName": "PointFarm",
+                                    "varName": "rewardDebt",
+                                    "varType": "uint256",
+                                    "varBytes": 32,
+                                    "varValue": 0,
+                                    "varSlot": 9627430145577198249428960048218766661920089909322630752910237450229227756502,
+                                    "varOffset": 0
+                                }
+                            ],
+                            "varSlot": 9627430145577198249428960048218766661920089909322630752910237450229227756501,
+                            "varOffset": null
+                        }
+                    },
+                    "varSlot": 8980041631919178290161226234105977776452779202751091583642356499240698725347,
+                    "varOffset": null,
+                    "key_var_type": {
+                        "contractName": null,
+                        "varName": null,
+                        "varType": "address",
+                        "varBytes": 20,
+                        "varValue": null,
+                        "varSlot": null,
+                        "varOffset": null
+                    },
+                    "val_var_type": {
+                        "contractName": null,
+                        "varName": null,
+                        "varType": "PointFarm.UserInfo",
+                        "varBytes": 64,
+                        "varValue": [
+                            {
+                                "contractName": "PointFarm",
+                                "varName": "amount",
+                                "varType": "uint256",
+                                "varBytes": 32,
+                                "varValue": null,
+                                "varSlot": 0,
+                                "varOffset": 0
+                            },
+                            {
+                                "contractName": "PointFarm",
+                                "varName": "rewardDebt",
+                                "varType": "uint256",
+                                "varBytes": 32,
+                                "varValue": null,
+                                "varSlot": 1,
+                                "varOffset": 0
+                            }
+                        ],
+                        "varSlot": null,
+                        "varOffset": null
+                    }
+                }
+            },
+            "varSlot": 10,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "uint256",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "mapping(address => PointFarm.UserInfo)",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null,
+                "key_var_type": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "address",
+                    "varBytes": 20,
+                    "varValue": null,
+                    "varSlot": null,
+                    "varOffset": null
+                },
+                "val_var_type": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "PointFarm.UserInfo",
+                    "varBytes": 64,
+                    "varValue": [
+                        {
+                            "contractName": "PointFarm",
+                            "varName": "amount",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 0,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "PointFarm",
+                            "varName": "rewardDebt",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 1,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": null,
+                    "varOffset": null
+                }
+            }
+        },
+        {
+            "contractName": "PointFarm",
+            "varName": "startBlock",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 11,
+            "varOffset": 0
+        },
+        {
+            "contractName": "PointFarm",
+            "varName": "shop",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": "0xcdcc535503cba9286489b338b36156b4b75008f6",
+            "varSlot": 12,
+            "varOffset": 0
+        }
+    ]
+}
