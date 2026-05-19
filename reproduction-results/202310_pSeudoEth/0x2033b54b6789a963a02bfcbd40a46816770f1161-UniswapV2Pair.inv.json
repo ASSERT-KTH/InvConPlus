@@ -1,0 +1,206 @@
+[
+    {
+        "func": "approve(spender,value)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.NORMAL",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "approve(spender,value)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.REVERSION",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "burn(to)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.NORMAL",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "burn(to)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.REVERSION",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "initialize(_token0,_token1)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.NORMAL",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "initialize(_token0,_token1)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.REVERSION",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "mint(to)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.NORMAL",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "mint(to)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.REVERSION",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "permit(owner,spender,value,deadline,v,r,s)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.NORMAL",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "permit(owner,spender,value,deadline,v,r,s)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.REVERSION",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "skim(to)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.NORMAL",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "skim(to)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.REVERSION",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "swap(amount0Out,amount1Out,to,data)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.NORMAL",
+        "preconditions": [
+            "msg.sender != 0",
+            "amount1Out one of [0,78208877671187260]",
+            "amount0Out one of [0,305845105926432906,90552811040872754]",
+            "data != \"\"",
+            "to != 0",
+            "msg.value == 0",
+            "msg.value one of [0]",
+            "amount1Out != amount0Out",
+            "amount1Out >= msg.value",
+            "amount0Out >= msg.value"
+        ],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "swap(amount0Out,amount1Out,to,data)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.REVERSION",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "sync()",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.NORMAL",
+        "preconditions": [
+            "msg.value == 0",
+            "msg.value one of [0]",
+            "msg.sender != 0"
+        ],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "sync()",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.REVERSION",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "transfer(to,value)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.NORMAL",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "transfer(to,value)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.REVERSION",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "transferFrom(from,to,value)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.NORMAL",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": "transferFrom(from,to,value)",
+        "type": "PptType.EXIT",
+        "executionType": "TxType.REVERSION",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    },
+    {
+        "func": null,
+        "type": "PptType.CONTRACT",
+        "executionType": "TxType.NORMAL",
+        "preconditions": [],
+        "postconditions": [],
+        "falsified_preconditions": [],
+        "falsified_postconditions": []
+    }
+]
