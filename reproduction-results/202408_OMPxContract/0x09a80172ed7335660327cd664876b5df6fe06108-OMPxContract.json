@@ -1,0 +1,230 @@
+{
+    "variables": [
+        {
+            "contractName": "OMPxContract",
+            "varName": "balances",
+            "varType": "mapping(address => uint256)",
+            "varBytes": 32,
+            "varValue": {},
+            "varSlot": 0,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "address",
+                "varBytes": 20,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "uint256",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            }
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "totalSupply_",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 1,
+            "varOffset": 0
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "owner",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 2,
+            "varOffset": 0
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "halted",
+            "varType": "bool",
+            "varBytes": 1,
+            "varValue": null,
+            "varSlot": 2,
+            "varOffset": 20
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "descPrecision",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 3,
+            "varOffset": 0
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "defaultCoef",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 4,
+            "varOffset": 0
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "discounts",
+            "varType": "Discountable.DiscStruct[]",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 5,
+            "varOffset": 0,
+            "item_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "Discountable.DiscStruct",
+                "varBytes": 64,
+                "varValue": [
+                    {
+                        "contractName": "OMPxContract",
+                        "varName": "amount",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 0,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "OMPxContract",
+                        "varName": "disc",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 1,
+                        "varOffset": 0
+                    }
+                ],
+                "varSlot": null,
+                "varOffset": null
+            }
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "stat_tokensBoughtBack",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": 383000000000000000000000,
+            "varSlot": 6,
+            "varOffset": 0
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "stat_timesBoughtBack",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": 281,
+            "varSlot": 7,
+            "varOffset": 0
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "stat_tokensPurchased",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": 867130000000000000000000,
+            "varSlot": 8,
+            "varOffset": 0
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "stat_timesPurchased",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": 37,
+            "varSlot": 9,
+            "varOffset": 0
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "stat_ethSent",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": 4806956718045563340,
+            "varSlot": 10,
+            "varOffset": 0
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "stat_ethReceived",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": 1321105266643508000,
+            "varSlot": 11,
+            "varOffset": 0
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "stat_tokensSpend",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": 9338000000000000000000,
+            "varSlot": 12,
+            "varOffset": 0
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "stat_timesSpend",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": 155,
+            "varSlot": 13,
+            "varOffset": 0
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "oddSent",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": 1539166463667378630,
+            "varSlot": 14,
+            "varOffset": 0
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "feeSent",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": 447295966911503655,
+            "varSlot": 15,
+            "varOffset": 0
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "token",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 16,
+            "varOffset": 0
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "feeReceiverContract",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": "0x8b26a81522747bc66be1261eaac3091c6fff0d6d",
+            "varSlot": 17,
+            "varOffset": 0
+        },
+        {
+            "contractName": "OMPxContract",
+            "varName": "feeBalance",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": 86810335093558922,
+            "varSlot": 18,
+            "varOffset": 0
+        }
+    ]
+}
