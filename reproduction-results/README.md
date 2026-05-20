@@ -42,4 +42,4 @@ python3 -m invconplus.main \
 
 - Original repository: https://github.com/Franklinliu/InvConPlus-Tool
 - Fork: https://github.com/ASSERT-KTH/InvConPlus
-- Paper: InvCon+, ASE 2022
+- Paper: "Automated Invariant Generation for Solidity Smart Contracts"
