@@ -1,0 +1,34 @@
+{
+  "contract_id": "202210_N00d",
+  "contract_name": "SushiBar",
+  "vulnerable_functions": [
+    "enter"
+  ],
+  "invcon_sections_examined": [
+    "enter(_amount)::::NORMAL",
+    "CONTRACT::::NORMAL"
+  ],
+  "invcon_predicate_counts": {
+    "enter(_amount)::::NORMAL": 192,
+    "CONTRACT::::NORMAL": 69
+  },
+  "match_results": [
+    {
+      "ground_truth": {
+        "raw": "!__lock_modifier0_lock",
+        "normalised": "!__lock_modifier0_lock",
+        "source_line": 22
+      },
+      "match_type": "NONE",
+      "matched_invcon_predicates": [],
+      "notes": "GT tokens: ['__lock_modifier0_lock'] | GT ops: ['!'] | No predicate covered both."
+    }
+  ],
+  "summary": {
+    "total_gt_conditions": 1,
+    "exact_matches": 0,
+    "partial_matches": 0,
+    "no_matches": 1,
+    "coverage_pct": 0.0
+  }
+}

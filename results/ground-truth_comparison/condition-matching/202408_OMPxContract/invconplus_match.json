@@ -1,0 +1,37 @@
+{
+  "contract_id": "202408_OMPxContract",
+  "contract_name": "OMPxContract",
+  "vulnerable_functions": [
+    "purchase",
+    "buyBack"
+  ],
+  "invcon_sections_examined": [
+    "buyBack(tokensToBuyBack,minPrice)::::NORMAL",
+    "purchase(tokensToPurchase,maxPrice)::::NORMAL",
+    "CONTRACT::::NORMAL"
+  ],
+  "invcon_predicate_counts": {
+    "buyBack(tokensToBuyBack,minPrice)::::NORMAL": 1770,
+    "purchase(tokensToPurchase,maxPrice)::::NORMAL": 1843,
+    "CONTRACT::::NORMAL": 2299
+  },
+  "match_results": [
+    {
+      "ground_truth": {
+        "raw": "block.timestamp >= lastInteractionTimestamp[msg.sender] + 30 seconds",
+        "normalised": "block.timestamp >= lastinteractiontimestamp[msg.sender] + 30 seconds",
+        "source_line": 23
+      },
+      "match_type": "NONE",
+      "matched_invcon_predicates": [],
+      "notes": "GT tokens: ['>=', 'block.timestamp', 'lastinteractiontimestamp', 'msg.sender', 'seconds'] | GT ops: ['>='] | No predicate covered both."
+    }
+  ],
+  "summary": {
+    "total_gt_conditions": 1,
+    "exact_matches": 0,
+    "partial_matches": 0,
+    "no_matches": 1,
+    "coverage_pct": 0.0
+  }
+}

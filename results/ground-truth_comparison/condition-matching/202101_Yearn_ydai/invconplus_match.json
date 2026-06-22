@@ -1,0 +1,90 @@
+{
+  "contract_id": "202102_Yearn_ydai",
+  "contract_name": "yVault",
+  "vulnerable_functions": [
+    "earn"
+  ],
+  "invcon_sections_examined": [
+    "earn()::::NORMAL",
+    "CONTRACT::::NORMAL"
+  ],
+  "invcon_predicate_counts": {
+    "earn()::::NORMAL": 165,
+    "CONTRACT::::NORMAL": 140
+  },
+  "match_results": [
+    {
+      "ground_truth": {
+        "raw": "msg.sender == governance",
+        "normalised": "msg.sender == governance",
+        "source_line": 4
+      },
+      "match_type": "PARTIAL",
+      "matched_invcon_predicates": [
+        "governance == ori(governance)",
+        "ori(governance) == 0",
+        "ori(token) == ori(governance)",
+        "ori(controller) == ori(governance)",
+        "governance == 0",
+        "controller == governance",
+        "controller == ori(governance)",
+        "ori(token) == governance",
+        "token == governance",
+        "token == ori(governance)",
+        "ori(controller) == governance",
+        "ori(governance) == 0",
+        "ori(token) == ori(governance)",
+        "ori(controller) == ori(governance)",
+        "governance == 0",
+        "controller == governance",
+        "controller == ori(governance)",
+        "ori(token) == governance",
+        "token == governance",
+        "token == ori(governance)",
+        "ori(controller) == governance",
+        "governance == ori(governance)"
+      ],
+      "notes": "Token overlap found; not a literal match"
+    },
+    {
+      "ground_truth": {
+        "raw": "msg.sender == governance",
+        "normalised": "msg.sender == governance",
+        "source_line": 25
+      },
+      "match_type": "PARTIAL",
+      "matched_invcon_predicates": [
+        "governance == ori(governance)",
+        "ori(governance) == 0",
+        "ori(token) == ori(governance)",
+        "ori(controller) == ori(governance)",
+        "governance == 0",
+        "controller == governance",
+        "controller == ori(governance)",
+        "ori(token) == governance",
+        "token == governance",
+        "token == ori(governance)",
+        "ori(controller) == governance",
+        "ori(governance) == 0",
+        "ori(token) == ori(governance)",
+        "ori(controller) == ori(governance)",
+        "governance == 0",
+        "controller == governance",
+        "controller == ori(governance)",
+        "ori(token) == governance",
+        "token == governance",
+        "token == ori(governance)",
+        "ori(controller) == governance",
+        "governance == ori(governance)"
+      ],
+      "notes": "Token overlap found; not a literal match"
+    }
+  ],
+  "summary": {
+    "total_gt_conditions": 2,
+    "exact_matches": 0,
+    "partial_matches": 2,
+    "no_matches": 0,
+    "coverage_pct": 100.0
+  }
+}

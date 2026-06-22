@@ -1,0 +1,42 @@
+{
+  "contract_id": "202409_OnyxDAO",
+  "contract_name": "NFTLiquidation",
+  "vulnerable_functions": [
+    "liquidateWithSingleRepay"
+  ],
+  "invcon_sections_examined": [
+    "CONTRACT::::NORMAL"
+  ],
+  "invcon_predicate_counts": {
+    "CONTRACT::::NORMAL": 134
+  },
+  "match_results": [
+    {
+      "ground_truth": {
+        "raw": "repayAmount == borrowedAmount",
+        "normalised": "repayamount == borrowedamount",
+        "source_line": 7
+      },
+      "match_type": "NONE",
+      "matched_invcon_predicates": [],
+      "notes": "GT tokens: ['==', 'borrowedamount', 'repayamount'] | GT ops: ['=='] | No predicate covered both."
+    },
+    {
+      "ground_truth": {
+        "raw": "repayAmount == borrowedAmount",
+        "normalised": "repayamount == borrowedamount",
+        "source_line": 21
+      },
+      "match_type": "NONE",
+      "matched_invcon_predicates": [],
+      "notes": "GT tokens: ['==', 'borrowedamount', 'repayamount'] | GT ops: ['=='] | No predicate covered both."
+    }
+  ],
+  "summary": {
+    "total_gt_conditions": 2,
+    "exact_matches": 0,
+    "partial_matches": 0,
+    "no_matches": 2,
+    "coverage_pct": 0.0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "contract_id": "202308_Uwerx",
+  "contract_name": "Uwerx",
+  "vulnerable_functions": [
+    "transfer",
+    "transferFrom"
+  ],
+  "invcon_sections_examined": [
+    "transfer(to,amount)::::NORMAL",
+    "CONTRACT::::NORMAL"
+  ],
+  "invcon_predicate_counts": {
+    "transfer(to,amount)::::NORMAL": 182,
+    "CONTRACT::::NORMAL": 58
+  },
+  "match_results": [
+    {
+      "ground_truth": {
+        "raw": "uniswapPoolAddress!=address(0x1)",
+        "normalised": "uniswappooladdress!=address(0x1)",
+        "source_line": 7
+      },
+      "match_type": "PARTIAL",
+      "matched_invcon_predicates": [
+        "msg.sender != ori(uniswapPoolAddress)",
+        "ori(marketingWalletAddress) != ori(uniswapPoolAddress)",
+        "to != ori(uniswapPoolAddress)",
+        "msg.sender != uniswapPoolAddress",
+        "marketingWalletAddress != uniswapPoolAddress",
+        "marketingWalletAddress != ori(uniswapPoolAddress)",
+        "ori(marketingWalletAddress) != uniswapPoolAddress",
+        "to != uniswapPoolAddress",
+        "ori(marketingWalletAddress) != ori(uniswapPoolAddress)",
+        "ori(marketingWalletAddress) != uniswapPoolAddress",
+        "uniswapPoolAddress != marketingWalletAddress",
+        "ori(uniswapPoolAddress) != marketingWalletAddress"
+      ],
+      "notes": "Token overlap found; not a literal match"
+    },
+    {
+      "ground_truth": {
+        "raw": "_balances[to]==(toBalance - userTransferAmount)",
+        "normalised": "_balances[to]==(tobalance - usertransferamount)",
+        "source_line": 29
+      },
+      "match_type": "PARTIAL",
+      "matched_invcon_predicates": [
+        "ori(_balances[to]) == 0",
+        "msg.sender == to",
+        "ori(Sum(_balances[...])) == ori(_totalSupply)",
+        "ori(_totalSupply) == ori(_balances[to])",
+        "amount == ori(_balances[to])",
+        "ori(_balances[to]) == msg.value",
+        "_balances[to] == 0",
+        "ori(Sum(_balances[...])) == _totalSupply",
+        "ori(Sum(_balances[...])) == Sum(_balances[...])",
+        "ori(_totalSupply) == Sum(_balances[...])",
+        "ori(_totalSupply) == _balances[to]",
+        "amount == _balances[to]",
+        "_totalSupply == ori(_balances[to])",
+        "_totalSupply == Sum(_balances[...])",
+        "_totalSupply == _balances[to]",
+        "ori(_balances[to]) == _balances[to]",
+        "msg.value == _balances[to]",
+        "_balances[to] - ori(_balances[to]) == amount",
+        "ori(_totalSupply) == ori(Sum(_balances[...]))",
+        "ori(_totalSupply) == Sum(_balances[...])",
+        "_totalSupply == ori(Sum(_balances[...]))",
+        "_totalSupply == Sum(_balances[...])",
+        "ori(Sum(_balances[...])) == Sum(_balances[...])"
+      ],
+      "notes": "Token overlap found; not a literal match"
+    }
+  ],
+  "summary": {
+    "total_gt_conditions": 2,
+    "exact_matches": 0,
+    "partial_matches": 2,
+    "no_matches": 0,
+    "coverage_pct": 100.0
+  }
+}

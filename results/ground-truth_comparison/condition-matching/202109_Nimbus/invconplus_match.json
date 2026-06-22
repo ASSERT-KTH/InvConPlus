@@ -1,0 +1,32 @@
+{
+  "contract_id": "202109_Nimbus",
+  "contract_name": "NimbusPair",
+  "vulnerable_functions": [
+    "swap"
+  ],
+  "invcon_sections_examined": [
+    "swap(amount0Out,amount1Out,to,data)::::NORMAL"
+  ],
+  "invcon_predicate_counts": {
+    "swap(amount0Out,amount1Out,to,data)::::NORMAL": 28
+  },
+  "match_results": [
+    {
+      "ground_truth": {
+        "raw": "balance0Adjusted.mul(balance1Adjusted) >= uint(_reserve0).mul(_reserve1).mul(10_000**2)",
+        "normalised": "balance0adjusted.mul(balance1adjusted) >= uint(_reserve0).mul(_reserve1).mul(10_000**2)",
+        "source_line": 8
+      },
+      "match_type": "NONE",
+      "matched_invcon_predicates": [],
+      "notes": "GT tokens: ['>=', '_000', '_reserve0', '_reserve1', 'balance0adjusted.mul', 'balance1adjusted', 'mul'] | GT ops: ['>='] | No predicate covered both."
+    }
+  ],
+  "summary": {
+    "total_gt_conditions": 1,
+    "exact_matches": 0,
+    "partial_matches": 0,
+    "no_matches": 1,
+    "coverage_pct": 0.0
+  }
+}

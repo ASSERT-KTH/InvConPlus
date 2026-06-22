@@ -1,0 +1,57 @@
+{
+  "contract_id": "202309_uniclyNFT",
+  "contract_name": "PointFarm",
+  "vulnerable_functions": [
+    "deposit",
+    "withdraw"
+  ],
+  "invcon_sections_examined": [
+    "deposit(_pid,_amount)::::NORMAL",
+    "CONTRACT::::NORMAL"
+  ],
+  "invcon_predicate_counts": {
+    "deposit(_pid,_amount)::::NORMAL": 706,
+    "CONTRACT::::NORMAL": 125
+  },
+  "match_results": [
+    {
+      "ground_truth": {
+        "raw": "_amount > 0",
+        "normalised": "_amount > 0",
+        "source_line": 7
+      },
+      "match_type": "EXACT",
+      "matched_invcon_predicates": [
+        "_amount > 0"
+      ],
+      "notes": ""
+    },
+    {
+      "ground_truth": {
+        "raw": "user.amount > 0",
+        "normalised": "user.amount > 0",
+        "source_line": 7
+      },
+      "match_type": "NONE",
+      "matched_invcon_predicates": [],
+      "notes": "GT tokens: ['user.amount'] | GT ops: ['>'] | No predicate covered both."
+    },
+    {
+      "ground_truth": {
+        "raw": "!__lock_modifier0_lock",
+        "normalised": "!__lock_modifier0_lock",
+        "source_line": 26
+      },
+      "match_type": "NONE",
+      "matched_invcon_predicates": [],
+      "notes": "GT tokens: ['__lock_modifier0_lock'] | GT ops: ['!'] | No predicate covered both."
+    }
+  ],
+  "summary": {
+    "total_gt_conditions": 3,
+    "exact_matches": 1,
+    "partial_matches": 0,
+    "no_matches": 2,
+    "coverage_pct": 33.3
+  }
+}

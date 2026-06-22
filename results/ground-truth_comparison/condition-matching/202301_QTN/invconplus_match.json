@@ -1,0 +1,107 @@
+{
+  "contract_id": "202301_QTN",
+  "contract_name": "QUATERNION",
+  "vulnerable_functions": [
+    "transfer",
+    "transferFrom"
+  ],
+  "invcon_sections_examined": [
+    "transfer(recipient,amount)::::NORMAL",
+    "CONTRACT::::NORMAL"
+  ],
+  "invcon_predicate_counts": {
+    "transfer(recipient,amount)::::NORMAL": 1098,
+    "CONTRACT::::NORMAL": 897
+  },
+  "match_results": [
+    {
+      "ground_truth": {
+        "raw": "msg.sender == address(uniswapV2Router), \"rebase denied, unauthorized caller (possible skim)\"",
+        "normalised": "msg.sender == address(uniswapv2router), \"rebase denied, unauthorized caller (possible skim)\"",
+        "source_line": 6
+      },
+      "match_type": "PARTIAL",
+      "matched_invcon_predicates": [
+        "ori(uniswapV2Router) == 0",
+        "ori(uniswapV2Router) == ori(_previousOwner)",
+        "ori(uniswapV2Router) == ori(_owner)",
+        "ori(uniswapV2Router) == ori(uniswapV2Pair)",
+        "uniswapV2Router == 0",
+        "uniswapV2Pair == ori(uniswapV2Router)",
+        "uniswapV2Pair == uniswapV2Router",
+        "ori(uniswapV2Router) == uniswapV2Router",
+        "ori(uniswapV2Router) == _owner",
+        "ori(uniswapV2Router) == _previousOwner",
+        "uniswapV2Router == _owner",
+        "uniswapV2Router == ori(_previousOwner)",
+        "uniswapV2Router == _previousOwner",
+        "uniswapV2Router == ori(_owner)",
+        "uniswapV2Router == ori(uniswapV2Pair)",
+        "ori(uniswapV2Router) == 0",
+        "ori(uniswapV2Router) == ori(_previousOwner)",
+        "ori(uniswapV2Router) == ori(_owner)",
+        "ori(uniswapV2Router) == ori(uniswapV2Pair)",
+        "uniswapV2Router == 0",
+        "uniswapV2Pair == ori(uniswapV2Router)",
+        "uniswapV2Pair == uniswapV2Router",
+        "ori(uniswapV2Router) == uniswapV2Router",
+        "ori(uniswapV2Router) == _owner",
+        "ori(uniswapV2Router) == _previousOwner",
+        "uniswapV2Router == _owner",
+        "uniswapV2Router == ori(_previousOwner)",
+        "uniswapV2Router == _previousOwner",
+        "uniswapV2Router == ori(_owner)",
+        "uniswapV2Router == ori(uniswapV2Pair)"
+      ],
+      "notes": "Token overlap found; not a literal match"
+    },
+    {
+      "ground_truth": {
+        "raw": "msg.sender == address(uniswapV2Router), \"rebase denied, unauthorized caller (possible skim)\"",
+        "normalised": "msg.sender == address(uniswapv2router), \"rebase denied, unauthorized caller (possible skim)\"",
+        "source_line": 46
+      },
+      "match_type": "PARTIAL",
+      "matched_invcon_predicates": [
+        "ori(uniswapV2Router) == 0",
+        "ori(uniswapV2Router) == ori(_previousOwner)",
+        "ori(uniswapV2Router) == ori(_owner)",
+        "ori(uniswapV2Router) == ori(uniswapV2Pair)",
+        "uniswapV2Router == 0",
+        "uniswapV2Pair == ori(uniswapV2Router)",
+        "uniswapV2Pair == uniswapV2Router",
+        "ori(uniswapV2Router) == uniswapV2Router",
+        "ori(uniswapV2Router) == _owner",
+        "ori(uniswapV2Router) == _previousOwner",
+        "uniswapV2Router == _owner",
+        "uniswapV2Router == ori(_previousOwner)",
+        "uniswapV2Router == _previousOwner",
+        "uniswapV2Router == ori(_owner)",
+        "uniswapV2Router == ori(uniswapV2Pair)",
+        "ori(uniswapV2Router) == 0",
+        "ori(uniswapV2Router) == ori(_previousOwner)",
+        "ori(uniswapV2Router) == ori(_owner)",
+        "ori(uniswapV2Router) == ori(uniswapV2Pair)",
+        "uniswapV2Router == 0",
+        "uniswapV2Pair == ori(uniswapV2Router)",
+        "uniswapV2Pair == uniswapV2Router",
+        "ori(uniswapV2Router) == uniswapV2Router",
+        "ori(uniswapV2Router) == _owner",
+        "ori(uniswapV2Router) == _previousOwner",
+        "uniswapV2Router == _owner",
+        "uniswapV2Router == ori(_previousOwner)",
+        "uniswapV2Router == _previousOwner",
+        "uniswapV2Router == ori(_owner)",
+        "uniswapV2Router == ori(uniswapV2Pair)"
+      ],
+      "notes": "Token overlap found; not a literal match"
+    }
+  ],
+  "summary": {
+    "total_gt_conditions": 2,
+    "exact_matches": 0,
+    "partial_matches": 2,
+    "no_matches": 0,
+    "coverage_pct": 100.0
+  }
+}

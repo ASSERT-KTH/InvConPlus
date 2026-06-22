@@ -1,0 +1,34 @@
+{
+  "contract_id": "202210_Uerii",
+  "contract_name": "Token",
+  "vulnerable_functions": [
+    "mint"
+  ],
+  "invcon_sections_examined": [
+    "mint()::::NORMAL",
+    "CONTRACT::::NORMAL"
+  ],
+  "invcon_predicate_counts": {
+    "mint()::::NORMAL": 76,
+    "CONTRACT::::NORMAL": 38
+  },
+  "match_results": [
+    {
+      "ground_truth": {
+        "raw": "totalSupply() + amount <= CAP",
+        "normalised": "totalsupply() + amount <= cap",
+        "source_line": 13
+      },
+      "match_type": "NONE",
+      "matched_invcon_predicates": [],
+      "notes": "GT tokens: ['<=', 'amount', 'cap', 'totalsupply'] | GT ops: ['<='] | No predicate covered both."
+    }
+  ],
+  "summary": {
+    "total_gt_conditions": 1,
+    "exact_matches": 0,
+    "partial_matches": 0,
+    "no_matches": 1,
+    "coverage_pct": 0.0
+  }
+}

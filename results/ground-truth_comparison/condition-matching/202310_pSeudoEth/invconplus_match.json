@@ -1,0 +1,58 @@
+{
+  "contract_id": "202310_pSeudoEth",
+  "contract_name": "UniswapV2Pair",
+  "vulnerable_functions": [
+    "skim"
+  ],
+  "invcon_sections_examined": [],
+  "invcon_predicate_counts": {},
+  "match_results": [
+    {
+      "ground_truth": {
+        "raw": "balance0 - reserve0 <= reserve0 / 10",
+        "normalised": "balance0 - reserve0 <= reserve0 / 10",
+        "source_line": 6
+      },
+      "match_type": "NONE",
+      "matched_invcon_predicates": [],
+      "notes": "GT tokens: ['<=', 'balance0', 'reserve0'] | GT ops: ['<='] | No predicate covered both."
+    },
+    {
+      "ground_truth": {
+        "raw": "balance1 - reserve1 <= reserve1 / 10",
+        "normalised": "balance1 - reserve1 <= reserve1 / 10",
+        "source_line": 6
+      },
+      "match_type": "NONE",
+      "matched_invcon_predicates": [],
+      "notes": "GT tokens: ['<=', 'balance1', 'reserve1'] | GT ops: ['<='] | No predicate covered both."
+    },
+    {
+      "ground_truth": {
+        "raw": "balance0 - reserve0 <= reserve0 / 10",
+        "normalised": "balance0 - reserve0 <= reserve0 / 10",
+        "source_line": 37
+      },
+      "match_type": "NONE",
+      "matched_invcon_predicates": [],
+      "notes": "GT tokens: ['<=', 'balance0', 'reserve0'] | GT ops: ['<='] | No predicate covered both."
+    },
+    {
+      "ground_truth": {
+        "raw": "balance1 - reserve1 <= reserve1 / 10",
+        "normalised": "balance1 - reserve1 <= reserve1 / 10",
+        "source_line": 37
+      },
+      "match_type": "NONE",
+      "matched_invcon_predicates": [],
+      "notes": "GT tokens: ['<=', 'balance1', 'reserve1'] | GT ops: ['<='] | No predicate covered both."
+    }
+  ],
+  "summary": {
+    "total_gt_conditions": 4,
+    "exact_matches": 0,
+    "partial_matches": 0,
+    "no_matches": 4,
+    "coverage_pct": 0.0
+  }
+}

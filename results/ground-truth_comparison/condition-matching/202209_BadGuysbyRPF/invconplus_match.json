@@ -1,0 +1,54 @@
+{
+  "contract_id": "202209_BadGuysbyRPF",
+  "contract_name": "Bad_Guys_by_RPF",
+  "vulnerable_functions": [
+    "WhiteListMint"
+  ],
+  "invcon_sections_examined": [
+    "WhiteListMint(_merkleProof,chosenAmount)::::NORMAL",
+    "CONTRACT::::NORMAL"
+  ],
+  "invcon_predicate_counts": {
+    "WhiteListMint(_merkleProof,chosenAmount)::::NORMAL": 124,
+    "CONTRACT::::NORMAL": 75
+  },
+  "match_results": [
+    {
+      "ground_truth": {
+        "raw": "_numberMinted(msg.sender) + chosenAmount <= 1",
+        "normalised": "_numberminted(msg.sender) + chosenamount <= 1",
+        "source_line": 6
+      },
+      "match_type": "PARTIAL",
+      "matched_invcon_predicates": [
+        "msg.value <= chosenAmount",
+        "ori(maxsupply) <= chosenAmount",
+        "ori(reserve) <= chosenAmount",
+        "reserve <= chosenAmount"
+      ],
+      "notes": "Token overlap found; not a literal match"
+    },
+    {
+      "ground_truth": {
+        "raw": "_numberMinted(msg.sender) + chosenAmount <= 1",
+        "normalised": "_numberminted(msg.sender) + chosenamount <= 1",
+        "source_line": 44
+      },
+      "match_type": "PARTIAL",
+      "matched_invcon_predicates": [
+        "msg.value <= chosenAmount",
+        "ori(maxsupply) <= chosenAmount",
+        "ori(reserve) <= chosenAmount",
+        "reserve <= chosenAmount"
+      ],
+      "notes": "Token overlap found; not a literal match"
+    }
+  ],
+  "summary": {
+    "total_gt_conditions": 2,
+    "exact_matches": 0,
+    "partial_matches": 2,
+    "no_matches": 0,
+    "coverage_pct": 100.0
+  }
+}

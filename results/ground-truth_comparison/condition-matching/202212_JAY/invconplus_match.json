@@ -1,0 +1,47 @@
+{
+  "contract_id": "202212_JAY",
+  "contract_name": "JAY",
+  "vulnerable_functions": [
+    "buyJay",
+    "sell"
+  ],
+  "invcon_sections_examined": [
+    "buyJay(erc721TokenAddress,erc721Ids,erc1155TokenAddress,erc1155Ids,erc1155Amounts)::::NORMAL",
+    "sell(value)::::NORMAL",
+    "CONTRACT::::NORMAL"
+  ],
+  "invcon_predicate_counts": {
+    "buyJay(erc721TokenAddress,erc721Ids,erc1155TokenAddress,erc1155Ids,erc1155Amounts)::::NORMAL": 661,
+    "sell(value)::::NORMAL": 534,
+    "CONTRACT::::NORMAL": 555
+  },
+  "match_results": [
+    {
+      "ground_truth": {
+        "raw": "!__lock_modifier0_lock",
+        "normalised": "!__lock_modifier0_lock",
+        "source_line": 7
+      },
+      "match_type": "NONE",
+      "matched_invcon_predicates": [],
+      "notes": "GT tokens: ['__lock_modifier0_lock'] | GT ops: ['!'] | No predicate covered both."
+    },
+    {
+      "ground_truth": {
+        "raw": "!__lock_modifier0_lock",
+        "normalised": "!__lock_modifier0_lock",
+        "source_line": 31
+      },
+      "match_type": "NONE",
+      "matched_invcon_predicates": [],
+      "notes": "GT tokens: ['__lock_modifier0_lock'] | GT ops: ['!'] | No predicate covered both."
+    }
+  ],
+  "summary": {
+    "total_gt_conditions": 2,
+    "exact_matches": 0,
+    "partial_matches": 0,
+    "no_matches": 2,
+    "coverage_pct": 0.0
+  }
+}

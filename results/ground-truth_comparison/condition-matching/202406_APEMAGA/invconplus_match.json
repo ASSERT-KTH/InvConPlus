@@ -1,0 +1,44 @@
+{
+  "contract_id": "202406_APEMAGA",
+  "contract_name": "Tonken",
+  "vulnerable_functions": [
+    "family"
+  ],
+  "invcon_sections_examined": [
+    "family(account)::::NORMAL",
+    "CONTRACT::::NORMAL"
+  ],
+  "invcon_predicate_counts": {
+    "family(account)::::NORMAL": 139,
+    "CONTRACT::::NORMAL": 118
+  },
+  "match_results": [
+    {
+      "ground_truth": {
+        "raw": "msg.sender == account",
+        "normalised": "msg.sender == account",
+        "source_line": 7
+      },
+      "match_type": "NONE",
+      "matched_invcon_predicates": [],
+      "notes": "GT tokens: ['==', 'account', 'msg.sender'] | GT ops: ['=='] | No predicate covered both."
+    },
+    {
+      "ground_truth": {
+        "raw": "msg.sender == account",
+        "normalised": "msg.sender == account",
+        "source_line": 22
+      },
+      "match_type": "NONE",
+      "matched_invcon_predicates": [],
+      "notes": "GT tokens: ['==', 'account', 'msg.sender'] | GT ops: ['=='] | No predicate covered both."
+    }
+  ],
+  "summary": {
+    "total_gt_conditions": 2,
+    "exact_matches": 0,
+    "partial_matches": 0,
+    "no_matches": 2,
+    "coverage_pct": 0.0
+  }
+}
