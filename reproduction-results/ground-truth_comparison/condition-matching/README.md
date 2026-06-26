@@ -63,6 +63,7 @@ The same two-level strategy is used as for InvCon:
 | **202305_ERC20TokenBank** | `doExchange` | Price Manipulation | `namount >= (camount * 995) / 1000` | — (local vars `namount`/`camount` not in output) | ❌ NONE |
 | **202306_VINU** | `addLiquidityETH` | Price Manipulation | `size == 0` | — (assembly var `size` not in output) | ❌ NONE |
 | **202308_Uwerx** | `transfer`, `transferFrom` | Logic Flaw | `uniswapPoolAddress != address(0x1)` / `_balances[to] == (toBalance - userTransferAmount)` | `to != uniswapPoolAddress` / `_balances[to] - ori(_balances[to]) == amount` | 🟡 PARTIAL |
+| **202309_JumpFarm** | `unstake` | Logic Flaw | `TOKEN.balanceOf(address(this)) <= balanceBefore` |-(`balanceBefore` is a local var introduced by the patch; not tracked by InvCon+) | ❌ NONE |
 | **202309_uniclyNFT** | `deposit`, `withdraw` | Reentrancy | `_amount > 0` / `user.amount > 0` / `!__lock_modifier0_lock` | `_amount > 0` ✅ (exact); `user.amount` / lock var not matched | ✅ EXACT (1/3) |
 | **202310_pSeudoEth** | `skim` | Price Manipulation | `balance0 - reserve0 <= reserve0 / 10` / `balance1 - reserve1 <= reserve1 / 10` | — (no output for `skim`) | ❌ NONE |
 | **202311_grok** | `transfer`, `transferFrom` | Slippage | `sellSlippageBps = 9500` *(implicit slippage param)* | — (state var introduced by patch) | ❌ NONE |
@@ -71,6 +72,7 @@ The same two-level strategy is used as for InvCon:
 | **202408_OMPxContract** | `purchase`, `buyBack` | Flash Loan | `block.timestamp >= lastInteractionTimestamp[msg.sender] + 30 seconds` | — (mapping `lastInteractionTimestamp` not in output) | ❌ NONE |
 | **202409_Bedrock_DeFi** | `mint` | Logic Flaw | `uniBTCAmount * 1e10 < msg.value` | — (no output for `mint`) | ❌ NONE |
 | **202409_OnyxDAO** | `liquidateWithSingleRepay` | Logic Flaw | `repayAmount == borrowedAmount` | — (local vars not in output) | ❌ NONE |
+| 202603_AlkemiEarn | `liquidateBorrow` | Logic Flaw | `msg.sender!=targetAccount` | -(no output for `liquidateBorrow` | ❌ NONE |
 
 ---
 
@@ -78,15 +80,15 @@ The same two-level strategy is used as for InvCon:
 
 | Match Type | Contracts | % of total |
 |---|---|---|
-| ✅ EXACT (at least 1 condition) | 1 | 4.5% |
-| 🟡 PARTIAL (at least 1 condition) | 5 | 22.7% |
-| ❌ NONE (all conditions) | 16 | 72.7% |
+| ✅ EXACT (at least 1 condition) | 1 | 4.2% |
+| 🟡 PARTIAL (at least 1 condition) | 5 | 20.8% |
+| ❌ NONE (all conditions) | 18 | 75.0% |
 
-**Total contracts evaluated:** 22 / 22  
+**Total contracts evaluated:** 24 / 28
 **Total GT conditions evaluated:** 41  
 - Exact matches: 1  
 - Partial matches: 9  
-- No matches: 31
+- No matches: 33
 
 ---
 
