@@ -1,0 +1,2478 @@
+WARNING:root:0xe38b72d6595fd3885d1d2f770aa23e94757f91a1
+WARNING:root:createInitialPptsForFunction for acceptOwnership()
+WARNING:root:createInitialPptsForFunction for acquire(token)
+WARNING:root:createInitialPptsForFunction for addBlacklist(user)
+WARNING:root:createInitialPptsForFunction for addBlacklister(user)
+WARNING:root:createInitialPptsForFunction for addMinter(user)
+WARNING:root:createInitialPptsForFunction for addPauser(user)
+WARNING:root:createInitialPptsForFunction for approve(spender,amount)
+WARNING:root:createInitialPptsForFunction for bulkTransfer(to,amount)
+WARNING:root:createInitialPptsForFunction for bulkTransfer(to,amount)
+WARNING:root:createInitialPptsForFunction for bulkTransferFrom(from,to,amount)
+WARNING:root:createInitialPptsForFunction for bulkTransferFrom(from,to,amount)
+WARNING:root:createInitialPptsForFunction for burn(amount)
+WARNING:root:createInitialPptsForFunction for burnBlackFunds(user)
+WARNING:root:createInitialPptsForFunction for burnFrom(from,amount)
+WARNING:root:createInitialPptsForFunction for giveOwnership(_newOwner)
+WARNING:root:createInitialPptsForFunction for mint(to,amount)
+WARNING:root:createInitialPptsForFunction for pause()
+WARNING:root:createInitialPptsForFunction for permit(user,spender,value,deadline,v,r,s)
+WARNING:root:createInitialPptsForFunction for removeBlacklist(user)
+WARNING:root:createInitialPptsForFunction for removeBlacklister(user)
+WARNING:root:createInitialPptsForFunction for removeMinter(user)
+WARNING:root:createInitialPptsForFunction for removePauser(user)
+WARNING:root:createInitialPptsForFunction for transfer(to,amount)
+WARNING:root:createInitialPptsForFunction for transferFrom(from,to,amount)
+WARNING:root:createInitialPptsForFunction for unpause()
+WARNING:root:createInitialPptsForFunction for upgrade(token)
+WARNING:root:createInitialPptsForContract...
+main contract:  TcrToken
+IERC20
+IUpgradedToken
+TcrToken
+**********
+
+burnBlackFunds(user)
+set()
+[]
+**********
+
+onlyBlacklister()
+set()
+[]
+**********
+
+removePauser(user)
+{VarInfo(name='isPauser[user]', type='bool', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c1dd50>)}
+[]
+**********
+
+upgrade(token)
+{VarInfo(name='upgradedAddress', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f61d0>, vartype=<VarType.STATEVAR: 0>, derivation=None), VarInfo(name='token', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f4460>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='deprecated', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f60e0>, vartype=<VarType.STATEVAR: 0>, derivation=None)}
+[]
+**********
+
+mint(to,amount)
+{VarInfo(name='amount', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161d3af0>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='_balances[to]', type='uint256', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c1e3e0>), VarInfo(name='_totalSupply', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161a5030>, vartype=<VarType.STATEVAR: 0>, derivation=None), VarInfo(name='maxSupply', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161a5870>, vartype=<VarType.STATEVAR: 0>, derivation=None)}
+[]
+**********
+
+bulkTransferFrom(from,to,amount)
+set()
+[]
+**********
+
+burn(amount)
+{VarInfo(name='amount', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c163035b0>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='_balances[msg.sender]', type='uint256', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c1f2e0>)}
+[]
+**********
+
+addBlacklister(user)
+{VarInfo(name='isBlacklistAdmin[user]', type='bool', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c1ead0>)}
+[]
+**********
+
+_transfer(from,to,amount)
+{VarInfo(name='amount', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f5c00>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='from', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f5900>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='_balances[to]', type='uint256', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c2c040>), VarInfo(name='_balances[from]', type='uint256', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c1fdf0>), VarInfo(name='to', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f5a80>, vartype=<VarType.TXVAR: 1>, derivation=None)}
+[]
+**********
+
+giveOwnership(_newOwner)
+{VarInfo(name='_newOwner', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161d3a60>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='newOwner', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f5f00>, vartype=<VarType.STATEVAR: 0>, derivation=None)}
+[]
+**********
+
+_burn(from,amount)
+{VarInfo(name='_balances[from]', type='uint256', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c1fb50>), VarInfo(name='amount', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f5810>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='_totalSupply', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161a5030>, vartype=<VarType.STATEVAR: 0>, derivation=None)}
+[]
+**********
+
+notPaused()
+set()
+[]
+**********
+
+approve(spender,amount)
+set()
+[]
+**********
+
+acquire(token)
+{VarInfo(name='token', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161d1c90>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='amount', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c1607dba0>, vartype=<VarType.LOCALVAR: 2>, derivation=None)}
+[]
+**********
+
+onlyPauser()
+set()
+[]
+**********
+
+addPauser(user)
+{VarInfo(name='isPauser[user]', type='bool', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c2c760>)}
+[]
+**********
+
+unpause()
+{VarInfo(name='paused', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f5ff0>, vartype=<VarType.STATEVAR: 0>, derivation=None)}
+[]
+**********
+
+transferFrom(from,to,amount)
+set()
+[]
+**********
+
+_allowanceTransfer(spender,from,to,amount)
+{VarInfo(name='_balances[from]', type='uint256', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c2d870>), VarInfo(name='amount', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f55d0>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='_allowances[from][spender]', type='uint256', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c2d2a0>)}
+[]
+**********
+
+constructor()
+{VarInfo(name='getChainId', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f5d20>, vartype=<VarType.STATEVAR: 0>, derivation=None), VarInfo(name='owner', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f5e10>, vartype=<VarType.STATEVAR: 0>, derivation=None), VarInfo(name='msg.sender', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c15c2d4b0>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='DOMAIN_SEPARATOR', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f62c0>, vartype=<VarType.STATEVAR: 0>, derivation=None), VarInfo(name='block.chainid', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c15c2dab0>, vartype=<VarType.LOCALVAR: 2>, derivation=None)}
+[]
+**********
+
+onlyMinter()
+set()
+[]
+**********
+
+balanceOf(account)
+set()
+[]
+**********
+
+addBlacklist(user)
+{VarInfo(name='isBlacklisted[user]', type='bool', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c2e920>)}
+[]
+**********
+
+notOnBlacklist(user)
+set()
+[]
+**********
+
+onlyOwner()
+{VarInfo(name='owner', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f5e10>, vartype=<VarType.STATEVAR: 0>, derivation=None), VarInfo(name='msg.sender', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c15c2ef50>, vartype=<VarType.TXVAR: 1>, derivation=None)}
+[]
+**********
+
+transfer(to,amount)
+{VarInfo(name='amount', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161d14e0>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='_balances[msg.sender]', type='uint256', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c1d810>)}
+[]
+**********
+
+removeBlacklister(user)
+{VarInfo(name='isBlacklistAdmin[user]', type='bool', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c2edd0>)}
+[]
+**********
+
+acceptOwnership()
+{VarInfo(name='newOwner', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f5f00>, vartype=<VarType.STATEVAR: 0>, derivation=None), VarInfo(name='owner', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f5e10>, vartype=<VarType.STATEVAR: 0>, derivation=None), VarInfo(name='msg.sender', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c15c2e5c0>, vartype=<VarType.TXVAR: 1>, derivation=None)}
+[]
+**********
+
+permit(user,spender,value,deadline,v,r,s)
+WARNING:root:0xab3366fbbae842dae263d2fca51a12ef0d12fee379282c08e47693f03ca33e13acceptOwnership()
+WARNING:root:0x5c875e7352b2dc491b069942ecd1e764ad73902fe446fe2b39ed7b97ef234f39acceptOwnership()
+WARNING:root:0x072179ab0a8218052cd6b2d5280277bbb37882840f083356216cc2981438666baddMinter(user)
+WARNING:root:0xdb5b8d01d2b0c2680d6d977136496d022ddede4489a162f7e931d32f7ff4d4femint(to,amount)
+WARNING:root:0xa105ac7eaa62ebe9054466910572cca7f7d1057292611ef9c24ca5ee980a6930approve(spender,amount)
+WARNING:root:0x9553b059ee360bc934c44c8146dda58ae0c8925a30d6f60d446292bc9af98700transferFrom(from,to,amount)
+WARNING:root:0x590fad2e78c1be231634c524748abe7a9e69df83a7889c9d29917884c20173b7transfer(to,amount)
+WARNING:root:0xa30e15eb27bffc92e177e209201c7f399c2f2e2c24b5a748a8eb17850ae6dc9btransfer(to,amount)
+WARNING:root:0xb2a8a1ccbc54f51e6be7407aabc54b37fc15df07912e52494a550d28623650fbtransfer(to,amount)
+WARNING:root:0xf0ea85cb385ede939b1c658cd2aa3c3650033e650e36dbbce21ebb23f63932c5transfer(to,amount)
+WARNING:root:0x6834e5a44412d24806d13a9a6f4fd77daac906955af60a67014032e7e3b0f3e6transfer(to,amount)
+WARNING:root:0x95a30bcccb72359139684a4d88dd6f6cc8a46acb6d8cbcbe61c4ceea2c15150etransfer(to,amount)
+WARNING:root:0x592c2d683e7d382b5973ded17635e762479a38aeb281a152e98f258e58e5e0e4transfer(to,amount)
+WARNING:root:0xb927726fca7f17699672e1bd6c834e2a604d3b1a073682376a53ecfe66d48bf0transfer(to,amount)
+WARNING:root:0xd8e7d6daf697920c15822c181a7b5a8c5daec0336fd3aa0e1a088a1a870774e9transfer(to,amount)
+WARNING:root:0x1589ba1ba22d0e90ee59f4aaf27b48a8439a87355b1b2d917b3b25af3102b127transfer(to,amount)
+WARNING:root:0xad1841022699eecf11147e9956e51460489e6bc41a6f8a82f94e8c9a225aa680transfer(to,amount)
+WARNING:root:0x4d9943be666e96f09817a99a5d49a01060185e1d806dc3856e41c398e898c59etransfer(to,amount)
+WARNING:root:0xbc6025025edc785202d83c9c2a4851f9adda9908e65353c7f50e4aeec09dda02transfer(to,amount)
+WARNING:root:0x581ef9e379caefa8ebcb883e1e4177b9e54729303dd8fe54d472d3e7fb4ef7a3transfer(to,amount)
+WARNING:root:0x138146c60f697bb269c5a471ebb2e292559563c9ba6646ab7cf2c6ace31030a4transfer(to,amount)
+WARNING:root:0xc304d53786d0fc72accc3e6852c433823d979a8ba7b57cfb2f455b6cf323963atransfer(to,amount)
+WARNING:root:0xca48979f2e17ad4ae4d92c8b6cb42a49322dd53e75b30782ebbbeb376c489c8ctransfer(to,amount)
+WARNING:root:0x52883381dad5d2817414878d9605168c78c52f1d12cf9d577ca99e81ae996967transfer(to,amount)
+WARNING:root:0x9e2db0b4ed59fb4ef5ff7b2cf8d0ccdd9b7fcd75a28184a3e72997478e0b707dtransfer(to,amount)
+WARNING:root:0xd2c7ba63cb1739630823a34d48201c6456ace3024804fe02d7535b68c5b67242transfer(to,amount)
+WARNING:root:0xe8a107c252064d4a92c6b3b96aefda899ae22d8dad58dbd799e9068862f08325transfer(to,amount)
+WARNING:root:0xbbc8917a2963555caeee21e422a44edb0cba9052fa28d67a190dccb35dccf7eatransfer(to,amount)
+WARNING:root:0x581bd42d2dcb07953ccb8d7344dfe77aae1f685ff3883fdc7d41eca13167012ftransfer(to,amount)
+WARNING:root:0xab2b6d1853a39db3472c8280376e60afb106812bdbadf92dbbbd3b282161926ftransfer(to,amount)
+WARNING:root:0xe8c7e3a39ade9da1832ba510075b847a775af22f1e7a6c2268c363b8da02c8fetransfer(to,amount)
+WARNING:root:0x61c8e10e83261fff8dda5db27ba046d10b566fc042fd78d96609489ff73f80b3transfer(to,amount)
+WARNING:root:0x19a53dbdd48649bead9d7f9ccfe96b384b7dcd45ad0b2e554bd4bcd920c13991transfer(to,amount)
+WARNING:root:0x07a09b8500c57c669e192e707b1337de18e102feb832bc00529d5e47f34d875ftransfer(to,amount)
+WARNING:root:0xc433951e147c0e0ee8275aae737d2a8d86171b15be68e0ecfc610d051a6ed0bbtransfer(to,amount)
+WARNING:root:0x30af3014079a003af5da537c4fc7da9811b9dc3520801ca710039d28cf6da223transfer(to,amount)
+WARNING:root:0x3b0feab3970539164cb0f4a72360fd4673beeb8d42c313855a3dc1dc339b9827transfer(to,amount)
+WARNING:root:0x84d72e31d3416289f4ff7d5312f99b9ff743b6293b12904ed48ddbf735ce9a78transfer(to,amount)
+WARNING:root:0xcb342dc0d63dfaf29caf839116fd46ec0b0a1423dcb1b975f1b7dfc5012e2828transfer(to,amount)
+WARNING:root:0x8da75825afe4c5ecfa7dd2d6748da982028b02aed6890f31b82c7765ee57a821transfer(to,amount)
+WARNING:root:0x2dbcd53468b65c0ef44b22f88d5af83fe46b0a854ddf3d45247978481cc320f3transfer(to,amount)
+WARNING:root:0x0b214aff6f6fb466dc4f39d01833d1734ca0807b9ba6d5c689571e3e9b79b1c5transfer(to,amount)
+WARNING:root:0x9ca41d2a7e11fedf2eaf7bf542a9dddae7b6bf39b2aea2a886772143d4ceca23transfer(to,amount)
+WARNING:root:0x501d1aa8bbceafe0f94c8ebc5c9189341cd741c2cbf152e48a1c02ecb6f76bb0transfer(to,amount)
+WARNING:root:0xb6fed2c79fecb915b15c447a6b3740851c8bd07af129c614a199071a73b3bad8transfer(to,amount)
+WARNING:root:0x6fa9bc216e395a51a7f40b4b5522fac58b6223cfc53100f4258c72056891538btransfer(to,amount)
+WARNING:root:0x267878f6eac4f6519e76464081b05f0630cf274ad8ec913e63467f47344bce27transfer(to,amount)
+WARNING:root:0x8dab0b28428e16e907dd1b5284bdf36653135df53746232e0fa1f324b429ae1fapprove(spender,amount)
+WARNING:root:0xffd5538eef1b3db11d2a974eb3f3ed3962b9cd856b69016bc72bbda0642587c5transferFrom(from,to,amount)
+WARNING:root:0xc2d6cd465a2822cb1a29c2af69247834999d4d8e4647c0a72de3bcb7bfbf9820transferFrom(from,to,amount)
+WARNING:root:0x1f91aac99f6be96757762420bc22262801bd83651b2a0c413c2e8b406550718etransfer(to,amount)
+WARNING:root:0x39b59fabc0b000ab951ab0f690467e0d2e859aedc6a41828d77be61093222558transfer(to,amount)
+WARNING:root:0xfd12810af809e48a3f0f3d02df4db37ae524f704881a3ba852a3145475ebc362transfer(to,amount)
+WARNING:root:0x8878292bbbd95c7bc44fd772dbdd0f4d28aa77f0d75908b5803d166b96a175a5approve(spender,amount)
+WARNING:root:0x6d9c93808d03f84e286f4334f09a16e26b39c22407015d41020014f0359b50d1approve(spender,amount)
+WARNING:root:0x6641f5a0ac84a08e1e48b0a77a76cae3c7031d0a0c8e67f9f7a991d99a4c624etransfer(to,amount)
+WARNING:root:0xe04cac9e118abebf1bb3b04376c987ab6bbf3f289512f5edf5e69538ad290e07balanceOf(account)
+WARNING:root:0x48fbc0ecf1400a60d495fb47f9544a25dcf6512e54a2c821e7cb7e950e51b47ftransfer(to,amount)
+WARNING:root:0xb56cc38f0f6e85af78d3d3892f67a987401a4143d0a9bac38ebda291efafdd35transfer(to,amount)
+WARNING:root:0x472a2c42bca04c9b0a4626c4b91a8efe15f65486cbdd290aa0a2e79d13eeaadbtransfer(to,amount)
+WARNING:root:0x54869c29957293df31b08ec876864a09d9078a63a5132bef9ff82dd99c4c6357transfer(to,amount)
+WARNING:root:0xbb8d607f88c04664b3697c198386e6336c09893d0528b5fd8cb39ddf96d7667eapprove(spender,amount)
+WARNING:root:0xdbf829878ef26b9f549da4e112712bfc1d373d3ec8a536fbfc7a28e32c8d29d6transfer(to,amount)
+WARNING:root:0x1e541372235180d3585c84993bc42f86bfadd4264abce89d3ad2e3b86169dff3balanceOf(account)
+WARNING:root:0x26c80aed4e735fae75151884f002472bdbbcc5b00a1f73bc3132905c7810f513balanceOf(account)
+WARNING:root:0xb6398717494985f9dcfee5d8d191e041536643580f8876a076dc0eeb9704d241transfer(to,amount)
+WARNING:root:0x1457ac59ad8437ff418b1248a887d60cd9a0cab591f34dbef318e92f5776b1cbtransfer(to,amount)
+WARNING:root:0x738d0db23d4e67ce5879aa53cbead43628058825d50ccfb60357f43aeb1c8db4transfer(to,amount)
+WARNING:root:0xfe2be11d3a26e8a111f5113350323575c2240f37a0b75637b2c7c470aaa84347transfer(to,amount)
+WARNING:root:0x1eecb1dad0efef290010460c4fa15b92bac753ea677938ccef106dd5c60c4c0ebalanceOf(account)
+WARNING:root:0xf8a50bd0c1d547090a4f792ea1e85936d2b38112f7a7c58b94b69808fe05bbf6approve(spender,amount)
+WARNING:root:0xa0f1f8aa620d1d665ea941ab561e2da5275024021341d682e20712705239e9ddtransfer(to,amount)
+WARNING:root:0x53a48b2bd2bafe3e7146a6d04d9fb6107231152a8e4c8bb3b230f678df223998balanceOf(account)
+WARNING:root:0xa870f23acd04df75283584afe85cd661a46b38521cd6b6f33718b3228b6ac077approve(spender,amount)
+WARNING:root:0xe263c450552833358d90eef1b24e9c606b97db1af4f81336cdaac6b14b48db03transfer(to,amount)
+WARNING:root:0x6bef44df689267ab72de539de704a8545bd6dca34e0ac60c2ab65b22c8806cbdtransfer(to,amount)
+WARNING:root:0xc11f230124ecf778da64a179711c35bcd52cbfce1bdda08ac75147d6ef0a58datransfer(to,amount)
+WARNING:root:0x7bfb12a11a3f47b392045a58f811b513835cbbb28123fe54829000faf2dff06atransfer(to,amount)
+WARNING:root:0xd9fd15373023f544f8ef3de8b2e11a9b1e7c5d074325c01e7b255b7e207d05d5transfer(to,amount)
+WARNING:root:0xcfa7e1c257d7dc2e34f083399f11cdce06c237660d2170dca4709800b7a07273approve(spender,amount)
+WARNING:root:0x011e5958efb21f44ae311e6f964d8aa46450f2f7538f719eee6aff07ba0dbba1approve(spender,amount)
+WARNING:root:0x285ae176974ec2177000a452ce4a46b08f5f68325ac2ff1ab8039497d5a76d93transfer(to,amount)
+WARNING:root:0xa0d564787dcf1b6df4c97ae4ea9973710d5e840d3249b6b1747338251474bf97transfer(to,amount)
+WARNING:root:0xa8e6849420ebeeec09d6d888ba308f137dd21c87d56076509ced1b2346c675aatransfer(to,amount)
+WARNING:root:0x916ee9825d8e29ebe43b6431f1261ede3860034dc28636f42208da3c36dabcffbalanceOf(account)
+WARNING:root:0xdacec3ccd930fecabc812715c40806f5abeca77f1cc2099dc1841111c5e3cbc6transferFrom(from,to,amount)
+WARNING:root:0x6b3749661531487899272b60d7c85645d01850b83bf13bc890a3795448b6ba07approve(spender,amount)
+WARNING:root:0x4e94d2588dfcd59cdee1f25315288b472114bb274feb835123c67ef54f8462catransfer(to,amount)
+WARNING:root:0x1bc2df03aa20ba06137ba58d02375524fe40dca0043c646fb45ea92ab2159a27balanceOf(account)
+WARNING:root:0x16bbee3bba4f5c003859282045cc9ab045cf7881f13b49ba5164c5e82870dfe7transfer(to,amount)
+WARNING:root:0x8c36144afcc899b7a8690f63b2e52e2200b0d3c1e5916267cd37240548b783aftransfer(to,amount)
+WARNING:root:0x9ec9730cb748cf4bb090aad36eb2fee3b4af8f37e73c395ae6c7a4afbb4936c4transfer(to,amount)
+WARNING:root:0xd483aa30b5c7828a3ff2df4d5e87cfee4e1a5bcf3838a10c59ede9d2319cff86transfer(to,amount)
+WARNING:root:0x7236b6ad2229f516b53342d0583f9f3bb64d3aad808b408a90f9025d9050e17ftransfer(to,amount)
+WARNING:root:0x2d1b95b6182d2000a43daca1ab6110e45edc30c0fddcc35d4873750b3c497d3dtransferFrom(from,to,amount)
+WARNING:root:0xccfb54bf6a1c956b45cfadd508d0ef8a8c2e916bd22208e6c3c3903411a8a8c5approve(spender,amount)
+WARNING:root:0x311d099139aca79c702461dbd880fdbbd549f3232f9271539ea6e1c7c797bdabtransferFrom(from,to,amount)
+WARNING:root:0xe4267b1efcc682a06e9bdc15286cedefe0b7f73987503704d9352c99ef149502transfer(to,amount)
+WARNING:root:0x92871770bf3aaaf7e1c0177da0cf8c30ff4f53f967a12f8606d5bbe862683b89transfer(to,amount)
+WARNING:root:0x16b5ddd6900734a11ecc80a900e20d3870f3e5aa3b7d3c44205045227529abb1approve(spender,amount)
+WARNING:root:0xd8f89e176449ef9f252da62903b3281cb63842a41719680ada6772768c376c03transfer(to,amount)
+WARNING:root:0xa1fca191d4f347ab1a137d43d7586d811927b325f1c2854103d40770005be646transfer(to,amount)
+WARNING:root:0x00b9e2b085d717b3032700733e5af8c6d94be6f6a756cb7a94161abadf904e79transfer(to,amount)
+WARNING:root:0x958890511ded87185e71f169334297e9c43a109617d2e5382284c7369e46d04bapprove(spender,amount)
+WARNING:root:0x36e6430af9cef8aeffd546f7a541ea811e1510227c42b32d327d4e52611dba56transferFrom(from,to,amount)
+WARNING:root:0x27d31f1ba88db97692f016648b0efd530a7acbfbec7c9177e9ed35c78734a70capprove(spender,amount)
+WARNING:root:0x47a0a4cc7101c47a237aca878af2f09f222bb78b135600c9615b830fa94c16c1transfer(to,amount)
+WARNING:root:0x63e8a66a171faaa2eaa628d51b5d0ed45470132a5b7c34f156e63ca1e391b522transfer(to,amount)
+WARNING:root:0xc76c6bf02f8c9ca11f07e768361b5c9ab3aa43e4ac2995487a7047a7b894d5aetransfer(to,amount)
+WARNING:root:0xc12f61704eaaa24a324741e6f258f58cbf0ee87f728cdb008ec4ecd7a8d9789capprove(spender,amount)
+WARNING:root:0xad61ffc2795bfcabc630c63e4b8ea8f073dee04ef4b629399ae4a18ee5caaacaapprove(spender,amount)
+WARNING:root:0x9c8e24482473252c96b9ff9deaf6619a40fcd716403f0e95c86c2d5b7d36aa7aapprove(spender,amount)
+WARNING:root:0xb06cab4658bb38ed3194d548c32735a00a4b41f7946db6c51e38760e86861e7atransfer(to,amount)
+WARNING:root:0x3fefef9e22c2ceb251ab5b3beac4dc4d9ade2c425a250e0bdb33e5e37577dba5transfer(to,amount)
+WARNING:root:0xe45ecc99563ac18e5a03370b9f89e0108623bc74fb4629e6da053350ec666a02transfer(to,amount)
+WARNING:root:0x13e8063281af7bea59777e0cd25fe8d9eed6521b70fc7c49c69175ba37c36ce6transfer(to,amount)
+WARNING:root:0x0698db22ff265f69df175021efd5457cc53578dd150e44ed5ccdf9e8dfe25e41transfer(to,amount)
+WARNING:root:0x2b9fcacf80e95a24bf312add410d07fcef50f75672143bb458f46ad62e2e29e8transfer(to,amount)
+WARNING:root:0x4fe7ffc001810b582a14ee8d8427c92dd1582399ff9806a23c2b34830325d197transfer(to,amount)
+WARNING:root:0x2d8f1fee4ec65eb309a52ecbe46f4e363046987bea2cdcf97ff7cd8d8f5955dftransfer(to,amount)
+WARNING:root:0x63636d6bf281e3af3b87d1e284759a88bfd5cda97c0d9a27bab28a2377bc0ca3transfer(to,amount)
+WARNING:root:0x6068690fadd3532757b0684791a1e379c41e9fc32075efbb4bfb1faed2b1f6aatransfer(to,amount)
+WARNING:root:0xf7fb0132d89fbc5994fd1653f76749bd47fbd2df1aa90623ef73064e2dee0b95transfer(to,amount)
+WARNING:root:0xbe5fc69de9b880f6b57e32128f6113120360fbcd8548fffe6cf1d9e28948a692approve(spender,amount)
+WARNING:root:0xfe2f13e726df91c41a0596c91f4902b2f424ba95800997a6ce80c8ead49bcc8ftransfer(to,amount)
+WARNING:root:0x4d17acc732ced5f9da8bcbc081b232f1c6715794acd4d6adf2a351b0134516dctransfer(to,amount)
+WARNING:root:0xb9d70e2d6f152461dbba9b45fa02b53d6ab7b0b23a3a9612a8962235b0e38a1ftransfer(to,amount)
+WARNING:root:0x215f3038038a1e003741c6650b58e8c815a0785e74c6d23a3b844b0ed155e054approve(spender,amount)
+WARNING:root:0xb5d74fa743075e81f0d022f2dd3fe33d40277ef4c60048188a171d2e53bf9b51transfer(to,amount)
+WARNING:root:0xd177a25b30a9d48331a52e75ba762bab3fc28ff5534b5226c467cef4f12c6ca5approve(spender,amount)
+WARNING:root:0xd41bb4e2b07066d53fe5c25c2745738dff50b4c3403630a201f524a05a04c40atransfer(to,amount)
+WARNING:root:0x65293c3c3a2cfaefea395f29ae6ea8fddc9fe2cdd99edb23d15b480278927638transferFrom(from,to,amount)
+WARNING:root:0xb6570e92bb29fb7579cd7cad0996d9a6028314c018f1a972bfbce6cbd93b0bfbtransfer(to,amount)
+WARNING:root:0x0bce8b26cc59cec7cc243a3a0fc2d3d151710e80cf01662f1f6c9eb84efd68ebtransfer(to,amount)
+WARNING:root:0x3ca7aca750818258ac9eca69ba38b2d1c5370daa2cd368f4fc83a4c37c16bbcatransfer(to,amount)
+WARNING:root:0xff2386471e4ea300275e428d623316a5d02b0b88a2d1956501fa5dd2c0701ca1approve(spender,amount)
+WARNING:root:0x8555e55de3ce233f5d979d1119abdfb9c38fc5ab355d5001fc9b311e142ca7datransfer(to,amount)
+WARNING:root:0xb53e51cbd9febece2099df669be6c530ab273164f10f51fd5ec3d10e3de485efapprove(spender,amount)
+WARNING:root:0xa6e29dcf9163f6990a49c132967240b7a4a286e5737ad5e452391cc3aa626e10approve(spender,amount)
+WARNING:root:0x91ee06d9a74f6c2a7abb87fa0aee2e17598f8f5c29f991423dd17d75eb89ba2etransfer(to,amount)
+WARNING:root:0xbc8aee72ec7f54794a441a4d491b39cc6234f10be20e6c79fd13bd98126cef11approve(spender,amount)
+WARNING:root:0x8dd49e80094cc1d8b040161860977c5a109cc0af5343024817ea2542fd9d49cctransfer(to,amount)
+WARNING:root:0x2c6458a9be48dc929643d8fea83036ead0682e74fb4e31704d379af73b604cedtransfer(to,amount)
+WARNING:root:0xd28bb0714b3e2009f5331f9286bc1c543d1ccf902fe1ae2ce7df81ddab643088transfer(to,amount)
+WARNING:root:0x9480cdf8e92846f8ef9dc112ec7114d1f5bb4564645e1ba940c70ef9c2106245transfer(to,amount)
+WARNING:root:0x721ce00c78b545cc80bd75d18f08c56add7bdca918d0a6987ead5dc5736a7e49transfer(to,amount)
+WARNING:root:0x87d18790ed705c481f57097942ddc0f47b86a6c3deebbf68d87d39099dc870cbtransferFrom(from,to,amount)
+WARNING:root:0xb083a290f810079a077bce3c1043bd0877b8da353aec561f5d6529afad6b5dc6transfer(to,amount)
+WARNING:root:0xb9809d36df06ebbeb7cb6f1e3249c1a9f0b04de8aa4f2ab610364fe59f7ea80btransferFrom(from,to,amount)
+WARNING:root:0x50162a9a4871469f3be6cdbb1337e240aac84b03508e1cd80cdbd633e27385c8transfer(to,amount)
+WARNING:root:0x68df3fc6a7d93c615a04e86e6ca1a034d88988dc84f106d4dcab4332cf1c0aabtransfer(to,amount)
+WARNING:root:0xc5268002910d1b205de67ea443c8a155b4c68757edcce2032b3a4fa498aee5edapprove(spender,amount)
+WARNING:root:0xc99e7f58aa27d02cdcceef439a89a1ef7cfac51e04bdd71df249b342a7931b52approve(spender,amount)
+WARNING:root:0x4c7aa83026122c11b9ab52c8534a3fb52c42f748c3d1d2cc215e75420dbb2f2atransferFrom(from,to,amount)
+WARNING:root:0xbb2812bf86d41f364b91f07705c7e83693dd1e2b10ab3b22dbf4a5621312ec8etransfer(to,amount)
+WARNING:root:0x7bf381069561c7370a862f79ed8d9f1fa5b31fcceaf2b3e239788e3e4c8a8b4bapprove(spender,amount)
+WARNING:root:0x4e16390229a3dcab4510a7f04cda068f03e73185b5da9f7722d1a9fcbe4f1c60transferFrom(from,to,amount)
+WARNING:root:0x496cdda9016de07919cdd5291e69ca0d36f4db46b785566d9c7f5f374103ca43approve(spender,amount)
+WARNING:root:0x62922e02eda7bbb1eda0f1ae76f4664b231618249b3432df5bf2e2141f4c5172transferFrom(from,to,amount)
+WARNING:root:0x608d9d159e5e0ddcba56ddcb02bd3f438e1f3fc7755e3dddb17047671e540641transfer(to,amount)
+WARNING:root:0x9fa2a9b10544223d62b849448178511f3afca68dbeb4ddb6c5dc0f5d560e0c48transferFrom(from,to,amount)
+WARNING:root:0x3017ecc42c5f3d195424f92b27ea0f09c8d72d5203847504e040715c94ab65d3transfer(to,amount)
+WARNING:root:0x4ca212f2fcb138290ad7bf1610fb51d6719201de2e8e51499c82a5457fa3c25btransfer(to,amount)
+WARNING:root:0x73b1a81420865a6654d7a08fd05540c733c196da4406b450bd7dcb58b4ea4a34transfer(to,amount)
+WARNING:root:0x170d6b68d69d7bf09bca5593418c49a18bd80dbfb00e71eb57e67b05807b7d78transferFrom(from,to,amount)
+WARNING:root:0x34b05057348f72eb5b7ab54be8086951c105671b5dd9ee2978719f74beb9f530transfer(to,amount)
+WARNING:root:0x242d7419498d69ac0d3c8646b16d33e719d41312d9e8ff080b10b9ba9ff263b9transferFrom(from,to,amount)
+WARNING:root:0x7d6237d3c32dae2d0f8bcb8c61511daa915ba1f7e67963bc5910f7862255122dtransfer(to,amount)
+WARNING:root:0xf8a78fd772804fb5c4e6bfc9860739032ae16527cb752336881e5d24b8133e60transfer(to,amount)
+WARNING:root:0xd9742159948aab2ee91a612369e6269744d6a2d5166418ba8871a88063476263transferFrom(from,to,amount)
+WARNING:root:0xa4d42abddff191f74705dc545305ad49e245fad8914b11fc1ceadb99dcbe15b4transfer(to,amount)
+WARNING:root:0x4549cf00f91675d9832ccaa4794a864e2e62eb489a20453fd730326c55d6452btransferFrom(from,to,amount)
+WARNING:root:0x50d5132a645051f4d75fc77f3fe51f9019484e89d9c712144ca0fe129f449299transfer(to,amount)
+WARNING:root:0xc211c69b80f73e206a23071e3d0d808a61bce11ba0ffdb51712ebadf2da1b5e5transfer(to,amount)
+WARNING:root:0x29f08db791a3fb0203a3091a72935e72f129d32823631c15ffc5230b7e6e370dtransferFrom(from,to,amount)
+WARNING:root:0x39af1a982dc1ace7f387ae9073006a0d01b06468216760bcc907444ca6dee904transfer(to,amount)
+WARNING:root:0xd60df5c8ad6d77b7faf7452f11759067951d7f277a02714df2f07723d11d88b1transferFrom(from,to,amount)
+WARNING:root:0xba5c08dd0b18f28cb3209d30f5b2ae246493bb1e8ab0408b36f0a8d6ee087277approve(spender,amount)
+WARNING:root:0xaa448476a97bdae045fe913f761021bca2c33c49b53798990dfe53abfaa208a2transferFrom(from,to,amount)
+WARNING:root:0x615b8a1b4beb963dff0a25f21fc8d874ab8360c7fe18d63e517720fcd5ef8c8ebalanceOf(account)
+WARNING:root:0xfdcce35ef1b1f2405f563eed8a1c8865718482a583cf0391b23e63442f20d751transferFrom(from,to,amount)
+WARNING:root:0x56cbf4328cf7f8d87fc7264448b8ea7662f62bc83fb6cc04fef87c73809a4e36transfer(to,amount)
+WARNING:root:0xdfc33061f723dc6e955f3c8888975e2c99dd210ab5b8293965877216690df83atransfer(to,amount)
+WARNING:root:0x2b642b52676950cdbe7d88c56a01334d13dbde138f67021078bfe921d1303ad0transfer(to,amount)
+WARNING:root:0x9091c1eeda5910d5e3d80603d7dc51365f89b0cdafa6d77d3f163a38c7124be6approve(spender,amount)
+WARNING:root:0xa2e54cea17646919db5bcdc284954f1e39ae9689907d4b26f2ccab689c4393b7transferFrom(from,to,amount)
+WARNING:root:0xa36be288004118b02bbeab007c9059a9a0f78c1d0de036662ed3fe07c05db03ctransfer(to,amount)
+WARNING:root:0xae626c5f80f25e95aeed59ef0ac21a0fb3edb3e4b325e63e3f76850f62f534eftransfer(to,amount)
+WARNING:root:0xa9b2275781a7ffbf65976fb2825ac94bc5da9a5e8356811bbf35ea3df05b6615transfer(to,amount)
+WARNING:root:0x01ac4b636b93507f7a0bf938577d8171f50c61f759662a01cf3c938d8e8f6c8ctransfer(to,amount)
+WARNING:root:0x4c815888c5bb14797cc646a7f348fd6df8cf8fbe2d2f059b8abf9956c58b67e6approve(spender,amount)
+WARNING:root:0x2f82d108faa225008296f1704733316aefc398b92232058542575ee0c5ad8731transfer(to,amount)
+WARNING:root:0x477187d1f0b630c03ddc26611898a4160de3b59d716aa0569ddcd3e33ff1031etransferFrom(from,to,amount)
+WARNING:root:0x7e3d6d8974a53e9da80cc5ce1c847728c74445ef9dfebdec45d435057816b0aetransfer(to,amount)
+WARNING:root:0x568a0475cc9fd02c3b270234546985e4fdbd0ca741fef6d4144d880d10ab462ctransferFrom(from,to,amount)
+WARNING:root:0x72ea41890a456446e67deab09aae70129e891197b69c136f1f4f3adf54dc0fc3transfer(to,amount)
+WARNING:root:0xead5e2e525fa9373444ffc1b561a39241e45f9fafcb906146d2d2acff941a49btransfer(to,amount)
+WARNING:root:0x15544040d0a113d3406becfb7329568fb92c23decf5e112dd2ddb9a4c6bb1ae5transfer(to,amount)
+WARNING:root:0xadd5d1cbd4d0c23ca092aed71e173b64057186cd9a55b9d69c28c37172a936f7approve(spender,amount)
+WARNING:root:0x931b92860e5d423ee02024f209e904cd3657b99bcf7bbf5805a5af190d0800d5transfer(to,amount)
+WARNING:root:0xd97566587a53f25f50f180e4418e8b126a6319c62fdcd1941001ea5930517bcdtransferFrom(from,to,amount)
+WARNING:root:0x60656d7bad9bbcb610fd9b7084c9ea4b04d9b4546696538709cff15f5d7b2fb0approve(spender,amount)
+WARNING:root:0xb15825a396d39194f03fd9697ae522fd5f125e9ee50c1d6011526dff4b9800ddtransfer(to,amount)
+WARNING:root:0xc7c68370f7fabd507f521c47d61af14d6e5984018272ba674efb09ac1f3a5231transfer(to,amount)
+WARNING:root:0x34890aa287c647937adb8df27679bbcd36bfc16d1085d2bea182303d95a3203btransferFrom(from,to,amount)
+WARNING:root:0x2f7d9a0e4ced1969f8ece4901ef6b9250d46e803eba4be0657e2c0484434bfeetransfer(to,amount)
+WARNING:root:0x21bd4e3c00e7d5344ffec01881c7de52b0e32c752c75f0eac385df1503c2f5aaapprove(spender,amount)
+WARNING:root:0xa967e25a0c947bd81502322091d9cd6545f4f788f81d6e6490b218fad0f39570transferFrom(from,to,amount)
+WARNING:root:0x8342bbb911ddd96457cbec7db52d26bca1188dd689e13e7cd4cd205b853d3bb2transfer(to,amount)
+WARNING:root:0x27585634f2c4c3ffb7f43d83c641354b635e17a9f8908365e1270f59053bc237transfer(to,amount)
+WARNING:root:0x0c0cb8029cebb1388d0af47fafac3638277d9f16b110aca610f58e47a03e5c67transferFrom(from,to,amount)
+WARNING:root:0x84607c63eeeab9f13d027bc73b0afab8007bcdf8184158263552e06a9c0cd561transfer(to,amount)
+WARNING:root:0xc7aab4fa6e5db773508b6c2aba8a8e3b3e88b3df7273b509a7fd6316eefa1eb3transfer(to,amount)
+WARNING:root:0x9198f7a149b18873fac67fb5801c492215638ebe39603eda97ac335005a9a672transferFrom(from,to,amount)
+WARNING:root:0x18ebf9274ea909438198e804dd7f9cef3d329153b693fc83fc2a7cf38e463dc6transfer(to,amount)
+WARNING:root:0x8eb78bf1a86ced2575e9bde28093a6dfc8060bb0513d6464f131906e6f4c32a8transfer(to,amount)
+WARNING:root:0xf587df2ef6d25779a75076774aa09e7ea9086a56f762df8ed0a99949befa874atransfer(to,amount)
+WARNING:root:0x73208ca3b108a3c9e48541e7771873b3697adb76cae7ac410051384e3007af73transferFrom(from,to,amount)
+WARNING:root:0x3a8408e657f06bca0fd606d1999392cff0c911a0281f1ffd509b2c31c8571e91approve(spender,amount)
+WARNING:root:0xfac968a5ad5959f585690b6d0f10764da4ff454c4cadeeaebf8b31575514cffatransferFrom(from,to,amount)
+WARNING:root:0xb13fc65ce0fa01045635db3b7712ef249d6df27735608ddfcf5878d995c72e5ctransfer(to,amount)
+WARNING:root:0x821ab020b57a39d0e0e7b14c61c1389c1714f8235b4d37ef8f924a45fdb2d87ftransfer(to,amount)
+WARNING:root:0x08ff62f41f1df06fdfdb2f9952a0cd23c7c07b1b106c5a2e3a0bed8bc5eb338etransfer(to,amount)
+WARNING:root:0x81add1d5190ed333cebcd8ec67a1555807b2f91df3a13b55d71313008c2bd123transferFrom(from,to,amount)
+WARNING:root:0x478bc7a385aaea767335779cb7694b84a16c15e5354d1b227e9952b508431c4etransfer(to,amount)
+WARNING:root:0xa042ab85c16e6d839011b2166f7d4ce46435286c4df3e03c770a5d5dc27b1d77transfer(to,amount)
+WARNING:root:0xeb5e75179ab1676c5ebf0283028df6d6fcbcf2ee7a1e454760d30e08472a36d2transferFrom(from,to,amount)
+WARNING:root:0xa64c62a03384c12116bfd0094d7c088117d89a221a9f761a76d1a17398c42efcapprove(spender,amount)
+WARNING:root:0x153b9cd525ffa161c7a17add736f60c39a90ebeb75e65e19af0204142131a6dctransfer(to,amount)
+WARNING:root:0x1a0437c2e0f6cc32e305a54dcc75485465e07f96c0f66185f9005aaca162cdc0transfer(to,amount)
+WARNING:root:0x8226a18fa5e852505818428d201e71cd3331887ebabb4d34c2a34e4110ebc9a2approve(spender,amount)
+WARNING:root:0xcc1320fd3ea41232cdca85834e83de60477856d4a907d6abf70bacb55673f25etransferFrom(from,to,amount)
+WARNING:root:0x8c4423b266ce0eb62a20157e71aabbdda6b820c76d8d8f2fad78c5c65580beaftransferFrom(from,to,amount)
+WARNING:root:0x7e2339e3617831d257ef77f4d0b0f89c01186b4e3ffa393e62b336378e7c5b1btransfer(to,amount)
+WARNING:root:0x3249c62aacfe478886841e9e4b2c963cb32cf8382962381419cc5c802715e11ctransfer(to,amount)
+WARNING:root:0x7ff4f00dfc0348d458abbceb22cbaa0a8452a6d70934188bf52b3949ce15d98etransferFrom(from,to,amount)
+WARNING:root:0x0d5ff341a93966ff093ba6701e5cd4354614f1b4fa6e7f584145c7957e26438ftransfer(to,amount)
+WARNING:root:0xebb5c0cc94ff3cef7472a001371663259c7ed7ea2df0d2262b95e3af1e1fd1e4transferFrom(from,to,amount)
+WARNING:root:0x293199417398b38c988e04d8cb788162fc881ad6d11be685cefc1610a21e2823transfer(to,amount)
+WARNING:root:0x38d7c8007a3b97037795784c9d64b4e3eab55c0160575cd69930d6251a1cbdactransfer(to,amount)
+WARNING:root:0xe49deceacecf04c3ec935c151ec03412eb4031e5399323c3e12cd325cefd79b1transferFrom(from,to,amount)
+WARNING:root:0xd78486e59349127def4569790e0f8e98e6fdf002deac1d3ffcfdc5f78e6402e8transfer(to,amount)
+WARNING:root:0x6ceaed7b85c2b888074b82a666adce58878e9e7fbe4f3ae3fb7d0daa48987e7btransfer(to,amount)
+WARNING:root:0xfde9d6e872af127b693af2434b2f06222ba8321c53dc5cd563c3b90274a82382transferFrom(from,to,amount)
+WARNING:root:0xdd8b4ef2ae20d540943a9ab7a81158f0c7782afa86e18a06050d3d589e517f70transfer(to,amount)
+WARNING:root:0x5f70261f85ed369a95c3488769e1f032889c6241ffdfa4338fd904303eeb7814transfer(to,amount)
+WARNING:root:0xfa8b1a29ba49862138e5aa0984cb18e335059e0f4383167f109c498f59e637d7transfer(to,amount)
+WARNING:root:0x0cf373710b7d345cbd2ba9aa822b3fb6f6eb3ef129dda8da51d8532084fda295transfer(to,amount)
+WARNING:root:0xe72424dc91ec8ba35a84acad32a3788a31f2f25e4d14ef2129a0ef4af87b1eb4transfer(to,amount)
+WARNING:root:0x2f7d7e435b9f09b3c8920b0f4c860bbc5f8261e62950b3bb5ff317e60ad6a810transfer(to,amount)
+WARNING:root:0x94621320e17c29de4b6d425d783e712ffee4a544fad2306e353d854748f04840transfer(to,amount)
+WARNING:root:0x69aa11b033c3f7f1469d65222a2b6a7d976acd1db3deac31c5d2f658c442a181transfer(to,amount)
+WARNING:root:0x603f85fdaff72d88e44e501d28a1fec9f905aa14ea85cff9209f9d4a8565004dapprove(spender,amount)
+WARNING:root:0x176f2f7724473ac90120972b73a35b1d134a30ac66dfbbce8275f4765acd4b59transferFrom(from,to,amount)
+WARNING:root:0xd7a1a82c27f7d2168da3ae5da1a5963e430693b6cb47634eec0c192cafe9b886approve(spender,amount)
+WARNING:root:0x14b611a127a2b6d237f92d533ba621ae3d0ff4122c7aa4dfc66b8f3b24be5a70transfer(to,amount)
+WARNING:root:0xeb24dff450f5ea8c8cfc78c4047b255296477ce7d19fc348824ee15ab16a4516transfer(to,amount)
+WARNING:root:0x7e882aa70f47b82484d82b485fa19b5c62677394f4b9a8afdac2de80e47b0767transfer(to,amount)
+WARNING:root:0xade6988fabd52a5e3e78e42e8fb40bc61466b90a0f0a735a8a79053818fee604transfer(to,amount)
+WARNING:root:0x44cd972d78d8187368576c4fc4953c171dcaeaa7614f99f4d8d6215e1be2371bapprove(spender,amount)
+WARNING:root:0x6134a63949113c44eee8cc141d584d53515da43c803f217b803f915cd1b6ed43balanceOf(account)
+WARNING:root:0xbc16702e791d48bf2aef081afc2baf7eb12911fb78aa19d47a5ea24282802a32approve(spender,amount)
+WARNING:root:0x9f356ce34476d7da9b64b5b2994b0f4b24b2857d38f21455c38587e96664bd1atransfer(to,amount)
+WARNING:root:0xac0ca1c0b42b2180d1535f1593447da64b8f7ca734e1420a5b4b3ed5c607bbe4transfer(to,amount)
+WARNING:root:0x0def1bc40e9f601cbc980604c46cdf4ef85f84846e57aac37908393afaf4ff04transfer(to,amount)
+WARNING:root:0x01f3ecef705e7202444e3b7b9db867c42713caf24847a048940acc6bdbb18715transfer(to,amount)
+WARNING:root:0xdcb5443618cff56393a266ac787bc738f1c576b0e13fb41cc1a0cf9d759fe270transfer(to,amount)
+WARNING:root:0xc1f8eabaf59e072678152471a4cd0e493f78868b02d40061a2663aad6fb051e6transfer(to,amount)
+WARNING:root:0xaff5da47b1d30f2a51eea1009e1422f3704355ba7f4c3597d78d2970ea2ae92ctransfer(to,amount)
+WARNING:root:0x7e6874d3b1fbfcf191784211dee7594de4e8c9c9b5ff2a83639cc5692bcc7a39approve(spender,amount)
+WARNING:root:0xf0a9f1982565d597f01a4a279425ec6657e654a6c06400e0c4b6d9f561c57447transfer(to,amount)
+WARNING:root:0x65678e8507492af83587e9e7c31a9367d51ac3355e742465bb908d5d1d19ca54transfer(to,amount)
+WARNING:root:0xa332b1e1a87b65c569d9b3a2b136a31aad568107f94ec68a7e1f19c67cdf9a7atransfer(to,amount)
+WARNING:root:0xcce6bbb7400b1c7385de4bad9d5c2d44be305ac8c0a4638eb1b2033439d21d71transfer(to,amount)
+WARNING:root:0xacc7f85450e152e014891b53fc46bf01bb22a81d2d5bfc0aa6544606b0a529d7approve(spender,amount)
+WARNING:root:0x68ee7f12224dcfec29b1a12272a5a98eb7d2d5032bf888dd319a16f593eda4cabalanceOf(account)
+WARNING:root:0x0d27ca1555be7caae67f4fed121e295a1b063e1b0d6b1651e6219677534a660capprove(spender,amount)
+WARNING:root:0x2e256d9372ef3891e85f81798cf52cd88dd7f6ac87a314be48fad4b763144bebtransfer(to,amount)
+WARNING:root:0x2c41301760195ab36e4d6f29a9264a7349f968af66f5a629106c80082a4d407ctransfer(to,amount)
+WARNING:root:0x054148dc0adc0a50f67bc1ae94d0fe242d1fb7c099b820c74cf9e70dd896a234transfer(to,amount)
+WARNING:root:0x83249adca39faf08d024a4f8bae1537526f2a667cdfea4a6a8f572c7755413betransfer(to,amount)
+WARNING:root:0xfa6d25bc9c6da25b4c66f24c4576d07b9feb5687a41e45c7df0566741125bbf7transfer(to,amount)
+WARNING:root:0x7239aa8bde9f745889889131b80d513f3166f2325f8ca675c894593fcc3a6183transfer(to,amount)
+WARNING:root:0x2f66f49d65ba908d81f29e68f3fd0c7d04308b7f679f22825aa2a57e416af9ebapprove(spender,amount)
+WARNING:root:0x31fc6498fa981ad454f4a0275d413bf692811907836a56a2873e6e6a9f762311transfer(to,amount)
+WARNING:root:0xa6c9fc22a2cbd205b8511b8896a214af2145302158a1a9047115519a4e1e0acdtransfer(to,amount)
+WARNING:root:0x57e6bfc445faef2e73b4feafe7af20cdbbe2e33afae715f2fab0696633144f34transfer(to,amount)
+WARNING:root:0x14d71f3a75454d86829ffb263d5f49d8b4166c85f55b4c6e39d2a5753aa86692approve(spender,amount)
+WARNING:root:0xfb3af72f857d4245e42bc87583b4a7d97d5af3930acb20c5e517d4768c386432transfer(to,amount)
+WARNING:root:0x7cdd70967f9876cb44f11ae6792f7658728c7e230df02cf7dc7eda30c21da37ctransfer(to,amount)
+WARNING:root:0x1cf8f9ae0751709341c22855329c829a6bfed9a8e21bd14aeea398353ac1a64ftransfer(to,amount)
+WARNING:root:0xf3819553cdbd74e62a31ee18c97e4d00aff83e294382cffb47b8659aebe84a08approve(spender,amount)
+WARNING:root:0x7ce49b0538cf05323084e7bb7061e64046fb2998345f458e56ad166d28409858transfer(to,amount)
+WARNING:root:0x633b4bda67fca516dd148f1cb45806a3eb538623bab9e0ae2002944656b277d5approve(spender,amount)
+WARNING:root:0x3de406d080992147e70c0c3a93736b7dc188b0423d5c6846acf15c9ed440a024transfer(to,amount)
+WARNING:root:0xe1ed6fa905b6907d0a65f66a9af677b51a1a960db6a3ec7142e87fcb30f4b23ctransfer(to,amount)
+WARNING:root:0x7dc81589a4bc8a61dd3dbe63667188a90b53e02cc0de7afc0ec88dd541c49fd0transfer(to,amount)
+WARNING:root:0x6f8ee652fca5f08cc247881e495e184be8b6abe05e7f79210431fdf4b55a6b93approve(spender,amount)
+WARNING:root:0x6eee9f51ff9c54ef1656326d2ac868f1e5f27e4568073d40d933b65a56777344approve(spender,amount)
+WARNING:root:0x69bd06a1e8184db936f39fec1ffa11911d84c3ac70bfb54363f955642e66eeb7transfer(to,amount)
+WARNING:root:0xaafb2df87ba1a73421fd6c02c053c7bbb4435dcf0e9a3ad8d199527038e98351approve(spender,amount)
+WARNING:root:0x0275f45f0cf2d608d8f273fa3a978e91ee70423cf1dbd91ae81051dbb7fe7613transferFrom(from,to,amount)
+WARNING:root:0xa9fe99c487505a92fea82da69948d79757c37372da21fad0827658fa4a9ea632transfer(to,amount)
+WARNING:root:0x394bd803f2080300efa0f69525bb86188fca4bb68d65e40c75716d75d62f5077transfer(to,amount)
+WARNING:root:0x90d4a6b0328e77ac4cb85fcecfd473de7bf8e1445ddf146cd50e872e4c62085ctransfer(to,amount)
+WARNING:root:0xe7f2e23c6fa246d15f40b28fc5ba7b5750b7f8b8bfe0ef1e4d7743dd575f0d6atransfer(to,amount)
+WARNING:root:0x63a5828788975f7c27d4adaab0d30dc2f2344569dda6bb84bf9a472c094d8cfbtransferFrom(from,to,amount)
+WARNING:root:0x9cf37e09b861f68ea9dab794f6ad5342deab7aeebb4a09749ee809c4ddb9b4f6transferFrom(from,to,amount)
+WARNING:root:0x6baae29b29dbc2d44e159a47090d6002bd4a3bd0c506941a6d00e5b9255e5532approve(spender,amount)
+WARNING:root:0x686c61d766f73aa90aee1b7f0928683061b9fd8115178a15b8be8443df297699approve(spender,amount)
+WARNING:root:0x2d5ccdee3601a1b8a61720caa4a619bcff4f22706b878b941f2d9505e97b009btransfer(to,amount)
+WARNING:root:0xa92c8b1181067f8267d995dffb9066c943160ad192b9cbca22b9b2284705fc39transfer(to,amount)
+WARNING:root:0xd5e5ba1b93d717b80ec8a8913e7ddea36bcfb3a0e6b0a75f221ecbcf2c271688transfer(to,amount)
+WARNING:root:0x9151f0cdf59760238c3d2d25d9eea67f94ddd65e0d93f32577781865887f5907transferFrom(from,to,amount)
+WARNING:root:0x19b9e3f5b9dc883593f9107b4c7af206f5f14965a00eb4def0a31cce51269bb7transfer(to,amount)
+WARNING:root:0x635b0926d5561ee4f87a600d806510c5c448ff03ced02bf1c16aed801ea8ba29transfer(to,amount)
+WARNING:root:0xb692e0b6c1244820ba87d4dc736c822084a1f41f3ee0cccaf65aa7d55f5e2728approve(spender,amount)
+WARNING:root:0xc1a07b194210054addee86a915895cc31ec582d256ae7e61a5489a1f04644157approve(spender,amount)
+WARNING:root:0x88676c4d889eb6f449176b675e1b26e521ac1fd79f22764f20bf6a365cd425d7transferFrom(from,to,amount)
+WARNING:root:0x73fe58c6af4f3cf7b1b758dcdc12d825c2155bfe77a2049b031070ddd9d921d2transfer(to,amount)
+WARNING:root:0x67c03798c32dd217eed7574a00e85848b2fab3206b2507b12852f99492ed87a6transfer(to,amount)
+WARNING:root:0x6c9b00558dc794c76e84e21224374859074443213548bbb69d69821127d67af1balanceOf(account)
+WARNING:root:0x1619aaf9a807a4cd36b642ef3b8417824b33cf3c3528df8fd12707c5e4ebf76ftransferFrom(from,to,amount)
+WARNING:root:0xf93e3544a771cc36cb7e33c1fbc4067ca373d9fcb5df58bdba99d5008693c90atransfer(to,amount)
+WARNING:root:0x5c7034e70d7353c9c2f266da8794d27a2e394c4913a3ebb84255288898b55231transferFrom(from,to,amount)
+WARNING:root:0xc1249904de5001d0929138425e62cf53e8117d864af8656dac0f37d4e590beadtransferFrom(from,to,amount)
+WARNING:root:0xa25d2dacc989d8af50c39848c25a26fdc73c7d837ba21d1aaf3668be9a6c9f3btransferFrom(from,to,amount)
+WARNING:root:0x9429c05a87651440845e44e89ef6cc2aa40de8934c549588959abae3010ec0f8approve(spender,amount)
+WARNING:root:0x9d480095ba256bafdf6e397a752603ab3d4b3d5b20beca59b52afb68eee9ca1atransferFrom(from,to,amount)
+WARNING:root:0x3d4a66e271d84451647c8b1feaaa6116ea505d64c809e930fc619136ee5555abapprove(spender,amount)
+WARNING:root:0x315bf8e6af5eec317febd8738e5fced9736e437b5bdabd8dc0ada0b749cd1f10transferFrom(from,to,amount)
+WARNING:root:0x9b46f57f683d26f2b4f98abb856a3fc1a2b1e8dfa4452a24722a59c602f169aatransferFrom(from,to,amount)
+WARNING:root:0x4159aa2469a622a6009136bd1e2f8471fa7943552a2f8d1eb7b6c3621e7f85a9transferFrom(from,to,amount)
+WARNING:root:0x7c2aa818bcf0b1d78834052b7f6d95e4e53131595446d9ee520b340cddb70b79transferFrom(from,to,amount)
+WARNING:root:0x3983de0cf8c2d550fb63b85a9cd9da91491eb186ae0d8a3b41671eca6a0c44e1transferFrom(from,to,amount)
+WARNING:root:0xefcc1fef22d2683899778c0206fc18450f94043577b3538d2a49d05e5eec971ftransfer(to,amount)
+WARNING:root:0x09588995cd26aa2e482a2285ce8dd0605a78b0090e4dd771cf70e11cf7a5d067transferFrom(from,to,amount)
+WARNING:root:0xe79cc2c9b869f5aa595dee3c1f3a97c8086d00cac96ae944b6c627e73fa187aetransfer(to,amount)
+WARNING:root:0xd311a3059d23912bc7ab9fbc4b59e8f9d96f86c613407ca6475f924fbd7309batransfer(to,amount)
+WARNING:root:0xdf40a911b2728015df07fd168e1b66b260e97d6926658cfd448daa4984aaeabftransfer(to,amount)
+WARNING:root:0xc0d9896721b3642502c6180a58e8dbaaeefb962e1e6dbe65b4bfa4f18a56b0cftransferFrom(from,to,amount)
+WARNING:root:0x3a5b96e1670d5c1a6720d6442b2fdb349478eaa6d2cba7319de7d1dec15767c3transferFrom(from,to,amount)
+WARNING:root:0x1922ebeb97745c7e23e2154d66426e54539080e2428c3686cfdca32cfbc25b29transfer(to,amount)
+WARNING:root:0x8477ce9d4fa4cc997bda362ea117b04c89ee0635f643ed056ddd4e0e33d4613etransfer(to,amount)
+WARNING:root:0x6aac6934e9429e185bea793c9891f1b74b6f68b31d2f2fd603a2cb98b5b55f61transferFrom(from,to,amount)
+WARNING:root:0xb9411d51deaacbfb87621201f4282c8fab9f280fef4d66fd3a8582708d9a4bacapprove(spender,amount)
+WARNING:root:0xe99b918ecabd4dfcdaa5aee6a3384b1483e2e1d572b03f5a944e001ae55904b5transferFrom(from,to,amount)
+WARNING:root:0x1d2591204a697d6cd967855a963f1fb70d2c22997ab27185ab7207c693a70c11transfer(to,amount)
+WARNING:root:0xa8c42ed0751a55e8a9194db21159b04d7bc670b494c1238e990e938ad247728ftransferFrom(from,to,amount)
+WARNING:root:0xe5a6338123952a722ba16950cf3fb4b4da090a09ab0b755bc47802b67ef3f7dftransfer(to,amount)
+WARNING:root:0x66eb14d6b1d68f1d4226cd2cc76d82a35e2052d58023e0b8ca07b23c35b90253transfer(to,amount)
+WARNING:root:0xa9e885eb9cb84291715499ab0784fe6bfb0cc1214ac77fb18d7572f8b131aa6aapprove(spender,amount)
+WARNING:root:0x73368386bd5d9a87f512f5c1fdedf79b7f18cab37deda26e4743219e47851429transferFrom(from,to,amount)
+WARNING:root:0xa8fbfbef111c1e97fe097fde2a275fe6b2dd1be40066a1e198f08bb9a136a597transfer(to,amount)
+WARNING:root:0x65c602ca09eea6b51d314028193a01a19121484b43e3f4abe72f620ff5783e60approve(spender,amount)
+WARNING:root:0x1ad0c1c761ebbe0e16f6b9329d45067e6595b45ede85d9f3873ddf98f54824aftransfer(to,amount)
+WARNING:root:0xf094248b83e2fbd4c756e4fd67e375b6b80265c2967a9211fc68faf26cb6cb4btransferFrom(from,to,amount)
+WARNING:root:0xbfac461ee13fc25a62264da1822cb6445b6f7dc7e625b00dbf9c5ad81a999881transfer(to,amount)
+WARNING:root:0xf954e5739ed6783fa8906fb7af9d1957ffc4be6ec48501128e5e08650250f22ctransfer(to,amount)
+WARNING:root:0x4da49ebd33b5d2704b0da8322e54066b475a28e15abb4a958c129cf9c3703e23transfer(to,amount)
+WARNING:root:0x463f796a506fd323aebb58beab6cce9c86d77f6e79af1f09c63fd57a84ebfc96transfer(to,amount)
+WARNING:root:0x4f68760c1afc73c4af03d9a7e1b2ad1ecc181075c14b8dc0bbeb84c6a02ad7e9approve(spender,amount)
+WARNING:root:0xd85462603eb0a329577080f18ef8db268f6ffa2c01039af919729dba34751732transfer(to,amount)
+WARNING:root:0xad0dcfe1a2165b5622adf3e41c6cb4dc4033bfbd02045b163c743811909a3730transfer(to,amount)
+WARNING:root:0x68dbab2ec4725d49767794415022b8c989e83ac1a116c13f08dd5628d223fc1ctransfer(to,amount)
+WARNING:root:0xdd34a40033da11b53e718c812f2e66657eac7b860695d6d1c32116570222ea51transfer(to,amount)
+WARNING:root:0xec836a7c4ef01027921503448cb54f46f07894fccb5a3e4895e77b5cc7400608transfer(to,amount)
+WARNING:root:0x6a5c6db1725cfbad678b415fd6a7a861f138b25fa418358d6b4510d53f02478dtransferFrom(from,to,amount)
+WARNING:root:0xb4a2929d1baf8ef7200fa834f3c4130d23d9dca6e603d960e7ea74c7c2f5d4c9transfer(to,amount)
+WARNING:root:0xcb507c7ec12da08f8a6058cb32e1c507e8dd9b70351b4cfa7ab99b60035c441atransfer(to,amount)
+WARNING:root:0x90a1e3cfd6ccbf0f1792a553e783943b3fcabc641a6f90f90deec0ddaaebf4b0transfer(to,amount)
+WARNING:root:0x2d2d5fe1e799b92deb5fcd8304cd4cb1fb37324105f294e41c36a021d1fcf61etransfer(to,amount)
+WARNING:root:0x7a3e51aa15fdfdf7c12752d987bba12b78b79378c29c67d65b26fc4f3c0fa87ftransferFrom(from,to,amount)
+WARNING:root:0x8a5980125d828f3b56020fb39df233113e5257750ea40b60150e48c345bf2449transfer(to,amount)
+WARNING:root:0xeb5d88ca6d00419b74ebbcaa6851bf7574d3040429bc2cdd6be1f980dc5575b7transfer(to,amount)
+WARNING:root:0xa305fb5082dd57498ca21989f58e4c3e6db09f4acd7416338f7bddcf3138d9cetransferFrom(from,to,amount)
+WARNING:root:0x6e899cc54cc7da65a7cf9ca4e501c135929c20bbd0cf9ec92196c97fdad1233dtransferFrom(from,to,amount)
+WARNING:root:0xf682fe3c83164dc78320b46ee574a395846366bb3ad3e3d090ae94aa8105702etransfer(to,amount)
+WARNING:root:Generating invariants... for 378 txs
+WARNING:root:Time used: 14.75725507736206 seconds
+WARNING:root:Time Usage Detail: initializePpts(6.983913898468018), readTx(6.992283344268799), processData(0.7500579357147217)
+WARNING:root:
+
+WARNING:root:acceptOwnership()
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:paused == false
+ori(upgradedAddress) == 0
+owner != 0
+deprecated == false
+ori(_totalSupply) == 0
+ori(_totalSupply) == 0
+ori(_totalSupply) one of [0]
+_totalSupply == 0
+_totalSupply == 0
+_totalSupply one of [0]
+elem of nonces[...] is one of [0]
+elem of nonces[...] is one of []
+elem of _balances[...] is one of [0]
+elem of _balances[...] is one of []
+Sum(_balances[...]) == 0
+Sum(_balances[...]) == 0
+Sum(_balances[...]) one of [0]
+newOwner == 0
+ori(deprecated) == false
+msg.sender != 0
+ori(Sum(nonces[...])) == 0
+ori(Sum(nonces[...])) == 0
+ori(Sum(nonces[...])) one of [0]
+upgradedAddress == 0
+ori(paused) == false
+ori(owner) == 0
+msg.value == 0
+msg.value == 0
+msg.value one of [0]
+Sum(nonces[...]) == 0
+Sum(nonces[...]) == 0
+Sum(nonces[...]) one of [0]
+ori(newOwner) != 0
+ori(Sum(_balances[...])) == 0
+ori(Sum(_balances[...])) == 0
+ori(Sum(_balances[...])) one of [0]
+paused == deprecated
+paused == ori(deprecated)
+paused == ori(paused)
+ori(upgradedAddress) != owner
+ori(upgradedAddress) == newOwner
+ori(upgradedAddress) != msg.sender
+ori(upgradedAddress) == upgradedAddress
+ori(upgradedAddress) == ori(owner)
+ori(upgradedAddress) != ori(newOwner)
+owner != newOwner
+owner == msg.sender
+owner != upgradedAddress
+owner != ori(owner)
+owner == ori(newOwner)
+deprecated == ori(deprecated)
+deprecated == ori(paused)
+ori(_totalSupply) == _totalSupply
+ori(_totalSupply) >= _totalSupply
+ori(_totalSupply) <= _totalSupply
+ori(_totalSupply) == Sum(_balances[...])
+ori(_totalSupply) >= Sum(_balances[...])
+ori(_totalSupply) <= Sum(_balances[...])
+ori(_totalSupply) == ori(Sum(nonces[...]))
+ori(_totalSupply) >= ori(Sum(nonces[...]))
+ori(_totalSupply) <= ori(Sum(nonces[...]))
+ori(_totalSupply) == msg.value
+ori(_totalSupply) >= msg.value
+ori(_totalSupply) <= msg.value
+ori(_totalSupply) == Sum(nonces[...])
+ori(_totalSupply) >= Sum(nonces[...])
+ori(_totalSupply) <= Sum(nonces[...])
+ori(_totalSupply) == ori(Sum(_balances[...]))
+ori(_totalSupply) >= ori(Sum(_balances[...]))
+ori(_totalSupply) <= ori(Sum(_balances[...]))
+_totalSupply == Sum(_balances[...])
+_totalSupply >= Sum(_balances[...])
+_totalSupply <= Sum(_balances[...])
+_totalSupply == ori(Sum(nonces[...]))
+_totalSupply >= ori(Sum(nonces[...]))
+_totalSupply <= ori(Sum(nonces[...]))
+_totalSupply == msg.value
+_totalSupply >= msg.value
+_totalSupply <= msg.value
+_totalSupply == Sum(nonces[...])
+_totalSupply >= Sum(nonces[...])
+_totalSupply <= Sum(nonces[...])
+_totalSupply == ori(Sum(_balances[...]))
+_totalSupply >= ori(Sum(_balances[...]))
+_totalSupply <= ori(Sum(_balances[...]))
+Sum(_balances[...]) == ori(Sum(nonces[...]))
+Sum(_balances[...]) >= ori(Sum(nonces[...]))
+Sum(_balances[...]) <= ori(Sum(nonces[...]))
+Sum(_balances[...]) == msg.value
+Sum(_balances[...]) >= msg.value
+Sum(_balances[...]) <= msg.value
+Sum(_balances[...]) == Sum(nonces[...])
+Sum(_balances[...]) >= Sum(nonces[...])
+Sum(_balances[...]) <= Sum(nonces[...])
+Sum(_balances[...]) == ori(Sum(_balances[...]))
+Sum(_balances[...]) >= ori(Sum(_balances[...]))
+Sum(_balances[...]) <= ori(Sum(_balances[...]))
+newOwner != msg.sender
+newOwner == upgradedAddress
+newOwner == ori(owner)
+newOwner != ori(newOwner)
+ori(deprecated) == ori(paused)
+msg.sender != upgradedAddress
+msg.sender != ori(owner)
+msg.sender == ori(newOwner)
+ori(Sum(nonces[...])) == msg.value
+ori(Sum(nonces[...])) >= msg.value
+ori(Sum(nonces[...])) <= msg.value
+ori(Sum(nonces[...])) == Sum(nonces[...])
+ori(Sum(nonces[...])) >= Sum(nonces[...])
+ori(Sum(nonces[...])) <= Sum(nonces[...])
+ori(Sum(nonces[...])) == ori(Sum(_balances[...]))
+ori(Sum(nonces[...])) >= ori(Sum(_balances[...]))
+ori(Sum(nonces[...])) <= ori(Sum(_balances[...]))
+upgradedAddress == ori(owner)
+upgradedAddress != ori(newOwner)
+ori(owner) != ori(newOwner)
+msg.value == Sum(nonces[...])
+msg.value >= Sum(nonces[...])
+msg.value <= Sum(nonces[...])
+msg.value == ori(Sum(_balances[...]))
+msg.value >= ori(Sum(_balances[...]))
+msg.value <= ori(Sum(_balances[...]))
+Sum(nonces[...]) == ori(Sum(_balances[...]))
+Sum(nonces[...]) >= ori(Sum(_balances[...]))
+Sum(nonces[...]) <= ori(Sum(_balances[...]))
+WARNING:root:
+
+WARNING:root:acceptOwnership()
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:paused == false
+ori(upgradedAddress) == 0
+owner != 0
+deprecated == false
+ori(_totalSupply) == 0
+ori(_totalSupply) == 0
+ori(_totalSupply) one of [0]
+_totalSupply == 0
+_totalSupply == 0
+_totalSupply one of [0]
+elem of nonces[...] is one of [0]
+elem of nonces[...] is one of []
+elem of _balances[...] is one of [0]
+elem of _balances[...] is one of []
+Sum(_balances[...]) == 0
+Sum(_balances[...]) == 0
+Sum(_balances[...]) one of [0]
+newOwner == 0
+ori(deprecated) == false
+msg.sender != 0
+ori(Sum(nonces[...])) == 0
+ori(Sum(nonces[...])) == 0
+ori(Sum(nonces[...])) one of [0]
+upgradedAddress == 0
+ori(paused) == false
+ori(owner) != 0
+msg.value == 0
+msg.value == 0
+msg.value one of [0]
+Sum(nonces[...]) == 0
+Sum(nonces[...]) == 0
+Sum(nonces[...]) one of [0]
+ori(newOwner) == 0
+ori(Sum(_balances[...])) == 0
+ori(Sum(_balances[...])) == 0
+ori(Sum(_balances[...])) one of [0]
+paused == deprecated
+paused == ori(deprecated)
+paused == ori(paused)
+ori(upgradedAddress) != owner
+ori(upgradedAddress) == newOwner
+ori(upgradedAddress) != msg.sender
+ori(upgradedAddress) == upgradedAddress
+ori(upgradedAddress) != ori(owner)
+ori(upgradedAddress) == ori(newOwner)
+owner != newOwner
+owner == msg.sender
+owner != upgradedAddress
+owner == ori(owner)
+owner != ori(newOwner)
+deprecated == ori(deprecated)
+deprecated == ori(paused)
+ori(_totalSupply) == _totalSupply
+ori(_totalSupply) >= _totalSupply
+ori(_totalSupply) <= _totalSupply
+ori(_totalSupply) == Sum(_balances[...])
+ori(_totalSupply) >= Sum(_balances[...])
+ori(_totalSupply) <= Sum(_balances[...])
+ori(_totalSupply) == ori(Sum(nonces[...]))
+ori(_totalSupply) >= ori(Sum(nonces[...]))
+ori(_totalSupply) <= ori(Sum(nonces[...]))
+ori(_totalSupply) == msg.value
+ori(_totalSupply) >= msg.value
+ori(_totalSupply) <= msg.value
+ori(_totalSupply) == Sum(nonces[...])
+ori(_totalSupply) >= Sum(nonces[...])
+ori(_totalSupply) <= Sum(nonces[...])
+ori(_totalSupply) == ori(Sum(_balances[...]))
+ori(_totalSupply) >= ori(Sum(_balances[...]))
+ori(_totalSupply) <= ori(Sum(_balances[...]))
+_totalSupply == Sum(_balances[...])
+_totalSupply >= Sum(_balances[...])
+_totalSupply <= Sum(_balances[...])
+_totalSupply == ori(Sum(nonces[...]))
+_totalSupply >= ori(Sum(nonces[...]))
+_totalSupply <= ori(Sum(nonces[...]))
+_totalSupply == msg.value
+_totalSupply >= msg.value
+_totalSupply <= msg.value
+_totalSupply == Sum(nonces[...])
+_totalSupply >= Sum(nonces[...])
+_totalSupply <= Sum(nonces[...])
+_totalSupply == ori(Sum(_balances[...]))
+_totalSupply >= ori(Sum(_balances[...]))
+_totalSupply <= ori(Sum(_balances[...]))
+Sum(_balances[...]) == ori(Sum(nonces[...]))
+Sum(_balances[...]) >= ori(Sum(nonces[...]))
+Sum(_balances[...]) <= ori(Sum(nonces[...]))
+Sum(_balances[...]) == msg.value
+Sum(_balances[...]) >= msg.value
+Sum(_balances[...]) <= msg.value
+Sum(_balances[...]) == Sum(nonces[...])
+Sum(_balances[...]) >= Sum(nonces[...])
+Sum(_balances[...]) <= Sum(nonces[...])
+Sum(_balances[...]) == ori(Sum(_balances[...]))
+Sum(_balances[...]) >= ori(Sum(_balances[...]))
+Sum(_balances[...]) <= ori(Sum(_balances[...]))
+newOwner != msg.sender
+newOwner == upgradedAddress
+newOwner != ori(owner)
+newOwner == ori(newOwner)
+ori(deprecated) == ori(paused)
+msg.sender != upgradedAddress
+msg.sender == ori(owner)
+msg.sender != ori(newOwner)
+ori(Sum(nonces[...])) == msg.value
+ori(Sum(nonces[...])) >= msg.value
+ori(Sum(nonces[...])) <= msg.value
+ori(Sum(nonces[...])) == Sum(nonces[...])
+ori(Sum(nonces[...])) >= Sum(nonces[...])
+ori(Sum(nonces[...])) <= Sum(nonces[...])
+ori(Sum(nonces[...])) == ori(Sum(_balances[...]))
+ori(Sum(nonces[...])) >= ori(Sum(_balances[...]))
+ori(Sum(nonces[...])) <= ori(Sum(_balances[...]))
+upgradedAddress != ori(owner)
+upgradedAddress == ori(newOwner)
+ori(owner) != ori(newOwner)
+msg.value == Sum(nonces[...])
+msg.value >= Sum(nonces[...])
+msg.value <= Sum(nonces[...])
+msg.value == ori(Sum(_balances[...]))
+msg.value >= ori(Sum(_balances[...]))
+msg.value <= ori(Sum(_balances[...]))
+Sum(nonces[...]) == ori(Sum(_balances[...]))
+Sum(nonces[...]) >= ori(Sum(_balances[...]))
+Sum(nonces[...]) <= ori(Sum(_balances[...]))
+WARNING:root:
+
+WARNING:root:acquire(token)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:acquire(token)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:addBlacklist(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:addBlacklist(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:addBlacklister(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:addBlacklister(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:addMinter(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:user != 0
+paused == false
+ori(upgradedAddress) == 0
+owner != 0
+deprecated == false
+ori(_totalSupply) == 0
+ori(_totalSupply) == 0
+ori(_totalSupply) one of [0]
+_totalSupply == 0
+_totalSupply == 0
+_totalSupply one of [0]
+elem of nonces[...] is one of [0]
+elem of nonces[...] is one of []
+elem of _balances[...] is one of [0]
+elem of _balances[...] is one of []
+Sum(_balances[...]) == 0
+Sum(_balances[...]) == 0
+Sum(_balances[...]) one of [0]
+newOwner == 0
+ori(isMinter[user]) == false
+ori(deprecated) == false
+msg.sender != 0
+ori(Sum(nonces[...])) == 0
+ori(Sum(nonces[...])) == 0
+ori(Sum(nonces[...])) one of [0]
+upgradedAddress == 0
+ori(paused) == false
+ori(owner) != 0
+isMinter[user] == true
+msg.value == 0
+msg.value == 0
+msg.value one of [0]
+Sum(nonces[...]) == 0
+Sum(nonces[...]) == 0
+Sum(nonces[...]) one of [0]
+ori(newOwner) == 0
+ori(Sum(_balances[...])) == 0
+ori(Sum(_balances[...])) == 0
+ori(Sum(_balances[...])) one of [0]
+user != ori(upgradedAddress)
+user != owner
+user != newOwner
+user != msg.sender
+user != upgradedAddress
+user != ori(owner)
+user != ori(newOwner)
+paused == deprecated
+paused == ori(isMinter[user])
+paused == ori(deprecated)
+paused == ori(paused)
+paused != isMinter[user]
+ori(upgradedAddress) != owner
+ori(upgradedAddress) == newOwner
+ori(upgradedAddress) != msg.sender
+ori(upgradedAddress) == upgradedAddress
+ori(upgradedAddress) != ori(owner)
+ori(upgradedAddress) == ori(newOwner)
+owner != newOwner
+owner == msg.sender
+owner != upgradedAddress
+owner == ori(owner)
+owner != ori(newOwner)
+deprecated == ori(isMinter[user])
+deprecated == ori(deprecated)
+deprecated == ori(paused)
+deprecated != isMinter[user]
+ori(_totalSupply) == _totalSupply
+ori(_totalSupply) >= _totalSupply
+ori(_totalSupply) <= _totalSupply
+ori(_totalSupply) == Sum(_balances[...])
+ori(_totalSupply) >= Sum(_balances[...])
+ori(_totalSupply) <= Sum(_balances[...])
+ori(_totalSupply) == ori(Sum(nonces[...]))
+ori(_totalSupply) >= ori(Sum(nonces[...]))
+ori(_totalSupply) <= ori(Sum(nonces[...]))
+ori(_totalSupply) == msg.value
+ori(_totalSupply) >= msg.value
+ori(_totalSupply) <= msg.value
+ori(_totalSupply) == Sum(nonces[...])
+ori(_totalSupply) >= Sum(nonces[...])
+ori(_totalSupply) <= Sum(nonces[...])
+ori(_totalSupply) == ori(Sum(_balances[...]))
+ori(_totalSupply) >= ori(Sum(_balances[...]))
+ori(_totalSupply) <= ori(Sum(_balances[...]))
+_totalSupply == Sum(_balances[...])
+_totalSupply >= Sum(_balances[...])
+_totalSupply <= Sum(_balances[...])
+_totalSupply == ori(Sum(nonces[...]))
+_totalSupply >= ori(Sum(nonces[...]))
+_totalSupply <= ori(Sum(nonces[...]))
+_totalSupply == msg.value
+_totalSupply >= msg.value
+_totalSupply <= msg.value
+_totalSupply == Sum(nonces[...])
+_totalSupply >= Sum(nonces[...])
+_totalSupply <= Sum(nonces[...])
+_totalSupply == ori(Sum(_balances[...]))
+_totalSupply >= ori(Sum(_balances[...]))
+_totalSupply <= ori(Sum(_balances[...]))
+Sum(_balances[...]) == ori(Sum(nonces[...]))
+Sum(_balances[...]) >= ori(Sum(nonces[...]))
+Sum(_balances[...]) <= ori(Sum(nonces[...]))
+Sum(_balances[...]) == msg.value
+Sum(_balances[...]) >= msg.value
+Sum(_balances[...]) <= msg.value
+Sum(_balances[...]) == Sum(nonces[...])
+Sum(_balances[...]) >= Sum(nonces[...])
+Sum(_balances[...]) <= Sum(nonces[...])
+Sum(_balances[...]) == ori(Sum(_balances[...]))
+Sum(_balances[...]) >= ori(Sum(_balances[...]))
+Sum(_balances[...]) <= ori(Sum(_balances[...]))
+newOwner != msg.sender
+newOwner == upgradedAddress
+newOwner != ori(owner)
+newOwner == ori(newOwner)
+ori(isMinter[user]) == ori(deprecated)
+ori(isMinter[user]) == ori(paused)
+ori(isMinter[user]) != isMinter[user]
+ori(deprecated) == ori(paused)
+ori(deprecated) != isMinter[user]
+msg.sender != upgradedAddress
+msg.sender == ori(owner)
+msg.sender != ori(newOwner)
+ori(Sum(nonces[...])) == msg.value
+ori(Sum(nonces[...])) >= msg.value
+ori(Sum(nonces[...])) <= msg.value
+ori(Sum(nonces[...])) == Sum(nonces[...])
+ori(Sum(nonces[...])) >= Sum(nonces[...])
+ori(Sum(nonces[...])) <= Sum(nonces[...])
+ori(Sum(nonces[...])) == ori(Sum(_balances[...]))
+ori(Sum(nonces[...])) >= ori(Sum(_balances[...]))
+ori(Sum(nonces[...])) <= ori(Sum(_balances[...]))
+upgradedAddress != ori(owner)
+upgradedAddress == ori(newOwner)
+ori(paused) != isMinter[user]
+ori(owner) != ori(newOwner)
+msg.value == Sum(nonces[...])
+msg.value >= Sum(nonces[...])
+msg.value <= Sum(nonces[...])
+msg.value == ori(Sum(_balances[...]))
+msg.value >= ori(Sum(_balances[...]))
+msg.value <= ori(Sum(_balances[...]))
+Sum(nonces[...]) == ori(Sum(_balances[...]))
+Sum(nonces[...]) >= ori(Sum(_balances[...]))
+Sum(nonces[...]) <= ori(Sum(_balances[...]))
+WARNING:root:
+
+WARNING:root:addMinter(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:addPauser(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:addPauser(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:approve(spender,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:ori(_allowances[msg.sender][spender]) == 0
+ori(_allowances[msg.sender][spender]) == 0
+ori(_allowances[msg.sender][spender]) one of [0]
+paused == false
+ori(upgradedAddress) == 0
+owner != 0
+deprecated == false
+ori(_totalSupply) > 0
+ori(_totalSupply) == 10000000000000
+ori(_totalSupply) one of [10000000000000]
+_totalSupply > 0
+_totalSupply == 10000000000000
+_totalSupply one of [10000000000000]
+elem of nonces[...] is one of [0]
+elem of nonces[...] is one of []
+elem of _balances[...] is one of [10000000000000]
+amount > 0
+amount == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+amount one of [115792089237316195423570985008687907853269984665640564039457584007913129639935]
+_allowances[msg.sender][spender] > 0
+_allowances[msg.sender][spender] == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+_allowances[msg.sender][spender] one of [115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Sum(_balances[...]) > 0
+Sum(_balances[...]) == 10000000000000
+Sum(_balances[...]) one of [10000000000000]
+newOwner == 0
+ori(deprecated) == false
+msg.sender != 0
+ori(Sum(_allowances[msg.sender][...])) == 0
+ori(Sum(_allowances[msg.sender][...])) == 0
+ori(Sum(_allowances[msg.sender][...])) one of [0]
+ori(Sum(nonces[...])) == 0
+ori(Sum(nonces[...])) == 0
+ori(Sum(nonces[...])) one of [0]
+upgradedAddress == 0
+ori(paused) == false
+ori(owner) != 0
+elem of _allowances[msg.sender][...] is one of [115792089237316195423570985008687907853269984665640564039457584007913129639935]
+elem of _allowances[msg.sender][...] is one of [115792089237316195423570985008687907853269984665640564039457584007913129639935]
+spender != 0
+msg.value == 0
+msg.value == 0
+msg.value one of [0]
+Sum(nonces[...]) == 0
+Sum(nonces[...]) == 0
+Sum(nonces[...]) one of [0]
+ori(newOwner) == 0
+ori(Sum(_balances[...])) > 0
+ori(Sum(_balances[...])) == 10000000000000
+ori(Sum(_balances[...])) one of [10000000000000]
+Sum(_allowances[msg.sender][...]) > 0
+Sum(_allowances[msg.sender][...]) == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+Sum(_allowances[msg.sender][...]) one of [115792089237316195423570985008687907853269984665640564039457584007913129639935]
+ori(_allowances[msg.sender][spender]) <= ori(_totalSupply)
+ori(_allowances[msg.sender][spender]) < ori(_totalSupply)
+ori(_allowances[msg.sender][spender]) != ori(_totalSupply)
+ori(_allowances[msg.sender][spender]) <= _totalSupply
+ori(_allowances[msg.sender][spender]) < _totalSupply
+ori(_allowances[msg.sender][spender]) != _totalSupply
+ori(_allowances[msg.sender][spender]) <= amount
+ori(_allowances[msg.sender][spender]) < amount
+ori(_allowances[msg.sender][spender]) != amount
+ori(_allowances[msg.sender][spender]) <= _allowances[msg.sender][spender]
+ori(_allowances[msg.sender][spender]) < _allowances[msg.sender][spender]
+ori(_allowances[msg.sender][spender]) != _allowances[msg.sender][spender]
+ori(_allowances[msg.sender][spender]) <= Sum(_balances[...])
+ori(_allowances[msg.sender][spender]) < Sum(_balances[...])
+ori(_allowances[msg.sender][spender]) != Sum(_balances[...])
+ori(_allowances[msg.sender][spender]) == ori(Sum(_allowances[msg.sender][...]))
+ori(_allowances[msg.sender][spender]) >= ori(Sum(_allowances[msg.sender][...]))
+ori(_allowances[msg.sender][spender]) <= ori(Sum(_allowances[msg.sender][...]))
+ori(_allowances[msg.sender][spender]) == ori(Sum(nonces[...]))
+ori(_allowances[msg.sender][spender]) >= ori(Sum(nonces[...]))
+ori(_allowances[msg.sender][spender]) <= ori(Sum(nonces[...]))
+ori(_allowances[msg.sender][spender]) == msg.value
+ori(_allowances[msg.sender][spender]) >= msg.value
+ori(_allowances[msg.sender][spender]) <= msg.value
+ori(_allowances[msg.sender][spender]) == Sum(nonces[...])
+ori(_allowances[msg.sender][spender]) >= Sum(nonces[...])
+ori(_allowances[msg.sender][spender]) <= Sum(nonces[...])
+ori(_allowances[msg.sender][spender]) <= ori(Sum(_balances[...]))
+ori(_allowances[msg.sender][spender]) < ori(Sum(_balances[...]))
+ori(_allowances[msg.sender][spender]) != ori(Sum(_balances[...]))
+ori(_allowances[msg.sender][spender]) <= Sum(_allowances[msg.sender][...])
+ori(_allowances[msg.sender][spender]) < Sum(_allowances[msg.sender][...])
+ori(_allowances[msg.sender][spender]) != Sum(_allowances[msg.sender][...])
+paused == deprecated
+paused == ori(deprecated)
+paused == ori(paused)
+ori(upgradedAddress) != owner
+ori(upgradedAddress) == newOwner
+ori(upgradedAddress) != msg.sender
+ori(upgradedAddress) == upgradedAddress
+ori(upgradedAddress) != ori(owner)
+ori(upgradedAddress) != spender
+ori(upgradedAddress) == ori(newOwner)
+owner != newOwner
+owner != upgradedAddress
+owner == ori(owner)
+owner != spender
+owner != ori(newOwner)
+deprecated == ori(deprecated)
+deprecated == ori(paused)
+ori(_totalSupply) == _totalSupply
+ori(_totalSupply) >= _totalSupply
+ori(_totalSupply) <= _totalSupply
+ori(_totalSupply) <= amount
+ori(_totalSupply) < amount
+ori(_totalSupply) != amount
+ori(_totalSupply) <= _allowances[msg.sender][spender]
+ori(_totalSupply) < _allowances[msg.sender][spender]
+ori(_totalSupply) != _allowances[msg.sender][spender]
+ori(_totalSupply) == Sum(_balances[...])
+ori(_totalSupply) >= Sum(_balances[...])
+ori(_totalSupply) <= Sum(_balances[...])
+ori(_totalSupply) >= ori(Sum(_allowances[msg.sender][...]))
+ori(_totalSupply) > ori(Sum(_allowances[msg.sender][...]))
+ori(_totalSupply) != ori(Sum(_allowances[msg.sender][...]))
+ori(_totalSupply) >= ori(Sum(nonces[...]))
+ori(_totalSupply) > ori(Sum(nonces[...]))
+ori(_totalSupply) != ori(Sum(nonces[...]))
+ori(_totalSupply) >= msg.value
+ori(_totalSupply) > msg.value
+ori(_totalSupply) != msg.value
+ori(_totalSupply) >= Sum(nonces[...])
+ori(_totalSupply) > Sum(nonces[...])
+ori(_totalSupply) != Sum(nonces[...])
+ori(_totalSupply) == ori(Sum(_balances[...]))
+ori(_totalSupply) >= ori(Sum(_balances[...]))
+ori(_totalSupply) <= ori(Sum(_balances[...]))
+ori(_totalSupply) <= Sum(_allowances[msg.sender][...])
+ori(_totalSupply) < Sum(_allowances[msg.sender][...])
+ori(_totalSupply) != Sum(_allowances[msg.sender][...])
+_totalSupply <= amount
+_totalSupply < amount
+_totalSupply != amount
+_totalSupply <= _allowances[msg.sender][spender]
+_totalSupply < _allowances[msg.sender][spender]
+_totalSupply != _allowances[msg.sender][spender]
+_totalSupply == Sum(_balances[...])
+_totalSupply >= Sum(_balances[...])
+_totalSupply <= Sum(_balances[...])
+_totalSupply >= ori(Sum(_allowances[msg.sender][...]))
+_totalSupply > ori(Sum(_allowances[msg.sender][...]))
+_totalSupply != ori(Sum(_allowances[msg.sender][...]))
+_totalSupply >= ori(Sum(nonces[...]))
+_totalSupply > ori(Sum(nonces[...]))
+_totalSupply != ori(Sum(nonces[...]))
+_totalSupply >= msg.value
+_totalSupply > msg.value
+_totalSupply != msg.value
+_totalSupply >= Sum(nonces[...])
+_totalSupply > Sum(nonces[...])
+_totalSupply != Sum(nonces[...])
+_totalSupply == ori(Sum(_balances[...]))
+_totalSupply >= ori(Sum(_balances[...]))
+_totalSupply <= ori(Sum(_balances[...]))
+_totalSupply <= Sum(_allowances[msg.sender][...])
+_totalSupply < Sum(_allowances[msg.sender][...])
+_totalSupply != Sum(_allowances[msg.sender][...])
+amount == _allowances[msg.sender][spender]
+amount >= _allowances[msg.sender][spender]
+amount <= _allowances[msg.sender][spender]
+amount >= Sum(_balances[...])
+amount > Sum(_balances[...])
+amount != Sum(_balances[...])
+amount >= ori(Sum(_allowances[msg.sender][...]))
+amount > ori(Sum(_allowances[msg.sender][...]))
+amount != ori(Sum(_allowances[msg.sender][...]))
+amount >= ori(Sum(nonces[...]))
+amount > ori(Sum(nonces[...]))
+amount != ori(Sum(nonces[...]))
+amount >= msg.value
+amount > msg.value
+amount != msg.value
+amount >= Sum(nonces[...])
+amount > Sum(nonces[...])
+amount != Sum(nonces[...])
+amount >= ori(Sum(_balances[...]))
+amount > ori(Sum(_balances[...]))
+amount != ori(Sum(_balances[...]))
+amount == Sum(_allowances[msg.sender][...])
+amount >= Sum(_allowances[msg.sender][...])
+amount <= Sum(_allowances[msg.sender][...])
+_allowances[msg.sender][spender] >= Sum(_balances[...])
+_allowances[msg.sender][spender] > Sum(_balances[...])
+_allowances[msg.sender][spender] != Sum(_balances[...])
+_allowances[msg.sender][spender] >= ori(Sum(_allowances[msg.sender][...]))
+_allowances[msg.sender][spender] > ori(Sum(_allowances[msg.sender][...]))
+_allowances[msg.sender][spender] != ori(Sum(_allowances[msg.sender][...]))
+_allowances[msg.sender][spender] >= ori(Sum(nonces[...]))
+_allowances[msg.sender][spender] > ori(Sum(nonces[...]))
+_allowances[msg.sender][spender] != ori(Sum(nonces[...]))
+_allowances[msg.sender][spender] >= msg.value
+_allowances[msg.sender][spender] > msg.value
+_allowances[msg.sender][spender] != msg.value
+_allowances[msg.sender][spender] >= Sum(nonces[...])
+_allowances[msg.sender][spender] > Sum(nonces[...])
+_allowances[msg.sender][spender] != Sum(nonces[...])
+_allowances[msg.sender][spender] >= ori(Sum(_balances[...]))
+_allowances[msg.sender][spender] > ori(Sum(_balances[...]))
+_allowances[msg.sender][spender] != ori(Sum(_balances[...]))
+_allowances[msg.sender][spender] == Sum(_allowances[msg.sender][...])
+_allowances[msg.sender][spender] >= Sum(_allowances[msg.sender][...])
+_allowances[msg.sender][spender] <= Sum(_allowances[msg.sender][...])
+Sum(_balances[...]) >= ori(Sum(_allowances[msg.sender][...]))
+Sum(_balances[...]) > ori(Sum(_allowances[msg.sender][...]))
+Sum(_balances[...]) != ori(Sum(_allowances[msg.sender][...]))
+Sum(_balances[...]) >= ori(Sum(nonces[...]))
+Sum(_balances[...]) > ori(Sum(nonces[...]))
+Sum(_balances[...]) != ori(Sum(nonces[...]))
+Sum(_balances[...]) >= msg.value
+Sum(_balances[...]) > msg.value
+Sum(_balances[...]) != msg.value
+Sum(_balances[...]) >= Sum(nonces[...])
+Sum(_balances[...]) > Sum(nonces[...])
+Sum(_balances[...]) != Sum(nonces[...])
+Sum(_balances[...]) == ori(Sum(_balances[...]))
+Sum(_balances[...]) >= ori(Sum(_balances[...]))
+Sum(_balances[...]) <= ori(Sum(_balances[...]))
+Sum(_balances[...]) <= Sum(_allowances[msg.sender][...])
+Sum(_balances[...]) < Sum(_allowances[msg.sender][...])
+Sum(_balances[...]) != Sum(_allowances[msg.sender][...])
+newOwner != msg.sender
+newOwner == upgradedAddress
+newOwner != ori(owner)
+newOwner != spender
+newOwner == ori(newOwner)
+ori(deprecated) == ori(paused)
+msg.sender != upgradedAddress
+msg.sender != spender
+msg.sender != ori(newOwner)
+ori(Sum(_allowances[msg.sender][...])) == ori(Sum(nonces[...]))
+ori(Sum(_allowances[msg.sender][...])) >= ori(Sum(nonces[...]))
+ori(Sum(_allowances[msg.sender][...])) <= ori(Sum(nonces[...]))
+ori(Sum(_allowances[msg.sender][...])) == msg.value
+ori(Sum(_allowances[msg.sender][...])) >= msg.value
+ori(Sum(_allowances[msg.sender][...])) <= msg.value
+ori(Sum(_allowances[msg.sender][...])) == Sum(nonces[...])
+ori(Sum(_allowances[msg.sender][...])) >= Sum(nonces[...])
+ori(Sum(_allowances[msg.sender][...])) <= Sum(nonces[...])
+ori(Sum(_allowances[msg.sender][...])) <= ori(Sum(_balances[...]))
+ori(Sum(_allowances[msg.sender][...])) < ori(Sum(_balances[...]))
+ori(Sum(_allowances[msg.sender][...])) != ori(Sum(_balances[...]))
+ori(Sum(_allowances[msg.sender][...])) <= Sum(_allowances[msg.sender][...])
+ori(Sum(_allowances[msg.sender][...])) < Sum(_allowances[msg.sender][...])
+ori(Sum(_allowances[msg.sender][...])) != Sum(_allowances[msg.sender][...])
+ori(Sum(nonces[...])) == msg.value
+ori(Sum(nonces[...])) >= msg.value
+ori(Sum(nonces[...])) <= msg.value
+ori(Sum(nonces[...])) == Sum(nonces[...])
+ori(Sum(nonces[...])) >= Sum(nonces[...])
+ori(Sum(nonces[...])) <= Sum(nonces[...])
+ori(Sum(nonces[...])) <= ori(Sum(_balances[...]))
+ori(Sum(nonces[...])) < ori(Sum(_balances[...]))
+ori(Sum(nonces[...])) != ori(Sum(_balances[...]))
+ori(Sum(nonces[...])) <= Sum(_allowances[msg.sender][...])
+ori(Sum(nonces[...])) < Sum(_allowances[msg.sender][...])
+ori(Sum(nonces[...])) != Sum(_allowances[msg.sender][...])
+upgradedAddress != ori(owner)
+upgradedAddress != spender
+upgradedAddress == ori(newOwner)
+ori(owner) != spender
+ori(owner) != ori(newOwner)
+spender != ori(newOwner)
+msg.value == Sum(nonces[...])
+msg.value >= Sum(nonces[...])
+msg.value <= Sum(nonces[...])
+msg.value <= ori(Sum(_balances[...]))
+msg.value < ori(Sum(_balances[...]))
+msg.value != ori(Sum(_balances[...]))
+msg.value <= Sum(_allowances[msg.sender][...])
+msg.value < Sum(_allowances[msg.sender][...])
+msg.value != Sum(_allowances[msg.sender][...])
+Sum(nonces[...]) <= ori(Sum(_balances[...]))
+Sum(nonces[...]) < ori(Sum(_balances[...]))
+Sum(nonces[...]) != ori(Sum(_balances[...]))
+Sum(nonces[...]) <= Sum(_allowances[msg.sender][...])
+Sum(nonces[...]) < Sum(_allowances[msg.sender][...])
+Sum(nonces[...]) != Sum(_allowances[msg.sender][...])
+ori(Sum(_balances[...])) <= Sum(_allowances[msg.sender][...])
+ori(Sum(_balances[...])) < Sum(_allowances[msg.sender][...])
+ori(Sum(_balances[...])) != Sum(_allowances[msg.sender][...])
+WARNING:root:
+
+WARNING:root:approve(spender,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:bulkTransfer(to,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:bulkTransfer(to,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:bulkTransfer(to,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:bulkTransfer(to,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:bulkTransferFrom(from,to,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:bulkTransferFrom(from,to,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:bulkTransferFrom(from,to,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:bulkTransferFrom(from,to,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:burn(amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:burn(amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:burnBlackFunds(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:burnBlackFunds(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:burnFrom(from,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:burnFrom(from,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:giveOwnership(_newOwner)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:giveOwnership(_newOwner)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:mint(to,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:paused == false
+ori(upgradedAddress) == 0
+owner != 0
+deprecated == false
+ori(_totalSupply) == 0
+ori(_totalSupply) == 0
+ori(_totalSupply) one of [0]
+_balances[to] > 0
+_balances[to] == 10000000000000
+_balances[to] one of [10000000000000]
+ori(_balances[to]) == 0
+ori(_balances[to]) == 0
+ori(_balances[to]) one of [0]
+_totalSupply > 0
+_totalSupply == 10000000000000
+_totalSupply one of [10000000000000]
+elem of nonces[...] is one of [0]
+elem of nonces[...] is one of []
+elem of _balances[...] is one of [10000000000000]
+elem of _balances[...] is one of [10000000000000]
+amount > 0
+amount == 10000000000000
+amount one of [10000000000000]
+Sum(_balances[...]) > 0
+Sum(_balances[...]) == 10000000000000
+Sum(_balances[...]) one of [10000000000000]
+newOwner == 0
+ori(deprecated) == false
+msg.sender != 0
+to != 0
+ori(Sum(nonces[...])) == 0
+ori(Sum(nonces[...])) == 0
+ori(Sum(nonces[...])) one of [0]
+upgradedAddress == 0
+ori(paused) == false
+ori(owner) != 0
+msg.value == 0
+msg.value == 0
+msg.value one of [0]
+Sum(nonces[...]) == 0
+Sum(nonces[...]) == 0
+Sum(nonces[...]) one of [0]
+ori(newOwner) == 0
+ori(Sum(_balances[...])) == 0
+ori(Sum(_balances[...])) == 0
+ori(Sum(_balances[...])) one of [0]
+paused == deprecated
+paused == ori(deprecated)
+paused == ori(paused)
+ori(upgradedAddress) != owner
+ori(upgradedAddress) == newOwner
+ori(upgradedAddress) != msg.sender
+ori(upgradedAddress) != to
+ori(upgradedAddress) == upgradedAddress
+ori(upgradedAddress) != ori(owner)
+ori(upgradedAddress) == ori(newOwner)
+owner != newOwner
+owner != msg.sender
+owner == to
+owner != upgradedAddress
+owner == ori(owner)
+owner != ori(newOwner)
+deprecated == ori(deprecated)
+deprecated == ori(paused)
+ori(_totalSupply) <= _balances[to]
+ori(_totalSupply) < _balances[to]
+ori(_totalSupply) != _balances[to]
+ori(_totalSupply) == ori(_balances[to])
+ori(_totalSupply) >= ori(_balances[to])
+ori(_totalSupply) <= ori(_balances[to])
+ori(_totalSupply) <= _totalSupply
+ori(_totalSupply) < _totalSupply
+ori(_totalSupply) != _totalSupply
+ori(_totalSupply) <= amount
+ori(_totalSupply) < amount
+ori(_totalSupply) != amount
+ori(_totalSupply) <= Sum(_balances[...])
+ori(_totalSupply) < Sum(_balances[...])
+ori(_totalSupply) != Sum(_balances[...])
+ori(_totalSupply) == ori(Sum(nonces[...]))
+ori(_totalSupply) >= ori(Sum(nonces[...]))
+ori(_totalSupply) <= ori(Sum(nonces[...]))
+ori(_totalSupply) == msg.value
+ori(_totalSupply) >= msg.value
+ori(_totalSupply) <= msg.value
+ori(_totalSupply) == Sum(nonces[...])
+ori(_totalSupply) >= Sum(nonces[...])
+ori(_totalSupply) <= Sum(nonces[...])
+ori(_totalSupply) == ori(Sum(_balances[...]))
+ori(_totalSupply) >= ori(Sum(_balances[...]))
+ori(_totalSupply) <= ori(Sum(_balances[...]))
+_balances[to] >= ori(_balances[to])
+_balances[to] > ori(_balances[to])
+_balances[to] != ori(_balances[to])
+_balances[to] == _totalSupply
+_balances[to] >= _totalSupply
+_balances[to] <= _totalSupply
+_balances[to] == amount
+_balances[to] >= amount
+_balances[to] <= amount
+_balances[to] == Sum(_balances[...])
+_balances[to] >= Sum(_balances[...])
+_balances[to] <= Sum(_balances[...])
+_balances[to] >= ori(Sum(nonces[...]))
+_balances[to] > ori(Sum(nonces[...]))
+_balances[to] != ori(Sum(nonces[...]))
+_balances[to] >= msg.value
+_balances[to] > msg.value
+_balances[to] != msg.value
+_balances[to] >= Sum(nonces[...])
+_balances[to] > Sum(nonces[...])
+_balances[to] != Sum(nonces[...])
+_balances[to] >= ori(Sum(_balances[...]))
+_balances[to] > ori(Sum(_balances[...]))
+_balances[to] != ori(Sum(_balances[...]))
+ori(_balances[to]) <= _totalSupply
+ori(_balances[to]) < _totalSupply
+ori(_balances[to]) != _totalSupply
+ori(_balances[to]) <= amount
+ori(_balances[to]) < amount
+ori(_balances[to]) != amount
+ori(_balances[to]) <= Sum(_balances[...])
+ori(_balances[to]) < Sum(_balances[...])
+ori(_balances[to]) != Sum(_balances[...])
+ori(_balances[to]) == ori(Sum(nonces[...]))
+ori(_balances[to]) >= ori(Sum(nonces[...]))
+ori(_balances[to]) <= ori(Sum(nonces[...]))
+ori(_balances[to]) == msg.value
+ori(_balances[to]) >= msg.value
+ori(_balances[to]) <= msg.value
+ori(_balances[to]) == Sum(nonces[...])
+ori(_balances[to]) >= Sum(nonces[...])
+ori(_balances[to]) <= Sum(nonces[...])
+ori(_balances[to]) == ori(Sum(_balances[...]))
+ori(_balances[to]) >= ori(Sum(_balances[...]))
+ori(_balances[to]) <= ori(Sum(_balances[...]))
+_totalSupply == amount
+_totalSupply >= amount
+_totalSupply <= amount
+_totalSupply == Sum(_balances[...])
+_totalSupply >= Sum(_balances[...])
+_totalSupply <= Sum(_balances[...])
+_totalSupply >= ori(Sum(nonces[...]))
+_totalSupply > ori(Sum(nonces[...]))
+_totalSupply != ori(Sum(nonces[...]))
+_totalSupply >= msg.value
+_totalSupply > msg.value
+_totalSupply != msg.value
+_totalSupply >= Sum(nonces[...])
+_totalSupply > Sum(nonces[...])
+_totalSupply != Sum(nonces[...])
+_totalSupply >= ori(Sum(_balances[...]))
+_totalSupply > ori(Sum(_balances[...]))
+_totalSupply != ori(Sum(_balances[...]))
+amount == Sum(_balances[...])
+amount >= Sum(_balances[...])
+amount <= Sum(_balances[...])
+amount >= ori(Sum(nonces[...]))
+amount > ori(Sum(nonces[...]))
+amount != ori(Sum(nonces[...]))
+amount >= msg.value
+amount > msg.value
+amount != msg.value
+amount >= Sum(nonces[...])
+amount > Sum(nonces[...])
+amount != Sum(nonces[...])
+amount >= ori(Sum(_balances[...]))
+amount > ori(Sum(_balances[...]))
+amount != ori(Sum(_balances[...]))
+Sum(_balances[...]) >= ori(Sum(nonces[...]))
+Sum(_balances[...]) > ori(Sum(nonces[...]))
+Sum(_balances[...]) != ori(Sum(nonces[...]))
+Sum(_balances[...]) >= msg.value
+Sum(_balances[...]) > msg.value
+Sum(_balances[...]) != msg.value
+Sum(_balances[...]) >= Sum(nonces[...])
+Sum(_balances[...]) > Sum(nonces[...])
+Sum(_balances[...]) != Sum(nonces[...])
+Sum(_balances[...]) >= ori(Sum(_balances[...]))
+Sum(_balances[...]) > ori(Sum(_balances[...]))
+Sum(_balances[...]) != ori(Sum(_balances[...]))
+newOwner != msg.sender
+newOwner != to
+newOwner == upgradedAddress
+newOwner != ori(owner)
+newOwner == ori(newOwner)
+ori(deprecated) == ori(paused)
+msg.sender != to
+msg.sender != upgradedAddress
+msg.sender != ori(owner)
+msg.sender != ori(newOwner)
+to != upgradedAddress
+to == ori(owner)
+to != ori(newOwner)
+ori(Sum(nonces[...])) == msg.value
+ori(Sum(nonces[...])) >= msg.value
+ori(Sum(nonces[...])) <= msg.value
+ori(Sum(nonces[...])) == Sum(nonces[...])
+ori(Sum(nonces[...])) >= Sum(nonces[...])
+ori(Sum(nonces[...])) <= Sum(nonces[...])
+ori(Sum(nonces[...])) == ori(Sum(_balances[...]))
+ori(Sum(nonces[...])) >= ori(Sum(_balances[...]))
+ori(Sum(nonces[...])) <= ori(Sum(_balances[...]))
+upgradedAddress != ori(owner)
+upgradedAddress == ori(newOwner)
+ori(owner) != ori(newOwner)
+msg.value == Sum(nonces[...])
+msg.value >= Sum(nonces[...])
+msg.value <= Sum(nonces[...])
+msg.value == ori(Sum(_balances[...]))
+msg.value >= ori(Sum(_balances[...]))
+msg.value <= ori(Sum(_balances[...]))
+Sum(nonces[...]) == ori(Sum(_balances[...]))
+Sum(nonces[...]) >= ori(Sum(_balances[...]))
+Sum(nonces[...]) <= ori(Sum(_balances[...]))
+WARNING:root:
+
+WARNING:root:mint(to,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:pause()
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:pause()
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:permit(user,spender,value,deadline,v,r,s)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:permit(user,spender,value,deadline,v,r,s)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:removeBlacklist(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:removeBlacklist(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:removeBlacklister(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:removeBlacklister(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:removeMinter(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:removeMinter(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:removePauser(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:removePauser(user)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:transfer(to,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:paused == false
+ori(upgradedAddress) == 0
+owner != 0
+deprecated == false
+ori(_totalSupply) > 0
+ori(_totalSupply) == 10000000000000
+ori(_totalSupply) one of [10000000000000]
+_balances[to] > 0
+_totalSupply > 0
+_totalSupply == 10000000000000
+_totalSupply one of [10000000000000]
+elem of nonces[...] is one of [0]
+elem of nonces[...] is one of []
+elem of _balances[...] is one of [10000000000000]
+amount > 0
+Sum(_balances[...]) > 0
+Sum(_balances[...]) == 10000000000000
+Sum(_balances[...]) one of [10000000000000]
+newOwner == 0
+ori(deprecated) == false
+msg.sender != 0
+to != 0
+ori(Sum(nonces[...])) == 0
+ori(Sum(nonces[...])) == 0
+ori(Sum(nonces[...])) one of [0]
+upgradedAddress == 0
+ori(paused) == false
+ori(_balances[msg.sender]) > 0
+ori(owner) != 0
+msg.value == 0
+msg.value == 0
+msg.value one of [0]
+Sum(nonces[...]) == 0
+Sum(nonces[...]) == 0
+Sum(nonces[...]) one of [0]
+ori(newOwner) == 0
+ori(Sum(_balances[...])) > 0
+ori(Sum(_balances[...])) == 10000000000000
+ori(Sum(_balances[...])) one of [10000000000000]
+paused == deprecated
+paused == ori(deprecated)
+paused == ori(paused)
+ori(upgradedAddress) != owner
+ori(upgradedAddress) == newOwner
+ori(upgradedAddress) != msg.sender
+ori(upgradedAddress) != to
+ori(upgradedAddress) == upgradedAddress
+ori(upgradedAddress) != ori(owner)
+ori(upgradedAddress) == ori(newOwner)
+owner != newOwner
+owner != to
+owner != upgradedAddress
+owner == ori(owner)
+owner != ori(newOwner)
+deprecated == ori(deprecated)
+deprecated == ori(paused)
+ori(_totalSupply) >= _balances[to]
+ori(_totalSupply) > _balances[to]
+ori(_totalSupply) != _balances[to]
+ori(_totalSupply) >= _balances[msg.sender]
+ori(_totalSupply) > _balances[msg.sender]
+ori(_totalSupply) != _balances[msg.sender]
+ori(_totalSupply) >= ori(_balances[to])
+ori(_totalSupply) > ori(_balances[to])
+ori(_totalSupply) != ori(_balances[to])
+ori(_totalSupply) == _totalSupply
+ori(_totalSupply) >= _totalSupply
+ori(_totalSupply) <= _totalSupply
+ori(_totalSupply) >= amount
+ori(_totalSupply) > amount
+ori(_totalSupply) != amount
+ori(_totalSupply) == Sum(_balances[...])
+ori(_totalSupply) >= Sum(_balances[...])
+ori(_totalSupply) <= Sum(_balances[...])
+ori(_totalSupply) >= ori(Sum(nonces[...]))
+ori(_totalSupply) > ori(Sum(nonces[...]))
+ori(_totalSupply) != ori(Sum(nonces[...]))
+ori(_totalSupply) >= ori(_balances[msg.sender])
+ori(_totalSupply) > ori(_balances[msg.sender])
+ori(_totalSupply) != ori(_balances[msg.sender])
+ori(_totalSupply) >= msg.value
+ori(_totalSupply) > msg.value
+ori(_totalSupply) != msg.value
+ori(_totalSupply) >= Sum(nonces[...])
+ori(_totalSupply) > Sum(nonces[...])
+ori(_totalSupply) != Sum(nonces[...])
+ori(_totalSupply) == ori(Sum(_balances[...]))
+ori(_totalSupply) >= ori(Sum(_balances[...]))
+ori(_totalSupply) <= ori(Sum(_balances[...]))
+_balances[to] != _balances[msg.sender]
+_balances[to] >= ori(_balances[to])
+_balances[to] > ori(_balances[to])
+_balances[to] != ori(_balances[to])
+_balances[to] <= _totalSupply
+_balances[to] < _totalSupply
+_balances[to] != _totalSupply
+_balances[to] >= amount
+_balances[to] <= Sum(_balances[...])
+_balances[to] < Sum(_balances[...])
+_balances[to] != Sum(_balances[...])
+_balances[to] >= ori(Sum(nonces[...]))
+_balances[to] > ori(Sum(nonces[...]))
+_balances[to] != ori(Sum(nonces[...]))
+_balances[to] >= msg.value
+_balances[to] > msg.value
+_balances[to] != msg.value
+_balances[to] >= Sum(nonces[...])
+_balances[to] > Sum(nonces[...])
+_balances[to] != Sum(nonces[...])
+_balances[to] <= ori(Sum(_balances[...]))
+_balances[to] < ori(Sum(_balances[...]))
+_balances[to] != ori(Sum(_balances[...]))
+_balances[msg.sender] <= _totalSupply
+_balances[msg.sender] < _totalSupply
+_balances[msg.sender] != _totalSupply
+_balances[msg.sender] != amount
+_balances[msg.sender] <= Sum(_balances[...])
+_balances[msg.sender] < Sum(_balances[...])
+_balances[msg.sender] != Sum(_balances[...])
+_balances[msg.sender] >= ori(Sum(nonces[...]))
+_balances[msg.sender] <= ori(_balances[msg.sender])
+_balances[msg.sender] < ori(_balances[msg.sender])
+_balances[msg.sender] != ori(_balances[msg.sender])
+_balances[msg.sender] >= msg.value
+_balances[msg.sender] >= Sum(nonces[...])
+_balances[msg.sender] <= ori(Sum(_balances[...]))
+_balances[msg.sender] < ori(Sum(_balances[...]))
+_balances[msg.sender] != ori(Sum(_balances[...]))
+ori(_balances[to]) <= _totalSupply
+ori(_balances[to]) < _totalSupply
+ori(_balances[to]) != _totalSupply
+ori(_balances[to]) <= Sum(_balances[...])
+ori(_balances[to]) < Sum(_balances[...])
+ori(_balances[to]) != Sum(_balances[...])
+ori(_balances[to]) >= ori(Sum(nonces[...]))
+ori(_balances[to]) <= ori(_balances[msg.sender])
+ori(_balances[to]) < ori(_balances[msg.sender])
+ori(_balances[to]) != ori(_balances[msg.sender])
+ori(_balances[to]) >= msg.value
+ori(_balances[to]) >= Sum(nonces[...])
+ori(_balances[to]) <= ori(Sum(_balances[...]))
+ori(_balances[to]) < ori(Sum(_balances[...]))
+ori(_balances[to]) != ori(Sum(_balances[...]))
+_totalSupply >= amount
+_totalSupply > amount
+_totalSupply != amount
+_totalSupply == Sum(_balances[...])
+_totalSupply >= Sum(_balances[...])
+_totalSupply <= Sum(_balances[...])
+_totalSupply >= ori(Sum(nonces[...]))
+_totalSupply > ori(Sum(nonces[...]))
+_totalSupply != ori(Sum(nonces[...]))
+_totalSupply >= ori(_balances[msg.sender])
+_totalSupply > ori(_balances[msg.sender])
+_totalSupply != ori(_balances[msg.sender])
+_totalSupply >= msg.value
+_totalSupply > msg.value
+_totalSupply != msg.value
+_totalSupply >= Sum(nonces[...])
+_totalSupply > Sum(nonces[...])
+_totalSupply != Sum(nonces[...])
+_totalSupply == ori(Sum(_balances[...]))
+_totalSupply >= ori(Sum(_balances[...]))
+_totalSupply <= ori(Sum(_balances[...]))
+amount <= Sum(_balances[...])
+amount < Sum(_balances[...])
+amount != Sum(_balances[...])
+amount >= ori(Sum(nonces[...]))
+amount > ori(Sum(nonces[...]))
+amount != ori(Sum(nonces[...]))
+amount <= ori(_balances[msg.sender])
+amount >= msg.value
+amount > msg.value
+amount != msg.value
+amount >= Sum(nonces[...])
+amount > Sum(nonces[...])
+amount != Sum(nonces[...])
+amount <= ori(Sum(_balances[...]))
+amount < ori(Sum(_balances[...]))
+amount != ori(Sum(_balances[...]))
+Sum(_balances[...]) >= ori(Sum(nonces[...]))
+Sum(_balances[...]) > ori(Sum(nonces[...]))
+Sum(_balances[...]) != ori(Sum(nonces[...]))
+Sum(_balances[...]) >= ori(_balances[msg.sender])
+Sum(_balances[...]) > ori(_balances[msg.sender])
+Sum(_balances[...]) != ori(_balances[msg.sender])
+Sum(_balances[...]) >= msg.value
+Sum(_balances[...]) > msg.value
+Sum(_balances[...]) != msg.value
+Sum(_balances[...]) >= Sum(nonces[...])
+Sum(_balances[...]) > Sum(nonces[...])
+Sum(_balances[...]) != Sum(nonces[...])
+Sum(_balances[...]) == ori(Sum(_balances[...]))
+Sum(_balances[...]) >= ori(Sum(_balances[...]))
+Sum(_balances[...]) <= ori(Sum(_balances[...]))
+newOwner != msg.sender
+newOwner != to
+newOwner == upgradedAddress
+newOwner != ori(owner)
+newOwner == ori(newOwner)
+ori(deprecated) == ori(paused)
+msg.sender != to
+msg.sender != upgradedAddress
+msg.sender != ori(newOwner)
+to != upgradedAddress
+to != ori(owner)
+to != ori(newOwner)
+ori(Sum(nonces[...])) <= ori(_balances[msg.sender])
+ori(Sum(nonces[...])) < ori(_balances[msg.sender])
+ori(Sum(nonces[...])) != ori(_balances[msg.sender])
+ori(Sum(nonces[...])) == msg.value
+ori(Sum(nonces[...])) >= msg.value
+ori(Sum(nonces[...])) <= msg.value
+ori(Sum(nonces[...])) == Sum(nonces[...])
+ori(Sum(nonces[...])) >= Sum(nonces[...])
+ori(Sum(nonces[...])) <= Sum(nonces[...])
+ori(Sum(nonces[...])) <= ori(Sum(_balances[...]))
+ori(Sum(nonces[...])) < ori(Sum(_balances[...]))
+ori(Sum(nonces[...])) != ori(Sum(_balances[...]))
+upgradedAddress != ori(owner)
+upgradedAddress == ori(newOwner)
+ori(_balances[msg.sender]) >= msg.value
+ori(_balances[msg.sender]) > msg.value
+ori(_balances[msg.sender]) != msg.value
+ori(_balances[msg.sender]) >= Sum(nonces[...])
+ori(_balances[msg.sender]) > Sum(nonces[...])
+ori(_balances[msg.sender]) != Sum(nonces[...])
+ori(_balances[msg.sender]) <= ori(Sum(_balances[...]))
+ori(_balances[msg.sender]) < ori(Sum(_balances[...]))
+ori(_balances[msg.sender]) != ori(Sum(_balances[...]))
+ori(owner) != ori(newOwner)
+msg.value == Sum(nonces[...])
+msg.value >= Sum(nonces[...])
+msg.value <= Sum(nonces[...])
+msg.value <= ori(Sum(_balances[...]))
+msg.value < ori(Sum(_balances[...]))
+msg.value != ori(Sum(_balances[...]))
+Sum(nonces[...]) <= ori(Sum(_balances[...]))
+Sum(nonces[...]) < ori(Sum(_balances[...]))
+Sum(nonces[...]) != ori(Sum(_balances[...]))
+ori(_balances[msg.sender]) - amount == _balances[msg.sender]
+WARNING:root:
+
+WARNING:root:transfer(to,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:transferFrom(from,to,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:transferFrom(from,to,amount)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:paused == false
+ori(upgradedAddress) == 0
+owner != 0
+_allowances[from][msg.sender] > 0
+_allowances[from][msg.sender] == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+_allowances[from][msg.sender] one of [115792089237316195423570985008687907853269984665640564039457584007913129639935]
+ori(_balances[from]) == 0
+ori(_balances[from]) == 0
+ori(_balances[from]) one of [0]
+deprecated == false
+ori(_totalSupply) > 0
+ori(_totalSupply) == 10000000000000
+ori(_totalSupply) one of [10000000000000]
+ori(_allowances[from][msg.sender]) > 0
+ori(_allowances[from][msg.sender]) == 115792089237316195423570985008687907853269984665640564039457584007913129639935
+ori(_allowances[from][msg.sender]) one of [115792089237316195423570985008687907853269984665640564039457584007913129639935]
+_balances[to] > 0
+_balances[to] == 1143591250721
+_balances[to] one of [1143591250721]
+ori(_balances[to]) > 0
+ori(_balances[to]) == 1143591250721
+ori(_balances[to]) one of [1143591250721]
+_totalSupply > 0
+_totalSupply == 10000000000000
+_totalSupply one of [10000000000000]
+elem of nonces[...] is one of [0]
+elem of nonces[...] is one of []
+elem of _balances[...] is one of [10000000000000]
+elem of _balances[...] is one of [1000000000000,10000000000,171000000000,50000000000,0,30000000000,2000000000,7,115414178312,166847915016,27518779911,19920347149,21393456660,7683571220,27277713971,537846884409,19323690041,13931196478,40356300369,2526800141394,19998606930,112051727449,7680695913,19419582584,39465394812,92692992127,69623026304,7784285845,2204,47779238051,15842422951,8615321769,19515970742,59321159870,28654025931,22522342603,11680107226,4695450334,142415570657,9604892390,4297324780,36822503161,22520985851,100000000,46103634203,17701622558,1143591250721,5575453480,16026028374,17199974744,31666185054,6233012575,20433451367,11191398250,31621954424,1000037348219,45526474109,53973335421,3165181315,46646673796,1598356356,57923141009,2834685857,1554539953,81644004288,144096396738,4625733585,20394597849,38283920347,996999974883,128542151142,17129888746,16514609131,101556927980,148141768179,66943935482,64004584444]
+amount > 0
+amount == 28596055091
+amount one of [28596055091]
+Sum(_balances[...]) > 0
+Sum(_balances[...]) == 10000000000000
+Sum(_balances[...]) one of [10000000000000]
+newOwner == 0
+ori(deprecated) == false
+msg.sender != 0
+to != 0
+ori(Sum(nonces[...])) == 0
+ori(Sum(nonces[...])) == 0
+ori(Sum(nonces[...])) one of [0]
+upgradedAddress == 0
+ori(paused) == false
+ori(owner) != 0
+from != 0
+msg.value == 0
+msg.value == 0
+msg.value one of [0]
+Sum(nonces[...]) == 0
+Sum(nonces[...]) == 0
+Sum(nonces[...]) one of [0]
+ori(newOwner) == 0
+ori(Sum(_balances[...])) > 0
+ori(Sum(_balances[...])) == 10000000000000
+ori(Sum(_balances[...])) one of [10000000000000]
+_balances[from] == 0
+_balances[from] == 0
+_balances[from] one of [0]
+paused == deprecated
+paused == ori(deprecated)
+paused == ori(paused)
+ori(upgradedAddress) != owner
+ori(upgradedAddress) == newOwner
+ori(upgradedAddress) != msg.sender
+ori(upgradedAddress) != to
+ori(upgradedAddress) == upgradedAddress
+ori(upgradedAddress) != ori(owner)
+ori(upgradedAddress) != from
+ori(upgradedAddress) == ori(newOwner)
+owner != newOwner
+owner != msg.sender
+owner != to
+owner != upgradedAddress
+owner == ori(owner)
+owner != from
+owner != ori(newOwner)
+_allowances[from][msg.sender] >= ori(_balances[from])
+_allowances[from][msg.sender] > ori(_balances[from])
+_allowances[from][msg.sender] != ori(_balances[from])
+_allowances[from][msg.sender] >= ori(_totalSupply)
+_allowances[from][msg.sender] > ori(_totalSupply)
+_allowances[from][msg.sender] != ori(_totalSupply)
+_allowances[from][msg.sender] == ori(_allowances[from][msg.sender])
+_allowances[from][msg.sender] >= ori(_allowances[from][msg.sender])
+_allowances[from][msg.sender] <= ori(_allowances[from][msg.sender])
+_allowances[from][msg.sender] >= _balances[to]
+_allowances[from][msg.sender] > _balances[to]
+_allowances[from][msg.sender] != _balances[to]
+_allowances[from][msg.sender] >= ori(_balances[to])
+_allowances[from][msg.sender] > ori(_balances[to])
+_allowances[from][msg.sender] != ori(_balances[to])
+_allowances[from][msg.sender] >= _totalSupply
+_allowances[from][msg.sender] > _totalSupply
+_allowances[from][msg.sender] != _totalSupply
+_allowances[from][msg.sender] >= amount
+_allowances[from][msg.sender] > amount
+_allowances[from][msg.sender] != amount
+_allowances[from][msg.sender] >= Sum(_balances[...])
+_allowances[from][msg.sender] > Sum(_balances[...])
+_allowances[from][msg.sender] != Sum(_balances[...])
+_allowances[from][msg.sender] >= ori(Sum(nonces[...]))
+_allowances[from][msg.sender] > ori(Sum(nonces[...]))
+_allowances[from][msg.sender] != ori(Sum(nonces[...]))
+_allowances[from][msg.sender] >= msg.value
+_allowances[from][msg.sender] > msg.value
+_allowances[from][msg.sender] != msg.value
+_allowances[from][msg.sender] >= Sum(nonces[...])
+_allowances[from][msg.sender] > Sum(nonces[...])
+_allowances[from][msg.sender] != Sum(nonces[...])
+_allowances[from][msg.sender] >= ori(Sum(_balances[...]))
+_allowances[from][msg.sender] > ori(Sum(_balances[...]))
+_allowances[from][msg.sender] != ori(Sum(_balances[...]))
+_allowances[from][msg.sender] >= _balances[from]
+_allowances[from][msg.sender] > _balances[from]
+_allowances[from][msg.sender] != _balances[from]
+ori(_balances[from]) <= ori(_totalSupply)
+ori(_balances[from]) < ori(_totalSupply)
+ori(_balances[from]) != ori(_totalSupply)
+ori(_balances[from]) <= ori(_allowances[from][msg.sender])
+ori(_balances[from]) < ori(_allowances[from][msg.sender])
+ori(_balances[from]) != ori(_allowances[from][msg.sender])
+ori(_balances[from]) <= _balances[to]
+ori(_balances[from]) < _balances[to]
+ori(_balances[from]) != _balances[to]
+ori(_balances[from]) <= ori(_balances[to])
+ori(_balances[from]) < ori(_balances[to])
+ori(_balances[from]) != ori(_balances[to])
+ori(_balances[from]) <= _totalSupply
+ori(_balances[from]) < _totalSupply
+ori(_balances[from]) != _totalSupply
+ori(_balances[from]) <= amount
+ori(_balances[from]) < amount
+ori(_balances[from]) != amount
+ori(_balances[from]) <= Sum(_balances[...])
+ori(_balances[from]) < Sum(_balances[...])
+ori(_balances[from]) != Sum(_balances[...])
+ori(_balances[from]) == ori(Sum(nonces[...]))
+ori(_balances[from]) >= ori(Sum(nonces[...]))
+ori(_balances[from]) <= ori(Sum(nonces[...]))
+ori(_balances[from]) == msg.value
+ori(_balances[from]) >= msg.value
+ori(_balances[from]) <= msg.value
+ori(_balances[from]) == Sum(nonces[...])
+ori(_balances[from]) >= Sum(nonces[...])
+ori(_balances[from]) <= Sum(nonces[...])
+ori(_balances[from]) <= ori(Sum(_balances[...]))
+ori(_balances[from]) < ori(Sum(_balances[...]))
+ori(_balances[from]) != ori(Sum(_balances[...]))
+ori(_balances[from]) == _balances[from]
+ori(_balances[from]) >= _balances[from]
+ori(_balances[from]) <= _balances[from]
+deprecated == ori(deprecated)
+deprecated == ori(paused)
+ori(_totalSupply) <= ori(_allowances[from][msg.sender])
+ori(_totalSupply) < ori(_allowances[from][msg.sender])
+ori(_totalSupply) != ori(_allowances[from][msg.sender])
+ori(_totalSupply) >= _balances[to]
+ori(_totalSupply) > _balances[to]
+ori(_totalSupply) != _balances[to]
+ori(_totalSupply) >= ori(_balances[to])
+ori(_totalSupply) > ori(_balances[to])
+ori(_totalSupply) != ori(_balances[to])
+ori(_totalSupply) == _totalSupply
+ori(_totalSupply) >= _totalSupply
+ori(_totalSupply) <= _totalSupply
+ori(_totalSupply) >= amount
+ori(_totalSupply) > amount
+ori(_totalSupply) != amount
+ori(_totalSupply) == Sum(_balances[...])
+ori(_totalSupply) >= Sum(_balances[...])
+ori(_totalSupply) <= Sum(_balances[...])
+ori(_totalSupply) >= ori(Sum(nonces[...]))
+ori(_totalSupply) > ori(Sum(nonces[...]))
+ori(_totalSupply) != ori(Sum(nonces[...]))
+ori(_totalSupply) >= msg.value
+ori(_totalSupply) > msg.value
+ori(_totalSupply) != msg.value
+ori(_totalSupply) >= Sum(nonces[...])
+ori(_totalSupply) > Sum(nonces[...])
+ori(_totalSupply) != Sum(nonces[...])
+ori(_totalSupply) == ori(Sum(_balances[...]))
+ori(_totalSupply) >= ori(Sum(_balances[...]))
+ori(_totalSupply) <= ori(Sum(_balances[...]))
+ori(_totalSupply) >= _balances[from]
+ori(_totalSupply) > _balances[from]
+ori(_totalSupply) != _balances[from]
+ori(_allowances[from][msg.sender]) >= _balances[to]
+ori(_allowances[from][msg.sender]) > _balances[to]
+ori(_allowances[from][msg.sender]) != _balances[to]
+ori(_allowances[from][msg.sender]) >= ori(_balances[to])
+ori(_allowances[from][msg.sender]) > ori(_balances[to])
+ori(_allowances[from][msg.sender]) != ori(_balances[to])
+ori(_allowances[from][msg.sender]) >= _totalSupply
+ori(_allowances[from][msg.sender]) > _totalSupply
+ori(_allowances[from][msg.sender]) != _totalSupply
+ori(_allowances[from][msg.sender]) >= amount
+ori(_allowances[from][msg.sender]) > amount
+ori(_allowances[from][msg.sender]) != amount
+ori(_allowances[from][msg.sender]) >= Sum(_balances[...])
+ori(_allowances[from][msg.sender]) > Sum(_balances[...])
+ori(_allowances[from][msg.sender]) != Sum(_balances[...])
+ori(_allowances[from][msg.sender]) >= ori(Sum(nonces[...]))
+ori(_allowances[from][msg.sender]) > ori(Sum(nonces[...]))
+ori(_allowances[from][msg.sender]) != ori(Sum(nonces[...]))
+ori(_allowances[from][msg.sender]) >= msg.value
+ori(_allowances[from][msg.sender]) > msg.value
+ori(_allowances[from][msg.sender]) != msg.value
+ori(_allowances[from][msg.sender]) >= Sum(nonces[...])
+ori(_allowances[from][msg.sender]) > Sum(nonces[...])
+ori(_allowances[from][msg.sender]) != Sum(nonces[...])
+ori(_allowances[from][msg.sender]) >= ori(Sum(_balances[...]))
+ori(_allowances[from][msg.sender]) > ori(Sum(_balances[...]))
+ori(_allowances[from][msg.sender]) != ori(Sum(_balances[...]))
+ori(_allowances[from][msg.sender]) >= _balances[from]
+ori(_allowances[from][msg.sender]) > _balances[from]
+ori(_allowances[from][msg.sender]) != _balances[from]
+_balances[to] == ori(_balances[to])
+_balances[to] >= ori(_balances[to])
+_balances[to] <= ori(_balances[to])
+_balances[to] <= _totalSupply
+_balances[to] < _totalSupply
+_balances[to] != _totalSupply
+_balances[to] >= amount
+_balances[to] > amount
+_balances[to] != amount
+_balances[to] <= Sum(_balances[...])
+_balances[to] < Sum(_balances[...])
+_balances[to] != Sum(_balances[...])
+_balances[to] >= ori(Sum(nonces[...]))
+_balances[to] > ori(Sum(nonces[...]))
+_balances[to] != ori(Sum(nonces[...]))
+_balances[to] >= msg.value
+_balances[to] > msg.value
+_balances[to] != msg.value
+_balances[to] >= Sum(nonces[...])
+_balances[to] > Sum(nonces[...])
+_balances[to] != Sum(nonces[...])
+_balances[to] <= ori(Sum(_balances[...]))
+_balances[to] < ori(Sum(_balances[...]))
+_balances[to] != ori(Sum(_balances[...]))
+_balances[to] >= _balances[from]
+_balances[to] > _balances[from]
+_balances[to] != _balances[from]
+ori(_balances[to]) <= _totalSupply
+ori(_balances[to]) < _totalSupply
+ori(_balances[to]) != _totalSupply
+ori(_balances[to]) >= amount
+ori(_balances[to]) > amount
+ori(_balances[to]) != amount
+ori(_balances[to]) <= Sum(_balances[...])
+ori(_balances[to]) < Sum(_balances[...])
+ori(_balances[to]) != Sum(_balances[...])
+ori(_balances[to]) >= ori(Sum(nonces[...]))
+ori(_balances[to]) > ori(Sum(nonces[...]))
+ori(_balances[to]) != ori(Sum(nonces[...]))
+ori(_balances[to]) >= msg.value
+ori(_balances[to]) > msg.value
+ori(_balances[to]) != msg.value
+ori(_balances[to]) >= Sum(nonces[...])
+ori(_balances[to]) > Sum(nonces[...])
+ori(_balances[to]) != Sum(nonces[...])
+ori(_balances[to]) <= ori(Sum(_balances[...]))
+ori(_balances[to]) < ori(Sum(_balances[...]))
+ori(_balances[to]) != ori(Sum(_balances[...]))
+ori(_balances[to]) >= _balances[from]
+ori(_balances[to]) > _balances[from]
+ori(_balances[to]) != _balances[from]
+_totalSupply >= amount
+_totalSupply > amount
+_totalSupply != amount
+_totalSupply == Sum(_balances[...])
+_totalSupply >= Sum(_balances[...])
+_totalSupply <= Sum(_balances[...])
+_totalSupply >= ori(Sum(nonces[...]))
+_totalSupply > ori(Sum(nonces[...]))
+_totalSupply != ori(Sum(nonces[...]))
+_totalSupply >= msg.value
+_totalSupply > msg.value
+_totalSupply != msg.value
+_totalSupply >= Sum(nonces[...])
+_totalSupply > Sum(nonces[...])
+_totalSupply != Sum(nonces[...])
+_totalSupply == ori(Sum(_balances[...]))
+_totalSupply >= ori(Sum(_balances[...]))
+_totalSupply <= ori(Sum(_balances[...]))
+_totalSupply >= _balances[from]
+_totalSupply > _balances[from]
+_totalSupply != _balances[from]
+amount <= Sum(_balances[...])
+amount < Sum(_balances[...])
+amount != Sum(_balances[...])
+amount >= ori(Sum(nonces[...]))
+amount > ori(Sum(nonces[...]))
+amount != ori(Sum(nonces[...]))
+amount >= msg.value
+amount > msg.value
+amount != msg.value
+amount >= Sum(nonces[...])
+amount > Sum(nonces[...])
+amount != Sum(nonces[...])
+amount <= ori(Sum(_balances[...]))
+amount < ori(Sum(_balances[...]))
+amount != ori(Sum(_balances[...]))
+amount >= _balances[from]
+amount > _balances[from]
+amount != _balances[from]
+Sum(_balances[...]) >= ori(Sum(nonces[...]))
+Sum(_balances[...]) > ori(Sum(nonces[...]))
+Sum(_balances[...]) != ori(Sum(nonces[...]))
+Sum(_balances[...]) >= msg.value
+Sum(_balances[...]) > msg.value
+Sum(_balances[...]) != msg.value
+Sum(_balances[...]) >= Sum(nonces[...])
+Sum(_balances[...]) > Sum(nonces[...])
+Sum(_balances[...]) != Sum(nonces[...])
+Sum(_balances[...]) == ori(Sum(_balances[...]))
+Sum(_balances[...]) >= ori(Sum(_balances[...]))
+Sum(_balances[...]) <= ori(Sum(_balances[...]))
+Sum(_balances[...]) >= _balances[from]
+Sum(_balances[...]) > _balances[from]
+Sum(_balances[...]) != _balances[from]
+newOwner != msg.sender
+newOwner != to
+newOwner == upgradedAddress
+newOwner != ori(owner)
+newOwner != from
+newOwner == ori(newOwner)
+ori(deprecated) == ori(paused)
+msg.sender != to
+msg.sender != upgradedAddress
+msg.sender != ori(owner)
+msg.sender != from
+msg.sender != ori(newOwner)
+to != upgradedAddress
+to != ori(owner)
+to != from
+to != ori(newOwner)
+ori(Sum(nonces[...])) == msg.value
+ori(Sum(nonces[...])) >= msg.value
+ori(Sum(nonces[...])) <= msg.value
+ori(Sum(nonces[...])) == Sum(nonces[...])
+ori(Sum(nonces[...])) >= Sum(nonces[...])
+ori(Sum(nonces[...])) <= Sum(nonces[...])
+ori(Sum(nonces[...])) <= ori(Sum(_balances[...]))
+ori(Sum(nonces[...])) < ori(Sum(_balances[...]))
+ori(Sum(nonces[...])) != ori(Sum(_balances[...]))
+ori(Sum(nonces[...])) == _balances[from]
+ori(Sum(nonces[...])) >= _balances[from]
+ori(Sum(nonces[...])) <= _balances[from]
+upgradedAddress != ori(owner)
+upgradedAddress != from
+upgradedAddress == ori(newOwner)
+ori(owner) != from
+ori(owner) != ori(newOwner)
+from != ori(newOwner)
+msg.value == Sum(nonces[...])
+msg.value >= Sum(nonces[...])
+msg.value <= Sum(nonces[...])
+msg.value <= ori(Sum(_balances[...]))
+msg.value < ori(Sum(_balances[...]))
+msg.value != ori(Sum(_balances[...]))
+msg.value == _balances[from]
+msg.value >= _balances[from]
+msg.value <= _balances[from]
+Sum(nonces[...]) <= ori(Sum(_balances[...]))
+Sum(nonces[...]) < ori(Sum(_balances[...]))
+Sum(nonces[...]) != ori(Sum(_balances[...]))
+Sum(nonces[...]) == _balances[from]
+Sum(nonces[...]) >= _balances[from]
+Sum(nonces[...]) <= _balances[from]
+ori(Sum(_balances[...])) >= _balances[from]
+ori(Sum(_balances[...])) > _balances[from]
+ori(Sum(_balances[...])) != _balances[from]
+WARNING:root:
+
+WARNING:root:unpause()
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:unpause()
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:upgrade(token)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:upgrade(token)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:None
+WARNING:root:PptType.CONTRACT
+WARNING:root:TxType.NORMAL
+WARNING:root:paused == false
+ori(upgradedAddress) == 0
+owner != 0
+deprecated == false
+ori(_totalSupply) one of [0,10000000000000]
+_totalSupply one of [0,10000000000000]
+elem of nonces[...] is one of [0]
+elem of nonces[...] is one of []
+elem of _balances[...] is one of [0]
+Sum(_balances[...]) one of [0,10000000000000]
+newOwner == 0
+ori(deprecated) == false
+ori(Sum(nonces[...])) == 0
+ori(Sum(nonces[...])) == 0
+ori(Sum(nonces[...])) one of [0]
+upgradedAddress == 0
+ori(paused) == false
+Sum(nonces[...]) == 0
+Sum(nonces[...]) == 0
+Sum(nonces[...]) one of [0]
+ori(Sum(_balances[...])) one of [0,10000000000000]
+paused == deprecated
+paused == ori(deprecated)
+paused == ori(paused)
+ori(upgradedAddress) != owner
+ori(upgradedAddress) == newOwner
+ori(upgradedAddress) == upgradedAddress
+owner != newOwner
+owner != upgradedAddress
+deprecated == ori(deprecated)
+deprecated == ori(paused)
+ori(_totalSupply) <= _totalSupply
+ori(_totalSupply) <= Sum(_balances[...])
+ori(_totalSupply) >= ori(Sum(nonces[...]))
+ori(_totalSupply) >= Sum(nonces[...])
+ori(_totalSupply) == ori(Sum(_balances[...]))
+ori(_totalSupply) >= ori(Sum(_balances[...]))
+ori(_totalSupply) <= ori(Sum(_balances[...]))
+_totalSupply == Sum(_balances[...])
+_totalSupply >= Sum(_balances[...])
+_totalSupply <= Sum(_balances[...])
+_totalSupply >= ori(Sum(nonces[...]))
+_totalSupply >= Sum(nonces[...])
+_totalSupply >= ori(Sum(_balances[...]))
+Sum(_balances[...]) >= ori(Sum(nonces[...]))
+Sum(_balances[...]) >= Sum(nonces[...])
+Sum(_balances[...]) >= ori(Sum(_balances[...]))
+newOwner == upgradedAddress
+ori(deprecated) == ori(paused)
+ori(Sum(nonces[...])) == Sum(nonces[...])
+ori(Sum(nonces[...])) >= Sum(nonces[...])
+ori(Sum(nonces[...])) <= Sum(nonces[...])
+ori(Sum(nonces[...])) <= ori(Sum(_balances[...]))
+ori(owner) != ori(newOwner)
+Sum(nonces[...]) <= ori(Sum(_balances[...]))
+{VarInfo(name='user', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c16183880>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='recoveredAddress', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c15f2e6e0>, vartype=<VarType.LOCALVAR: 2>, derivation=None), VarInfo(name='deadline', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f4070>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='block.timestamp', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c15c2ca60>, vartype=<VarType.LOCALVAR: 2>, derivation=None)}
+[]
+**********
+
+totalSupply()
+set()
+[]
+**********
+
+allowance(account,spender)
+set()
+[]
+**********
+
+bulkTransfer(to,amount)
+{VarInfo(name='amount[i]', type='uint256', vartype=<VarType.TXVAR: 1>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c44190>), VarInfo(name='_balances[msg.sender]', type='uint256', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c2ffd0>)}
+[]
+**********
+
+addMinter(user)
+{VarInfo(name='isMinter[user]', type='bool', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c442b0>)}
+[]
+**********
+
+burnFrom(from,amount)
+{VarInfo(name='_balances[from]', type='uint256', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c45540>), VarInfo(name='amount', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161d12a0>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='_allowances[msg.sender][from]', type='uint256', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c45000>)}
+[]
+**********
+
+removeMinter(user)
+{VarInfo(name='isMinter[user]', type='bool', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c45030>)}
+[]
+**********
+
+removeBlacklist(user)
+{VarInfo(name='isBlacklisted[user]', type='bool', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c45720>)}
+[]
+**********
+
+_approve(account,spender,amount)
+{VarInfo(name='_allowances[account][spender]', type='uint256', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7c2c15c2f520>), VarInfo(name='amount', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f5060>, vartype=<VarType.TXVAR: 1>, derivation=None)}
+[]
+**********
+
+pause()
+{VarInfo(name='paused', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7c2c161f5ff0>, vartype=<VarType.STATEVAR: 0>, derivation=None)}
+[]
