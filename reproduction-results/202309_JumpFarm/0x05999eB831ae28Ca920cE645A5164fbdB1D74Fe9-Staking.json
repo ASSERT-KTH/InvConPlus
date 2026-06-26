@@ -1,0 +1,68 @@
+{
+    "variables": [
+        {
+            "contractName": "Staking",
+            "varName": "_owner",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 0,
+            "varOffset": 0
+        },
+        {
+            "contractName": "Staking",
+            "varName": "epoch",
+            "varType": "Staking.Epoch",
+            "varBytes": 128,
+            "varValue": [
+                {
+                    "contractName": "Staking",
+                    "varName": "length",
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": null,
+                    "varSlot": 0,
+                    "varOffset": 0
+                },
+                {
+                    "contractName": "Staking",
+                    "varName": "number",
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": null,
+                    "varSlot": 1,
+                    "varOffset": 0
+                },
+                {
+                    "contractName": "Staking",
+                    "varName": "end",
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": null,
+                    "varSlot": 2,
+                    "varOffset": 0
+                },
+                {
+                    "contractName": "Staking",
+                    "varName": "distribute",
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": null,
+                    "varSlot": 3,
+                    "varOffset": 0
+                }
+            ],
+            "varSlot": 1,
+            "varOffset": 0
+        },
+        {
+            "contractName": "Staking",
+            "varName": "distributor",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 5,
+            "varOffset": 0
+        }
+    ]
+}

@@ -1,0 +1,541 @@
+{
+    "variables": [
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "initialInterestIndex",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 0,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "defaultOriginationFee",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 1,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "defaultCollateralRatio",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 2,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "defaultLiquidationDiscount",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 3,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "minimumCollateralRatioMantissa",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 4,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "maximumLiquidationDiscountMantissa",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 5,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "initializationDone",
+            "varType": "bool",
+            "varBytes": 1,
+            "varValue": null,
+            "varSlot": 6,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "pendingAdmin",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 6,
+            "varOffset": 1
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "admin",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 7,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "managers",
+            "varType": "mapping(address => bool)",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 8,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "address",
+                "varBytes": 20,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "bool",
+                "varBytes": 1,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            }
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "oracle",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 9,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "priceOracle",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 10,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "supplyBalances",
+            "varType": "mapping(address => mapping(address => AlkemiEarnPublic.Balance))",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 11,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "address",
+                "varBytes": 20,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "mapping(address => AlkemiEarnPublic.Balance)",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null,
+                "key_var_type": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "address",
+                    "varBytes": 20,
+                    "varValue": null,
+                    "varSlot": null,
+                    "varOffset": null
+                },
+                "val_var_type": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "AlkemiEarnPublic.Balance",
+                    "varBytes": 64,
+                    "varValue": [
+                        {
+                            "contractName": "AlkemiEarnPublic",
+                            "varName": "principal",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 0,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "AlkemiEarnPublic",
+                            "varName": "interestIndex",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 1,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": null,
+                    "varOffset": null
+                }
+            }
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "borrowBalances",
+            "varType": "mapping(address => mapping(address => AlkemiEarnPublic.Balance))",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 12,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "address",
+                "varBytes": 20,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "mapping(address => AlkemiEarnPublic.Balance)",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null,
+                "key_var_type": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "address",
+                    "varBytes": 20,
+                    "varValue": null,
+                    "varSlot": null,
+                    "varOffset": null
+                },
+                "val_var_type": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "AlkemiEarnPublic.Balance",
+                    "varBytes": 64,
+                    "varValue": [
+                        {
+                            "contractName": "AlkemiEarnPublic",
+                            "varName": "principal",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 0,
+                            "varOffset": 0
+                        },
+                        {
+                            "contractName": "AlkemiEarnPublic",
+                            "varName": "interestIndex",
+                            "varType": "uint256",
+                            "varBytes": 32,
+                            "varValue": null,
+                            "varSlot": 1,
+                            "varOffset": 0
+                        }
+                    ],
+                    "varSlot": null,
+                    "varOffset": null
+                }
+            }
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "wethAddress",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 13,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "WETHContract",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 14,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "markets",
+            "varType": "mapping(address => AlkemiEarnPublic.Market)",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 15,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "address",
+                "varBytes": 20,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "AlkemiEarnPublic.Market",
+                "varBytes": 245,
+                "varValue": [
+                    {
+                        "contractName": "AlkemiEarnPublic",
+                        "varName": "isSupported",
+                        "varType": "bool",
+                        "varBytes": 1,
+                        "varValue": null,
+                        "varSlot": 0,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "AlkemiEarnPublic",
+                        "varName": "blockNumber",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 1,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "AlkemiEarnPublic",
+                        "varName": "interestRateModel",
+                        "varType": "contract InterestRateModel",
+                        "varBytes": 20,
+                        "varValue": null,
+                        "varSlot": 2,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "AlkemiEarnPublic",
+                        "varName": "totalSupply",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 3,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "AlkemiEarnPublic",
+                        "varName": "supplyRateMantissa",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 4,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "AlkemiEarnPublic",
+                        "varName": "supplyIndex",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 5,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "AlkemiEarnPublic",
+                        "varName": "totalBorrows",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 6,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "AlkemiEarnPublic",
+                        "varName": "borrowRateMantissa",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 7,
+                        "varOffset": 0
+                    },
+                    {
+                        "contractName": "AlkemiEarnPublic",
+                        "varName": "borrowIndex",
+                        "varType": "uint256",
+                        "varBytes": 32,
+                        "varValue": null,
+                        "varSlot": 8,
+                        "varOffset": 0
+                    }
+                ],
+                "varSlot": null,
+                "varOffset": null
+            }
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "collateralMarkets",
+            "varType": "address[]",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 16,
+            "varOffset": 0,
+            "item_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "address",
+                "varBytes": 20,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            }
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "collateralRatio",
+            "varType": "Exponential.Exp",
+            "varBytes": 32,
+            "varValue": [
+                {
+                    "contractName": "AlkemiEarnPublic",
+                    "varName": "mantissa",
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": null,
+                    "varSlot": 0,
+                    "varOffset": 0
+                }
+            ],
+            "varSlot": 17,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "originationFee",
+            "varType": "Exponential.Exp",
+            "varBytes": 32,
+            "varValue": [
+                {
+                    "contractName": "AlkemiEarnPublic",
+                    "varName": "mantissa",
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": null,
+                    "varSlot": 0,
+                    "varOffset": 0
+                }
+            ],
+            "varSlot": 18,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "liquidationDiscount",
+            "varType": "Exponential.Exp",
+            "varBytes": 32,
+            "varValue": [
+                {
+                    "contractName": "AlkemiEarnPublic",
+                    "varName": "mantissa",
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": null,
+                    "varSlot": 0,
+                    "varOffset": 0
+                }
+            ],
+            "varSlot": 19,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "paused",
+            "varType": "bool",
+            "varBytes": 1,
+            "varValue": null,
+            "varSlot": 20,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "originationFeeBalance",
+            "varType": "mapping(address => mapping(address => uint256))",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 21,
+            "varOffset": 0,
+            "key_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "address",
+                "varBytes": 20,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null
+            },
+            "val_var_type": {
+                "contractName": null,
+                "varName": null,
+                "varType": "mapping(address => uint256)",
+                "varBytes": 32,
+                "varValue": null,
+                "varSlot": null,
+                "varOffset": null,
+                "key_var_type": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "address",
+                    "varBytes": 20,
+                    "varValue": null,
+                    "varSlot": null,
+                    "varOffset": null
+                },
+                "val_var_type": {
+                    "contractName": null,
+                    "varName": null,
+                    "varType": "uint256",
+                    "varBytes": 32,
+                    "varValue": null,
+                    "varSlot": null,
+                    "varOffset": null
+                }
+            }
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "rewardControl",
+            "varType": "address",
+            "varBytes": 20,
+            "varValue": null,
+            "varSlot": 22,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "closeFactorMantissa",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 23,
+            "varOffset": 0
+        },
+        {
+            "contractName": "AlkemiEarnPublic",
+            "varName": "_guardCounter",
+            "varType": "uint256",
+            "varBytes": 32,
+            "varValue": null,
+            "varSlot": 24,
+            "varOffset": 0
+        }
+    ]
+}
