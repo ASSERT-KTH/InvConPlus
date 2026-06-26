@@ -1,0 +1,34 @@
+{
+  "contract_id": "202309_JumpFarm",
+  "contract_name": "Staking",
+  "vulnerable_functions": [
+    "unstake"
+  ],
+  "invcon_sections_examined": [
+    "unstake(_to,_amount,_rebase)::::NORMAL",
+    "CONTRACT::::NORMAL"
+  ],
+  "invcon_predicate_counts": {
+    "unstake(_to,_amount,_rebase)::::NORMAL": 176,
+    "CONTRACT::::NORMAL": 10
+  },
+  "match_results": [
+    {
+      "ground_truth": {
+        "raw": "TOKEN.balanceOf(address(this)) <= balanceBefore",
+        "normalised": "token.balanceof(address(this)) <= balancebefore",
+        "source_line": 18
+      },
+      "match_type": "NONE",
+      "matched_invcon_predicates": [],
+      "notes": "GT tokens: ['<=', 'balancebefore', 'this', 'token.balanceof'] | GT ops: ['<='] | No predicate covered both."
+    }
+  ],
+  "summary": {
+    "total_gt_conditions": 1,
+    "exact_matches": 0,
+    "partial_matches": 0,
+    "no_matches": 1,
+    "coverage_pct": 0.0
+  }
+}
