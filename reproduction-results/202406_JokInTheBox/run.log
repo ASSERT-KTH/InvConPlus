@@ -1,0 +1,4298 @@
+WARNING:root:0xA6447f6156EFfD23EC3b57d5edD978349E4e192d
+WARNING:root:cached record number 145
+WARNING:root:0xA6447f6156EFfD23EC3b57d5edD978349E4e192d has transactions no less than 145
+WARNING:root:size of transactions to analyze:0
+|████████████████████████████████████████| 0 in 0.0s (0.00/s) 
+WARNING:root:fetching state diff for 0 transactions
+|████████████████████████████████████████| 0 in 0.0s (0.00/s) 
+WARNING:CryticCompile:Multiple frameworks detected: solc, Solc-json. Using solc (highest priority). Use --compile-force-framework to override.
+WARNING:root:createInitialPptsForFunction for renounceOwnership()
+WARNING:root:createInitialPptsForFunction for setEthTax(_ethTax)
+WARNING:root:createInitialPptsForFunction for setJokToken(_jokToken)
+WARNING:root:createInitialPptsForFunction for setMEVBot(_bot)
+WARNING:root:createInitialPptsForFunction for setMaxPercentage(_maxPercentage)
+WARNING:root:createInitialPptsForFunction for setStakingSigner(_stakingSigner)
+WARNING:root:createInitialPptsForFunction for setValidLockPeriod(lockPeriod,isValid,bonus)
+WARNING:root:createInitialPptsForFunction for stake(amount,lockPeriod)
+WARNING:root:createInitialPptsForFunction for transferOwnership(newOwner)
+WARNING:root:createInitialPptsForFunction for unstake(stakeIndex)
+WARNING:root:createInitialPptsForFunction for updateTotalDeposits()
+WARNING:root:createInitialPptsForFunction for withdraw(earnings,affiliateEarnings,inETH,message,_v,_r,_s)
+WARNING:root:createInitialPptsForContract...
+main contract:  JokInTheBoxStaking
+Context
+Ownable
+IERC20
+JokInTheBoxStaking
+**********
+
+getCurrentDay()
+set()
+[]
+**********
+
+setMaxPercentage(_maxPercentage)
+{VarInfo(name='_maxPercentage', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace67455ba0>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='maxPercentage', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace67457610>, vartype=<VarType.STATEVAR: 0>, derivation=None)}
+[]
+**********
+
+isValidSignature(beneficiary,amount,inETH,message,_v,_r,_s)
+set()
+[]
+**********
+
+withdraw(earnings,affiliateEarnings,inETH,message,_v,_r,_s)
+{VarInfo(name='affiliateEarnings', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace6742fa90>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='totalEarnings', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace67499e70>, vartype=<VarType.LOCALVAR: 2>, derivation=None), VarInfo(name='earnings', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace6742f4c0>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='fee', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace6749a1d0>, vartype=<VarType.LOCALVAR: 2>, derivation=None)}
+[]
+**********
+
+constructor()
+{VarInfo(name='ethTax', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace67457520>, vartype=<VarType.STATEVAR: 0>, derivation=None), VarInfo(name='jokToken', type=<slither.core.solidity_types.user_defined_type.UserDefinedType object at 0x7ace674572b0>, vartype=<VarType.STATEVAR: 0>, derivation=None)}
+[]
+**********
+
+unstake(stakeIndex)
+{VarInfo(name='stakes[msg.sender][stakeIndex]', type='struct JokInTheBoxStaking.Stake storage ref', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7ace67199210>), VarInfo(name='currentDay', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace674c7730>, vartype=<VarType.LOCALVAR: 2>, derivation=None), VarInfo(name='currentStake', type=<slither.core.solidity_types.user_defined_type.UserDefinedType object at 0x7ace674c75b0>, vartype=<VarType.LOCALVAR: 2>, derivation=None), VarInfo(name='stakeIndex', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace674541c0>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='totalStaked', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace67456440>, vartype=<VarType.STATEVAR: 0>, derivation=None)}
+[]
+**********
+
+setEthTax(_ethTax)
+{VarInfo(name='ethTax', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace67457520>, vartype=<VarType.STATEVAR: 0>, derivation=None), VarInfo(name='_ethTax', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace67455b40>, vartype=<VarType.TXVAR: 1>, derivation=None)}
+[]
+**********
+
+oldOwner()
+set()
+[]
+**********
+
+transferOwnership(newOwner)
+{VarInfo(name='newOwner', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace6742ed70>, vartype=<VarType.TXVAR: 1>, derivation=None)}
+[]
+**********
+
+setValidLockPeriod(lockPeriod,isValid,bonus)
+{VarInfo(name='lockPeriod', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace6758fe50>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='validLockPeriods[lockPeriod]', type='struct JokInTheBoxStaking.LockPeriod storage ref', vartype=<VarType.STATEVAR: 0>, derivation=<invconplus.derivation.binary.MappingItem.MappingItem object at 0x7ace6719a320>)}
+[]
+**********
+
+_msgData()
+set()
+[]
+**********
+
+stake(amount,lockPeriod)
+{VarInfo(name='amount', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace6742f580>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='totalStaked', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace67456440>, vartype=<VarType.STATEVAR: 0>, derivation=None)}
+[]
+**********
+
+setMEVBot(_bot)
+{VarInfo(name='_bot', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace6758fbe0>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='bot', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace67457400>, vartype=<VarType.STATEVAR: 0>, derivation=None)}
+[]
+**********
+
+setJokToken(_jokToken)
+{VarInfo(name='_jokToken', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace675b45e0>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='jokToken', type=<slither.core.solidity_types.user_defined_type.UserDefinedType object at 0x7ace674572b0>, vartype=<VarType.STATEVAR: 0>, derivation=None)}
+[]
+**********
+
+getMessageHash(beneficiary,amount,inETH,message,_nonce)
+set()
+[]
+**********
+
+owner()
+set()
+[]
+**********
+
+onlyOwner()
+set()
+[]
+**********
+
+_transferOwnership(newOwner)
+{VarInfo(name='lastOwnershipTransfer', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace675dd270>, vartype=<VarType.STATEVAR: 0>, derivation=None), VarInfo(name='block.timestamp', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace6719b8b0>, vartype=<VarType.LOCALVAR: 2>, derivation=None), VarInfo(name='_oldOwner', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace675dd180>, vartype=<VarType.STATEVAR: 0>, derivation=None), VarInfo(name='newOwner', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace6742f0a0>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='_owner', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace6758cd90>, vartype=<VarType.STATEVAR: 0>, derivation=None), VarInfo(name='oldOwner_', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace67370640>, vartype=<VarType.LOCALVAR: 2>, derivation=None)}
+[]
+**********
+
+renounceOwnership()
+set()
+[]
+**********
+
+_msgSender()
+set()
+[]
+**********
+
+updateTotalDeposits()
+{VarInfo(name='msg.value', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace6719b370>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='bot', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace67457400>, vartype=<VarType.STATEVAR: 0>, derivation=None), VarInfo(name='currentDay', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace673193f0>, vartype=<VarType.LOCALVAR: 2>, derivation=None), VarInfo(name='msg.sender', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace6719beb0>, vartype=<VarType.TXVAR: 1>, derivation=None), VarInfo(name='totalDeposits', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace67456e90>, vartype=<VarType.STATEVAR: 0>, derivation=None), VarInfo(name='lastOwnerDepositDay', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace67456da0>, vartype=<VarType.STATEVAR: 0>, derivation=None)}
+[]
+**********
+
+setStakingSigner(_stakingSigner)
+{VarInfo(name='stakingSigner', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace67457250>, vartype=<VarType.STATEVAR: 0>, derivation=None), VarInfo(name='_stakingSigner', type=<slither.core.solidity_types.elementary_type.ElementaryType object at 0x7ace674553c0>, vartype=<VarType.TXVAR: 1>, derivation=None)}
+[]
+error:  unstake(stakeIndex)  not found in all_func_dependencies
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/abstractType/DataDependency.py", line 527, in createDerivedVarsForFunc
+    return set(self.all_func_dependencies[func_name].createDerivedVarInfos())
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/abstractType/DataDependency.py", line 451, in createDerivedVarInfos
+    deriveds = Original.createDerivedVarInfos(varInfo=varInfo, ppt_slice=self.ppt_slice)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/derivation/unary/Original.py", line 60, in createDerivedVarInfos
+    assert MappingItem.valid_vars([base, index_var])
+AssertionError
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/abstractType/DataDependency.py", line 527, in createDerivedVarsForFunc
+    return set(self.all_func_dependencies[func_name].createDerivedVarInfos())
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/abstractType/DataDependency.py", line 451, in createDerivedVarInfos
+    deriveds = Original.createDerivedVarInfos(varInfo=varInfo, ppt_slice=self.ppt_slice)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/derivation/unary/Original.py", line 60, in createDerivedVarInfos
+    assert MappingItem.valid_vars([base, index_var])
+AssertionError
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 243, in tryImplyAndSet
+    if self.varValue[guess_key].implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x8ec1daf6630f0a518aabd43487a083046eccd4586948108ad296db65087ffd52unstake(stakeIndex)
+WARNING:root:0x3831ec4e63a4b7ccf1289e47f3c4c46fb84479a875af8ebf2ebc4409983f508aunstake(stakeIndex)
+WARNING:root:succeed in updating variables
+WARNING:root:0xd03f0f33d4fe83bf3949224a0219bc75b4104cffc5fcb776b26c20dafa2efee1stake(amount,lockPeriod)
+WARNING:root:0xc5a2d779278eabc2bf86f1f387ad3473fa5c9ad99a0fa33595d3e06304347ac9unstake(stakeIndex)
+WARNING:root:0xa288e7a96b3013b362a5d63f502ff20a32f4112b9bf39fb9e7063093c2f1e5a6unstake(stakeIndex)
+WARNING:root:succeed in updating variables
+WARNING:root:0xb162d5f2236db72e3bb7b760c55abff2d2b46a4a872a14e333aeb9af175e12ebstake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0x00dc6322a8ee2b3c9ddb257ea178891e5d52378a8c06dd68945c7e0f5f66798aunstake(stakeIndex)
+WARNING:root:succeed in updating variables
+WARNING:root:0xebc38c1250e9875b60f151eb404e780f68c75c8834e3f635bcbb8f64efda0a2dstake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0xaa97b3322abb0a97cd526220ab1a60568eb2aaafd156419fcfbb32ccedbce375stake(amount,lockPeriod)
+WARNING:root:0x2ce989f4152b597f42ad8556e28739d5e71ac264eed75fdaaded787018e83e9dunstake(stakeIndex)
+WARNING:root:0x479782c74c98bffaab097431d384eea35d94f0a3f85c9d060af5e9d753f8111bunstake(stakeIndex)
+WARNING:root:0x8140fac8bc123dce041a12b3e03e1ae3fe6201f14e34a0256516c8658ee38ecasetValidLockPeriod(lockPeriod,isValid,bonus)
+WARNING:root:0x03f4374406345a45cc954542c523dc27c37987abe57c8d9d96d5da00ef906463setValidLockPeriod(lockPeriod,isValid,bonus)
+WARNING:root:0x0576ec1baa5a62af1d011f8c838febaf0969feb1cad1efc8d934006755609e2asetValidLockPeriod(lockPeriod,isValid,bonus)
+WARNING:root:0x39012d86d02a34e763edaf52187c724e40b85b326f364f8705816ab08f2f15ccsetValidLockPeriod(lockPeriod,isValid,bonus)
+WARNING:root:0xe09e7d5e2d6007c1bd359fc977b0be3202096edb95f8cfdcfef59e0f8168a808setValidLockPeriod(lockPeriod,isValid,bonus)
+WARNING:root:0x141a7e62924a1042e33014541ab7ba6b812c0bd587d4b75d4a64c30ba3890efcsetValidLockPeriod(lockPeriod,isValid,bonus)
+WARNING:root:0x52c7f97b9117c74ffad7248138f7a54b3ccce0d4ad135376632fb8a50c48495asetValidLockPeriod(lockPeriod,isValid,bonus)
+WARNING:root:0x78e9ab3122245b836c537d2871b69ac0c941bfaa45da85390b067817af54a5a6setValidLockPeriod(lockPeriod,isValid,bonus)
+WARNING:root:0xfc43b18049a43e369b678bd837b29d42c32ea818a16c69dc35b7e16e20fce75fsetValidLockPeriod(lockPeriod,isValid,bonus)
+WARNING:root:succeed in updating variables
+WARNING:root:0x5ec4927d002116f1c893627e267d4696869fdd44a54056c172fc07aaa4c9e786stake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x955fd0c6e694c7af23e86e855c0c5fb72eff0186c8a2203b0be6e7c123d83d5cstake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0x9136c505662ee3b81b79c9f98abe596444f531586e50e3bb0277a7246881c0bbstake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0xf309cdf378d252ddbad43037601998ae1620fa6cf455c134b5f38671fad39d62stake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0xbc08ef0e2c7bfb5c97adda982a55642993d776bbc3809d647af01a5d434a6871stake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0xf3a50422c7abcca35118c2ecba89604e655b863c9d051f20dfdc688525a8a200stake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0x0bdf8f29f61954fa72856b1ec4e35288973bcc3d0a9fb9d54b21e159ee9dfbfastake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0x65ecb0c619571004f664ac402df06d5feb4aa39b748a018c9aa365da1327e3f3stake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0x5e8aededcf67afb5817f8eaaae8ebbe7864ef20edb021394714e4661d15e0f33stake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0x7475b44f8a5b55bf5aa68f0b01071b3bb0fc5cf9977f7a509e703cd985827f50stake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0xb764e6aa784773bfe0bb624432f0033b4904ef8d8f69fce6d6e9a13ee76acb04stake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0x8a54e7d7120bab527f41a2da2731a9c06ec5ae9e7be72ac82adaf29abc198803stake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0x31a6b8cb69d65d3bfc1561f5db9fd1e8da808917a345080a79d432cd57c5e7e8stake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0x6c9013480f3af1cdb568012a302de8258bb7388052b7781a8979341f1b03ad01stake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0xe5c7a0f6ca2f610a2613d8dba5afd7a8b066ae96eaead628c8766670f8b170feupdateTotalDeposits()
+WARNING:root:0xb8cf8e4b8be735eeab5416c18df3c7d0a09bc1c02fc493cc2e5c010d379cd6cfsetMEVBot(_bot)
+WARNING:root:0xbcec44c6c98eb1366e8b7413ea0712dfcd19338119ec4c06bb7646708f68fb9dtransferOwnership(newOwner)
+WARNING:root:0x410a24855688c5fcb101c4f8522c6522ae617b55b3643aa8cc337eca8a6810a4updateTotalDeposits()
+WARNING:root:succeed in updating variables
+WARNING:root:0x4171c4f09574ec03d2d31ed66b422478d270c5142b3470f5ef2dd467eac477d2unstake(stakeIndex)
+WARNING:root:succeed in updating variables
+WARNING:root:0xceacd1de4bd9a1c3ee57f4a6b773e644727b1325921e55dae420013b786b1ef7stake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 243, in tryImplyAndSet
+    if self.varValue[guess_key].implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x210d2d832181dc56a34f44b2c0dffc69ab1d3010a2f6ae52e3700ef3d7a62200stake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0xc223a19f9981d720bcc212cd50ccbb758f1254170caad0a7db39ff6582471c5fstake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x454b8e98a22e55252f5c72503951c8d0e62b244d995d52f2f51b9458496d85aestake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x740176fd11d82c3ca8a6aa71760d71a8b1320295bf604797d8da9e41a675250cstake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x45d2007a0f090b19f93ad087018c45488be2d9642302a659e70ca650b8161d99stake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x618c2be6a499370b45361a0e50dd1b16f8f7dc2f916086e05ec2ee4ddd9eb8b2stake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0xf18cdc781e8ecce5a59610ee93a841c9dfe1e13a0ef296f87c309020443fe3festake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x9a447738118f115a2077db394856182e272ddf906fbcf23172a81291f6c4a2b3stake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x2dd9e893ce59cf5746617a5bd25ff002d784be477d26538a2250cfbc908428adstake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0xa3ab3d1151af0d3359834f6206c492ad0e8e6a52941e4cce0274c3361093d305stake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0xa18f9d97cf196de37965acdd9279799760d314bf6fef7897ce5dd1b3e94f5baestake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 243, in tryImplyAndSet
+    if self.varValue[guess_key].implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0xdde071ccdc459f9bf3ca21d40f339cced73fdff479b31b4d947b9f7e4c292ba5stake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x3a6180bc74cae694fff56bbead083de51011e79f9bfd9617963bf38d6d964e8astake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0x0d9fb81e4374ca2d478bb2fc01faca7c6e8abd9401cb3e234f6abbb10b3e66bbstake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0xef03fa84598a056f147b8cc38ebcb5260a004383ec0218dd9e123ad408ee953dstake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 243, in tryImplyAndSet
+    if self.varValue[guess_key].implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x415dc8884267cbaded046c20ce0e1b1777d92f1d485b183d379469429bb72c15stake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0xb87997f4c9c0ffdfc5d80112bab67a0466bcad112b1e011018e63c8424d6325fstake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0x9eac26d201a7db7a60f866086c9855e4264f3e6c5c9faa0a9c64dbcda42901dfstake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x488981e15385c52d16281a64baf3e926b68afa65a1fba22f2dc5943ebe1ecb25stake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x9ee56c43bc83829c0034fb6a38e04255ff8b9f39786a91778a7594b1352c6b4cstake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x54d09163d6dfd820eb48c59001697b0ec8ca58a1ed4552e762f07e510c982011stake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 243, in tryImplyAndSet
+    if self.varValue[guess_key].implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x38f6654448714b9332835c43155c3f70abe3be38befc6249f8bced77efa38d2fstake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0x88dc8a2e578cc7ba585d58fc909077529b936c3ce12e7acdb2de2699b5248e64stake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0xce44de4cfb0fc7d40c36f5c995bda4f1a0f081f56510303caa5eb612df900b2cstake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 243, in tryImplyAndSet
+    if self.varValue[guess_key].implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x7e2e692184c485f150d94c0659c1e16d6263a09849910acf7ce6202c6ad27c1estake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0x23b400003039e80deba5ed0dcd747ec58b265300d081766704306e95f5bd7996stake(amount,lockPeriod)
+WARNING:root:0x2f4c75a68e04b41131630af397a6e83363f89d9ede7512a5941e3dd887b714eestake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0xf185ee8856b8dc82f59072ac1809cb121ca039ed1d00168d80acb810c01c674dstake(amount,lockPeriod)
+WARNING:root:0x7eda79aa9cd674089c5924897ef9bbf854fa604092fd98d1c68a80e5a471db4estake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0xdcf6df2acbdfb73272f7890936e97e1e0c80f8ff854475eda13d26bed66cdf3estake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0xaf62f1e9646661d562f63ea507e14326fd17330d769b6f83e0ada27102bcf549stake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0xa786c86952d4c84ec352f44b7ce35633340fedc4e1b36c905cfedb0c2c44acfastake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0xe20f72acd81573ee02c1798a46315d6016a0124c4ea922c2168d9b02e8ebf247stake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 243, in tryImplyAndSet
+    if self.varValue[guess_key].implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x01f4e91e77653d9c6699a4ab1a0edbd95b613aed03e340bcb903bb726198a404stake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 243, in tryImplyAndSet
+    if self.varValue[guess_key].implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x5c53a049571890c61edc3c149c0f07f560eb5ef6a3ad39967eff87aec2f15f26stake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x3b214f07205be5243543c77e7087e1a4974e3ffa0e28daa9e7fda5ed5d3aeb09stake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x61020de41a2c991050fb335dc42aed6772a3e7b821b8013760a7e4a75789d7bestake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0xbaacf555bec14a3379c16d7411b2a6c3a9e51d126c0d5c9b6d5069d4c942e7c9stake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0xf9d68af2ef800b52d31465c205a7de4008bb3057be558567aa3a551d107bd04bstake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0x67d17bdcbce474f410b8ecd7b9f5bd39ace6bc4f8ba89efa61f0304269e79618stake(amount,lockPeriod)
+WARNING:root:0xe8277ef6ba8611bd12dc5a6e7ca4b984423bc0b3828159f83b466fdcf4fe054funstake(stakeIndex)
+WARNING:root:0xc76e7fe80e7658c93b75daec4abc86448761d7b5d203bed5ba26395bd74c39edstake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 243, in tryImplyAndSet
+    if self.varValue[guess_key].implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x652ac6f5c67b4c2f48fe30053853f10dde37f0f9851c005015374e307f8cadc7stake(amount,lockPeriod)
+WARNING:root:0xf6a0674d47f0324d39a58b0f35bf4b58ee6d0d28b426bfda036c53b86f2e5607unstake(stakeIndex)
+WARNING:root:0x798f394f484f4642dc568e06938a2edb6430ea6bf767ccadd578bee802e1b077unstake(stakeIndex)
+WARNING:root:0x09de3289a58c6188778aae3384f1668ff8f7fb2884fd8d435b53c551048c4caeunstake(stakeIndex)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 243, in tryImplyAndSet
+    if self.varValue[guess_key].implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x1eb8f74f96b46c21b05191a377d4879e41c65bd950368a25a91b4e3363c7b666stake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 243, in tryImplyAndSet
+    if self.varValue[guess_key].implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0x72b1497c15e998934a869b57f15b9faf4c44a4fa3b3596c71e8d5d50ebbb59b1stake(amount,lockPeriod)
+WARNING:root:0x2b603549140d6b815fccb5332e62bb6c08e97dacfe4e4c7bedaa883b2ae8243cunstake(stakeIndex)
+WARNING:root:0xefbccd9b905c9312a10535bde4cca3e0c81872e689e49112e210a2a255d68382unstake(stakeIndex)
+WARNING:root:0x3e37500458459269eb92a1b0339f2a73830d0007450a482febd814414e9f8a0funstake(stakeIndex)
+WARNING:root:succeed in updating variables
+WARNING:root:0x3780b31d8e02f52fedcc177e9a10b04ee290a544c7a5300984712f6a42ba79c8stake(amount,lockPeriod)
+WARNING:root:succeed in updating variables
+WARNING:root:0x642e4e8f2bbd69d2785a307a100a4dd23c59cd36fe08f0904df34c31193e1260stake(amount,lockPeriod)
+WARNING:root:0xc3ed2f7ee12a38c53bb66dd586974818ae50d9359bb226502a7ab1b935bb6efeunstake(stakeIndex)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 243, in tryImplyAndSet
+    if self.varValue[guess_key].implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0xb9264fac09f7624d2a5b2705a2dbebaa45bdc8770b8c98beb1647b4410187eafstake(amount,lockPeriod)
+Traceback (most recent call last):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 417, in setValue
+    if variable.implyAndSet(slot, value):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 221, in implyAndSet
+    if self.tryImplyAndSet(slot, value, guess_key):
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 256, in tryImplyAndSet
+    success = self.varValue[guess_key].implyAndSet(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 128, in implyAndSet
+    self.setValue(slot, value)
+  File "/mnt/ssd2/angela/InvConPlus/invconplus/model/model.py", line 354, in setValue
+    self.varValue[-1].varSlot = math.ceil(i / math.floor(32/self.item_var_type.varBytes))
+ZeroDivisionError: division by zero
+WARNING:root:succeed in updating variables
+WARNING:root:0xb7dfb3be0098dd9fe9f6290b4fcb949ea08128062f7a331b6b9c7e548ecc2b6cstake(amount,lockPeriod)
+WARNING:root:Generating invariants... for 96 txs
+WARNING:root:Time used: 20.51614546775818 seconds
+WARNING:root:Time Usage Detail: initializePpts(5.137963056564331), readTx(14.136385440826416), processData(1.231307029724121)
+WARNING:root:
+
+WARNING:root:renounceOwnership()
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:renounceOwnership()
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:setEthTax(_ethTax)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:setEthTax(_ethTax)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:setJokToken(_jokToken)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:setJokToken(_jokToken)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:setMEVBot(_bot)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:ori(jokToken) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) one of [0]
+jokToken == 0
+_oldOwner == 0
+totalDeposits > 0
+totalDeposits == 1000000000000000
+totalDeposits one of [1000000000000000]
+ori(bot) == 0
+Sum(nonce[...]) == 0
+Sum(nonce[...]) == 0
+Sum(nonce[...]) one of [0]
+msg.value == 0
+msg.value == 0
+msg.value one of [0]
+bot != 0
+_owner == 0
+ori(_owner) == 0
+_bot != 0
+lastOwnerDepositDay > 0
+lastOwnerDepositDay == 19877
+lastOwnerDepositDay one of [19877]
+ori(_oldOwner) == 0
+ori(lastOwnershipTransfer) == 0
+ori(lastOwnershipTransfer) == 0
+ori(lastOwnershipTransfer) one of [0]
+elem of nonce[...] is one of [0]
+elem of nonce[...] is one of []
+lastOwnershipTransfer == 0
+lastOwnershipTransfer == 0
+lastOwnershipTransfer one of [0]
+stakingSigner == 0
+totalStaked > 0
+totalStaked == 13200999000000000000000000
+totalStaked one of [13200999000000000000000000]
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) one of [0]
+ori(ethTax) == 0
+ori(ethTax) == 0
+ori(ethTax) one of [0]
+ori(stakingSigner) == 0
+ethTax == 0
+ethTax == 0
+ethTax one of [0]
+msg.sender != 0
+ori(totalStaked) > 0
+ori(totalStaked) == 13200999000000000000000000
+ori(totalStaked) one of [13200999000000000000000000]
+ori(lastOwnerDepositDay) > 0
+ori(lastOwnerDepositDay) == 19877
+ori(lastOwnerDepositDay) one of [19877]
+ori(totalDeposits) > 0
+ori(totalDeposits) == 1000000000000000
+ori(totalDeposits) one of [1000000000000000]
+maxPercentage == 0
+maxPercentage == 0
+maxPercentage one of [0]
+ori(jokToken) == jokToken
+ori(jokToken) == _oldOwner
+ori(jokToken) == ori(bot)
+ori(jokToken) != bot
+ori(jokToken) == _owner
+ori(jokToken) == ori(_owner)
+ori(jokToken) != _bot
+ori(jokToken) == ori(_oldOwner)
+ori(jokToken) == stakingSigner
+ori(jokToken) == ori(stakingSigner)
+ori(jokToken) != msg.sender
+ori(maxPercentage) <= totalDeposits
+ori(maxPercentage) < totalDeposits
+ori(maxPercentage) != totalDeposits
+ori(maxPercentage) == Sum(nonce[...])
+ori(maxPercentage) >= Sum(nonce[...])
+ori(maxPercentage) <= Sum(nonce[...])
+ori(maxPercentage) == msg.value
+ori(maxPercentage) >= msg.value
+ori(maxPercentage) <= msg.value
+ori(maxPercentage) <= lastOwnerDepositDay
+ori(maxPercentage) < lastOwnerDepositDay
+ori(maxPercentage) != lastOwnerDepositDay
+ori(maxPercentage) == ori(lastOwnershipTransfer)
+ori(maxPercentage) >= ori(lastOwnershipTransfer)
+ori(maxPercentage) <= ori(lastOwnershipTransfer)
+ori(maxPercentage) == lastOwnershipTransfer
+ori(maxPercentage) >= lastOwnershipTransfer
+ori(maxPercentage) <= lastOwnershipTransfer
+ori(maxPercentage) <= totalStaked
+ori(maxPercentage) < totalStaked
+ori(maxPercentage) != totalStaked
+ori(maxPercentage) == ori(Sum(nonce[...]))
+ori(maxPercentage) >= ori(Sum(nonce[...]))
+ori(maxPercentage) <= ori(Sum(nonce[...]))
+ori(maxPercentage) == ori(ethTax)
+ori(maxPercentage) >= ori(ethTax)
+ori(maxPercentage) <= ori(ethTax)
+ori(maxPercentage) == ethTax
+ori(maxPercentage) >= ethTax
+ori(maxPercentage) <= ethTax
+ori(maxPercentage) <= ori(totalStaked)
+ori(maxPercentage) < ori(totalStaked)
+ori(maxPercentage) != ori(totalStaked)
+ori(maxPercentage) <= ori(lastOwnerDepositDay)
+ori(maxPercentage) < ori(lastOwnerDepositDay)
+ori(maxPercentage) != ori(lastOwnerDepositDay)
+ori(maxPercentage) <= ori(totalDeposits)
+ori(maxPercentage) < ori(totalDeposits)
+ori(maxPercentage) != ori(totalDeposits)
+ori(maxPercentage) == maxPercentage
+ori(maxPercentage) >= maxPercentage
+ori(maxPercentage) <= maxPercentage
+jokToken == _oldOwner
+jokToken == ori(bot)
+jokToken != bot
+jokToken == _owner
+jokToken == ori(_owner)
+jokToken != _bot
+jokToken == ori(_oldOwner)
+jokToken == stakingSigner
+jokToken == ori(stakingSigner)
+jokToken != msg.sender
+_oldOwner == ori(bot)
+_oldOwner != bot
+_oldOwner == _owner
+_oldOwner == ori(_owner)
+_oldOwner != _bot
+_oldOwner == ori(_oldOwner)
+_oldOwner == stakingSigner
+_oldOwner == ori(stakingSigner)
+_oldOwner != msg.sender
+totalDeposits >= Sum(nonce[...])
+totalDeposits > Sum(nonce[...])
+totalDeposits != Sum(nonce[...])
+totalDeposits >= msg.value
+totalDeposits > msg.value
+totalDeposits != msg.value
+totalDeposits >= lastOwnerDepositDay
+totalDeposits > lastOwnerDepositDay
+totalDeposits != lastOwnerDepositDay
+totalDeposits >= ori(lastOwnershipTransfer)
+totalDeposits > ori(lastOwnershipTransfer)
+totalDeposits != ori(lastOwnershipTransfer)
+totalDeposits >= lastOwnershipTransfer
+totalDeposits > lastOwnershipTransfer
+totalDeposits != lastOwnershipTransfer
+totalDeposits <= totalStaked
+totalDeposits < totalStaked
+totalDeposits != totalStaked
+totalDeposits >= ori(Sum(nonce[...]))
+totalDeposits > ori(Sum(nonce[...]))
+totalDeposits != ori(Sum(nonce[...]))
+totalDeposits >= ori(ethTax)
+totalDeposits > ori(ethTax)
+totalDeposits != ori(ethTax)
+totalDeposits >= ethTax
+totalDeposits > ethTax
+totalDeposits != ethTax
+totalDeposits <= ori(totalStaked)
+totalDeposits < ori(totalStaked)
+totalDeposits != ori(totalStaked)
+totalDeposits >= ori(lastOwnerDepositDay)
+totalDeposits > ori(lastOwnerDepositDay)
+totalDeposits != ori(lastOwnerDepositDay)
+totalDeposits == ori(totalDeposits)
+totalDeposits >= ori(totalDeposits)
+totalDeposits <= ori(totalDeposits)
+totalDeposits >= maxPercentage
+totalDeposits > maxPercentage
+totalDeposits != maxPercentage
+ori(bot) != bot
+ori(bot) == _owner
+ori(bot) == ori(_owner)
+ori(bot) != _bot
+ori(bot) == ori(_oldOwner)
+ori(bot) == stakingSigner
+ori(bot) == ori(stakingSigner)
+ori(bot) != msg.sender
+Sum(nonce[...]) == msg.value
+Sum(nonce[...]) >= msg.value
+Sum(nonce[...]) <= msg.value
+Sum(nonce[...]) <= lastOwnerDepositDay
+Sum(nonce[...]) < lastOwnerDepositDay
+Sum(nonce[...]) != lastOwnerDepositDay
+Sum(nonce[...]) == ori(lastOwnershipTransfer)
+Sum(nonce[...]) >= ori(lastOwnershipTransfer)
+Sum(nonce[...]) <= ori(lastOwnershipTransfer)
+Sum(nonce[...]) == lastOwnershipTransfer
+Sum(nonce[...]) >= lastOwnershipTransfer
+Sum(nonce[...]) <= lastOwnershipTransfer
+Sum(nonce[...]) <= totalStaked
+Sum(nonce[...]) < totalStaked
+Sum(nonce[...]) != totalStaked
+Sum(nonce[...]) == ori(Sum(nonce[...]))
+Sum(nonce[...]) >= ori(Sum(nonce[...]))
+Sum(nonce[...]) <= ori(Sum(nonce[...]))
+Sum(nonce[...]) == ori(ethTax)
+Sum(nonce[...]) >= ori(ethTax)
+Sum(nonce[...]) <= ori(ethTax)
+Sum(nonce[...]) == ethTax
+Sum(nonce[...]) >= ethTax
+Sum(nonce[...]) <= ethTax
+Sum(nonce[...]) <= ori(totalStaked)
+Sum(nonce[...]) < ori(totalStaked)
+Sum(nonce[...]) != ori(totalStaked)
+Sum(nonce[...]) <= ori(lastOwnerDepositDay)
+Sum(nonce[...]) < ori(lastOwnerDepositDay)
+Sum(nonce[...]) != ori(lastOwnerDepositDay)
+Sum(nonce[...]) <= ori(totalDeposits)
+Sum(nonce[...]) < ori(totalDeposits)
+Sum(nonce[...]) != ori(totalDeposits)
+Sum(nonce[...]) == maxPercentage
+Sum(nonce[...]) >= maxPercentage
+Sum(nonce[...]) <= maxPercentage
+msg.value <= lastOwnerDepositDay
+msg.value < lastOwnerDepositDay
+msg.value != lastOwnerDepositDay
+msg.value == ori(lastOwnershipTransfer)
+msg.value >= ori(lastOwnershipTransfer)
+msg.value <= ori(lastOwnershipTransfer)
+msg.value == lastOwnershipTransfer
+msg.value >= lastOwnershipTransfer
+msg.value <= lastOwnershipTransfer
+msg.value <= totalStaked
+msg.value < totalStaked
+msg.value != totalStaked
+msg.value == ori(Sum(nonce[...]))
+msg.value >= ori(Sum(nonce[...]))
+msg.value <= ori(Sum(nonce[...]))
+msg.value == ori(ethTax)
+msg.value >= ori(ethTax)
+msg.value <= ori(ethTax)
+msg.value == ethTax
+msg.value >= ethTax
+msg.value <= ethTax
+msg.value <= ori(totalStaked)
+msg.value < ori(totalStaked)
+msg.value != ori(totalStaked)
+msg.value <= ori(lastOwnerDepositDay)
+msg.value < ori(lastOwnerDepositDay)
+msg.value != ori(lastOwnerDepositDay)
+msg.value <= ori(totalDeposits)
+msg.value < ori(totalDeposits)
+msg.value != ori(totalDeposits)
+msg.value == maxPercentage
+msg.value >= maxPercentage
+msg.value <= maxPercentage
+bot != _owner
+bot != ori(_owner)
+bot == _bot
+bot != ori(_oldOwner)
+bot != stakingSigner
+bot != ori(stakingSigner)
+bot != msg.sender
+_owner == ori(_owner)
+_owner != _bot
+_owner == ori(_oldOwner)
+_owner == stakingSigner
+_owner == ori(stakingSigner)
+_owner != msg.sender
+ori(_owner) != _bot
+ori(_owner) == ori(_oldOwner)
+ori(_owner) == stakingSigner
+ori(_owner) == ori(stakingSigner)
+ori(_owner) != msg.sender
+_bot != ori(_oldOwner)
+_bot != stakingSigner
+_bot != ori(stakingSigner)
+_bot != msg.sender
+lastOwnerDepositDay >= ori(lastOwnershipTransfer)
+lastOwnerDepositDay > ori(lastOwnershipTransfer)
+lastOwnerDepositDay != ori(lastOwnershipTransfer)
+lastOwnerDepositDay >= lastOwnershipTransfer
+lastOwnerDepositDay > lastOwnershipTransfer
+lastOwnerDepositDay != lastOwnershipTransfer
+lastOwnerDepositDay <= totalStaked
+lastOwnerDepositDay < totalStaked
+lastOwnerDepositDay != totalStaked
+lastOwnerDepositDay >= ori(Sum(nonce[...]))
+lastOwnerDepositDay > ori(Sum(nonce[...]))
+lastOwnerDepositDay != ori(Sum(nonce[...]))
+lastOwnerDepositDay >= ori(ethTax)
+lastOwnerDepositDay > ori(ethTax)
+lastOwnerDepositDay != ori(ethTax)
+lastOwnerDepositDay >= ethTax
+lastOwnerDepositDay > ethTax
+lastOwnerDepositDay != ethTax
+lastOwnerDepositDay <= ori(totalStaked)
+lastOwnerDepositDay < ori(totalStaked)
+lastOwnerDepositDay != ori(totalStaked)
+lastOwnerDepositDay == ori(lastOwnerDepositDay)
+lastOwnerDepositDay >= ori(lastOwnerDepositDay)
+lastOwnerDepositDay <= ori(lastOwnerDepositDay)
+lastOwnerDepositDay <= ori(totalDeposits)
+lastOwnerDepositDay < ori(totalDeposits)
+lastOwnerDepositDay != ori(totalDeposits)
+lastOwnerDepositDay >= maxPercentage
+lastOwnerDepositDay > maxPercentage
+lastOwnerDepositDay != maxPercentage
+ori(_oldOwner) == stakingSigner
+ori(_oldOwner) == ori(stakingSigner)
+ori(_oldOwner) != msg.sender
+ori(lastOwnershipTransfer) == lastOwnershipTransfer
+ori(lastOwnershipTransfer) >= lastOwnershipTransfer
+ori(lastOwnershipTransfer) <= lastOwnershipTransfer
+ori(lastOwnershipTransfer) <= totalStaked
+ori(lastOwnershipTransfer) < totalStaked
+ori(lastOwnershipTransfer) != totalStaked
+ori(lastOwnershipTransfer) == ori(Sum(nonce[...]))
+ori(lastOwnershipTransfer) >= ori(Sum(nonce[...]))
+ori(lastOwnershipTransfer) <= ori(Sum(nonce[...]))
+ori(lastOwnershipTransfer) == ori(ethTax)
+ori(lastOwnershipTransfer) >= ori(ethTax)
+ori(lastOwnershipTransfer) <= ori(ethTax)
+ori(lastOwnershipTransfer) == ethTax
+ori(lastOwnershipTransfer) >= ethTax
+ori(lastOwnershipTransfer) <= ethTax
+ori(lastOwnershipTransfer) <= ori(totalStaked)
+ori(lastOwnershipTransfer) < ori(totalStaked)
+ori(lastOwnershipTransfer) != ori(totalStaked)
+ori(lastOwnershipTransfer) <= ori(lastOwnerDepositDay)
+ori(lastOwnershipTransfer) < ori(lastOwnerDepositDay)
+ori(lastOwnershipTransfer) != ori(lastOwnerDepositDay)
+ori(lastOwnershipTransfer) <= ori(totalDeposits)
+ori(lastOwnershipTransfer) < ori(totalDeposits)
+ori(lastOwnershipTransfer) != ori(totalDeposits)
+ori(lastOwnershipTransfer) == maxPercentage
+ori(lastOwnershipTransfer) >= maxPercentage
+ori(lastOwnershipTransfer) <= maxPercentage
+lastOwnershipTransfer <= totalStaked
+lastOwnershipTransfer < totalStaked
+lastOwnershipTransfer != totalStaked
+lastOwnershipTransfer == ori(Sum(nonce[...]))
+lastOwnershipTransfer >= ori(Sum(nonce[...]))
+lastOwnershipTransfer <= ori(Sum(nonce[...]))
+lastOwnershipTransfer == ori(ethTax)
+lastOwnershipTransfer >= ori(ethTax)
+lastOwnershipTransfer <= ori(ethTax)
+lastOwnershipTransfer == ethTax
+lastOwnershipTransfer >= ethTax
+lastOwnershipTransfer <= ethTax
+lastOwnershipTransfer <= ori(totalStaked)
+lastOwnershipTransfer < ori(totalStaked)
+lastOwnershipTransfer != ori(totalStaked)
+lastOwnershipTransfer <= ori(lastOwnerDepositDay)
+lastOwnershipTransfer < ori(lastOwnerDepositDay)
+lastOwnershipTransfer != ori(lastOwnerDepositDay)
+lastOwnershipTransfer <= ori(totalDeposits)
+lastOwnershipTransfer < ori(totalDeposits)
+lastOwnershipTransfer != ori(totalDeposits)
+lastOwnershipTransfer == maxPercentage
+lastOwnershipTransfer >= maxPercentage
+lastOwnershipTransfer <= maxPercentage
+stakingSigner == ori(stakingSigner)
+stakingSigner != msg.sender
+totalStaked >= ori(Sum(nonce[...]))
+totalStaked > ori(Sum(nonce[...]))
+totalStaked != ori(Sum(nonce[...]))
+totalStaked >= ori(ethTax)
+totalStaked > ori(ethTax)
+totalStaked != ori(ethTax)
+totalStaked >= ethTax
+totalStaked > ethTax
+totalStaked != ethTax
+totalStaked == ori(totalStaked)
+totalStaked >= ori(totalStaked)
+totalStaked <= ori(totalStaked)
+totalStaked >= ori(lastOwnerDepositDay)
+totalStaked > ori(lastOwnerDepositDay)
+totalStaked != ori(lastOwnerDepositDay)
+totalStaked >= ori(totalDeposits)
+totalStaked > ori(totalDeposits)
+totalStaked != ori(totalDeposits)
+totalStaked >= maxPercentage
+totalStaked > maxPercentage
+totalStaked != maxPercentage
+ori(Sum(nonce[...])) == ori(ethTax)
+ori(Sum(nonce[...])) >= ori(ethTax)
+ori(Sum(nonce[...])) <= ori(ethTax)
+ori(Sum(nonce[...])) == ethTax
+ori(Sum(nonce[...])) >= ethTax
+ori(Sum(nonce[...])) <= ethTax
+ori(Sum(nonce[...])) <= ori(totalStaked)
+ori(Sum(nonce[...])) < ori(totalStaked)
+ori(Sum(nonce[...])) != ori(totalStaked)
+ori(Sum(nonce[...])) <= ori(lastOwnerDepositDay)
+ori(Sum(nonce[...])) < ori(lastOwnerDepositDay)
+ori(Sum(nonce[...])) != ori(lastOwnerDepositDay)
+ori(Sum(nonce[...])) <= ori(totalDeposits)
+ori(Sum(nonce[...])) < ori(totalDeposits)
+ori(Sum(nonce[...])) != ori(totalDeposits)
+ori(Sum(nonce[...])) == maxPercentage
+ori(Sum(nonce[...])) >= maxPercentage
+ori(Sum(nonce[...])) <= maxPercentage
+ori(ethTax) == ethTax
+ori(ethTax) >= ethTax
+ori(ethTax) <= ethTax
+ori(ethTax) <= ori(totalStaked)
+ori(ethTax) < ori(totalStaked)
+ori(ethTax) != ori(totalStaked)
+ori(ethTax) <= ori(lastOwnerDepositDay)
+ori(ethTax) < ori(lastOwnerDepositDay)
+ori(ethTax) != ori(lastOwnerDepositDay)
+ori(ethTax) <= ori(totalDeposits)
+ori(ethTax) < ori(totalDeposits)
+ori(ethTax) != ori(totalDeposits)
+ori(ethTax) == maxPercentage
+ori(ethTax) >= maxPercentage
+ori(ethTax) <= maxPercentage
+ori(stakingSigner) != msg.sender
+ethTax <= ori(totalStaked)
+ethTax < ori(totalStaked)
+ethTax != ori(totalStaked)
+ethTax <= ori(lastOwnerDepositDay)
+ethTax < ori(lastOwnerDepositDay)
+ethTax != ori(lastOwnerDepositDay)
+ethTax <= ori(totalDeposits)
+ethTax < ori(totalDeposits)
+ethTax != ori(totalDeposits)
+ethTax == maxPercentage
+ethTax >= maxPercentage
+ethTax <= maxPercentage
+ori(totalStaked) >= ori(lastOwnerDepositDay)
+ori(totalStaked) > ori(lastOwnerDepositDay)
+ori(totalStaked) != ori(lastOwnerDepositDay)
+ori(totalStaked) >= ori(totalDeposits)
+ori(totalStaked) > ori(totalDeposits)
+ori(totalStaked) != ori(totalDeposits)
+ori(totalStaked) >= maxPercentage
+ori(totalStaked) > maxPercentage
+ori(totalStaked) != maxPercentage
+ori(lastOwnerDepositDay) <= ori(totalDeposits)
+ori(lastOwnerDepositDay) < ori(totalDeposits)
+ori(lastOwnerDepositDay) != ori(totalDeposits)
+ori(lastOwnerDepositDay) >= maxPercentage
+ori(lastOwnerDepositDay) > maxPercentage
+ori(lastOwnerDepositDay) != maxPercentage
+ori(totalDeposits) >= maxPercentage
+ori(totalDeposits) > maxPercentage
+ori(totalDeposits) != maxPercentage
+WARNING:root:
+
+WARNING:root:setMEVBot(_bot)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:setMaxPercentage(_maxPercentage)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:setMaxPercentage(_maxPercentage)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:setStakingSigner(_stakingSigner)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:setStakingSigner(_stakingSigner)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:setValidLockPeriod(lockPeriod,isValid,bonus)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:ori(jokToken) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) one of [0]
+jokToken == 0
+isValid == true
+ori(validLockPeriods[lockPeriod].isValid) == false
+_oldOwner == 0
+totalDeposits == 0
+totalDeposits == 0
+totalDeposits one of [0]
+ori(validLockPeriods[lockPeriod].bonus) == 0
+ori(validLockPeriods[lockPeriod].bonus) == 0
+ori(validLockPeriods[lockPeriod].bonus) one of [0]
+ori(bot) == 0
+Sum(nonce[...]) == 0
+Sum(nonce[...]) == 0
+Sum(nonce[...]) one of [0]
+msg.value == 0
+msg.value == 0
+msg.value one of [0]
+bot == 0
+_owner == 0
+validLockPeriods[lockPeriod].isValid == true
+ori(_owner) == 0
+lastOwnerDepositDay == 0
+lastOwnerDepositDay == 0
+lastOwnerDepositDay one of [0]
+ori(_oldOwner) == 0
+ori(lastOwnershipTransfer) == 0
+ori(lastOwnershipTransfer) == 0
+ori(lastOwnershipTransfer) one of [0]
+elem of nonce[...] is one of [0]
+elem of nonce[...] is one of []
+lastOwnershipTransfer == 0
+lastOwnershipTransfer == 0
+lastOwnershipTransfer one of [0]
+stakingSigner == 0
+totalStaked > 0
+totalStaked == 3000000000000000000000000
+totalStaked one of [3000000000000000000000000]
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) one of [0]
+ori(ethTax) == 0
+ori(ethTax) == 0
+ori(ethTax) one of [0]
+validLockPeriods[lockPeriod].bonus > 0
+validLockPeriods[lockPeriod].bonus one of [35,40,45,50,20,55,25,60,30]
+lockPeriod > 0
+lockPeriod one of [330,300,365,270,240,210,180,150,120]
+ethTax == 0
+ethTax == 0
+ethTax one of [0]
+msg.sender != 0
+ori(stakingSigner) == 0
+bonus > 0
+bonus one of [35,40,45,50,20,55,25,60,30]
+ori(totalStaked) > 0
+ori(totalStaked) == 3000000000000000000000000
+ori(totalStaked) one of [3000000000000000000000000]
+ori(lastOwnerDepositDay) == 0
+ori(lastOwnerDepositDay) == 0
+ori(lastOwnerDepositDay) one of [0]
+ori(totalDeposits) == 0
+ori(totalDeposits) == 0
+ori(totalDeposits) one of [0]
+maxPercentage == 0
+maxPercentage == 0
+maxPercentage one of [0]
+ori(jokToken) == jokToken
+ori(jokToken) == _oldOwner
+ori(jokToken) == ori(bot)
+ori(jokToken) == bot
+ori(jokToken) == _owner
+ori(jokToken) == ori(_owner)
+ori(jokToken) == ori(_oldOwner)
+ori(jokToken) == stakingSigner
+ori(jokToken) != msg.sender
+ori(jokToken) == ori(stakingSigner)
+ori(maxPercentage) == totalDeposits
+ori(maxPercentage) >= totalDeposits
+ori(maxPercentage) <= totalDeposits
+ori(maxPercentage) == ori(validLockPeriods[lockPeriod].bonus)
+ori(maxPercentage) >= ori(validLockPeriods[lockPeriod].bonus)
+ori(maxPercentage) <= ori(validLockPeriods[lockPeriod].bonus)
+ori(maxPercentage) == Sum(nonce[...])
+ori(maxPercentage) >= Sum(nonce[...])
+ori(maxPercentage) <= Sum(nonce[...])
+ori(maxPercentage) == msg.value
+ori(maxPercentage) >= msg.value
+ori(maxPercentage) <= msg.value
+ori(maxPercentage) == lastOwnerDepositDay
+ori(maxPercentage) >= lastOwnerDepositDay
+ori(maxPercentage) <= lastOwnerDepositDay
+ori(maxPercentage) == ori(lastOwnershipTransfer)
+ori(maxPercentage) >= ori(lastOwnershipTransfer)
+ori(maxPercentage) <= ori(lastOwnershipTransfer)
+ori(maxPercentage) == lastOwnershipTransfer
+ori(maxPercentage) >= lastOwnershipTransfer
+ori(maxPercentage) <= lastOwnershipTransfer
+ori(maxPercentage) <= totalStaked
+ori(maxPercentage) < totalStaked
+ori(maxPercentage) != totalStaked
+ori(maxPercentage) == ori(Sum(nonce[...]))
+ori(maxPercentage) >= ori(Sum(nonce[...]))
+ori(maxPercentage) <= ori(Sum(nonce[...]))
+ori(maxPercentage) == ori(ethTax)
+ori(maxPercentage) >= ori(ethTax)
+ori(maxPercentage) <= ori(ethTax)
+ori(maxPercentage) <= validLockPeriods[lockPeriod].bonus
+ori(maxPercentage) < validLockPeriods[lockPeriod].bonus
+ori(maxPercentage) != validLockPeriods[lockPeriod].bonus
+ori(maxPercentage) <= lockPeriod
+ori(maxPercentage) < lockPeriod
+ori(maxPercentage) != lockPeriod
+ori(maxPercentage) == ethTax
+ori(maxPercentage) >= ethTax
+ori(maxPercentage) <= ethTax
+ori(maxPercentage) <= bonus
+ori(maxPercentage) < bonus
+ori(maxPercentage) != bonus
+ori(maxPercentage) <= ori(totalStaked)
+ori(maxPercentage) < ori(totalStaked)
+ori(maxPercentage) != ori(totalStaked)
+ori(maxPercentage) == ori(lastOwnerDepositDay)
+ori(maxPercentage) >= ori(lastOwnerDepositDay)
+ori(maxPercentage) <= ori(lastOwnerDepositDay)
+ori(maxPercentage) == ori(totalDeposits)
+ori(maxPercentage) >= ori(totalDeposits)
+ori(maxPercentage) <= ori(totalDeposits)
+ori(maxPercentage) == maxPercentage
+ori(maxPercentage) >= maxPercentage
+ori(maxPercentage) <= maxPercentage
+jokToken == _oldOwner
+jokToken == ori(bot)
+jokToken == bot
+jokToken == _owner
+jokToken == ori(_owner)
+jokToken == ori(_oldOwner)
+jokToken == stakingSigner
+jokToken != msg.sender
+jokToken == ori(stakingSigner)
+isValid != ori(validLockPeriods[lockPeriod].isValid)
+isValid == validLockPeriods[lockPeriod].isValid
+ori(validLockPeriods[lockPeriod].isValid) != validLockPeriods[lockPeriod].isValid
+_oldOwner == ori(bot)
+_oldOwner == bot
+_oldOwner == _owner
+_oldOwner == ori(_owner)
+_oldOwner == ori(_oldOwner)
+_oldOwner == stakingSigner
+_oldOwner != msg.sender
+_oldOwner == ori(stakingSigner)
+totalDeposits == ori(validLockPeriods[lockPeriod].bonus)
+totalDeposits >= ori(validLockPeriods[lockPeriod].bonus)
+totalDeposits <= ori(validLockPeriods[lockPeriod].bonus)
+totalDeposits == Sum(nonce[...])
+totalDeposits >= Sum(nonce[...])
+totalDeposits <= Sum(nonce[...])
+totalDeposits == msg.value
+totalDeposits >= msg.value
+totalDeposits <= msg.value
+totalDeposits == lastOwnerDepositDay
+totalDeposits >= lastOwnerDepositDay
+totalDeposits <= lastOwnerDepositDay
+totalDeposits == ori(lastOwnershipTransfer)
+totalDeposits >= ori(lastOwnershipTransfer)
+totalDeposits <= ori(lastOwnershipTransfer)
+totalDeposits == lastOwnershipTransfer
+totalDeposits >= lastOwnershipTransfer
+totalDeposits <= lastOwnershipTransfer
+totalDeposits <= totalStaked
+totalDeposits < totalStaked
+totalDeposits != totalStaked
+totalDeposits == ori(Sum(nonce[...]))
+totalDeposits >= ori(Sum(nonce[...]))
+totalDeposits <= ori(Sum(nonce[...]))
+totalDeposits == ori(ethTax)
+totalDeposits >= ori(ethTax)
+totalDeposits <= ori(ethTax)
+totalDeposits <= validLockPeriods[lockPeriod].bonus
+totalDeposits < validLockPeriods[lockPeriod].bonus
+totalDeposits != validLockPeriods[lockPeriod].bonus
+totalDeposits <= lockPeriod
+totalDeposits < lockPeriod
+totalDeposits != lockPeriod
+totalDeposits == ethTax
+totalDeposits >= ethTax
+totalDeposits <= ethTax
+totalDeposits <= bonus
+totalDeposits < bonus
+totalDeposits != bonus
+totalDeposits <= ori(totalStaked)
+totalDeposits < ori(totalStaked)
+totalDeposits != ori(totalStaked)
+totalDeposits == ori(lastOwnerDepositDay)
+totalDeposits >= ori(lastOwnerDepositDay)
+totalDeposits <= ori(lastOwnerDepositDay)
+totalDeposits == ori(totalDeposits)
+totalDeposits >= ori(totalDeposits)
+totalDeposits <= ori(totalDeposits)
+totalDeposits == maxPercentage
+totalDeposits >= maxPercentage
+totalDeposits <= maxPercentage
+ori(validLockPeriods[lockPeriod].bonus) == Sum(nonce[...])
+ori(validLockPeriods[lockPeriod].bonus) >= Sum(nonce[...])
+ori(validLockPeriods[lockPeriod].bonus) <= Sum(nonce[...])
+ori(validLockPeriods[lockPeriod].bonus) == msg.value
+ori(validLockPeriods[lockPeriod].bonus) >= msg.value
+ori(validLockPeriods[lockPeriod].bonus) <= msg.value
+ori(validLockPeriods[lockPeriod].bonus) == lastOwnerDepositDay
+ori(validLockPeriods[lockPeriod].bonus) >= lastOwnerDepositDay
+ori(validLockPeriods[lockPeriod].bonus) <= lastOwnerDepositDay
+ori(validLockPeriods[lockPeriod].bonus) == ori(lastOwnershipTransfer)
+ori(validLockPeriods[lockPeriod].bonus) >= ori(lastOwnershipTransfer)
+ori(validLockPeriods[lockPeriod].bonus) <= ori(lastOwnershipTransfer)
+ori(validLockPeriods[lockPeriod].bonus) == lastOwnershipTransfer
+ori(validLockPeriods[lockPeriod].bonus) >= lastOwnershipTransfer
+ori(validLockPeriods[lockPeriod].bonus) <= lastOwnershipTransfer
+ori(validLockPeriods[lockPeriod].bonus) <= totalStaked
+ori(validLockPeriods[lockPeriod].bonus) < totalStaked
+ori(validLockPeriods[lockPeriod].bonus) != totalStaked
+ori(validLockPeriods[lockPeriod].bonus) == ori(Sum(nonce[...]))
+ori(validLockPeriods[lockPeriod].bonus) >= ori(Sum(nonce[...]))
+ori(validLockPeriods[lockPeriod].bonus) <= ori(Sum(nonce[...]))
+ori(validLockPeriods[lockPeriod].bonus) == ori(ethTax)
+ori(validLockPeriods[lockPeriod].bonus) >= ori(ethTax)
+ori(validLockPeriods[lockPeriod].bonus) <= ori(ethTax)
+ori(validLockPeriods[lockPeriod].bonus) <= validLockPeriods[lockPeriod].bonus
+ori(validLockPeriods[lockPeriod].bonus) < validLockPeriods[lockPeriod].bonus
+ori(validLockPeriods[lockPeriod].bonus) != validLockPeriods[lockPeriod].bonus
+ori(validLockPeriods[lockPeriod].bonus) <= lockPeriod
+ori(validLockPeriods[lockPeriod].bonus) < lockPeriod
+ori(validLockPeriods[lockPeriod].bonus) != lockPeriod
+ori(validLockPeriods[lockPeriod].bonus) == ethTax
+ori(validLockPeriods[lockPeriod].bonus) >= ethTax
+ori(validLockPeriods[lockPeriod].bonus) <= ethTax
+ori(validLockPeriods[lockPeriod].bonus) <= bonus
+ori(validLockPeriods[lockPeriod].bonus) < bonus
+ori(validLockPeriods[lockPeriod].bonus) != bonus
+ori(validLockPeriods[lockPeriod].bonus) <= ori(totalStaked)
+ori(validLockPeriods[lockPeriod].bonus) < ori(totalStaked)
+ori(validLockPeriods[lockPeriod].bonus) != ori(totalStaked)
+ori(validLockPeriods[lockPeriod].bonus) == ori(lastOwnerDepositDay)
+ori(validLockPeriods[lockPeriod].bonus) >= ori(lastOwnerDepositDay)
+ori(validLockPeriods[lockPeriod].bonus) <= ori(lastOwnerDepositDay)
+ori(validLockPeriods[lockPeriod].bonus) == ori(totalDeposits)
+ori(validLockPeriods[lockPeriod].bonus) >= ori(totalDeposits)
+ori(validLockPeriods[lockPeriod].bonus) <= ori(totalDeposits)
+ori(validLockPeriods[lockPeriod].bonus) == maxPercentage
+ori(validLockPeriods[lockPeriod].bonus) >= maxPercentage
+ori(validLockPeriods[lockPeriod].bonus) <= maxPercentage
+ori(bot) == bot
+ori(bot) == _owner
+ori(bot) == ori(_owner)
+ori(bot) == ori(_oldOwner)
+ori(bot) == stakingSigner
+ori(bot) != msg.sender
+ori(bot) == ori(stakingSigner)
+Sum(nonce[...]) == msg.value
+Sum(nonce[...]) >= msg.value
+Sum(nonce[...]) <= msg.value
+Sum(nonce[...]) == lastOwnerDepositDay
+Sum(nonce[...]) >= lastOwnerDepositDay
+Sum(nonce[...]) <= lastOwnerDepositDay
+Sum(nonce[...]) == ori(lastOwnershipTransfer)
+Sum(nonce[...]) >= ori(lastOwnershipTransfer)
+Sum(nonce[...]) <= ori(lastOwnershipTransfer)
+Sum(nonce[...]) == lastOwnershipTransfer
+Sum(nonce[...]) >= lastOwnershipTransfer
+Sum(nonce[...]) <= lastOwnershipTransfer
+Sum(nonce[...]) <= totalStaked
+Sum(nonce[...]) < totalStaked
+Sum(nonce[...]) != totalStaked
+Sum(nonce[...]) == ori(Sum(nonce[...]))
+Sum(nonce[...]) >= ori(Sum(nonce[...]))
+Sum(nonce[...]) <= ori(Sum(nonce[...]))
+Sum(nonce[...]) == ori(ethTax)
+Sum(nonce[...]) >= ori(ethTax)
+Sum(nonce[...]) <= ori(ethTax)
+Sum(nonce[...]) <= validLockPeriods[lockPeriod].bonus
+Sum(nonce[...]) < validLockPeriods[lockPeriod].bonus
+Sum(nonce[...]) != validLockPeriods[lockPeriod].bonus
+Sum(nonce[...]) <= lockPeriod
+Sum(nonce[...]) < lockPeriod
+Sum(nonce[...]) != lockPeriod
+Sum(nonce[...]) == ethTax
+Sum(nonce[...]) >= ethTax
+Sum(nonce[...]) <= ethTax
+Sum(nonce[...]) <= bonus
+Sum(nonce[...]) < bonus
+Sum(nonce[...]) != bonus
+Sum(nonce[...]) <= ori(totalStaked)
+Sum(nonce[...]) < ori(totalStaked)
+Sum(nonce[...]) != ori(totalStaked)
+Sum(nonce[...]) == ori(lastOwnerDepositDay)
+Sum(nonce[...]) >= ori(lastOwnerDepositDay)
+Sum(nonce[...]) <= ori(lastOwnerDepositDay)
+Sum(nonce[...]) == ori(totalDeposits)
+Sum(nonce[...]) >= ori(totalDeposits)
+Sum(nonce[...]) <= ori(totalDeposits)
+Sum(nonce[...]) == maxPercentage
+Sum(nonce[...]) >= maxPercentage
+Sum(nonce[...]) <= maxPercentage
+msg.value == lastOwnerDepositDay
+msg.value >= lastOwnerDepositDay
+msg.value <= lastOwnerDepositDay
+msg.value == ori(lastOwnershipTransfer)
+msg.value >= ori(lastOwnershipTransfer)
+msg.value <= ori(lastOwnershipTransfer)
+msg.value == lastOwnershipTransfer
+msg.value >= lastOwnershipTransfer
+msg.value <= lastOwnershipTransfer
+msg.value <= totalStaked
+msg.value < totalStaked
+msg.value != totalStaked
+msg.value == ori(Sum(nonce[...]))
+msg.value >= ori(Sum(nonce[...]))
+msg.value <= ori(Sum(nonce[...]))
+msg.value == ori(ethTax)
+msg.value >= ori(ethTax)
+msg.value <= ori(ethTax)
+msg.value <= validLockPeriods[lockPeriod].bonus
+msg.value < validLockPeriods[lockPeriod].bonus
+msg.value != validLockPeriods[lockPeriod].bonus
+msg.value <= lockPeriod
+msg.value < lockPeriod
+msg.value != lockPeriod
+msg.value == ethTax
+msg.value >= ethTax
+msg.value <= ethTax
+msg.value <= bonus
+msg.value < bonus
+msg.value != bonus
+msg.value <= ori(totalStaked)
+msg.value < ori(totalStaked)
+msg.value != ori(totalStaked)
+msg.value == ori(lastOwnerDepositDay)
+msg.value >= ori(lastOwnerDepositDay)
+msg.value <= ori(lastOwnerDepositDay)
+msg.value == ori(totalDeposits)
+msg.value >= ori(totalDeposits)
+msg.value <= ori(totalDeposits)
+msg.value == maxPercentage
+msg.value >= maxPercentage
+msg.value <= maxPercentage
+bot == _owner
+bot == ori(_owner)
+bot == ori(_oldOwner)
+bot == stakingSigner
+bot != msg.sender
+bot == ori(stakingSigner)
+_owner == ori(_owner)
+_owner == ori(_oldOwner)
+_owner == stakingSigner
+_owner != msg.sender
+_owner == ori(stakingSigner)
+ori(_owner) == ori(_oldOwner)
+ori(_owner) == stakingSigner
+ori(_owner) != msg.sender
+ori(_owner) == ori(stakingSigner)
+lastOwnerDepositDay == ori(lastOwnershipTransfer)
+lastOwnerDepositDay >= ori(lastOwnershipTransfer)
+lastOwnerDepositDay <= ori(lastOwnershipTransfer)
+lastOwnerDepositDay == lastOwnershipTransfer
+lastOwnerDepositDay >= lastOwnershipTransfer
+lastOwnerDepositDay <= lastOwnershipTransfer
+lastOwnerDepositDay <= totalStaked
+lastOwnerDepositDay < totalStaked
+lastOwnerDepositDay != totalStaked
+lastOwnerDepositDay == ori(Sum(nonce[...]))
+lastOwnerDepositDay >= ori(Sum(nonce[...]))
+lastOwnerDepositDay <= ori(Sum(nonce[...]))
+lastOwnerDepositDay == ori(ethTax)
+lastOwnerDepositDay >= ori(ethTax)
+lastOwnerDepositDay <= ori(ethTax)
+lastOwnerDepositDay <= validLockPeriods[lockPeriod].bonus
+lastOwnerDepositDay < validLockPeriods[lockPeriod].bonus
+lastOwnerDepositDay != validLockPeriods[lockPeriod].bonus
+lastOwnerDepositDay <= lockPeriod
+lastOwnerDepositDay < lockPeriod
+lastOwnerDepositDay != lockPeriod
+lastOwnerDepositDay == ethTax
+lastOwnerDepositDay >= ethTax
+lastOwnerDepositDay <= ethTax
+lastOwnerDepositDay <= bonus
+lastOwnerDepositDay < bonus
+lastOwnerDepositDay != bonus
+lastOwnerDepositDay <= ori(totalStaked)
+lastOwnerDepositDay < ori(totalStaked)
+lastOwnerDepositDay != ori(totalStaked)
+lastOwnerDepositDay == ori(lastOwnerDepositDay)
+lastOwnerDepositDay >= ori(lastOwnerDepositDay)
+lastOwnerDepositDay <= ori(lastOwnerDepositDay)
+lastOwnerDepositDay == ori(totalDeposits)
+lastOwnerDepositDay >= ori(totalDeposits)
+lastOwnerDepositDay <= ori(totalDeposits)
+lastOwnerDepositDay == maxPercentage
+lastOwnerDepositDay >= maxPercentage
+lastOwnerDepositDay <= maxPercentage
+ori(_oldOwner) == stakingSigner
+ori(_oldOwner) != msg.sender
+ori(_oldOwner) == ori(stakingSigner)
+ori(lastOwnershipTransfer) == lastOwnershipTransfer
+ori(lastOwnershipTransfer) >= lastOwnershipTransfer
+ori(lastOwnershipTransfer) <= lastOwnershipTransfer
+ori(lastOwnershipTransfer) <= totalStaked
+ori(lastOwnershipTransfer) < totalStaked
+ori(lastOwnershipTransfer) != totalStaked
+ori(lastOwnershipTransfer) == ori(Sum(nonce[...]))
+ori(lastOwnershipTransfer) >= ori(Sum(nonce[...]))
+ori(lastOwnershipTransfer) <= ori(Sum(nonce[...]))
+ori(lastOwnershipTransfer) == ori(ethTax)
+ori(lastOwnershipTransfer) >= ori(ethTax)
+ori(lastOwnershipTransfer) <= ori(ethTax)
+ori(lastOwnershipTransfer) <= validLockPeriods[lockPeriod].bonus
+ori(lastOwnershipTransfer) < validLockPeriods[lockPeriod].bonus
+ori(lastOwnershipTransfer) != validLockPeriods[lockPeriod].bonus
+ori(lastOwnershipTransfer) <= lockPeriod
+ori(lastOwnershipTransfer) < lockPeriod
+ori(lastOwnershipTransfer) != lockPeriod
+ori(lastOwnershipTransfer) == ethTax
+ori(lastOwnershipTransfer) >= ethTax
+ori(lastOwnershipTransfer) <= ethTax
+ori(lastOwnershipTransfer) <= bonus
+ori(lastOwnershipTransfer) < bonus
+ori(lastOwnershipTransfer) != bonus
+ori(lastOwnershipTransfer) <= ori(totalStaked)
+ori(lastOwnershipTransfer) < ori(totalStaked)
+ori(lastOwnershipTransfer) != ori(totalStaked)
+ori(lastOwnershipTransfer) == ori(lastOwnerDepositDay)
+ori(lastOwnershipTransfer) >= ori(lastOwnerDepositDay)
+ori(lastOwnershipTransfer) <= ori(lastOwnerDepositDay)
+ori(lastOwnershipTransfer) == ori(totalDeposits)
+ori(lastOwnershipTransfer) >= ori(totalDeposits)
+ori(lastOwnershipTransfer) <= ori(totalDeposits)
+ori(lastOwnershipTransfer) == maxPercentage
+ori(lastOwnershipTransfer) >= maxPercentage
+ori(lastOwnershipTransfer) <= maxPercentage
+lastOwnershipTransfer <= totalStaked
+lastOwnershipTransfer < totalStaked
+lastOwnershipTransfer != totalStaked
+lastOwnershipTransfer == ori(Sum(nonce[...]))
+lastOwnershipTransfer >= ori(Sum(nonce[...]))
+lastOwnershipTransfer <= ori(Sum(nonce[...]))
+lastOwnershipTransfer == ori(ethTax)
+lastOwnershipTransfer >= ori(ethTax)
+lastOwnershipTransfer <= ori(ethTax)
+lastOwnershipTransfer <= validLockPeriods[lockPeriod].bonus
+lastOwnershipTransfer < validLockPeriods[lockPeriod].bonus
+lastOwnershipTransfer != validLockPeriods[lockPeriod].bonus
+lastOwnershipTransfer <= lockPeriod
+lastOwnershipTransfer < lockPeriod
+lastOwnershipTransfer != lockPeriod
+lastOwnershipTransfer == ethTax
+lastOwnershipTransfer >= ethTax
+lastOwnershipTransfer <= ethTax
+lastOwnershipTransfer <= bonus
+lastOwnershipTransfer < bonus
+lastOwnershipTransfer != bonus
+lastOwnershipTransfer <= ori(totalStaked)
+lastOwnershipTransfer < ori(totalStaked)
+lastOwnershipTransfer != ori(totalStaked)
+lastOwnershipTransfer == ori(lastOwnerDepositDay)
+lastOwnershipTransfer >= ori(lastOwnerDepositDay)
+lastOwnershipTransfer <= ori(lastOwnerDepositDay)
+lastOwnershipTransfer == ori(totalDeposits)
+lastOwnershipTransfer >= ori(totalDeposits)
+lastOwnershipTransfer <= ori(totalDeposits)
+lastOwnershipTransfer == maxPercentage
+lastOwnershipTransfer >= maxPercentage
+lastOwnershipTransfer <= maxPercentage
+stakingSigner != msg.sender
+stakingSigner == ori(stakingSigner)
+totalStaked >= ori(Sum(nonce[...]))
+totalStaked > ori(Sum(nonce[...]))
+totalStaked != ori(Sum(nonce[...]))
+totalStaked >= ori(ethTax)
+totalStaked > ori(ethTax)
+totalStaked != ori(ethTax)
+totalStaked >= validLockPeriods[lockPeriod].bonus
+totalStaked > validLockPeriods[lockPeriod].bonus
+totalStaked != validLockPeriods[lockPeriod].bonus
+totalStaked >= lockPeriod
+totalStaked > lockPeriod
+totalStaked != lockPeriod
+totalStaked >= ethTax
+totalStaked > ethTax
+totalStaked != ethTax
+totalStaked >= bonus
+totalStaked > bonus
+totalStaked != bonus
+totalStaked == ori(totalStaked)
+totalStaked >= ori(totalStaked)
+totalStaked <= ori(totalStaked)
+totalStaked >= ori(lastOwnerDepositDay)
+totalStaked > ori(lastOwnerDepositDay)
+totalStaked != ori(lastOwnerDepositDay)
+totalStaked >= ori(totalDeposits)
+totalStaked > ori(totalDeposits)
+totalStaked != ori(totalDeposits)
+totalStaked >= maxPercentage
+totalStaked > maxPercentage
+totalStaked != maxPercentage
+ori(Sum(nonce[...])) == ori(ethTax)
+ori(Sum(nonce[...])) >= ori(ethTax)
+ori(Sum(nonce[...])) <= ori(ethTax)
+ori(Sum(nonce[...])) <= validLockPeriods[lockPeriod].bonus
+ori(Sum(nonce[...])) < validLockPeriods[lockPeriod].bonus
+ori(Sum(nonce[...])) != validLockPeriods[lockPeriod].bonus
+ori(Sum(nonce[...])) <= lockPeriod
+ori(Sum(nonce[...])) < lockPeriod
+ori(Sum(nonce[...])) != lockPeriod
+ori(Sum(nonce[...])) == ethTax
+ori(Sum(nonce[...])) >= ethTax
+ori(Sum(nonce[...])) <= ethTax
+ori(Sum(nonce[...])) <= bonus
+ori(Sum(nonce[...])) < bonus
+ori(Sum(nonce[...])) != bonus
+ori(Sum(nonce[...])) <= ori(totalStaked)
+ori(Sum(nonce[...])) < ori(totalStaked)
+ori(Sum(nonce[...])) != ori(totalStaked)
+ori(Sum(nonce[...])) == ori(lastOwnerDepositDay)
+ori(Sum(nonce[...])) >= ori(lastOwnerDepositDay)
+ori(Sum(nonce[...])) <= ori(lastOwnerDepositDay)
+ori(Sum(nonce[...])) == ori(totalDeposits)
+ori(Sum(nonce[...])) >= ori(totalDeposits)
+ori(Sum(nonce[...])) <= ori(totalDeposits)
+ori(Sum(nonce[...])) == maxPercentage
+ori(Sum(nonce[...])) >= maxPercentage
+ori(Sum(nonce[...])) <= maxPercentage
+ori(ethTax) <= validLockPeriods[lockPeriod].bonus
+ori(ethTax) < validLockPeriods[lockPeriod].bonus
+ori(ethTax) != validLockPeriods[lockPeriod].bonus
+ori(ethTax) <= lockPeriod
+ori(ethTax) < lockPeriod
+ori(ethTax) != lockPeriod
+ori(ethTax) == ethTax
+ori(ethTax) >= ethTax
+ori(ethTax) <= ethTax
+ori(ethTax) <= bonus
+ori(ethTax) < bonus
+ori(ethTax) != bonus
+ori(ethTax) <= ori(totalStaked)
+ori(ethTax) < ori(totalStaked)
+ori(ethTax) != ori(totalStaked)
+ori(ethTax) == ori(lastOwnerDepositDay)
+ori(ethTax) >= ori(lastOwnerDepositDay)
+ori(ethTax) <= ori(lastOwnerDepositDay)
+ori(ethTax) == ori(totalDeposits)
+ori(ethTax) >= ori(totalDeposits)
+ori(ethTax) <= ori(totalDeposits)
+ori(ethTax) == maxPercentage
+ori(ethTax) >= maxPercentage
+ori(ethTax) <= maxPercentage
+validLockPeriods[lockPeriod].bonus <= lockPeriod
+validLockPeriods[lockPeriod].bonus < lockPeriod
+validLockPeriods[lockPeriod].bonus != lockPeriod
+validLockPeriods[lockPeriod].bonus >= ethTax
+validLockPeriods[lockPeriod].bonus > ethTax
+validLockPeriods[lockPeriod].bonus != ethTax
+validLockPeriods[lockPeriod].bonus == bonus
+validLockPeriods[lockPeriod].bonus >= bonus
+validLockPeriods[lockPeriod].bonus <= bonus
+validLockPeriods[lockPeriod].bonus <= ori(totalStaked)
+validLockPeriods[lockPeriod].bonus < ori(totalStaked)
+validLockPeriods[lockPeriod].bonus != ori(totalStaked)
+validLockPeriods[lockPeriod].bonus >= ori(lastOwnerDepositDay)
+validLockPeriods[lockPeriod].bonus > ori(lastOwnerDepositDay)
+validLockPeriods[lockPeriod].bonus != ori(lastOwnerDepositDay)
+validLockPeriods[lockPeriod].bonus >= ori(totalDeposits)
+validLockPeriods[lockPeriod].bonus > ori(totalDeposits)
+validLockPeriods[lockPeriod].bonus != ori(totalDeposits)
+validLockPeriods[lockPeriod].bonus >= maxPercentage
+validLockPeriods[lockPeriod].bonus > maxPercentage
+validLockPeriods[lockPeriod].bonus != maxPercentage
+lockPeriod >= ethTax
+lockPeriod > ethTax
+lockPeriod != ethTax
+lockPeriod >= bonus
+lockPeriod > bonus
+lockPeriod != bonus
+lockPeriod <= ori(totalStaked)
+lockPeriod < ori(totalStaked)
+lockPeriod != ori(totalStaked)
+lockPeriod >= ori(lastOwnerDepositDay)
+lockPeriod > ori(lastOwnerDepositDay)
+lockPeriod != ori(lastOwnerDepositDay)
+lockPeriod >= ori(totalDeposits)
+lockPeriod > ori(totalDeposits)
+lockPeriod != ori(totalDeposits)
+lockPeriod >= maxPercentage
+lockPeriod > maxPercentage
+lockPeriod != maxPercentage
+ethTax <= bonus
+ethTax < bonus
+ethTax != bonus
+ethTax <= ori(totalStaked)
+ethTax < ori(totalStaked)
+ethTax != ori(totalStaked)
+ethTax == ori(lastOwnerDepositDay)
+ethTax >= ori(lastOwnerDepositDay)
+ethTax <= ori(lastOwnerDepositDay)
+ethTax == ori(totalDeposits)
+ethTax >= ori(totalDeposits)
+ethTax <= ori(totalDeposits)
+ethTax == maxPercentage
+ethTax >= maxPercentage
+ethTax <= maxPercentage
+msg.sender != ori(stakingSigner)
+bonus <= ori(totalStaked)
+bonus < ori(totalStaked)
+bonus != ori(totalStaked)
+bonus >= ori(lastOwnerDepositDay)
+bonus > ori(lastOwnerDepositDay)
+bonus != ori(lastOwnerDepositDay)
+bonus >= ori(totalDeposits)
+bonus > ori(totalDeposits)
+bonus != ori(totalDeposits)
+bonus >= maxPercentage
+bonus > maxPercentage
+bonus != maxPercentage
+ori(totalStaked) >= ori(lastOwnerDepositDay)
+ori(totalStaked) > ori(lastOwnerDepositDay)
+ori(totalStaked) != ori(lastOwnerDepositDay)
+ori(totalStaked) >= ori(totalDeposits)
+ori(totalStaked) > ori(totalDeposits)
+ori(totalStaked) != ori(totalDeposits)
+ori(totalStaked) >= maxPercentage
+ori(totalStaked) > maxPercentage
+ori(totalStaked) != maxPercentage
+ori(lastOwnerDepositDay) == ori(totalDeposits)
+ori(lastOwnerDepositDay) >= ori(totalDeposits)
+ori(lastOwnerDepositDay) <= ori(totalDeposits)
+ori(lastOwnerDepositDay) == maxPercentage
+ori(lastOwnerDepositDay) >= maxPercentage
+ori(lastOwnerDepositDay) <= maxPercentage
+ori(totalDeposits) == maxPercentage
+ori(totalDeposits) >= maxPercentage
+ori(totalDeposits) <= maxPercentage
+WARNING:root:
+
+WARNING:root:setValidLockPeriod(lockPeriod,isValid,bonus)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:stake(amount,lockPeriod)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:ori(jokToken) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) one of [0]
+jokToken == 0
+totalDeposits one of [0,2000000000000000]
+Sum(nonce[...]) == 0
+Sum(nonce[...]) == 0
+Sum(nonce[...]) one of [0]
+msg.value one of [0,800000000000000,777999999999990]
+lastOwnerDepositDay one of [0,19877]
+ori(lastOwnershipTransfer) one of [0,1717407323]
+elem of nonce[...] is one of [0]
+elem of nonce[...] is one of []
+lastOwnershipTransfer one of [0,1717407323]
+stakingSigner == 0
+totalStaked > 0
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) one of [0]
+ori(ethTax) == 0
+ori(ethTax) == 0
+ori(ethTax) one of [0]
+amount > 0
+lockPeriod > 0
+ethTax == 0
+ethTax == 0
+ethTax one of [0]
+msg.sender != 0
+ori(stakingSigner) == 0
+ori(totalStaked) > 0
+ori(lastOwnerDepositDay) one of [0,19877]
+ori(totalDeposits) one of [0,2000000000000000]
+maxPercentage == 0
+maxPercentage == 0
+maxPercentage one of [0]
+ori(jokToken) == jokToken
+ori(jokToken) == stakingSigner
+ori(jokToken) != msg.sender
+ori(jokToken) == ori(stakingSigner)
+ori(maxPercentage) <= totalDeposits
+ori(maxPercentage) == Sum(nonce[...])
+ori(maxPercentage) >= Sum(nonce[...])
+ori(maxPercentage) <= Sum(nonce[...])
+ori(maxPercentage) <= msg.value
+ori(maxPercentage) <= lastOwnerDepositDay
+ori(maxPercentage) <= ori(lastOwnershipTransfer)
+ori(maxPercentage) <= lastOwnershipTransfer
+ori(maxPercentage) <= totalStaked
+ori(maxPercentage) < totalStaked
+ori(maxPercentage) != totalStaked
+ori(maxPercentage) == ori(Sum(nonce[...]))
+ori(maxPercentage) >= ori(Sum(nonce[...]))
+ori(maxPercentage) <= ori(Sum(nonce[...]))
+ori(maxPercentage) == ori(ethTax)
+ori(maxPercentage) >= ori(ethTax)
+ori(maxPercentage) <= ori(ethTax)
+ori(maxPercentage) <= amount
+ori(maxPercentage) < amount
+ori(maxPercentage) != amount
+ori(maxPercentage) <= lockPeriod
+ori(maxPercentage) < lockPeriod
+ori(maxPercentage) != lockPeriod
+ori(maxPercentage) == ethTax
+ori(maxPercentage) >= ethTax
+ori(maxPercentage) <= ethTax
+ori(maxPercentage) <= ori(totalStaked)
+ori(maxPercentage) < ori(totalStaked)
+ori(maxPercentage) != ori(totalStaked)
+ori(maxPercentage) <= ori(lastOwnerDepositDay)
+ori(maxPercentage) <= ori(totalDeposits)
+ori(maxPercentage) == maxPercentage
+ori(maxPercentage) >= maxPercentage
+ori(maxPercentage) <= maxPercentage
+jokToken == stakingSigner
+jokToken != msg.sender
+jokToken == ori(stakingSigner)
+_oldOwner == ori(_oldOwner)
+_oldOwner != msg.sender
+totalDeposits >= Sum(nonce[...])
+totalDeposits >= msg.value
+totalDeposits >= lastOwnerDepositDay
+totalDeposits >= ori(lastOwnershipTransfer)
+totalDeposits >= lastOwnershipTransfer
+totalDeposits <= totalStaked
+totalDeposits < totalStaked
+totalDeposits != totalStaked
+totalDeposits >= ori(Sum(nonce[...]))
+totalDeposits >= ori(ethTax)
+totalDeposits != amount
+totalDeposits != lockPeriod
+totalDeposits >= ethTax
+totalDeposits <= ori(totalStaked)
+totalDeposits < ori(totalStaked)
+totalDeposits != ori(totalStaked)
+totalDeposits >= ori(lastOwnerDepositDay)
+totalDeposits == ori(totalDeposits)
+totalDeposits >= ori(totalDeposits)
+totalDeposits <= ori(totalDeposits)
+totalDeposits >= maxPercentage
+ori(bot) == bot
+ori(bot) == _owner
+ori(bot) == ori(_owner)
+ori(bot) != msg.sender
+Sum(nonce[...]) <= msg.value
+Sum(nonce[...]) <= lastOwnerDepositDay
+Sum(nonce[...]) <= ori(lastOwnershipTransfer)
+Sum(nonce[...]) <= lastOwnershipTransfer
+Sum(nonce[...]) <= totalStaked
+Sum(nonce[...]) < totalStaked
+Sum(nonce[...]) != totalStaked
+Sum(nonce[...]) == ori(Sum(nonce[...]))
+Sum(nonce[...]) >= ori(Sum(nonce[...]))
+Sum(nonce[...]) <= ori(Sum(nonce[...]))
+Sum(nonce[...]) == ori(ethTax)
+Sum(nonce[...]) >= ori(ethTax)
+Sum(nonce[...]) <= ori(ethTax)
+Sum(nonce[...]) <= amount
+Sum(nonce[...]) < amount
+Sum(nonce[...]) != amount
+Sum(nonce[...]) <= lockPeriod
+Sum(nonce[...]) < lockPeriod
+Sum(nonce[...]) != lockPeriod
+Sum(nonce[...]) == ethTax
+Sum(nonce[...]) >= ethTax
+Sum(nonce[...]) <= ethTax
+Sum(nonce[...]) <= ori(totalStaked)
+Sum(nonce[...]) < ori(totalStaked)
+Sum(nonce[...]) != ori(totalStaked)
+Sum(nonce[...]) <= ori(lastOwnerDepositDay)
+Sum(nonce[...]) <= ori(totalDeposits)
+Sum(nonce[...]) == maxPercentage
+Sum(nonce[...]) >= maxPercentage
+Sum(nonce[...]) <= maxPercentage
+msg.value <= totalStaked
+msg.value < totalStaked
+msg.value != totalStaked
+msg.value >= ori(Sum(nonce[...]))
+msg.value >= ori(ethTax)
+msg.value <= amount
+msg.value < amount
+msg.value != amount
+msg.value != lockPeriod
+msg.value >= ethTax
+msg.value <= ori(totalStaked)
+msg.value < ori(totalStaked)
+msg.value != ori(totalStaked)
+msg.value <= ori(totalDeposits)
+msg.value >= maxPercentage
+bot == _owner
+bot == ori(_owner)
+bot != msg.sender
+_owner == ori(_owner)
+_owner != msg.sender
+ori(_owner) != msg.sender
+lastOwnerDepositDay <= ori(lastOwnershipTransfer)
+lastOwnerDepositDay <= lastOwnershipTransfer
+lastOwnerDepositDay <= totalStaked
+lastOwnerDepositDay < totalStaked
+lastOwnerDepositDay != totalStaked
+lastOwnerDepositDay >= ori(Sum(nonce[...]))
+lastOwnerDepositDay >= ori(ethTax)
+lastOwnerDepositDay <= amount
+lastOwnerDepositDay < amount
+lastOwnerDepositDay != amount
+lastOwnerDepositDay != lockPeriod
+lastOwnerDepositDay >= ethTax
+lastOwnerDepositDay <= ori(totalStaked)
+lastOwnerDepositDay < ori(totalStaked)
+lastOwnerDepositDay != ori(totalStaked)
+lastOwnerDepositDay == ori(lastOwnerDepositDay)
+lastOwnerDepositDay >= ori(lastOwnerDepositDay)
+lastOwnerDepositDay <= ori(lastOwnerDepositDay)
+lastOwnerDepositDay <= ori(totalDeposits)
+lastOwnerDepositDay >= maxPercentage
+ori(_oldOwner) != msg.sender
+ori(lastOwnershipTransfer) == lastOwnershipTransfer
+ori(lastOwnershipTransfer) >= lastOwnershipTransfer
+ori(lastOwnershipTransfer) <= lastOwnershipTransfer
+ori(lastOwnershipTransfer) <= totalStaked
+ori(lastOwnershipTransfer) < totalStaked
+ori(lastOwnershipTransfer) != totalStaked
+ori(lastOwnershipTransfer) >= ori(Sum(nonce[...]))
+ori(lastOwnershipTransfer) >= ori(ethTax)
+ori(lastOwnershipTransfer) <= amount
+ori(lastOwnershipTransfer) < amount
+ori(lastOwnershipTransfer) != amount
+ori(lastOwnershipTransfer) != lockPeriod
+ori(lastOwnershipTransfer) >= ethTax
+ori(lastOwnershipTransfer) <= ori(totalStaked)
+ori(lastOwnershipTransfer) < ori(totalStaked)
+ori(lastOwnershipTransfer) != ori(totalStaked)
+ori(lastOwnershipTransfer) >= ori(lastOwnerDepositDay)
+ori(lastOwnershipTransfer) <= ori(totalDeposits)
+ori(lastOwnershipTransfer) >= maxPercentage
+lastOwnershipTransfer <= totalStaked
+lastOwnershipTransfer < totalStaked
+lastOwnershipTransfer != totalStaked
+lastOwnershipTransfer >= ori(Sum(nonce[...]))
+lastOwnershipTransfer >= ori(ethTax)
+lastOwnershipTransfer <= amount
+lastOwnershipTransfer < amount
+lastOwnershipTransfer != amount
+lastOwnershipTransfer != lockPeriod
+lastOwnershipTransfer >= ethTax
+lastOwnershipTransfer <= ori(totalStaked)
+lastOwnershipTransfer < ori(totalStaked)
+lastOwnershipTransfer != ori(totalStaked)
+lastOwnershipTransfer >= ori(lastOwnerDepositDay)
+lastOwnershipTransfer <= ori(totalDeposits)
+lastOwnershipTransfer >= maxPercentage
+stakingSigner != msg.sender
+stakingSigner == ori(stakingSigner)
+totalStaked >= ori(Sum(nonce[...]))
+totalStaked > ori(Sum(nonce[...]))
+totalStaked != ori(Sum(nonce[...]))
+totalStaked >= ori(ethTax)
+totalStaked > ori(ethTax)
+totalStaked != ori(ethTax)
+totalStaked >= amount
+totalStaked > amount
+totalStaked != amount
+totalStaked >= lockPeriod
+totalStaked > lockPeriod
+totalStaked != lockPeriod
+totalStaked >= ethTax
+totalStaked > ethTax
+totalStaked != ethTax
+totalStaked >= ori(totalStaked)
+totalStaked > ori(totalStaked)
+totalStaked != ori(totalStaked)
+totalStaked >= ori(lastOwnerDepositDay)
+totalStaked > ori(lastOwnerDepositDay)
+totalStaked != ori(lastOwnerDepositDay)
+totalStaked >= ori(totalDeposits)
+totalStaked > ori(totalDeposits)
+totalStaked != ori(totalDeposits)
+totalStaked >= maxPercentage
+totalStaked > maxPercentage
+totalStaked != maxPercentage
+ori(Sum(nonce[...])) == ori(ethTax)
+ori(Sum(nonce[...])) >= ori(ethTax)
+ori(Sum(nonce[...])) <= ori(ethTax)
+ori(Sum(nonce[...])) <= amount
+ori(Sum(nonce[...])) < amount
+ori(Sum(nonce[...])) != amount
+ori(Sum(nonce[...])) <= lockPeriod
+ori(Sum(nonce[...])) < lockPeriod
+ori(Sum(nonce[...])) != lockPeriod
+ori(Sum(nonce[...])) == ethTax
+ori(Sum(nonce[...])) >= ethTax
+ori(Sum(nonce[...])) <= ethTax
+ori(Sum(nonce[...])) <= ori(totalStaked)
+ori(Sum(nonce[...])) < ori(totalStaked)
+ori(Sum(nonce[...])) != ori(totalStaked)
+ori(Sum(nonce[...])) <= ori(lastOwnerDepositDay)
+ori(Sum(nonce[...])) <= ori(totalDeposits)
+ori(Sum(nonce[...])) == maxPercentage
+ori(Sum(nonce[...])) >= maxPercentage
+ori(Sum(nonce[...])) <= maxPercentage
+ori(ethTax) <= amount
+ori(ethTax) < amount
+ori(ethTax) != amount
+ori(ethTax) <= lockPeriod
+ori(ethTax) < lockPeriod
+ori(ethTax) != lockPeriod
+ori(ethTax) == ethTax
+ori(ethTax) >= ethTax
+ori(ethTax) <= ethTax
+ori(ethTax) <= ori(totalStaked)
+ori(ethTax) < ori(totalStaked)
+ori(ethTax) != ori(totalStaked)
+ori(ethTax) <= ori(lastOwnerDepositDay)
+ori(ethTax) <= ori(totalDeposits)
+ori(ethTax) == maxPercentage
+ori(ethTax) >= maxPercentage
+ori(ethTax) <= maxPercentage
+amount >= lockPeriod
+amount > lockPeriod
+amount != lockPeriod
+amount >= ethTax
+amount > ethTax
+amount != ethTax
+amount >= ori(lastOwnerDepositDay)
+amount > ori(lastOwnerDepositDay)
+amount != ori(lastOwnerDepositDay)
+amount != ori(totalDeposits)
+amount >= maxPercentage
+amount > maxPercentage
+amount != maxPercentage
+lockPeriod >= ethTax
+lockPeriod > ethTax
+lockPeriod != ethTax
+lockPeriod <= ori(totalStaked)
+lockPeriod < ori(totalStaked)
+lockPeriod != ori(totalStaked)
+lockPeriod != ori(lastOwnerDepositDay)
+lockPeriod != ori(totalDeposits)
+lockPeriod >= maxPercentage
+lockPeriod > maxPercentage
+lockPeriod != maxPercentage
+ethTax <= ori(totalStaked)
+ethTax < ori(totalStaked)
+ethTax != ori(totalStaked)
+ethTax <= ori(lastOwnerDepositDay)
+ethTax <= ori(totalDeposits)
+ethTax == maxPercentage
+ethTax >= maxPercentage
+ethTax <= maxPercentage
+msg.sender != ori(stakingSigner)
+ori(totalStaked) >= ori(lastOwnerDepositDay)
+ori(totalStaked) > ori(lastOwnerDepositDay)
+ori(totalStaked) != ori(lastOwnerDepositDay)
+ori(totalStaked) >= ori(totalDeposits)
+ori(totalStaked) > ori(totalDeposits)
+ori(totalStaked) != ori(totalDeposits)
+ori(totalStaked) >= maxPercentage
+ori(totalStaked) > maxPercentage
+ori(totalStaked) != maxPercentage
+ori(lastOwnerDepositDay) <= ori(totalDeposits)
+ori(lastOwnerDepositDay) >= maxPercentage
+ori(totalDeposits) >= maxPercentage
+WARNING:root:
+
+WARNING:root:stake(amount,lockPeriod)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:ori(jokToken) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) one of [0]
+jokToken == 0
+_oldOwner != 0
+totalDeposits > 0
+totalDeposits == 2000000000000000
+totalDeposits one of [2000000000000000]
+ori(bot) != 0
+Sum(nonce[...]) == 0
+Sum(nonce[...]) == 0
+Sum(nonce[...]) one of [0]
+msg.value == 0
+msg.value == 0
+msg.value one of [0]
+bot != 0
+_owner != 0
+ori(_owner) != 0
+lastOwnerDepositDay > 0
+lastOwnerDepositDay == 19877
+lastOwnerDepositDay one of [19877]
+ori(_oldOwner) != 0
+ori(lastOwnershipTransfer) > 0
+ori(lastOwnershipTransfer) == 1717407323
+ori(lastOwnershipTransfer) one of [1717407323]
+elem of nonce[...] is one of [0]
+elem of nonce[...] is one of []
+lastOwnershipTransfer > 0
+lastOwnershipTransfer == 1717407323
+lastOwnershipTransfer one of [1717407323]
+stakingSigner == 0
+totalStaked > 0
+totalStaked one of [102679412498109900513566168034,102679422498109900513566168034,129217466138754498248606862]
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) one of [0]
+ori(ethTax) == 0
+ori(ethTax) == 0
+ori(ethTax) one of [0]
+amount > 0
+amount one of [10000000000000000000000,100000000,400000000000000000000000]
+lockPeriod > 0
+lockPeriod one of [365,30]
+ethTax == 0
+ethTax == 0
+ethTax one of [0]
+msg.sender != 0
+ori(stakingSigner) == 0
+ori(totalStaked) > 0
+ori(totalStaked) one of [102679412498109900513566168034,102679422498109900513566168034,129217466138754498248606862]
+ori(lastOwnerDepositDay) > 0
+ori(lastOwnerDepositDay) == 19877
+ori(lastOwnerDepositDay) one of [19877]
+ori(totalDeposits) > 0
+ori(totalDeposits) == 2000000000000000
+ori(totalDeposits) one of [2000000000000000]
+maxPercentage == 0
+maxPercentage == 0
+maxPercentage one of [0]
+ori(jokToken) == jokToken
+ori(jokToken) != _oldOwner
+ori(jokToken) != ori(bot)
+ori(jokToken) != bot
+ori(jokToken) != _owner
+ori(jokToken) != ori(_owner)
+ori(jokToken) != ori(_oldOwner)
+ori(jokToken) == stakingSigner
+ori(jokToken) != msg.sender
+ori(jokToken) == ori(stakingSigner)
+ori(maxPercentage) <= totalDeposits
+ori(maxPercentage) < totalDeposits
+ori(maxPercentage) != totalDeposits
+ori(maxPercentage) == Sum(nonce[...])
+ori(maxPercentage) >= Sum(nonce[...])
+ori(maxPercentage) <= Sum(nonce[...])
+ori(maxPercentage) == msg.value
+ori(maxPercentage) >= msg.value
+ori(maxPercentage) <= msg.value
+ori(maxPercentage) <= lastOwnerDepositDay
+ori(maxPercentage) < lastOwnerDepositDay
+ori(maxPercentage) != lastOwnerDepositDay
+ori(maxPercentage) <= ori(lastOwnershipTransfer)
+ori(maxPercentage) < ori(lastOwnershipTransfer)
+ori(maxPercentage) != ori(lastOwnershipTransfer)
+ori(maxPercentage) <= lastOwnershipTransfer
+ori(maxPercentage) < lastOwnershipTransfer
+ori(maxPercentage) != lastOwnershipTransfer
+ori(maxPercentage) <= totalStaked
+ori(maxPercentage) < totalStaked
+ori(maxPercentage) != totalStaked
+ori(maxPercentage) == ori(Sum(nonce[...]))
+ori(maxPercentage) >= ori(Sum(nonce[...]))
+ori(maxPercentage) <= ori(Sum(nonce[...]))
+ori(maxPercentage) == ori(ethTax)
+ori(maxPercentage) >= ori(ethTax)
+ori(maxPercentage) <= ori(ethTax)
+ori(maxPercentage) <= amount
+ori(maxPercentage) < amount
+ori(maxPercentage) != amount
+ori(maxPercentage) <= lockPeriod
+ori(maxPercentage) < lockPeriod
+ori(maxPercentage) != lockPeriod
+ori(maxPercentage) == ethTax
+ori(maxPercentage) >= ethTax
+ori(maxPercentage) <= ethTax
+ori(maxPercentage) <= ori(totalStaked)
+ori(maxPercentage) < ori(totalStaked)
+ori(maxPercentage) != ori(totalStaked)
+ori(maxPercentage) <= ori(lastOwnerDepositDay)
+ori(maxPercentage) < ori(lastOwnerDepositDay)
+ori(maxPercentage) != ori(lastOwnerDepositDay)
+ori(maxPercentage) <= ori(totalDeposits)
+ori(maxPercentage) < ori(totalDeposits)
+ori(maxPercentage) != ori(totalDeposits)
+ori(maxPercentage) == maxPercentage
+ori(maxPercentage) >= maxPercentage
+ori(maxPercentage) <= maxPercentage
+jokToken != _oldOwner
+jokToken != ori(bot)
+jokToken != bot
+jokToken != _owner
+jokToken != ori(_owner)
+jokToken != ori(_oldOwner)
+jokToken == stakingSigner
+jokToken != msg.sender
+jokToken == ori(stakingSigner)
+_oldOwner != ori(bot)
+_oldOwner != bot
+_oldOwner != _owner
+_oldOwner != ori(_owner)
+_oldOwner == ori(_oldOwner)
+_oldOwner != stakingSigner
+_oldOwner != msg.sender
+_oldOwner != ori(stakingSigner)
+totalDeposits >= Sum(nonce[...])
+totalDeposits > Sum(nonce[...])
+totalDeposits != Sum(nonce[...])
+totalDeposits >= msg.value
+totalDeposits > msg.value
+totalDeposits != msg.value
+totalDeposits >= lastOwnerDepositDay
+totalDeposits > lastOwnerDepositDay
+totalDeposits != lastOwnerDepositDay
+totalDeposits >= ori(lastOwnershipTransfer)
+totalDeposits > ori(lastOwnershipTransfer)
+totalDeposits != ori(lastOwnershipTransfer)
+totalDeposits >= lastOwnershipTransfer
+totalDeposits > lastOwnershipTransfer
+totalDeposits != lastOwnershipTransfer
+totalDeposits <= totalStaked
+totalDeposits < totalStaked
+totalDeposits != totalStaked
+totalDeposits >= ori(Sum(nonce[...]))
+totalDeposits > ori(Sum(nonce[...]))
+totalDeposits != ori(Sum(nonce[...]))
+totalDeposits >= ori(ethTax)
+totalDeposits > ori(ethTax)
+totalDeposits != ori(ethTax)
+totalDeposits != amount
+totalDeposits >= lockPeriod
+totalDeposits > lockPeriod
+totalDeposits != lockPeriod
+totalDeposits >= ethTax
+totalDeposits > ethTax
+totalDeposits != ethTax
+totalDeposits <= ori(totalStaked)
+totalDeposits < ori(totalStaked)
+totalDeposits != ori(totalStaked)
+totalDeposits >= ori(lastOwnerDepositDay)
+totalDeposits > ori(lastOwnerDepositDay)
+totalDeposits != ori(lastOwnerDepositDay)
+totalDeposits == ori(totalDeposits)
+totalDeposits >= ori(totalDeposits)
+totalDeposits <= ori(totalDeposits)
+totalDeposits >= maxPercentage
+totalDeposits > maxPercentage
+totalDeposits != maxPercentage
+ori(bot) == bot
+ori(bot) == _owner
+ori(bot) == ori(_owner)
+ori(bot) != ori(_oldOwner)
+ori(bot) != stakingSigner
+ori(bot) != msg.sender
+ori(bot) != ori(stakingSigner)
+Sum(nonce[...]) == msg.value
+Sum(nonce[...]) >= msg.value
+Sum(nonce[...]) <= msg.value
+Sum(nonce[...]) <= lastOwnerDepositDay
+Sum(nonce[...]) < lastOwnerDepositDay
+Sum(nonce[...]) != lastOwnerDepositDay
+Sum(nonce[...]) <= ori(lastOwnershipTransfer)
+Sum(nonce[...]) < ori(lastOwnershipTransfer)
+Sum(nonce[...]) != ori(lastOwnershipTransfer)
+Sum(nonce[...]) <= lastOwnershipTransfer
+Sum(nonce[...]) < lastOwnershipTransfer
+Sum(nonce[...]) != lastOwnershipTransfer
+Sum(nonce[...]) <= totalStaked
+Sum(nonce[...]) < totalStaked
+Sum(nonce[...]) != totalStaked
+Sum(nonce[...]) == ori(Sum(nonce[...]))
+Sum(nonce[...]) >= ori(Sum(nonce[...]))
+Sum(nonce[...]) <= ori(Sum(nonce[...]))
+Sum(nonce[...]) == ori(ethTax)
+Sum(nonce[...]) >= ori(ethTax)
+Sum(nonce[...]) <= ori(ethTax)
+Sum(nonce[...]) <= amount
+Sum(nonce[...]) < amount
+Sum(nonce[...]) != amount
+Sum(nonce[...]) <= lockPeriod
+Sum(nonce[...]) < lockPeriod
+Sum(nonce[...]) != lockPeriod
+Sum(nonce[...]) == ethTax
+Sum(nonce[...]) >= ethTax
+Sum(nonce[...]) <= ethTax
+Sum(nonce[...]) <= ori(totalStaked)
+Sum(nonce[...]) < ori(totalStaked)
+Sum(nonce[...]) != ori(totalStaked)
+Sum(nonce[...]) <= ori(lastOwnerDepositDay)
+Sum(nonce[...]) < ori(lastOwnerDepositDay)
+Sum(nonce[...]) != ori(lastOwnerDepositDay)
+Sum(nonce[...]) <= ori(totalDeposits)
+Sum(nonce[...]) < ori(totalDeposits)
+Sum(nonce[...]) != ori(totalDeposits)
+Sum(nonce[...]) == maxPercentage
+Sum(nonce[...]) >= maxPercentage
+Sum(nonce[...]) <= maxPercentage
+msg.value <= lastOwnerDepositDay
+msg.value < lastOwnerDepositDay
+msg.value != lastOwnerDepositDay
+msg.value <= ori(lastOwnershipTransfer)
+msg.value < ori(lastOwnershipTransfer)
+msg.value != ori(lastOwnershipTransfer)
+msg.value <= lastOwnershipTransfer
+msg.value < lastOwnershipTransfer
+msg.value != lastOwnershipTransfer
+msg.value <= totalStaked
+msg.value < totalStaked
+msg.value != totalStaked
+msg.value == ori(Sum(nonce[...]))
+msg.value >= ori(Sum(nonce[...]))
+msg.value <= ori(Sum(nonce[...]))
+msg.value == ori(ethTax)
+msg.value >= ori(ethTax)
+msg.value <= ori(ethTax)
+msg.value <= amount
+msg.value < amount
+msg.value != amount
+msg.value <= lockPeriod
+msg.value < lockPeriod
+msg.value != lockPeriod
+msg.value == ethTax
+msg.value >= ethTax
+msg.value <= ethTax
+msg.value <= ori(totalStaked)
+msg.value < ori(totalStaked)
+msg.value != ori(totalStaked)
+msg.value <= ori(lastOwnerDepositDay)
+msg.value < ori(lastOwnerDepositDay)
+msg.value != ori(lastOwnerDepositDay)
+msg.value <= ori(totalDeposits)
+msg.value < ori(totalDeposits)
+msg.value != ori(totalDeposits)
+msg.value == maxPercentage
+msg.value >= maxPercentage
+msg.value <= maxPercentage
+bot == _owner
+bot == ori(_owner)
+bot != ori(_oldOwner)
+bot != stakingSigner
+bot != msg.sender
+bot != ori(stakingSigner)
+_owner == ori(_owner)
+_owner != ori(_oldOwner)
+_owner != stakingSigner
+_owner != msg.sender
+_owner != ori(stakingSigner)
+ori(_owner) != ori(_oldOwner)
+ori(_owner) != stakingSigner
+ori(_owner) != msg.sender
+ori(_owner) != ori(stakingSigner)
+lastOwnerDepositDay <= ori(lastOwnershipTransfer)
+lastOwnerDepositDay < ori(lastOwnershipTransfer)
+lastOwnerDepositDay != ori(lastOwnershipTransfer)
+lastOwnerDepositDay <= lastOwnershipTransfer
+lastOwnerDepositDay < lastOwnershipTransfer
+lastOwnerDepositDay != lastOwnershipTransfer
+lastOwnerDepositDay <= totalStaked
+lastOwnerDepositDay < totalStaked
+lastOwnerDepositDay != totalStaked
+lastOwnerDepositDay >= ori(Sum(nonce[...]))
+lastOwnerDepositDay > ori(Sum(nonce[...]))
+lastOwnerDepositDay != ori(Sum(nonce[...]))
+lastOwnerDepositDay >= ori(ethTax)
+lastOwnerDepositDay > ori(ethTax)
+lastOwnerDepositDay != ori(ethTax)
+lastOwnerDepositDay <= amount
+lastOwnerDepositDay < amount
+lastOwnerDepositDay != amount
+lastOwnerDepositDay >= lockPeriod
+lastOwnerDepositDay > lockPeriod
+lastOwnerDepositDay != lockPeriod
+lastOwnerDepositDay >= ethTax
+lastOwnerDepositDay > ethTax
+lastOwnerDepositDay != ethTax
+lastOwnerDepositDay <= ori(totalStaked)
+lastOwnerDepositDay < ori(totalStaked)
+lastOwnerDepositDay != ori(totalStaked)
+lastOwnerDepositDay == ori(lastOwnerDepositDay)
+lastOwnerDepositDay >= ori(lastOwnerDepositDay)
+lastOwnerDepositDay <= ori(lastOwnerDepositDay)
+lastOwnerDepositDay <= ori(totalDeposits)
+lastOwnerDepositDay < ori(totalDeposits)
+lastOwnerDepositDay != ori(totalDeposits)
+lastOwnerDepositDay >= maxPercentage
+lastOwnerDepositDay > maxPercentage
+lastOwnerDepositDay != maxPercentage
+ori(_oldOwner) != stakingSigner
+ori(_oldOwner) != msg.sender
+ori(_oldOwner) != ori(stakingSigner)
+ori(lastOwnershipTransfer) == lastOwnershipTransfer
+ori(lastOwnershipTransfer) >= lastOwnershipTransfer
+ori(lastOwnershipTransfer) <= lastOwnershipTransfer
+ori(lastOwnershipTransfer) <= totalStaked
+ori(lastOwnershipTransfer) < totalStaked
+ori(lastOwnershipTransfer) != totalStaked
+ori(lastOwnershipTransfer) >= ori(Sum(nonce[...]))
+ori(lastOwnershipTransfer) > ori(Sum(nonce[...]))
+ori(lastOwnershipTransfer) != ori(Sum(nonce[...]))
+ori(lastOwnershipTransfer) >= ori(ethTax)
+ori(lastOwnershipTransfer) > ori(ethTax)
+ori(lastOwnershipTransfer) != ori(ethTax)
+ori(lastOwnershipTransfer) != amount
+ori(lastOwnershipTransfer) >= lockPeriod
+ori(lastOwnershipTransfer) > lockPeriod
+ori(lastOwnershipTransfer) != lockPeriod
+ori(lastOwnershipTransfer) >= ethTax
+ori(lastOwnershipTransfer) > ethTax
+ori(lastOwnershipTransfer) != ethTax
+ori(lastOwnershipTransfer) <= ori(totalStaked)
+ori(lastOwnershipTransfer) < ori(totalStaked)
+ori(lastOwnershipTransfer) != ori(totalStaked)
+ori(lastOwnershipTransfer) >= ori(lastOwnerDepositDay)
+ori(lastOwnershipTransfer) > ori(lastOwnerDepositDay)
+ori(lastOwnershipTransfer) != ori(lastOwnerDepositDay)
+ori(lastOwnershipTransfer) <= ori(totalDeposits)
+ori(lastOwnershipTransfer) < ori(totalDeposits)
+ori(lastOwnershipTransfer) != ori(totalDeposits)
+ori(lastOwnershipTransfer) >= maxPercentage
+ori(lastOwnershipTransfer) > maxPercentage
+ori(lastOwnershipTransfer) != maxPercentage
+lastOwnershipTransfer <= totalStaked
+lastOwnershipTransfer < totalStaked
+lastOwnershipTransfer != totalStaked
+lastOwnershipTransfer >= ori(Sum(nonce[...]))
+lastOwnershipTransfer > ori(Sum(nonce[...]))
+lastOwnershipTransfer != ori(Sum(nonce[...]))
+lastOwnershipTransfer >= ori(ethTax)
+lastOwnershipTransfer > ori(ethTax)
+lastOwnershipTransfer != ori(ethTax)
+lastOwnershipTransfer != amount
+lastOwnershipTransfer >= lockPeriod
+lastOwnershipTransfer > lockPeriod
+lastOwnershipTransfer != lockPeriod
+lastOwnershipTransfer >= ethTax
+lastOwnershipTransfer > ethTax
+lastOwnershipTransfer != ethTax
+lastOwnershipTransfer <= ori(totalStaked)
+lastOwnershipTransfer < ori(totalStaked)
+lastOwnershipTransfer != ori(totalStaked)
+lastOwnershipTransfer >= ori(lastOwnerDepositDay)
+lastOwnershipTransfer > ori(lastOwnerDepositDay)
+lastOwnershipTransfer != ori(lastOwnerDepositDay)
+lastOwnershipTransfer <= ori(totalDeposits)
+lastOwnershipTransfer < ori(totalDeposits)
+lastOwnershipTransfer != ori(totalDeposits)
+lastOwnershipTransfer >= maxPercentage
+lastOwnershipTransfer > maxPercentage
+lastOwnershipTransfer != maxPercentage
+stakingSigner != msg.sender
+stakingSigner == ori(stakingSigner)
+totalStaked >= ori(Sum(nonce[...]))
+totalStaked > ori(Sum(nonce[...]))
+totalStaked != ori(Sum(nonce[...]))
+totalStaked >= ori(ethTax)
+totalStaked > ori(ethTax)
+totalStaked != ori(ethTax)
+totalStaked >= amount
+totalStaked > amount
+totalStaked != amount
+totalStaked >= lockPeriod
+totalStaked > lockPeriod
+totalStaked != lockPeriod
+totalStaked >= ethTax
+totalStaked > ethTax
+totalStaked != ethTax
+totalStaked == ori(totalStaked)
+totalStaked >= ori(totalStaked)
+totalStaked <= ori(totalStaked)
+totalStaked >= ori(lastOwnerDepositDay)
+totalStaked > ori(lastOwnerDepositDay)
+totalStaked != ori(lastOwnerDepositDay)
+totalStaked >= ori(totalDeposits)
+totalStaked > ori(totalDeposits)
+totalStaked != ori(totalDeposits)
+totalStaked >= maxPercentage
+totalStaked > maxPercentage
+totalStaked != maxPercentage
+ori(Sum(nonce[...])) == ori(ethTax)
+ori(Sum(nonce[...])) >= ori(ethTax)
+ori(Sum(nonce[...])) <= ori(ethTax)
+ori(Sum(nonce[...])) <= amount
+ori(Sum(nonce[...])) < amount
+ori(Sum(nonce[...])) != amount
+ori(Sum(nonce[...])) <= lockPeriod
+ori(Sum(nonce[...])) < lockPeriod
+ori(Sum(nonce[...])) != lockPeriod
+ori(Sum(nonce[...])) == ethTax
+ori(Sum(nonce[...])) >= ethTax
+ori(Sum(nonce[...])) <= ethTax
+ori(Sum(nonce[...])) <= ori(totalStaked)
+ori(Sum(nonce[...])) < ori(totalStaked)
+ori(Sum(nonce[...])) != ori(totalStaked)
+ori(Sum(nonce[...])) <= ori(lastOwnerDepositDay)
+ori(Sum(nonce[...])) < ori(lastOwnerDepositDay)
+ori(Sum(nonce[...])) != ori(lastOwnerDepositDay)
+ori(Sum(nonce[...])) <= ori(totalDeposits)
+ori(Sum(nonce[...])) < ori(totalDeposits)
+ori(Sum(nonce[...])) != ori(totalDeposits)
+ori(Sum(nonce[...])) == maxPercentage
+ori(Sum(nonce[...])) >= maxPercentage
+ori(Sum(nonce[...])) <= maxPercentage
+ori(ethTax) <= amount
+ori(ethTax) < amount
+ori(ethTax) != amount
+ori(ethTax) <= lockPeriod
+ori(ethTax) < lockPeriod
+ori(ethTax) != lockPeriod
+ori(ethTax) == ethTax
+ori(ethTax) >= ethTax
+ori(ethTax) <= ethTax
+ori(ethTax) <= ori(totalStaked)
+ori(ethTax) < ori(totalStaked)
+ori(ethTax) != ori(totalStaked)
+ori(ethTax) <= ori(lastOwnerDepositDay)
+ori(ethTax) < ori(lastOwnerDepositDay)
+ori(ethTax) != ori(lastOwnerDepositDay)
+ori(ethTax) <= ori(totalDeposits)
+ori(ethTax) < ori(totalDeposits)
+ori(ethTax) != ori(totalDeposits)
+ori(ethTax) == maxPercentage
+ori(ethTax) >= maxPercentage
+ori(ethTax) <= maxPercentage
+amount >= lockPeriod
+amount > lockPeriod
+amount != lockPeriod
+amount >= ethTax
+amount > ethTax
+amount != ethTax
+amount <= ori(totalStaked)
+amount < ori(totalStaked)
+amount != ori(totalStaked)
+amount >= ori(lastOwnerDepositDay)
+amount > ori(lastOwnerDepositDay)
+amount != ori(lastOwnerDepositDay)
+amount != ori(totalDeposits)
+amount >= maxPercentage
+amount > maxPercentage
+amount != maxPercentage
+lockPeriod >= ethTax
+lockPeriod > ethTax
+lockPeriod != ethTax
+lockPeriod <= ori(totalStaked)
+lockPeriod < ori(totalStaked)
+lockPeriod != ori(totalStaked)
+lockPeriod <= ori(lastOwnerDepositDay)
+lockPeriod < ori(lastOwnerDepositDay)
+lockPeriod != ori(lastOwnerDepositDay)
+lockPeriod <= ori(totalDeposits)
+lockPeriod < ori(totalDeposits)
+lockPeriod != ori(totalDeposits)
+lockPeriod >= maxPercentage
+lockPeriod > maxPercentage
+lockPeriod != maxPercentage
+ethTax <= ori(totalStaked)
+ethTax < ori(totalStaked)
+ethTax != ori(totalStaked)
+ethTax <= ori(lastOwnerDepositDay)
+ethTax < ori(lastOwnerDepositDay)
+ethTax != ori(lastOwnerDepositDay)
+ethTax <= ori(totalDeposits)
+ethTax < ori(totalDeposits)
+ethTax != ori(totalDeposits)
+ethTax == maxPercentage
+ethTax >= maxPercentage
+ethTax <= maxPercentage
+msg.sender != ori(stakingSigner)
+ori(totalStaked) >= ori(lastOwnerDepositDay)
+ori(totalStaked) > ori(lastOwnerDepositDay)
+ori(totalStaked) != ori(lastOwnerDepositDay)
+ori(totalStaked) >= ori(totalDeposits)
+ori(totalStaked) > ori(totalDeposits)
+ori(totalStaked) != ori(totalDeposits)
+ori(totalStaked) >= maxPercentage
+ori(totalStaked) > maxPercentage
+ori(totalStaked) != maxPercentage
+ori(lastOwnerDepositDay) <= ori(totalDeposits)
+ori(lastOwnerDepositDay) < ori(totalDeposits)
+ori(lastOwnerDepositDay) != ori(totalDeposits)
+ori(lastOwnerDepositDay) >= maxPercentage
+ori(lastOwnerDepositDay) > maxPercentage
+ori(lastOwnerDepositDay) != maxPercentage
+ori(totalDeposits) >= maxPercentage
+ori(totalDeposits) > maxPercentage
+ori(totalDeposits) != maxPercentage
+WARNING:root:
+
+WARNING:root:transferOwnership(newOwner)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:ori(jokToken) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) one of [0]
+jokToken == 0
+_oldOwner != 0
+newOwner != 0
+totalDeposits > 0
+totalDeposits == 1000000000000000
+totalDeposits one of [1000000000000000]
+ori(bot) != 0
+Sum(nonce[...]) == 0
+Sum(nonce[...]) == 0
+Sum(nonce[...]) one of [0]
+msg.value == 0
+msg.value == 0
+msg.value one of [0]
+bot != 0
+_owner != 0
+ori(_owner) == 0
+lastOwnerDepositDay > 0
+lastOwnerDepositDay == 19877
+lastOwnerDepositDay one of [19877]
+ori(_oldOwner) == 0
+ori(lastOwnershipTransfer) == 0
+ori(lastOwnershipTransfer) == 0
+ori(lastOwnershipTransfer) one of [0]
+elem of nonce[...] is one of [0]
+elem of nonce[...] is one of []
+lastOwnershipTransfer > 0
+lastOwnershipTransfer == 1717407323
+lastOwnershipTransfer one of [1717407323]
+stakingSigner == 0
+totalStaked > 0
+totalStaked == 13200999000000000000000000
+totalStaked one of [13200999000000000000000000]
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) one of [0]
+ori(ethTax) == 0
+ori(ethTax) == 0
+ori(ethTax) one of [0]
+ori(stakingSigner) == 0
+ethTax == 0
+ethTax == 0
+ethTax one of [0]
+msg.sender != 0
+ori(totalStaked) > 0
+ori(totalStaked) == 13200999000000000000000000
+ori(totalStaked) one of [13200999000000000000000000]
+ori(lastOwnerDepositDay) > 0
+ori(lastOwnerDepositDay) == 19877
+ori(lastOwnerDepositDay) one of [19877]
+ori(totalDeposits) > 0
+ori(totalDeposits) == 1000000000000000
+ori(totalDeposits) one of [1000000000000000]
+maxPercentage == 0
+maxPercentage == 0
+maxPercentage one of [0]
+ori(jokToken) == jokToken
+ori(jokToken) != _oldOwner
+ori(jokToken) != newOwner
+ori(jokToken) != ori(bot)
+ori(jokToken) != bot
+ori(jokToken) != _owner
+ori(jokToken) == ori(_owner)
+ori(jokToken) == ori(_oldOwner)
+ori(jokToken) == stakingSigner
+ori(jokToken) == ori(stakingSigner)
+ori(jokToken) != msg.sender
+ori(maxPercentage) <= totalDeposits
+ori(maxPercentage) < totalDeposits
+ori(maxPercentage) != totalDeposits
+ori(maxPercentage) == Sum(nonce[...])
+ori(maxPercentage) >= Sum(nonce[...])
+ori(maxPercentage) <= Sum(nonce[...])
+ori(maxPercentage) == msg.value
+ori(maxPercentage) >= msg.value
+ori(maxPercentage) <= msg.value
+ori(maxPercentage) <= lastOwnerDepositDay
+ori(maxPercentage) < lastOwnerDepositDay
+ori(maxPercentage) != lastOwnerDepositDay
+ori(maxPercentage) == ori(lastOwnershipTransfer)
+ori(maxPercentage) >= ori(lastOwnershipTransfer)
+ori(maxPercentage) <= ori(lastOwnershipTransfer)
+ori(maxPercentage) <= lastOwnershipTransfer
+ori(maxPercentage) < lastOwnershipTransfer
+ori(maxPercentage) != lastOwnershipTransfer
+ori(maxPercentage) <= totalStaked
+ori(maxPercentage) < totalStaked
+ori(maxPercentage) != totalStaked
+ori(maxPercentage) == ori(Sum(nonce[...]))
+ori(maxPercentage) >= ori(Sum(nonce[...]))
+ori(maxPercentage) <= ori(Sum(nonce[...]))
+ori(maxPercentage) == ori(ethTax)
+ori(maxPercentage) >= ori(ethTax)
+ori(maxPercentage) <= ori(ethTax)
+ori(maxPercentage) == ethTax
+ori(maxPercentage) >= ethTax
+ori(maxPercentage) <= ethTax
+ori(maxPercentage) <= ori(totalStaked)
+ori(maxPercentage) < ori(totalStaked)
+ori(maxPercentage) != ori(totalStaked)
+ori(maxPercentage) <= ori(lastOwnerDepositDay)
+ori(maxPercentage) < ori(lastOwnerDepositDay)
+ori(maxPercentage) != ori(lastOwnerDepositDay)
+ori(maxPercentage) <= ori(totalDeposits)
+ori(maxPercentage) < ori(totalDeposits)
+ori(maxPercentage) != ori(totalDeposits)
+ori(maxPercentage) == maxPercentage
+ori(maxPercentage) >= maxPercentage
+ori(maxPercentage) <= maxPercentage
+jokToken != _oldOwner
+jokToken != newOwner
+jokToken != ori(bot)
+jokToken != bot
+jokToken != _owner
+jokToken == ori(_owner)
+jokToken == ori(_oldOwner)
+jokToken == stakingSigner
+jokToken == ori(stakingSigner)
+jokToken != msg.sender
+_oldOwner != newOwner
+_oldOwner != ori(bot)
+_oldOwner != bot
+_oldOwner != _owner
+_oldOwner != ori(_owner)
+_oldOwner != ori(_oldOwner)
+_oldOwner != stakingSigner
+_oldOwner != ori(stakingSigner)
+_oldOwner == msg.sender
+newOwner == ori(bot)
+newOwner == bot
+newOwner == _owner
+newOwner != ori(_owner)
+newOwner != ori(_oldOwner)
+newOwner != stakingSigner
+newOwner != ori(stakingSigner)
+newOwner != msg.sender
+totalDeposits >= Sum(nonce[...])
+totalDeposits > Sum(nonce[...])
+totalDeposits != Sum(nonce[...])
+totalDeposits >= msg.value
+totalDeposits > msg.value
+totalDeposits != msg.value
+totalDeposits >= lastOwnerDepositDay
+totalDeposits > lastOwnerDepositDay
+totalDeposits != lastOwnerDepositDay
+totalDeposits >= ori(lastOwnershipTransfer)
+totalDeposits > ori(lastOwnershipTransfer)
+totalDeposits != ori(lastOwnershipTransfer)
+totalDeposits >= lastOwnershipTransfer
+totalDeposits > lastOwnershipTransfer
+totalDeposits != lastOwnershipTransfer
+totalDeposits <= totalStaked
+totalDeposits < totalStaked
+totalDeposits != totalStaked
+totalDeposits >= ori(Sum(nonce[...]))
+totalDeposits > ori(Sum(nonce[...]))
+totalDeposits != ori(Sum(nonce[...]))
+totalDeposits >= ori(ethTax)
+totalDeposits > ori(ethTax)
+totalDeposits != ori(ethTax)
+totalDeposits >= ethTax
+totalDeposits > ethTax
+totalDeposits != ethTax
+totalDeposits <= ori(totalStaked)
+totalDeposits < ori(totalStaked)
+totalDeposits != ori(totalStaked)
+totalDeposits >= ori(lastOwnerDepositDay)
+totalDeposits > ori(lastOwnerDepositDay)
+totalDeposits != ori(lastOwnerDepositDay)
+totalDeposits == ori(totalDeposits)
+totalDeposits >= ori(totalDeposits)
+totalDeposits <= ori(totalDeposits)
+totalDeposits >= maxPercentage
+totalDeposits > maxPercentage
+totalDeposits != maxPercentage
+ori(bot) == bot
+ori(bot) == _owner
+ori(bot) != ori(_owner)
+ori(bot) != ori(_oldOwner)
+ori(bot) != stakingSigner
+ori(bot) != ori(stakingSigner)
+ori(bot) != msg.sender
+Sum(nonce[...]) == msg.value
+Sum(nonce[...]) >= msg.value
+Sum(nonce[...]) <= msg.value
+Sum(nonce[...]) <= lastOwnerDepositDay
+Sum(nonce[...]) < lastOwnerDepositDay
+Sum(nonce[...]) != lastOwnerDepositDay
+Sum(nonce[...]) == ori(lastOwnershipTransfer)
+Sum(nonce[...]) >= ori(lastOwnershipTransfer)
+Sum(nonce[...]) <= ori(lastOwnershipTransfer)
+Sum(nonce[...]) <= lastOwnershipTransfer
+Sum(nonce[...]) < lastOwnershipTransfer
+Sum(nonce[...]) != lastOwnershipTransfer
+Sum(nonce[...]) <= totalStaked
+Sum(nonce[...]) < totalStaked
+Sum(nonce[...]) != totalStaked
+Sum(nonce[...]) == ori(Sum(nonce[...]))
+Sum(nonce[...]) >= ori(Sum(nonce[...]))
+Sum(nonce[...]) <= ori(Sum(nonce[...]))
+Sum(nonce[...]) == ori(ethTax)
+Sum(nonce[...]) >= ori(ethTax)
+Sum(nonce[...]) <= ori(ethTax)
+Sum(nonce[...]) == ethTax
+Sum(nonce[...]) >= ethTax
+Sum(nonce[...]) <= ethTax
+Sum(nonce[...]) <= ori(totalStaked)
+Sum(nonce[...]) < ori(totalStaked)
+Sum(nonce[...]) != ori(totalStaked)
+Sum(nonce[...]) <= ori(lastOwnerDepositDay)
+Sum(nonce[...]) < ori(lastOwnerDepositDay)
+Sum(nonce[...]) != ori(lastOwnerDepositDay)
+Sum(nonce[...]) <= ori(totalDeposits)
+Sum(nonce[...]) < ori(totalDeposits)
+Sum(nonce[...]) != ori(totalDeposits)
+Sum(nonce[...]) == maxPercentage
+Sum(nonce[...]) >= maxPercentage
+Sum(nonce[...]) <= maxPercentage
+msg.value <= lastOwnerDepositDay
+msg.value < lastOwnerDepositDay
+msg.value != lastOwnerDepositDay
+msg.value == ori(lastOwnershipTransfer)
+msg.value >= ori(lastOwnershipTransfer)
+msg.value <= ori(lastOwnershipTransfer)
+msg.value <= lastOwnershipTransfer
+msg.value < lastOwnershipTransfer
+msg.value != lastOwnershipTransfer
+msg.value <= totalStaked
+msg.value < totalStaked
+msg.value != totalStaked
+msg.value == ori(Sum(nonce[...]))
+msg.value >= ori(Sum(nonce[...]))
+msg.value <= ori(Sum(nonce[...]))
+msg.value == ori(ethTax)
+msg.value >= ori(ethTax)
+msg.value <= ori(ethTax)
+msg.value == ethTax
+msg.value >= ethTax
+msg.value <= ethTax
+msg.value <= ori(totalStaked)
+msg.value < ori(totalStaked)
+msg.value != ori(totalStaked)
+msg.value <= ori(lastOwnerDepositDay)
+msg.value < ori(lastOwnerDepositDay)
+msg.value != ori(lastOwnerDepositDay)
+msg.value <= ori(totalDeposits)
+msg.value < ori(totalDeposits)
+msg.value != ori(totalDeposits)
+msg.value == maxPercentage
+msg.value >= maxPercentage
+msg.value <= maxPercentage
+bot == _owner
+bot != ori(_owner)
+bot != ori(_oldOwner)
+bot != stakingSigner
+bot != ori(stakingSigner)
+bot != msg.sender
+_owner != ori(_owner)
+_owner != ori(_oldOwner)
+_owner != stakingSigner
+_owner != ori(stakingSigner)
+_owner != msg.sender
+ori(_owner) == ori(_oldOwner)
+ori(_owner) == stakingSigner
+ori(_owner) == ori(stakingSigner)
+ori(_owner) != msg.sender
+lastOwnerDepositDay >= ori(lastOwnershipTransfer)
+lastOwnerDepositDay > ori(lastOwnershipTransfer)
+lastOwnerDepositDay != ori(lastOwnershipTransfer)
+lastOwnerDepositDay <= lastOwnershipTransfer
+lastOwnerDepositDay < lastOwnershipTransfer
+lastOwnerDepositDay != lastOwnershipTransfer
+lastOwnerDepositDay <= totalStaked
+lastOwnerDepositDay < totalStaked
+lastOwnerDepositDay != totalStaked
+lastOwnerDepositDay >= ori(Sum(nonce[...]))
+lastOwnerDepositDay > ori(Sum(nonce[...]))
+lastOwnerDepositDay != ori(Sum(nonce[...]))
+lastOwnerDepositDay >= ori(ethTax)
+lastOwnerDepositDay > ori(ethTax)
+lastOwnerDepositDay != ori(ethTax)
+lastOwnerDepositDay >= ethTax
+lastOwnerDepositDay > ethTax
+lastOwnerDepositDay != ethTax
+lastOwnerDepositDay <= ori(totalStaked)
+lastOwnerDepositDay < ori(totalStaked)
+lastOwnerDepositDay != ori(totalStaked)
+lastOwnerDepositDay == ori(lastOwnerDepositDay)
+lastOwnerDepositDay >= ori(lastOwnerDepositDay)
+lastOwnerDepositDay <= ori(lastOwnerDepositDay)
+lastOwnerDepositDay <= ori(totalDeposits)
+lastOwnerDepositDay < ori(totalDeposits)
+lastOwnerDepositDay != ori(totalDeposits)
+lastOwnerDepositDay >= maxPercentage
+lastOwnerDepositDay > maxPercentage
+lastOwnerDepositDay != maxPercentage
+ori(_oldOwner) == stakingSigner
+ori(_oldOwner) == ori(stakingSigner)
+ori(_oldOwner) != msg.sender
+ori(lastOwnershipTransfer) <= lastOwnershipTransfer
+ori(lastOwnershipTransfer) < lastOwnershipTransfer
+ori(lastOwnershipTransfer) != lastOwnershipTransfer
+ori(lastOwnershipTransfer) <= totalStaked
+ori(lastOwnershipTransfer) < totalStaked
+ori(lastOwnershipTransfer) != totalStaked
+ori(lastOwnershipTransfer) == ori(Sum(nonce[...]))
+ori(lastOwnershipTransfer) >= ori(Sum(nonce[...]))
+ori(lastOwnershipTransfer) <= ori(Sum(nonce[...]))
+ori(lastOwnershipTransfer) == ori(ethTax)
+ori(lastOwnershipTransfer) >= ori(ethTax)
+ori(lastOwnershipTransfer) <= ori(ethTax)
+ori(lastOwnershipTransfer) == ethTax
+ori(lastOwnershipTransfer) >= ethTax
+ori(lastOwnershipTransfer) <= ethTax
+ori(lastOwnershipTransfer) <= ori(totalStaked)
+ori(lastOwnershipTransfer) < ori(totalStaked)
+ori(lastOwnershipTransfer) != ori(totalStaked)
+ori(lastOwnershipTransfer) <= ori(lastOwnerDepositDay)
+ori(lastOwnershipTransfer) < ori(lastOwnerDepositDay)
+ori(lastOwnershipTransfer) != ori(lastOwnerDepositDay)
+ori(lastOwnershipTransfer) <= ori(totalDeposits)
+ori(lastOwnershipTransfer) < ori(totalDeposits)
+ori(lastOwnershipTransfer) != ori(totalDeposits)
+ori(lastOwnershipTransfer) == maxPercentage
+ori(lastOwnershipTransfer) >= maxPercentage
+ori(lastOwnershipTransfer) <= maxPercentage
+lastOwnershipTransfer <= totalStaked
+lastOwnershipTransfer < totalStaked
+lastOwnershipTransfer != totalStaked
+lastOwnershipTransfer >= ori(Sum(nonce[...]))
+lastOwnershipTransfer > ori(Sum(nonce[...]))
+lastOwnershipTransfer != ori(Sum(nonce[...]))
+lastOwnershipTransfer >= ori(ethTax)
+lastOwnershipTransfer > ori(ethTax)
+lastOwnershipTransfer != ori(ethTax)
+lastOwnershipTransfer >= ethTax
+lastOwnershipTransfer > ethTax
+lastOwnershipTransfer != ethTax
+lastOwnershipTransfer <= ori(totalStaked)
+lastOwnershipTransfer < ori(totalStaked)
+lastOwnershipTransfer != ori(totalStaked)
+lastOwnershipTransfer >= ori(lastOwnerDepositDay)
+lastOwnershipTransfer > ori(lastOwnerDepositDay)
+lastOwnershipTransfer != ori(lastOwnerDepositDay)
+lastOwnershipTransfer <= ori(totalDeposits)
+lastOwnershipTransfer < ori(totalDeposits)
+lastOwnershipTransfer != ori(totalDeposits)
+lastOwnershipTransfer >= maxPercentage
+lastOwnershipTransfer > maxPercentage
+lastOwnershipTransfer != maxPercentage
+stakingSigner == ori(stakingSigner)
+stakingSigner != msg.sender
+totalStaked >= ori(Sum(nonce[...]))
+totalStaked > ori(Sum(nonce[...]))
+totalStaked != ori(Sum(nonce[...]))
+totalStaked >= ori(ethTax)
+totalStaked > ori(ethTax)
+totalStaked != ori(ethTax)
+totalStaked >= ethTax
+totalStaked > ethTax
+totalStaked != ethTax
+totalStaked == ori(totalStaked)
+totalStaked >= ori(totalStaked)
+totalStaked <= ori(totalStaked)
+totalStaked >= ori(lastOwnerDepositDay)
+totalStaked > ori(lastOwnerDepositDay)
+totalStaked != ori(lastOwnerDepositDay)
+totalStaked >= ori(totalDeposits)
+totalStaked > ori(totalDeposits)
+totalStaked != ori(totalDeposits)
+totalStaked >= maxPercentage
+totalStaked > maxPercentage
+totalStaked != maxPercentage
+ori(Sum(nonce[...])) == ori(ethTax)
+ori(Sum(nonce[...])) >= ori(ethTax)
+ori(Sum(nonce[...])) <= ori(ethTax)
+ori(Sum(nonce[...])) == ethTax
+ori(Sum(nonce[...])) >= ethTax
+ori(Sum(nonce[...])) <= ethTax
+ori(Sum(nonce[...])) <= ori(totalStaked)
+ori(Sum(nonce[...])) < ori(totalStaked)
+ori(Sum(nonce[...])) != ori(totalStaked)
+ori(Sum(nonce[...])) <= ori(lastOwnerDepositDay)
+ori(Sum(nonce[...])) < ori(lastOwnerDepositDay)
+ori(Sum(nonce[...])) != ori(lastOwnerDepositDay)
+ori(Sum(nonce[...])) <= ori(totalDeposits)
+ori(Sum(nonce[...])) < ori(totalDeposits)
+ori(Sum(nonce[...])) != ori(totalDeposits)
+ori(Sum(nonce[...])) == maxPercentage
+ori(Sum(nonce[...])) >= maxPercentage
+ori(Sum(nonce[...])) <= maxPercentage
+ori(ethTax) == ethTax
+ori(ethTax) >= ethTax
+ori(ethTax) <= ethTax
+ori(ethTax) <= ori(totalStaked)
+ori(ethTax) < ori(totalStaked)
+ori(ethTax) != ori(totalStaked)
+ori(ethTax) <= ori(lastOwnerDepositDay)
+ori(ethTax) < ori(lastOwnerDepositDay)
+ori(ethTax) != ori(lastOwnerDepositDay)
+ori(ethTax) <= ori(totalDeposits)
+ori(ethTax) < ori(totalDeposits)
+ori(ethTax) != ori(totalDeposits)
+ori(ethTax) == maxPercentage
+ori(ethTax) >= maxPercentage
+ori(ethTax) <= maxPercentage
+ori(stakingSigner) != msg.sender
+ethTax <= ori(totalStaked)
+ethTax < ori(totalStaked)
+ethTax != ori(totalStaked)
+ethTax <= ori(lastOwnerDepositDay)
+ethTax < ori(lastOwnerDepositDay)
+ethTax != ori(lastOwnerDepositDay)
+ethTax <= ori(totalDeposits)
+ethTax < ori(totalDeposits)
+ethTax != ori(totalDeposits)
+ethTax == maxPercentage
+ethTax >= maxPercentage
+ethTax <= maxPercentage
+ori(totalStaked) >= ori(lastOwnerDepositDay)
+ori(totalStaked) > ori(lastOwnerDepositDay)
+ori(totalStaked) != ori(lastOwnerDepositDay)
+ori(totalStaked) >= ori(totalDeposits)
+ori(totalStaked) > ori(totalDeposits)
+ori(totalStaked) != ori(totalDeposits)
+ori(totalStaked) >= maxPercentage
+ori(totalStaked) > maxPercentage
+ori(totalStaked) != maxPercentage
+ori(lastOwnerDepositDay) <= ori(totalDeposits)
+ori(lastOwnerDepositDay) < ori(totalDeposits)
+ori(lastOwnerDepositDay) != ori(totalDeposits)
+ori(lastOwnerDepositDay) >= maxPercentage
+ori(lastOwnerDepositDay) > maxPercentage
+ori(lastOwnerDepositDay) != maxPercentage
+ori(totalDeposits) >= maxPercentage
+ori(totalDeposits) > maxPercentage
+ori(totalDeposits) != maxPercentage
+WARNING:root:
+
+WARNING:root:transferOwnership(newOwner)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:unstake(stakeIndex)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:ori(jokToken) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) one of [0]
+jokToken == 0
+stakeIndex one of [0,2,3]
+totalDeposits one of [0,2000000000000000]
+Sum(nonce[...]) == 0
+Sum(nonce[...]) == 0
+Sum(nonce[...]) one of [0]
+msg.value == 0
+msg.value == 0
+msg.value one of [0]
+lastOwnerDepositDay one of [0,19877]
+ori(lastOwnershipTransfer) one of [0,1717407323]
+elem of nonce[...] is one of [0]
+elem of nonce[...] is one of []
+lastOwnershipTransfer one of [0,1717407323]
+stakingSigner == 0
+totalStaked > 0
+totalStaked one of [175455636362790031815768699,5657431362790031815768699,12200999000000000000000000,1000000000000000000000000,34630422362790031815768699,128767924768920031815768699,129217466138754498248606862]
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) one of [0]
+ori(ethTax) == 0
+ori(ethTax) == 0
+ori(ethTax) one of [0]
+ori(stakingSigner) == 0
+ethTax == 0
+ethTax == 0
+ethTax one of [0]
+msg.sender != 0
+ori(totalStaked) > 0
+ori(totalStaked) one of [2000000000000000000000000,175455636362790031815768699,129217466138754498248606862,316280850362790031815768699,129667007508588964681445025,146482645362790031815768699,13200999000000000000000000]
+ori(lastOwnerDepositDay) one of [0,19877]
+ori(totalDeposits) one of [0,2000000000000000]
+maxPercentage == 0
+maxPercentage == 0
+maxPercentage one of [0]
+ori(jokToken) == jokToken
+ori(jokToken) == stakingSigner
+ori(jokToken) == ori(stakingSigner)
+ori(jokToken) != msg.sender
+ori(maxPercentage) <= stakeIndex
+ori(maxPercentage) <= totalDeposits
+ori(maxPercentage) == Sum(nonce[...])
+ori(maxPercentage) >= Sum(nonce[...])
+ori(maxPercentage) <= Sum(nonce[...])
+ori(maxPercentage) == msg.value
+ori(maxPercentage) >= msg.value
+ori(maxPercentage) <= msg.value
+ori(maxPercentage) <= lastOwnerDepositDay
+ori(maxPercentage) <= ori(lastOwnershipTransfer)
+ori(maxPercentage) <= lastOwnershipTransfer
+ori(maxPercentage) <= totalStaked
+ori(maxPercentage) < totalStaked
+ori(maxPercentage) != totalStaked
+ori(maxPercentage) == ori(Sum(nonce[...]))
+ori(maxPercentage) >= ori(Sum(nonce[...]))
+ori(maxPercentage) <= ori(Sum(nonce[...]))
+ori(maxPercentage) == ori(ethTax)
+ori(maxPercentage) >= ori(ethTax)
+ori(maxPercentage) <= ori(ethTax)
+ori(maxPercentage) == ethTax
+ori(maxPercentage) >= ethTax
+ori(maxPercentage) <= ethTax
+ori(maxPercentage) <= ori(totalStaked)
+ori(maxPercentage) < ori(totalStaked)
+ori(maxPercentage) != ori(totalStaked)
+ori(maxPercentage) <= ori(lastOwnerDepositDay)
+ori(maxPercentage) <= ori(totalDeposits)
+ori(maxPercentage) == maxPercentage
+ori(maxPercentage) >= maxPercentage
+ori(maxPercentage) <= maxPercentage
+jokToken == stakingSigner
+jokToken == ori(stakingSigner)
+jokToken != msg.sender
+stakeIndex >= Sum(nonce[...])
+stakeIndex >= msg.value
+stakeIndex <= totalStaked
+stakeIndex < totalStaked
+stakeIndex != totalStaked
+stakeIndex >= ori(Sum(nonce[...]))
+stakeIndex >= ori(ethTax)
+stakeIndex >= ethTax
+stakeIndex <= ori(totalStaked)
+stakeIndex < ori(totalStaked)
+stakeIndex != ori(totalStaked)
+stakeIndex >= maxPercentage
+_oldOwner == ori(_oldOwner)
+_oldOwner != msg.sender
+totalDeposits >= Sum(nonce[...])
+totalDeposits >= msg.value
+totalDeposits >= lastOwnerDepositDay
+totalDeposits >= ori(lastOwnershipTransfer)
+totalDeposits >= lastOwnershipTransfer
+totalDeposits <= totalStaked
+totalDeposits < totalStaked
+totalDeposits != totalStaked
+totalDeposits >= ori(Sum(nonce[...]))
+totalDeposits >= ori(ethTax)
+totalDeposits >= ethTax
+totalDeposits <= ori(totalStaked)
+totalDeposits < ori(totalStaked)
+totalDeposits != ori(totalStaked)
+totalDeposits >= ori(lastOwnerDepositDay)
+totalDeposits == ori(totalDeposits)
+totalDeposits >= ori(totalDeposits)
+totalDeposits <= ori(totalDeposits)
+totalDeposits >= maxPercentage
+ori(bot) == bot
+ori(bot) == _owner
+ori(bot) == ori(_owner)
+ori(bot) != msg.sender
+Sum(nonce[...]) == msg.value
+Sum(nonce[...]) >= msg.value
+Sum(nonce[...]) <= msg.value
+Sum(nonce[...]) <= lastOwnerDepositDay
+Sum(nonce[...]) <= ori(lastOwnershipTransfer)
+Sum(nonce[...]) <= lastOwnershipTransfer
+Sum(nonce[...]) <= totalStaked
+Sum(nonce[...]) < totalStaked
+Sum(nonce[...]) != totalStaked
+Sum(nonce[...]) == ori(Sum(nonce[...]))
+Sum(nonce[...]) >= ori(Sum(nonce[...]))
+Sum(nonce[...]) <= ori(Sum(nonce[...]))
+Sum(nonce[...]) == ori(ethTax)
+Sum(nonce[...]) >= ori(ethTax)
+Sum(nonce[...]) <= ori(ethTax)
+Sum(nonce[...]) == ethTax
+Sum(nonce[...]) >= ethTax
+Sum(nonce[...]) <= ethTax
+Sum(nonce[...]) <= ori(totalStaked)
+Sum(nonce[...]) < ori(totalStaked)
+Sum(nonce[...]) != ori(totalStaked)
+Sum(nonce[...]) <= ori(lastOwnerDepositDay)
+Sum(nonce[...]) <= ori(totalDeposits)
+Sum(nonce[...]) == maxPercentage
+Sum(nonce[...]) >= maxPercentage
+Sum(nonce[...]) <= maxPercentage
+msg.value <= lastOwnerDepositDay
+msg.value <= ori(lastOwnershipTransfer)
+msg.value <= lastOwnershipTransfer
+msg.value <= totalStaked
+msg.value < totalStaked
+msg.value != totalStaked
+msg.value == ori(Sum(nonce[...]))
+msg.value >= ori(Sum(nonce[...]))
+msg.value <= ori(Sum(nonce[...]))
+msg.value == ori(ethTax)
+msg.value >= ori(ethTax)
+msg.value <= ori(ethTax)
+msg.value == ethTax
+msg.value >= ethTax
+msg.value <= ethTax
+msg.value <= ori(totalStaked)
+msg.value < ori(totalStaked)
+msg.value != ori(totalStaked)
+msg.value <= ori(lastOwnerDepositDay)
+msg.value <= ori(totalDeposits)
+msg.value == maxPercentage
+msg.value >= maxPercentage
+msg.value <= maxPercentage
+bot == _owner
+bot == ori(_owner)
+bot != msg.sender
+_owner == ori(_owner)
+_owner != msg.sender
+ori(_owner) != msg.sender
+lastOwnerDepositDay <= ori(lastOwnershipTransfer)
+lastOwnerDepositDay <= lastOwnershipTransfer
+lastOwnerDepositDay <= totalStaked
+lastOwnerDepositDay < totalStaked
+lastOwnerDepositDay != totalStaked
+lastOwnerDepositDay >= ori(Sum(nonce[...]))
+lastOwnerDepositDay >= ori(ethTax)
+lastOwnerDepositDay >= ethTax
+lastOwnerDepositDay <= ori(totalStaked)
+lastOwnerDepositDay < ori(totalStaked)
+lastOwnerDepositDay != ori(totalStaked)
+lastOwnerDepositDay == ori(lastOwnerDepositDay)
+lastOwnerDepositDay >= ori(lastOwnerDepositDay)
+lastOwnerDepositDay <= ori(lastOwnerDepositDay)
+lastOwnerDepositDay <= ori(totalDeposits)
+lastOwnerDepositDay >= maxPercentage
+ori(_oldOwner) != msg.sender
+ori(lastOwnershipTransfer) == lastOwnershipTransfer
+ori(lastOwnershipTransfer) >= lastOwnershipTransfer
+ori(lastOwnershipTransfer) <= lastOwnershipTransfer
+ori(lastOwnershipTransfer) <= totalStaked
+ori(lastOwnershipTransfer) < totalStaked
+ori(lastOwnershipTransfer) != totalStaked
+ori(lastOwnershipTransfer) >= ori(Sum(nonce[...]))
+ori(lastOwnershipTransfer) >= ori(ethTax)
+ori(lastOwnershipTransfer) >= ethTax
+ori(lastOwnershipTransfer) <= ori(totalStaked)
+ori(lastOwnershipTransfer) < ori(totalStaked)
+ori(lastOwnershipTransfer) != ori(totalStaked)
+ori(lastOwnershipTransfer) >= ori(lastOwnerDepositDay)
+ori(lastOwnershipTransfer) <= ori(totalDeposits)
+ori(lastOwnershipTransfer) >= maxPercentage
+lastOwnershipTransfer <= totalStaked
+lastOwnershipTransfer < totalStaked
+lastOwnershipTransfer != totalStaked
+lastOwnershipTransfer >= ori(Sum(nonce[...]))
+lastOwnershipTransfer >= ori(ethTax)
+lastOwnershipTransfer >= ethTax
+lastOwnershipTransfer <= ori(totalStaked)
+lastOwnershipTransfer < ori(totalStaked)
+lastOwnershipTransfer != ori(totalStaked)
+lastOwnershipTransfer >= ori(lastOwnerDepositDay)
+lastOwnershipTransfer <= ori(totalDeposits)
+lastOwnershipTransfer >= maxPercentage
+stakingSigner == ori(stakingSigner)
+stakingSigner != msg.sender
+totalStaked >= ori(Sum(nonce[...]))
+totalStaked > ori(Sum(nonce[...]))
+totalStaked != ori(Sum(nonce[...]))
+totalStaked >= ori(ethTax)
+totalStaked > ori(ethTax)
+totalStaked != ori(ethTax)
+totalStaked >= ethTax
+totalStaked > ethTax
+totalStaked != ethTax
+totalStaked <= ori(totalStaked)
+totalStaked < ori(totalStaked)
+totalStaked != ori(totalStaked)
+totalStaked >= ori(lastOwnerDepositDay)
+totalStaked > ori(lastOwnerDepositDay)
+totalStaked != ori(lastOwnerDepositDay)
+totalStaked >= ori(totalDeposits)
+totalStaked > ori(totalDeposits)
+totalStaked != ori(totalDeposits)
+totalStaked >= maxPercentage
+totalStaked > maxPercentage
+totalStaked != maxPercentage
+ori(Sum(nonce[...])) == ori(ethTax)
+ori(Sum(nonce[...])) >= ori(ethTax)
+ori(Sum(nonce[...])) <= ori(ethTax)
+ori(Sum(nonce[...])) == ethTax
+ori(Sum(nonce[...])) >= ethTax
+ori(Sum(nonce[...])) <= ethTax
+ori(Sum(nonce[...])) <= ori(totalStaked)
+ori(Sum(nonce[...])) < ori(totalStaked)
+ori(Sum(nonce[...])) != ori(totalStaked)
+ori(Sum(nonce[...])) <= ori(lastOwnerDepositDay)
+ori(Sum(nonce[...])) <= ori(totalDeposits)
+ori(Sum(nonce[...])) == maxPercentage
+ori(Sum(nonce[...])) >= maxPercentage
+ori(Sum(nonce[...])) <= maxPercentage
+ori(ethTax) == ethTax
+ori(ethTax) >= ethTax
+ori(ethTax) <= ethTax
+ori(ethTax) <= ori(totalStaked)
+ori(ethTax) < ori(totalStaked)
+ori(ethTax) != ori(totalStaked)
+ori(ethTax) <= ori(lastOwnerDepositDay)
+ori(ethTax) <= ori(totalDeposits)
+ori(ethTax) == maxPercentage
+ori(ethTax) >= maxPercentage
+ori(ethTax) <= maxPercentage
+ori(stakingSigner) != msg.sender
+ethTax <= ori(totalStaked)
+ethTax < ori(totalStaked)
+ethTax != ori(totalStaked)
+ethTax <= ori(lastOwnerDepositDay)
+ethTax <= ori(totalDeposits)
+ethTax == maxPercentage
+ethTax >= maxPercentage
+ethTax <= maxPercentage
+ori(totalStaked) >= ori(lastOwnerDepositDay)
+ori(totalStaked) > ori(lastOwnerDepositDay)
+ori(totalStaked) != ori(lastOwnerDepositDay)
+ori(totalStaked) >= ori(totalDeposits)
+ori(totalStaked) > ori(totalDeposits)
+ori(totalStaked) != ori(totalDeposits)
+ori(totalStaked) >= maxPercentage
+ori(totalStaked) > maxPercentage
+ori(totalStaked) != maxPercentage
+ori(lastOwnerDepositDay) <= ori(totalDeposits)
+ori(lastOwnerDepositDay) >= maxPercentage
+ori(totalDeposits) >= maxPercentage
+WARNING:root:
+
+WARNING:root:unstake(stakeIndex)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:ori(jokToken) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) one of [0]
+jokToken == 0
+stakeIndex one of [0,26,3]
+totalDeposits one of [0,2000000000000000]
+Sum(nonce[...]) == 0
+Sum(nonce[...]) == 0
+Sum(nonce[...]) one of [0]
+msg.value == 0
+msg.value == 0
+msg.value one of [0]
+lastOwnerDepositDay one of [0,19877]
+ori(lastOwnershipTransfer) one of [0,1717407323]
+elem of nonce[...] is one of [0]
+elem of nonce[...] is one of []
+lastOwnershipTransfer one of [0,1717407323]
+stakingSigner == 0
+totalStaked > 0
+totalStaked one of [2000000000000000000000000,1000000000000000000000000,3000000000000000000000000,34630422362790031815768699,129667007508588964681445025]
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) one of [0]
+ori(ethTax) == 0
+ori(ethTax) == 0
+ori(ethTax) one of [0]
+ori(stakingSigner) == 0
+ethTax == 0
+ethTax == 0
+ethTax one of [0]
+msg.sender != 0
+ori(totalStaked) > 0
+ori(totalStaked) one of [2000000000000000000000000,1000000000000000000000000,3000000000000000000000000,34630422362790031815768699,129667007508588964681445025]
+ori(lastOwnerDepositDay) one of [0,19877]
+ori(totalDeposits) one of [0,2000000000000000]
+maxPercentage == 0
+maxPercentage == 0
+maxPercentage one of [0]
+ori(jokToken) == jokToken
+ori(jokToken) == stakingSigner
+ori(jokToken) == ori(stakingSigner)
+ori(jokToken) != msg.sender
+ori(maxPercentage) <= stakeIndex
+ori(maxPercentage) <= totalDeposits
+ori(maxPercentage) == Sum(nonce[...])
+ori(maxPercentage) >= Sum(nonce[...])
+ori(maxPercentage) <= Sum(nonce[...])
+ori(maxPercentage) == msg.value
+ori(maxPercentage) >= msg.value
+ori(maxPercentage) <= msg.value
+ori(maxPercentage) <= lastOwnerDepositDay
+ori(maxPercentage) <= ori(lastOwnershipTransfer)
+ori(maxPercentage) <= lastOwnershipTransfer
+ori(maxPercentage) <= totalStaked
+ori(maxPercentage) < totalStaked
+ori(maxPercentage) != totalStaked
+ori(maxPercentage) == ori(Sum(nonce[...]))
+ori(maxPercentage) >= ori(Sum(nonce[...]))
+ori(maxPercentage) <= ori(Sum(nonce[...]))
+ori(maxPercentage) == ori(ethTax)
+ori(maxPercentage) >= ori(ethTax)
+ori(maxPercentage) <= ori(ethTax)
+ori(maxPercentage) == ethTax
+ori(maxPercentage) >= ethTax
+ori(maxPercentage) <= ethTax
+ori(maxPercentage) <= ori(totalStaked)
+ori(maxPercentage) < ori(totalStaked)
+ori(maxPercentage) != ori(totalStaked)
+ori(maxPercentage) <= ori(lastOwnerDepositDay)
+ori(maxPercentage) <= ori(totalDeposits)
+ori(maxPercentage) == maxPercentage
+ori(maxPercentage) >= maxPercentage
+ori(maxPercentage) <= maxPercentage
+jokToken == stakingSigner
+jokToken == ori(stakingSigner)
+jokToken != msg.sender
+stakeIndex >= Sum(nonce[...])
+stakeIndex >= msg.value
+stakeIndex <= totalStaked
+stakeIndex < totalStaked
+stakeIndex != totalStaked
+stakeIndex >= ori(Sum(nonce[...]))
+stakeIndex >= ori(ethTax)
+stakeIndex >= ethTax
+stakeIndex <= ori(totalStaked)
+stakeIndex < ori(totalStaked)
+stakeIndex != ori(totalStaked)
+stakeIndex >= maxPercentage
+_oldOwner == ori(_oldOwner)
+_oldOwner != msg.sender
+totalDeposits >= Sum(nonce[...])
+totalDeposits >= msg.value
+totalDeposits >= lastOwnerDepositDay
+totalDeposits >= ori(lastOwnershipTransfer)
+totalDeposits >= lastOwnershipTransfer
+totalDeposits <= totalStaked
+totalDeposits < totalStaked
+totalDeposits != totalStaked
+totalDeposits >= ori(Sum(nonce[...]))
+totalDeposits >= ori(ethTax)
+totalDeposits >= ethTax
+totalDeposits <= ori(totalStaked)
+totalDeposits < ori(totalStaked)
+totalDeposits != ori(totalStaked)
+totalDeposits >= ori(lastOwnerDepositDay)
+totalDeposits == ori(totalDeposits)
+totalDeposits >= ori(totalDeposits)
+totalDeposits <= ori(totalDeposits)
+totalDeposits >= maxPercentage
+ori(bot) == bot
+ori(bot) == _owner
+ori(bot) == ori(_owner)
+ori(bot) != msg.sender
+Sum(nonce[...]) == msg.value
+Sum(nonce[...]) >= msg.value
+Sum(nonce[...]) <= msg.value
+Sum(nonce[...]) <= lastOwnerDepositDay
+Sum(nonce[...]) <= ori(lastOwnershipTransfer)
+Sum(nonce[...]) <= lastOwnershipTransfer
+Sum(nonce[...]) <= totalStaked
+Sum(nonce[...]) < totalStaked
+Sum(nonce[...]) != totalStaked
+Sum(nonce[...]) == ori(Sum(nonce[...]))
+Sum(nonce[...]) >= ori(Sum(nonce[...]))
+Sum(nonce[...]) <= ori(Sum(nonce[...]))
+Sum(nonce[...]) == ori(ethTax)
+Sum(nonce[...]) >= ori(ethTax)
+Sum(nonce[...]) <= ori(ethTax)
+Sum(nonce[...]) == ethTax
+Sum(nonce[...]) >= ethTax
+Sum(nonce[...]) <= ethTax
+Sum(nonce[...]) <= ori(totalStaked)
+Sum(nonce[...]) < ori(totalStaked)
+Sum(nonce[...]) != ori(totalStaked)
+Sum(nonce[...]) <= ori(lastOwnerDepositDay)
+Sum(nonce[...]) <= ori(totalDeposits)
+Sum(nonce[...]) == maxPercentage
+Sum(nonce[...]) >= maxPercentage
+Sum(nonce[...]) <= maxPercentage
+msg.value <= lastOwnerDepositDay
+msg.value <= ori(lastOwnershipTransfer)
+msg.value <= lastOwnershipTransfer
+msg.value <= totalStaked
+msg.value < totalStaked
+msg.value != totalStaked
+msg.value == ori(Sum(nonce[...]))
+msg.value >= ori(Sum(nonce[...]))
+msg.value <= ori(Sum(nonce[...]))
+msg.value == ori(ethTax)
+msg.value >= ori(ethTax)
+msg.value <= ori(ethTax)
+msg.value == ethTax
+msg.value >= ethTax
+msg.value <= ethTax
+msg.value <= ori(totalStaked)
+msg.value < ori(totalStaked)
+msg.value != ori(totalStaked)
+msg.value <= ori(lastOwnerDepositDay)
+msg.value <= ori(totalDeposits)
+msg.value == maxPercentage
+msg.value >= maxPercentage
+msg.value <= maxPercentage
+bot == _owner
+bot == ori(_owner)
+bot != msg.sender
+_owner == ori(_owner)
+_owner != msg.sender
+ori(_owner) != msg.sender
+lastOwnerDepositDay <= ori(lastOwnershipTransfer)
+lastOwnerDepositDay <= lastOwnershipTransfer
+lastOwnerDepositDay <= totalStaked
+lastOwnerDepositDay < totalStaked
+lastOwnerDepositDay != totalStaked
+lastOwnerDepositDay >= ori(Sum(nonce[...]))
+lastOwnerDepositDay >= ori(ethTax)
+lastOwnerDepositDay >= ethTax
+lastOwnerDepositDay <= ori(totalStaked)
+lastOwnerDepositDay < ori(totalStaked)
+lastOwnerDepositDay != ori(totalStaked)
+lastOwnerDepositDay == ori(lastOwnerDepositDay)
+lastOwnerDepositDay >= ori(lastOwnerDepositDay)
+lastOwnerDepositDay <= ori(lastOwnerDepositDay)
+lastOwnerDepositDay <= ori(totalDeposits)
+lastOwnerDepositDay >= maxPercentage
+ori(_oldOwner) != msg.sender
+ori(lastOwnershipTransfer) == lastOwnershipTransfer
+ori(lastOwnershipTransfer) >= lastOwnershipTransfer
+ori(lastOwnershipTransfer) <= lastOwnershipTransfer
+ori(lastOwnershipTransfer) <= totalStaked
+ori(lastOwnershipTransfer) < totalStaked
+ori(lastOwnershipTransfer) != totalStaked
+ori(lastOwnershipTransfer) >= ori(Sum(nonce[...]))
+ori(lastOwnershipTransfer) >= ori(ethTax)
+ori(lastOwnershipTransfer) >= ethTax
+ori(lastOwnershipTransfer) <= ori(totalStaked)
+ori(lastOwnershipTransfer) < ori(totalStaked)
+ori(lastOwnershipTransfer) != ori(totalStaked)
+ori(lastOwnershipTransfer) >= ori(lastOwnerDepositDay)
+ori(lastOwnershipTransfer) <= ori(totalDeposits)
+ori(lastOwnershipTransfer) >= maxPercentage
+lastOwnershipTransfer <= totalStaked
+lastOwnershipTransfer < totalStaked
+lastOwnershipTransfer != totalStaked
+lastOwnershipTransfer >= ori(Sum(nonce[...]))
+lastOwnershipTransfer >= ori(ethTax)
+lastOwnershipTransfer >= ethTax
+lastOwnershipTransfer <= ori(totalStaked)
+lastOwnershipTransfer < ori(totalStaked)
+lastOwnershipTransfer != ori(totalStaked)
+lastOwnershipTransfer >= ori(lastOwnerDepositDay)
+lastOwnershipTransfer <= ori(totalDeposits)
+lastOwnershipTransfer >= maxPercentage
+stakingSigner == ori(stakingSigner)
+stakingSigner != msg.sender
+totalStaked >= ori(Sum(nonce[...]))
+totalStaked > ori(Sum(nonce[...]))
+totalStaked != ori(Sum(nonce[...]))
+totalStaked >= ori(ethTax)
+totalStaked > ori(ethTax)
+totalStaked != ori(ethTax)
+totalStaked >= ethTax
+totalStaked > ethTax
+totalStaked != ethTax
+totalStaked == ori(totalStaked)
+totalStaked >= ori(totalStaked)
+totalStaked <= ori(totalStaked)
+totalStaked >= ori(lastOwnerDepositDay)
+totalStaked > ori(lastOwnerDepositDay)
+totalStaked != ori(lastOwnerDepositDay)
+totalStaked >= ori(totalDeposits)
+totalStaked > ori(totalDeposits)
+totalStaked != ori(totalDeposits)
+totalStaked >= maxPercentage
+totalStaked > maxPercentage
+totalStaked != maxPercentage
+ori(Sum(nonce[...])) == ori(ethTax)
+ori(Sum(nonce[...])) >= ori(ethTax)
+ori(Sum(nonce[...])) <= ori(ethTax)
+ori(Sum(nonce[...])) == ethTax
+ori(Sum(nonce[...])) >= ethTax
+ori(Sum(nonce[...])) <= ethTax
+ori(Sum(nonce[...])) <= ori(totalStaked)
+ori(Sum(nonce[...])) < ori(totalStaked)
+ori(Sum(nonce[...])) != ori(totalStaked)
+ori(Sum(nonce[...])) <= ori(lastOwnerDepositDay)
+ori(Sum(nonce[...])) <= ori(totalDeposits)
+ori(Sum(nonce[...])) == maxPercentage
+ori(Sum(nonce[...])) >= maxPercentage
+ori(Sum(nonce[...])) <= maxPercentage
+ori(ethTax) == ethTax
+ori(ethTax) >= ethTax
+ori(ethTax) <= ethTax
+ori(ethTax) <= ori(totalStaked)
+ori(ethTax) < ori(totalStaked)
+ori(ethTax) != ori(totalStaked)
+ori(ethTax) <= ori(lastOwnerDepositDay)
+ori(ethTax) <= ori(totalDeposits)
+ori(ethTax) == maxPercentage
+ori(ethTax) >= maxPercentage
+ori(ethTax) <= maxPercentage
+ori(stakingSigner) != msg.sender
+ethTax <= ori(totalStaked)
+ethTax < ori(totalStaked)
+ethTax != ori(totalStaked)
+ethTax <= ori(lastOwnerDepositDay)
+ethTax <= ori(totalDeposits)
+ethTax == maxPercentage
+ethTax >= maxPercentage
+ethTax <= maxPercentage
+ori(totalStaked) >= ori(lastOwnerDepositDay)
+ori(totalStaked) > ori(lastOwnerDepositDay)
+ori(totalStaked) != ori(lastOwnerDepositDay)
+ori(totalStaked) >= ori(totalDeposits)
+ori(totalStaked) > ori(totalDeposits)
+ori(totalStaked) != ori(totalDeposits)
+ori(totalStaked) >= maxPercentage
+ori(totalStaked) > maxPercentage
+ori(totalStaked) != maxPercentage
+ori(lastOwnerDepositDay) <= ori(totalDeposits)
+ori(lastOwnerDepositDay) >= maxPercentage
+ori(totalDeposits) >= maxPercentage
+WARNING:root:
+
+WARNING:root:updateTotalDeposits()
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:ori(jokToken) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) one of [0]
+jokToken == 0
+totalDeposits > 0
+totalDeposits one of [1000000000000000,2000000000000000]
+Sum(nonce[...]) == 0
+Sum(nonce[...]) == 0
+Sum(nonce[...]) one of [0]
+msg.value > 0
+msg.value == 1000000000000000
+msg.value one of [1000000000000000]
+lastOwnerDepositDay > 0
+lastOwnerDepositDay == 19877
+lastOwnerDepositDay one of [19877]
+ori(lastOwnershipTransfer) one of [0,1717407323]
+elem of nonce[...] is one of [0]
+elem of nonce[...] is one of []
+lastOwnershipTransfer one of [0,1717407323]
+stakingSigner == 0
+totalStaked > 0
+totalStaked == 13200999000000000000000000
+totalStaked one of [13200999000000000000000000]
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) one of [0]
+ori(ethTax) == 0
+ori(ethTax) == 0
+ori(ethTax) one of [0]
+ori(stakingSigner) == 0
+ethTax == 0
+ethTax == 0
+ethTax one of [0]
+msg.sender != 0
+ori(totalStaked) > 0
+ori(totalStaked) == 13200999000000000000000000
+ori(totalStaked) one of [13200999000000000000000000]
+ori(lastOwnerDepositDay) one of [0,19877]
+ori(totalDeposits) one of [0,1000000000000000]
+maxPercentage == 0
+maxPercentage == 0
+maxPercentage one of [0]
+ori(jokToken) == jokToken
+ori(jokToken) == stakingSigner
+ori(jokToken) == ori(stakingSigner)
+ori(jokToken) != msg.sender
+ori(maxPercentage) <= totalDeposits
+ori(maxPercentage) < totalDeposits
+ori(maxPercentage) != totalDeposits
+ori(maxPercentage) == Sum(nonce[...])
+ori(maxPercentage) >= Sum(nonce[...])
+ori(maxPercentage) <= Sum(nonce[...])
+ori(maxPercentage) <= msg.value
+ori(maxPercentage) < msg.value
+ori(maxPercentage) != msg.value
+ori(maxPercentage) <= lastOwnerDepositDay
+ori(maxPercentage) < lastOwnerDepositDay
+ori(maxPercentage) != lastOwnerDepositDay
+ori(maxPercentage) <= ori(lastOwnershipTransfer)
+ori(maxPercentage) <= lastOwnershipTransfer
+ori(maxPercentage) <= totalStaked
+ori(maxPercentage) < totalStaked
+ori(maxPercentage) != totalStaked
+ori(maxPercentage) == ori(Sum(nonce[...]))
+ori(maxPercentage) >= ori(Sum(nonce[...]))
+ori(maxPercentage) <= ori(Sum(nonce[...]))
+ori(maxPercentage) == ori(ethTax)
+ori(maxPercentage) >= ori(ethTax)
+ori(maxPercentage) <= ori(ethTax)
+ori(maxPercentage) == ethTax
+ori(maxPercentage) >= ethTax
+ori(maxPercentage) <= ethTax
+ori(maxPercentage) <= ori(totalStaked)
+ori(maxPercentage) < ori(totalStaked)
+ori(maxPercentage) != ori(totalStaked)
+ori(maxPercentage) <= ori(lastOwnerDepositDay)
+ori(maxPercentage) <= ori(totalDeposits)
+ori(maxPercentage) == maxPercentage
+ori(maxPercentage) >= maxPercentage
+ori(maxPercentage) <= maxPercentage
+jokToken == stakingSigner
+jokToken == ori(stakingSigner)
+jokToken != msg.sender
+_oldOwner == ori(_oldOwner)
+_oldOwner != msg.sender
+totalDeposits >= Sum(nonce[...])
+totalDeposits > Sum(nonce[...])
+totalDeposits != Sum(nonce[...])
+totalDeposits >= msg.value
+totalDeposits >= lastOwnerDepositDay
+totalDeposits > lastOwnerDepositDay
+totalDeposits != lastOwnerDepositDay
+totalDeposits >= ori(lastOwnershipTransfer)
+totalDeposits > ori(lastOwnershipTransfer)
+totalDeposits != ori(lastOwnershipTransfer)
+totalDeposits >= lastOwnershipTransfer
+totalDeposits > lastOwnershipTransfer
+totalDeposits != lastOwnershipTransfer
+totalDeposits <= totalStaked
+totalDeposits < totalStaked
+totalDeposits != totalStaked
+totalDeposits >= ori(Sum(nonce[...]))
+totalDeposits > ori(Sum(nonce[...]))
+totalDeposits != ori(Sum(nonce[...]))
+totalDeposits >= ori(ethTax)
+totalDeposits > ori(ethTax)
+totalDeposits != ori(ethTax)
+totalDeposits >= ethTax
+totalDeposits > ethTax
+totalDeposits != ethTax
+totalDeposits <= ori(totalStaked)
+totalDeposits < ori(totalStaked)
+totalDeposits != ori(totalStaked)
+totalDeposits >= ori(lastOwnerDepositDay)
+totalDeposits > ori(lastOwnerDepositDay)
+totalDeposits != ori(lastOwnerDepositDay)
+totalDeposits >= ori(totalDeposits)
+totalDeposits > ori(totalDeposits)
+totalDeposits != ori(totalDeposits)
+totalDeposits >= maxPercentage
+totalDeposits > maxPercentage
+totalDeposits != maxPercentage
+ori(bot) == bot
+ori(bot) == _owner
+ori(bot) == ori(_owner)
+Sum(nonce[...]) <= msg.value
+Sum(nonce[...]) < msg.value
+Sum(nonce[...]) != msg.value
+Sum(nonce[...]) <= lastOwnerDepositDay
+Sum(nonce[...]) < lastOwnerDepositDay
+Sum(nonce[...]) != lastOwnerDepositDay
+Sum(nonce[...]) <= ori(lastOwnershipTransfer)
+Sum(nonce[...]) <= lastOwnershipTransfer
+Sum(nonce[...]) <= totalStaked
+Sum(nonce[...]) < totalStaked
+Sum(nonce[...]) != totalStaked
+Sum(nonce[...]) == ori(Sum(nonce[...]))
+Sum(nonce[...]) >= ori(Sum(nonce[...]))
+Sum(nonce[...]) <= ori(Sum(nonce[...]))
+Sum(nonce[...]) == ori(ethTax)
+Sum(nonce[...]) >= ori(ethTax)
+Sum(nonce[...]) <= ori(ethTax)
+Sum(nonce[...]) == ethTax
+Sum(nonce[...]) >= ethTax
+Sum(nonce[...]) <= ethTax
+Sum(nonce[...]) <= ori(totalStaked)
+Sum(nonce[...]) < ori(totalStaked)
+Sum(nonce[...]) != ori(totalStaked)
+Sum(nonce[...]) <= ori(lastOwnerDepositDay)
+Sum(nonce[...]) <= ori(totalDeposits)
+Sum(nonce[...]) == maxPercentage
+Sum(nonce[...]) >= maxPercentage
+Sum(nonce[...]) <= maxPercentage
+msg.value >= lastOwnerDepositDay
+msg.value > lastOwnerDepositDay
+msg.value != lastOwnerDepositDay
+msg.value >= ori(lastOwnershipTransfer)
+msg.value > ori(lastOwnershipTransfer)
+msg.value != ori(lastOwnershipTransfer)
+msg.value >= lastOwnershipTransfer
+msg.value > lastOwnershipTransfer
+msg.value != lastOwnershipTransfer
+msg.value <= totalStaked
+msg.value < totalStaked
+msg.value != totalStaked
+msg.value >= ori(Sum(nonce[...]))
+msg.value > ori(Sum(nonce[...]))
+msg.value != ori(Sum(nonce[...]))
+msg.value >= ori(ethTax)
+msg.value > ori(ethTax)
+msg.value != ori(ethTax)
+msg.value >= ethTax
+msg.value > ethTax
+msg.value != ethTax
+msg.value <= ori(totalStaked)
+msg.value < ori(totalStaked)
+msg.value != ori(totalStaked)
+msg.value >= ori(lastOwnerDepositDay)
+msg.value > ori(lastOwnerDepositDay)
+msg.value != ori(lastOwnerDepositDay)
+msg.value >= ori(totalDeposits)
+msg.value >= maxPercentage
+msg.value > maxPercentage
+msg.value != maxPercentage
+bot == _owner
+bot == ori(_owner)
+_owner == ori(_owner)
+lastOwnerDepositDay != ori(lastOwnershipTransfer)
+lastOwnerDepositDay != lastOwnershipTransfer
+lastOwnerDepositDay <= totalStaked
+lastOwnerDepositDay < totalStaked
+lastOwnerDepositDay != totalStaked
+lastOwnerDepositDay >= ori(Sum(nonce[...]))
+lastOwnerDepositDay > ori(Sum(nonce[...]))
+lastOwnerDepositDay != ori(Sum(nonce[...]))
+lastOwnerDepositDay >= ori(ethTax)
+lastOwnerDepositDay > ori(ethTax)
+lastOwnerDepositDay != ori(ethTax)
+lastOwnerDepositDay >= ethTax
+lastOwnerDepositDay > ethTax
+lastOwnerDepositDay != ethTax
+lastOwnerDepositDay <= ori(totalStaked)
+lastOwnerDepositDay < ori(totalStaked)
+lastOwnerDepositDay != ori(totalStaked)
+lastOwnerDepositDay >= ori(lastOwnerDepositDay)
+lastOwnerDepositDay != ori(totalDeposits)
+lastOwnerDepositDay >= maxPercentage
+lastOwnerDepositDay > maxPercentage
+lastOwnerDepositDay != maxPercentage
+ori(_oldOwner) != msg.sender
+ori(lastOwnershipTransfer) == lastOwnershipTransfer
+ori(lastOwnershipTransfer) >= lastOwnershipTransfer
+ori(lastOwnershipTransfer) <= lastOwnershipTransfer
+ori(lastOwnershipTransfer) <= totalStaked
+ori(lastOwnershipTransfer) < totalStaked
+ori(lastOwnershipTransfer) != totalStaked
+ori(lastOwnershipTransfer) >= ori(Sum(nonce[...]))
+ori(lastOwnershipTransfer) >= ori(ethTax)
+ori(lastOwnershipTransfer) >= ethTax
+ori(lastOwnershipTransfer) <= ori(totalStaked)
+ori(lastOwnershipTransfer) < ori(totalStaked)
+ori(lastOwnershipTransfer) != ori(totalStaked)
+ori(lastOwnershipTransfer) >= ori(lastOwnerDepositDay)
+ori(lastOwnershipTransfer) <= ori(totalDeposits)
+ori(lastOwnershipTransfer) >= maxPercentage
+lastOwnershipTransfer <= totalStaked
+lastOwnershipTransfer < totalStaked
+lastOwnershipTransfer != totalStaked
+lastOwnershipTransfer >= ori(Sum(nonce[...]))
+lastOwnershipTransfer >= ori(ethTax)
+lastOwnershipTransfer >= ethTax
+lastOwnershipTransfer <= ori(totalStaked)
+lastOwnershipTransfer < ori(totalStaked)
+lastOwnershipTransfer != ori(totalStaked)
+lastOwnershipTransfer >= ori(lastOwnerDepositDay)
+lastOwnershipTransfer <= ori(totalDeposits)
+lastOwnershipTransfer >= maxPercentage
+stakingSigner == ori(stakingSigner)
+stakingSigner != msg.sender
+totalStaked >= ori(Sum(nonce[...]))
+totalStaked > ori(Sum(nonce[...]))
+totalStaked != ori(Sum(nonce[...]))
+totalStaked >= ori(ethTax)
+totalStaked > ori(ethTax)
+totalStaked != ori(ethTax)
+totalStaked >= ethTax
+totalStaked > ethTax
+totalStaked != ethTax
+totalStaked == ori(totalStaked)
+totalStaked >= ori(totalStaked)
+totalStaked <= ori(totalStaked)
+totalStaked >= ori(lastOwnerDepositDay)
+totalStaked > ori(lastOwnerDepositDay)
+totalStaked != ori(lastOwnerDepositDay)
+totalStaked >= ori(totalDeposits)
+totalStaked > ori(totalDeposits)
+totalStaked != ori(totalDeposits)
+totalStaked >= maxPercentage
+totalStaked > maxPercentage
+totalStaked != maxPercentage
+ori(Sum(nonce[...])) == ori(ethTax)
+ori(Sum(nonce[...])) >= ori(ethTax)
+ori(Sum(nonce[...])) <= ori(ethTax)
+ori(Sum(nonce[...])) == ethTax
+ori(Sum(nonce[...])) >= ethTax
+ori(Sum(nonce[...])) <= ethTax
+ori(Sum(nonce[...])) <= ori(totalStaked)
+ori(Sum(nonce[...])) < ori(totalStaked)
+ori(Sum(nonce[...])) != ori(totalStaked)
+ori(Sum(nonce[...])) <= ori(lastOwnerDepositDay)
+ori(Sum(nonce[...])) <= ori(totalDeposits)
+ori(Sum(nonce[...])) == maxPercentage
+ori(Sum(nonce[...])) >= maxPercentage
+ori(Sum(nonce[...])) <= maxPercentage
+ori(ethTax) == ethTax
+ori(ethTax) >= ethTax
+ori(ethTax) <= ethTax
+ori(ethTax) <= ori(totalStaked)
+ori(ethTax) < ori(totalStaked)
+ori(ethTax) != ori(totalStaked)
+ori(ethTax) <= ori(lastOwnerDepositDay)
+ori(ethTax) <= ori(totalDeposits)
+ori(ethTax) == maxPercentage
+ori(ethTax) >= maxPercentage
+ori(ethTax) <= maxPercentage
+ori(stakingSigner) != msg.sender
+ethTax <= ori(totalStaked)
+ethTax < ori(totalStaked)
+ethTax != ori(totalStaked)
+ethTax <= ori(lastOwnerDepositDay)
+ethTax <= ori(totalDeposits)
+ethTax == maxPercentage
+ethTax >= maxPercentage
+ethTax <= maxPercentage
+ori(totalStaked) >= ori(lastOwnerDepositDay)
+ori(totalStaked) > ori(lastOwnerDepositDay)
+ori(totalStaked) != ori(lastOwnerDepositDay)
+ori(totalStaked) >= ori(totalDeposits)
+ori(totalStaked) > ori(totalDeposits)
+ori(totalStaked) != ori(totalDeposits)
+ori(totalStaked) >= maxPercentage
+ori(totalStaked) > maxPercentage
+ori(totalStaked) != maxPercentage
+ori(lastOwnerDepositDay) <= ori(totalDeposits)
+ori(lastOwnerDepositDay) >= maxPercentage
+ori(totalDeposits) >= maxPercentage
+WARNING:root:
+
+WARNING:root:updateTotalDeposits()
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:withdraw(earnings,affiliateEarnings,inETH,message,_v,_r,_s)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.NORMAL
+WARNING:root:
+WARNING:root:
+
+WARNING:root:withdraw(earnings,affiliateEarnings,inETH,message,_v,_r,_s)
+WARNING:root:PptType.EXIT
+WARNING:root:TxType.REVERSION
+WARNING:root:
+WARNING:root:
+
+WARNING:root:None
+WARNING:root:PptType.CONTRACT
+WARNING:root:TxType.NORMAL
+WARNING:root:ori(jokToken) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) == 0
+ori(maxPercentage) one of [0]
+jokToken == 0
+totalDeposits one of [0,1000000000000000,2000000000000000]
+Sum(nonce[...]) == 0
+Sum(nonce[...]) == 0
+Sum(nonce[...]) one of [0]
+lastOwnerDepositDay one of [0,19877]
+ori(lastOwnershipTransfer) one of [0,1717407323]
+elem of nonce[...] is one of [0]
+elem of nonce[...] is one of []
+lastOwnershipTransfer one of [0,1717407323]
+stakingSigner == 0
+totalStaked > 0
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) == 0
+ori(Sum(nonce[...])) one of [0]
+ori(ethTax) == 0
+ori(ethTax) == 0
+ori(ethTax) one of [0]
+ori(stakingSigner) == 0
+ethTax == 0
+ethTax == 0
+ethTax one of [0]
+ori(totalStaked) > 0
+ori(lastOwnerDepositDay) one of [0,19877]
+ori(totalDeposits) one of [0,1000000000000000,2000000000000000]
+maxPercentage == 0
+maxPercentage == 0
+maxPercentage one of [0]
+ori(jokToken) == jokToken
+ori(jokToken) == stakingSigner
+ori(jokToken) == ori(stakingSigner)
+ori(maxPercentage) <= totalDeposits
+ori(maxPercentage) == Sum(nonce[...])
+ori(maxPercentage) >= Sum(nonce[...])
+ori(maxPercentage) <= Sum(nonce[...])
+ori(maxPercentage) <= lastOwnerDepositDay
+ori(maxPercentage) <= ori(lastOwnershipTransfer)
+ori(maxPercentage) <= lastOwnershipTransfer
+ori(maxPercentage) <= totalStaked
+ori(maxPercentage) < totalStaked
+ori(maxPercentage) != totalStaked
+ori(maxPercentage) == ori(Sum(nonce[...]))
+ori(maxPercentage) >= ori(Sum(nonce[...]))
+ori(maxPercentage) <= ori(Sum(nonce[...]))
+ori(maxPercentage) == ori(ethTax)
+ori(maxPercentage) >= ori(ethTax)
+ori(maxPercentage) <= ori(ethTax)
+ori(maxPercentage) == ethTax
+ori(maxPercentage) >= ethTax
+ori(maxPercentage) <= ethTax
+ori(maxPercentage) <= ori(totalStaked)
+ori(maxPercentage) < ori(totalStaked)
+ori(maxPercentage) != ori(totalStaked)
+ori(maxPercentage) <= ori(lastOwnerDepositDay)
+ori(maxPercentage) <= ori(totalDeposits)
+ori(maxPercentage) == maxPercentage
+ori(maxPercentage) >= maxPercentage
+ori(maxPercentage) <= maxPercentage
+jokToken == stakingSigner
+jokToken == ori(stakingSigner)
+totalDeposits >= Sum(nonce[...])
+totalDeposits >= lastOwnerDepositDay
+totalDeposits >= ori(lastOwnershipTransfer)
+totalDeposits >= lastOwnershipTransfer
+totalDeposits <= totalStaked
+totalDeposits < totalStaked
+totalDeposits != totalStaked
+totalDeposits >= ori(Sum(nonce[...]))
+totalDeposits >= ori(ethTax)
+totalDeposits >= ethTax
+totalDeposits <= ori(totalStaked)
+totalDeposits < ori(totalStaked)
+totalDeposits != ori(totalStaked)
+totalDeposits >= ori(lastOwnerDepositDay)
+totalDeposits >= ori(totalDeposits)
+totalDeposits >= maxPercentage
+ori(bot) == _owner
+Sum(nonce[...]) <= lastOwnerDepositDay
+Sum(nonce[...]) <= ori(lastOwnershipTransfer)
+Sum(nonce[...]) <= lastOwnershipTransfer
+Sum(nonce[...]) <= totalStaked
+Sum(nonce[...]) < totalStaked
+Sum(nonce[...]) != totalStaked
+Sum(nonce[...]) == ori(Sum(nonce[...]))
+Sum(nonce[...]) >= ori(Sum(nonce[...]))
+Sum(nonce[...]) <= ori(Sum(nonce[...]))
+Sum(nonce[...]) == ori(ethTax)
+Sum(nonce[...]) >= ori(ethTax)
+Sum(nonce[...]) <= ori(ethTax)
+Sum(nonce[...]) == ethTax
+Sum(nonce[...]) >= ethTax
+Sum(nonce[...]) <= ethTax
+Sum(nonce[...]) <= ori(totalStaked)
+Sum(nonce[...]) < ori(totalStaked)
+Sum(nonce[...]) != ori(totalStaked)
+Sum(nonce[...]) <= ori(lastOwnerDepositDay)
+Sum(nonce[...]) <= ori(totalDeposits)
+Sum(nonce[...]) == maxPercentage
+Sum(nonce[...]) >= maxPercentage
+Sum(nonce[...]) <= maxPercentage
+lastOwnerDepositDay <= totalStaked
+lastOwnerDepositDay < totalStaked
+lastOwnerDepositDay != totalStaked
+lastOwnerDepositDay >= ori(Sum(nonce[...]))
+lastOwnerDepositDay >= ori(ethTax)
+lastOwnerDepositDay >= ethTax
+lastOwnerDepositDay <= ori(totalStaked)
+lastOwnerDepositDay < ori(totalStaked)
+lastOwnerDepositDay != ori(totalStaked)
+lastOwnerDepositDay >= ori(lastOwnerDepositDay)
+lastOwnerDepositDay >= maxPercentage
+ori(lastOwnershipTransfer) <= lastOwnershipTransfer
+ori(lastOwnershipTransfer) <= totalStaked
+ori(lastOwnershipTransfer) < totalStaked
+ori(lastOwnershipTransfer) != totalStaked
+ori(lastOwnershipTransfer) >= ori(Sum(nonce[...]))
+ori(lastOwnershipTransfer) >= ori(ethTax)
+ori(lastOwnershipTransfer) >= ethTax
+ori(lastOwnershipTransfer) <= ori(totalStaked)
+ori(lastOwnershipTransfer) < ori(totalStaked)
+ori(lastOwnershipTransfer) != ori(totalStaked)
+ori(lastOwnershipTransfer) <= ori(totalDeposits)
+ori(lastOwnershipTransfer) >= maxPercentage
+lastOwnershipTransfer <= totalStaked
+lastOwnershipTransfer < totalStaked
+lastOwnershipTransfer != totalStaked
+lastOwnershipTransfer >= ori(Sum(nonce[...]))
+lastOwnershipTransfer >= ori(ethTax)
+lastOwnershipTransfer >= ethTax
+lastOwnershipTransfer <= ori(totalStaked)
+lastOwnershipTransfer < ori(totalStaked)
+lastOwnershipTransfer != ori(totalStaked)
+lastOwnershipTransfer <= ori(totalDeposits)
+lastOwnershipTransfer >= maxPercentage
+stakingSigner == ori(stakingSigner)
+totalStaked >= ori(Sum(nonce[...]))
+totalStaked > ori(Sum(nonce[...]))
+totalStaked != ori(Sum(nonce[...]))
+totalStaked >= ori(ethTax)
+totalStaked > ori(ethTax)
+totalStaked != ori(ethTax)
+totalStaked >= ethTax
+totalStaked > ethTax
+totalStaked != ethTax
+totalStaked >= ori(lastOwnerDepositDay)
+totalStaked > ori(lastOwnerDepositDay)
+totalStaked != ori(lastOwnerDepositDay)
+totalStaked >= ori(totalDeposits)
+totalStaked > ori(totalDeposits)
+totalStaked != ori(totalDeposits)
+totalStaked >= maxPercentage
+totalStaked > maxPercentage
+totalStaked != maxPercentage
+ori(Sum(nonce[...])) == ori(ethTax)
+ori(Sum(nonce[...])) >= ori(ethTax)
+ori(Sum(nonce[...])) <= ori(ethTax)
+ori(Sum(nonce[...])) == ethTax
+ori(Sum(nonce[...])) >= ethTax
+ori(Sum(nonce[...])) <= ethTax
+ori(Sum(nonce[...])) <= ori(totalStaked)
+ori(Sum(nonce[...])) < ori(totalStaked)
+ori(Sum(nonce[...])) != ori(totalStaked)
+ori(Sum(nonce[...])) <= ori(lastOwnerDepositDay)
+ori(Sum(nonce[...])) <= ori(totalDeposits)
+ori(Sum(nonce[...])) == maxPercentage
+ori(Sum(nonce[...])) >= maxPercentage
+ori(Sum(nonce[...])) <= maxPercentage
+ori(ethTax) == ethTax
+ori(ethTax) >= ethTax
+ori(ethTax) <= ethTax
+ori(ethTax) <= ori(totalStaked)
+ori(ethTax) < ori(totalStaked)
+ori(ethTax) != ori(totalStaked)
+ori(ethTax) <= ori(lastOwnerDepositDay)
+ori(ethTax) <= ori(totalDeposits)
+ori(ethTax) == maxPercentage
+ori(ethTax) >= maxPercentage
+ori(ethTax) <= maxPercentage
+ethTax <= ori(totalStaked)
+ethTax < ori(totalStaked)
+ethTax != ori(totalStaked)
+ethTax <= ori(lastOwnerDepositDay)
+ethTax <= ori(totalDeposits)
+ethTax == maxPercentage
+ethTax >= maxPercentage
+ethTax <= maxPercentage
+ori(totalStaked) >= ori(lastOwnerDepositDay)
+ori(totalStaked) > ori(lastOwnerDepositDay)
+ori(totalStaked) != ori(lastOwnerDepositDay)
+ori(totalStaked) >= ori(totalDeposits)
+ori(totalStaked) > ori(totalDeposits)
+ori(totalStaked) != ori(totalDeposits)
+ori(totalStaked) >= maxPercentage
+ori(totalStaked) > maxPercentage
+ori(totalStaked) != maxPercentage
+ori(lastOwnerDepositDay) <= ori(totalDeposits)
+ori(lastOwnerDepositDay) >= maxPercentage
+ori(totalDeposits) >= maxPercentage
+dict_keys(['getCurrentDay()', 'setMaxPercentage(_maxPercentage)', 'isValidSignature(beneficiary,amount,inETH,message,_v,_r,_s)', 'withdraw(earnings,affiliateEarnings,inETH,message,_v,_r,_s)', 'constructor()', 'unstake(stakeIndex)', 'setEthTax(_ethTax)', 'oldOwner()', 'transferOwnership(newOwner)', 'setValidLockPeriod(lockPeriod,isValid,bonus)', '_msgData()', 'stake(amount,lockPeriod)', 'setMEVBot(_bot)', 'setJokToken(_jokToken)', 'getMessageHash(beneficiary,amount,inETH,message,_nonce)', 'owner()', 'onlyOwner()', '_transferOwnership(newOwner)', 'renounceOwnership()', '_msgSender()', 'updateTotalDeposits()', 'setStakingSigner(_stakingSigner)'])
+error:  unstake(stakeIndex)  not found in all_func_dependencies
+dict_keys(['getCurrentDay()', 'setMaxPercentage(_maxPercentage)', 'isValidSignature(beneficiary,amount,inETH,message,_v,_r,_s)', 'withdraw(earnings,affiliateEarnings,inETH,message,_v,_r,_s)', 'constructor()', 'unstake(stakeIndex)', 'setEthTax(_ethTax)', 'oldOwner()', 'transferOwnership(newOwner)', 'setValidLockPeriod(lockPeriod,isValid,bonus)', '_msgData()', 'stake(amount,lockPeriod)', 'setMEVBot(_bot)', 'setJokToken(_jokToken)', 'getMessageHash(beneficiary,amount,inETH,message,_nonce)', 'owner()', 'onlyOwner()', '_transferOwnership(newOwner)', 'renounceOwnership()', '_msgSender()', 'updateTotalDeposits()', 'setStakingSigner(_stakingSigner)'])
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
+division by zero
