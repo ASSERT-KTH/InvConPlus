@@ -64,7 +64,7 @@ The same two-level strategy is used as for InvCon:
 | **202306_VINU** | `addLiquidityETH` | Price Manipulation | `size == 0` | — (assembly var `size` not in output) | ❌ NONE |
 | **202308_Uwerx** | `transfer`, `transferFrom` | Logic Flaw | `uniswapPoolAddress != address(0x1)` / `_balances[to] == (toBalance - userTransferAmount)` | `to != uniswapPoolAddress` / `_balances[to] - ori(_balances[to]) == amount` | 🟡 PARTIAL |
 | **202309_JumpFarm** | `unstake` | Logic Flaw | `TOKEN.balanceOf(address(this)) <= balanceBefore` |-(`balanceBefore` is a local var introduced by the patch; not tracked by InvCon+) | ❌ NONE |
-| **202309_uniclyNFT** | `deposit`, `withdraw` | Reentrancy | `_amount > 0` / `user.amount > 0` / `!__lock_modifier0_lock` | `_amount > 0` ✅ (exact); `user.amount` / lock var not matched | ✅ EXACT (1/3) |
+| **202309_uniclyNFT** | `deposit`, `withdraw` | Reentrancy | `!__lock_modifier0_lock` | `ori(startBlock) == 0` lock var not matched | ❌ NONE |
 | **202310_pSeudoEth** | `skim` | Price Manipulation | `balance0 - reserve0 <= reserve0 / 10` / `balance1 - reserve1 <= reserve1 / 10` | — (no output for `skim`) | ❌ NONE |
 | **202311_grok** | `transfer`, `transferFrom` | Slippage | `sellSlippageBps = 9500` *(implicit slippage param)* | — (state var introduced by patch) | ❌ NONE |
 | **202404_HoppyFrogERC** | `transfer`, `transferFrom`, `manualSwap` | Logic Flaw | `swapAmount <= maxSwapForSell` | — (local var `swapAmount` not in output) | ❌ NONE |
@@ -80,15 +80,15 @@ The same two-level strategy is used as for InvCon:
 
 | Match Type | Contracts | % of total |
 |---|---|---|
-| ✅ EXACT (at least 1 condition) | 1 | 4.2% |
-| 🟡 PARTIAL (at least 1 condition) | 5 | 20.8% |
-| ❌ NONE (all conditions) | 18 | 75.0% |
+| ✅ EXACT (at least 1 condition) | 0 | 0% |
+| 🟡 PARTIAL (at least 1 condition) | 5 | 20.83% |
+| ❌ NONE (all conditions) | 19 | 79.16% |
 
 **Total contracts evaluated:** 24 / 28
 **Total GT conditions evaluated:** 41  
-- Exact matches: 1  
+- Exact matches: 0
 - Partial matches: 9  
-- No matches: 33
+- No matches: 34
 
 ---
 
